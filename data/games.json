@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "fetchedAt": "2026-08-17T06:48:56.876Z",
+  "fetchedAt": "2026-08-17T06:58:00.872Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -221,8 +221,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
@@ -1816,8 +1815,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
@@ -2032,8 +2030,7 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wired"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -2247,8 +2244,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
@@ -2293,8 +2289,7 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wired"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -2339,8 +2334,7 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wired"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -2385,8 +2379,7 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wired"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -2431,8 +2424,7 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wired"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -2702,7 +2694,6 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (DualShock 4 USB Wireless Adapter)",
         "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
@@ -2796,8 +2787,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -5253,8 +5243,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -6189,8 +6178,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
@@ -6676,8 +6664,7 @@
       "controllerSupport": "true",
       "connectionModes": [
         "Wired",
-        "Wireless (Bluetooth)",
-        "Wireless (DualShock 4 USB Wireless Adapter)"
+        "Wireless (Bluetooth)"
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",

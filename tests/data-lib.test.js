@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { attachAvailabilityStores, cleanCompanies, cleanSteamAppId, cleanText, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, splitValues, validateDataset } from '../scripts/data-lib.js';
 
 const dualSenseFixture = [
-  { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', 'Cover URL': 'https://example.com/alpha.jpg', 'Steam AppID': '12345,67890', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth)', 'Controller haptic feedback hd': 'unknown' } },
+  { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', 'Cover URL': 'https://example.com/alpha.jpg', 'Steam AppID': '12345,67890', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth),Wireless (USB)', 'Controller haptic feedback hd': 'unknown' } },
   { title: { Page: 'Beta Game', Developers: null, Publishers: 'Company:Beta', 'Cover URL': 'not-a-url', Released: null, 'Available on': null, 'Playstation controller support': 'hackable', 'DualSense adaptive trigger support': '', 'DualSense haptic feedback support': 'false', 'PlayStation controller models': 'DualSense', 'Playstation connection modes': 'Wired', 'Controller haptic feedback hd': null } }
 ];
 const edgeFixture = [
@@ -50,6 +50,7 @@ test('merges model rows and removes games without DualSense enhancements', () =>
   assert.deepEqual(alpha.developers, ['Alpha Studio', 'Second']);
   assert.deepEqual(alpha.releaseDates, ['2020-01-02', '2021-03-04']);
   assert.equal(alpha.modelStatuses.DualSense, 'true');
+  assert.deepEqual(alpha.connectionModes, ['Wired', 'Wireless (Bluetooth)']);
   assert.equal(alpha.modelStatuses['DualSense Edge'], 'limited');
   assert.equal(alpha.hdHapticFeedback, 'true');
   assert.equal(alpha.coverUrl, 'https://example.com/alpha.jpg');

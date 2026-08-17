@@ -174,7 +174,8 @@ export function cleanPlatforms(value) {
 }
 
 export function cleanConnections(value) {
-  return [...new Set(splitValues(value).map(cleanText).filter(Boolean))];
+  const supported = new Set(['Wired', 'Wireless (Bluetooth)']);
+  return [...new Set(splitValues(value).map(cleanText).filter((item) => supported.has(item)))];
 }
 
 export function pageUrl(title) {

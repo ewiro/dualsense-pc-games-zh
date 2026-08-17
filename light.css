@@ -49,6 +49,22 @@
   cursor: pointer;
   transition: color .18s ease, border-color .18s ease, background-color .18s ease;
 }
+.header-actions { display: flex; align-items: center; gap: 8px; }
+.github-link {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--ink);
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease;
+}
+.github-link svg { width: 19px; height: 19px; fill: currentColor; }
+.github-link:hover { border-color: var(--teal); color: var(--teal); }
 .theme-toggle:hover { border-color: var(--teal); color: var(--teal); }
 .theme-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
 [data-theme="light"] .theme-icon-sun,
@@ -109,5 +125,6 @@ th { text-align: center; }
 
 @media (prefers-reduced-motion: reduce) {
   .theme-toggle,
+  .github-link,
   .store-link { transition: none; }
 }
