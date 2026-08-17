@@ -1,0 +1,64 @@
+name: 更新数据并部署 GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '27 19 * * 2'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 设置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 抓取并校验 PCGamingWiki 数据
+        if: github.event_name != 'push'
+        env:
+          PCGW_USER_AGENT: dualsense-pc-games-zh/1.0 (https://github.com/${{ github.repository }})
+        run: npm run fetch
+
+      - name: 提交数据快照
+        if: github.event_name != 'push'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          if ! git diff --quiet -- data/games.json; then
+            git add data/games.json
+            git commit -m "chore(data): update PCGamingWiki snapshot"
+            git push
+          fi
+
+      - name: 配置 Pages
+        uses: actions/configure-pages@v5
+
+      - name: 安装依赖（本项目无第三方依赖）
+        run: npm install --ignore-scripts --package-lock=false
+
+      - name: 构建静态站点
+        run: npm test && npm run build
+
+      - name: 上传 Pages 构件
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,16 @@
+{
+  "name": "dualsense-pc-games-zh",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PCGamingWiki DualSense compatibility data in Chinese",
+  "scripts": {
+    "fetch": "node scripts/fetch-data.js",
+    "build": "node scripts/build.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
