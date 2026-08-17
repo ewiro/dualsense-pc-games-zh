@@ -18,6 +18,11 @@
 .section-heading h1 { font-size: 36px; line-height: 1.1; letter-spacing: -.04em; margin: 0; }
 .controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
 
+@media (min-width: 901px) {
+  main { padding-top: 56px; }
+  .stats { margin-top: 0; }
+}
+
 [data-theme="light"] body { background: #fff; color: var(--ink); }
 [data-theme="light"] .site-header { background: rgba(255, 255, 255, .94); border-bottom-color: #d8e2eb; }
 [data-theme="light"] .brand-mark { border-color: var(--teal); color: var(--teal); }
