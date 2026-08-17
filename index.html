@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#08121f">
-    <meta name="description" content="面向 DS5Dongle 用户的 DualSense PC 游戏兼容性中文资料库">
+    <meta name="description" content="只收录具有自适应扳机或 DualSense 触觉反馈的 PC 游戏中文资料库">
     <title>DualSense PC 游戏兼容性</title>
     <link rel="stylesheet" href="styles.css">
   </head>
@@ -20,14 +20,14 @@
         <div class="hero-copy">
           <p class="eyebrow">PC GAMINGWIKI · 中文整理</p>
           <h1>让每一次震动，<br><span>都有据可查。</span></h1>
-          <p class="hero-lede">汇总 DualSense 与 DualSense Edge 在 PC 游戏中的控制器支持、连接方式和沉浸式功能。数据定期同步，专为把 DS5Dongle 当作有线手柄使用的玩家整理。</p>
+          <p class="hero-lede">只收录明确支持自适应扳机或 DualSense 触觉反馈的 PC 游戏。仅能基本游玩、与普通手柄无明显差异的条目不再收录。</p>
         </div>
         <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core">DS</div></div>
       </section>
 
       <section class="stats" aria-label="数据统计">
-        <div class="stat"><span class="stat-label">收录游戏</span><strong id="stat-total">—</strong><span class="stat-note">个资料条目</span></div>
-        <div class="stat"><span class="stat-label">原生支持</span><strong id="stat-supported">—</strong><span class="stat-note">DualSense 支持</span></div>
+        <div class="stat"><span class="stat-label">增强功能游戏</span><strong id="stat-total">—</strong><span class="stat-note">已剔除仅基本游玩条目</span></div>
+        <div class="stat"><span class="stat-label">触觉反馈</span><strong id="stat-haptics">—</strong><span class="stat-note">有明确功能记录</span></div>
         <div class="stat"><span class="stat-label">自适应扳机</span><strong id="stat-triggers">—</strong><span class="stat-note">有记录的游戏</span></div>
         <div class="stat"><span class="stat-label">数据更新</span><strong id="stat-date">—</strong><span class="stat-note">来自 PCGamingWiki</span></div>
       </section>
@@ -37,7 +37,7 @@
         <div class="controls">
           <label class="search-wrap"><span class="sr-only">搜索游戏</span><span class="search-icon">⌕</span><input id="search" type="search" placeholder="搜索游戏、厂商或平台…" autocomplete="off"></label>
           <label><span class="sr-only">手柄型号</span><select id="model"><option value="all">全部型号</option><option value="DualSense">DualSense</option><option value="DualSense Edge">DualSense Edge</option></select></label>
-          <label><span class="sr-only">支持状态</span><select id="status"><option value="all">全部状态</option><option value="true">支持</option><option value="limited">有限支持</option><option value="hackable">需额外调整</option><option value="false">不支持</option><option value="unknown">未知</option></select></label>
+          <label><span class="sr-only">支持状态</span><select id="status"><option value="all">全部状态</option><option value="true">支持</option><option value="limited">有限支持</option><option value="hackable">需额外调整</option><option value="always on">始终启用</option><option value="false">不支持</option><option value="unknown">未知</option></select></label>
           <label><span class="sr-only">连接方式</span><select id="connection"><option value="all">全部连接</option><option value="Wired">有线</option><option value="Wireless (Bluetooth)">无线（蓝牙）</option></select></label>
           <label class="feature-filter"><span class="sr-only">功能</span><select id="feature"><option value="all">全部功能</option><option value="adaptiveTriggers">自适应扳机</option><option value="hapticFeedback">高清触觉反馈</option></select></label>
         </div>
@@ -54,7 +54,7 @@
 
       <section class="notes">
         <div><p class="eyebrow">READ THIS FIRST</p><h2>如何理解这些记录？</h2></div>
-        <div class="note-grid"><article><span class="note-number">01</span><h3>有线模式更贴近你的使用场景</h3><p>DS5Dongle 让手柄在电脑端表现为有线 DualSense。表中的“有线”是 PCGamingWiki 对游戏连接记录的整理，不代表本站逐一实测。</p></article><article><span class="note-number">02</span><h3>支持等级来自社区资料</h3><p>“支持”通常表示原生识别；“有限支持”或“需额外调整”可能需要 Steam Input、补丁或启动参数。请点击来源查看上下文。</p></article><article><span class="note-number">03</span><h3>数据会随源站变化</h3><p>本站通过 GitHub Actions 定期同步 PCGamingWiki Cargo API。游戏名、开发商和发行商保留源站原文，中文只用于界面与状态说明。</p></article></div>
+        <div class="note-grid"><article><span class="note-number">01</span><h3>只保留 DualSense 增强体验</h3><p>至少有一项自适应扳机或 DualSense 触觉反馈被记录为支持、有限支持、需额外调整或始终启用时，游戏才会出现在本站。</p></article><article><span class="note-number">02</span><h3>有线模式更贴近你的使用场景</h3><p>DS5Dongle 让手柄在电脑端表现为有线 DualSense。表中的“有线”是 PCGamingWiki 记录，不代表本站逐一实测。</p></article><article><span class="note-number">03</span><h3>数据会随源站变化</h3><p>“有限支持”或“需额外调整”可能需要设置、补丁或启动参数。请点击来源查看上下文。</p></article></div>
       </section>
     </main>
     <footer class="site-footer"><div><strong>DualSense PC 游戏资料库</strong><span>一个面向玩家的非官方中文整理项目</span></div><div><a href="https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense" target="_blank" rel="noreferrer">数据源：PCGamingWiki ↗</a><span id="footer-updated">最后更新：—</span></div><p>PCGamingWiki 派生数据采用 CC BY-NC-SA 3.0；本站代码采用 MIT。本站与 Sony、PCGamingWiki 或 DS5Dongle 作者无隶属关系。</p></footer>

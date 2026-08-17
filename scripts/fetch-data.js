@@ -45,4 +45,4 @@ const edgeRows = await queryModel('DualSense Edge');
 const dataset = mergeRecords(dualSenseRows, edgeRows);
 validateDataset(dataset, await readPrevious());
 await writeFile(outputPath, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
-console.log(`已写入 ${dataset.games.length} 条游戏记录（DualSense ${dualSenseRows.length}，DualSense Edge ${edgeRows.length}）`);
+console.log(`已从 ${dualSenseRows.length} 条 DualSense / ${edgeRows.length} 条 Edge 原始记录中筛选 ${dataset.games.length} 条增强功能游戏`);

@@ -1,5 +1,6 @@
-const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需额外调整', false: '不支持', unknown: '未知' };
-const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', false: 'status-no', unknown: 'status-unknown' };
+const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需额外调整', 'always on': '始终启用', false: '不支持', unknown: '未知' };
+const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', 'always on': 'status-good', false: 'status-no', unknown: 'status-unknown' };
+const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（蓝牙）', Wireless: '无线', 'Wireless (USB)': '无线（USB）' };
 const pageSize = 20;
 let games = [];
@@ -28,8 +29,8 @@ function filteredGames() {
     if (model !== 'all' && !game.models.includes(model)) return false;
     if (status !== 'all' && activeStatus(game, model) !== status) return false;
     if (connection !== 'all' && !(game.connectionModes || []).includes(connection)) return false;
-    if (feature === 'adaptiveTriggers' && game.adaptiveTriggers !== 'true') return false;
-    if (feature === 'hapticFeedback' && !['true', 'limited'].includes(game.hapticFeedback)) return false;
+    if (feature === 'adaptiveTriggers' && !ENHANCED_STATUSES.has(game.adaptiveTriggers)) return false;
+    if (feature === 'hapticFeedback' && !ENHANCED_STATUSES.has(game.hapticFeedback)) return false;
     return true;
   }).sort((a, b) => {
     const av = Array.isArray(a[sortKey]) ? a[sortKey][0] || '' : a[sortKey] || '';
@@ -39,8 +40,8 @@ function filteredGames() {
 }
 function features(game) {
   const values = [];
-  if (game.adaptiveTriggers === 'true') values.push('<span class="feature feature-trigger">扳机</span>');
-  if (['true', 'limited'].includes(game.hapticFeedback)) values.push('<span class="feature feature-haptic">触觉</span>');
+  if (ENHANCED_STATUSES.has(game.adaptiveTriggers)) values.push(`<span class="feature feature-trigger">扳机 · ${labelStatus(game.adaptiveTriggers)}</span>`);
+  if (ENHANCED_STATUSES.has(game.hapticFeedback)) values.push(`<span class="feature feature-haptic">触觉 · ${labelStatus(game.hapticFeedback)}</span>`);
   return values.join('') || '<span class="muted">—</span>';
 }
 function renderRow(game) {
@@ -65,10 +66,10 @@ function render() {
   $('pagination').innerHTML = totalPages > 1 ? `<button ${page === 1 ? 'disabled' : ''} data-page="${page - 1}">上一页</button><span>第 ${page} / ${totalPages} 页</span><button ${page === totalPages ? 'disabled' : ''} data-page="${page + 1}">下一页</button>` : '';
 }
 function renderStats(dataset) {
-  const supported = games.filter((game) => game.modelStatuses?.DualSense === 'true').length;
-  const triggers = games.filter((game) => game.adaptiveTriggers === 'true').length;
+  const haptics = games.filter((game) => ENHANCED_STATUSES.has(game.hapticFeedback)).length;
+  const triggers = games.filter((game) => ENHANCED_STATUSES.has(game.adaptiveTriggers)).length;
   $('stat-total').textContent = games.length.toLocaleString('zh-CN');
-  $('stat-supported').textContent = supported.toLocaleString('zh-CN');
+  $('stat-haptics').textContent = haptics.toLocaleString('zh-CN');
   $('stat-triggers').textContent = triggers.toLocaleString('zh-CN');
   const date = dataset.fetchedAt ? new Intl.DateTimeFormat('zh-CN', { dateStyle: 'medium' }).format(new Date(dataset.fetchedAt)) : '—';
   $('stat-date').textContent = date;

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { cleanCompanies, mergeRecords, normalizeStatus, parseCargoResponse, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { cleanCompanies, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseCargoResponse, splitValues, validateDataset } from '../scripts/data-lib.js';
 
 const dualSenseFixture = [
   { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth)', 'Controller haptic feedback hd': 'unknown' } },
@@ -13,6 +13,7 @@ const edgeFixture = [
 
 test('normalizes statuses and list values', () => {
   assert.equal(normalizeStatus('TRUE'), 'true');
+  assert.equal(normalizeStatus('always on'), 'always on');
   assert.equal(normalizeStatus('not-a-status'), 'unknown');
   assert.deepEqual(splitValues('Wired,Wireless (Bluetooth); USB'), ['Wired', 'Wireless (Bluetooth)', 'USB']);
   assert.deepEqual(cleanCompanies('Company:Alpha_Studio,Company:Beta'), ['Alpha Studio', 'Beta']);
@@ -24,9 +25,10 @@ test('rejects empty and malformed API responses', () => {
   assert.deepEqual(parseCargoResponse({ cargoquery: [] }), []);
 });
 
-test('merges paginated model rows and deduplicates games', () => {
+test('merges model rows and removes games without DualSense enhancements', () => {
   const dataset = mergeRecords(dualSenseFixture, edgeFixture, '2026-08-17T00:00:00.000Z');
-  assert.equal(dataset.games.length, 3);
+  assert.equal(dataset.schemaVersion, 2);
+  assert.equal(dataset.games.length, 1);
   const alpha = dataset.games.find((game) => game.title === 'Alpha Game');
   assert.deepEqual(alpha.models.sort(), ['DualSense', 'DualSense Edge']);
   assert.deepEqual(alpha.developers, ['Alpha Studio', 'Second']);
@@ -34,13 +36,18 @@ test('merges paginated model rows and deduplicates games', () => {
   assert.equal(alpha.modelStatuses.DualSense, 'true');
   assert.equal(alpha.modelStatuses['DualSense Edge'], 'limited');
   assert.equal(alpha.hdHapticFeedback, 'true');
+  assert.equal(hasEnhancedDualSenseFeature(alpha), true);
+  assert.equal(dataset.games.some((game) => game.title === 'Beta Game'), false);
+  assert.equal(dataset.games.some((game) => game.title === 'Gamma Game'), false);
   validateDataset(dataset);
 });
 
 test('rejects empty, malformed, incomplete and sharply reduced datasets', () => {
-  assert.throws(() => validateDataset({ schemaVersion: 1, fetchedAt: 'x', source: 'x', games: [] }), /数据为空/);
+  assert.throws(() => validateDataset({ schemaVersion: 2, fetchedAt: 'x', source: 'x', selection: {}, games: [] }), /数据为空/);
   const base = mergeRecords(dualSenseFixture, edgeFixture);
   assert.throws(() => validateDataset({ ...base, games: base.games.map((game) => ({ ...game, models: ['DualSense'] })) }), /DualSense 和 DualSense Edge/);
-  assert.throws(() => validateDataset({ ...base, games: base.games.slice(0, 1) }, base), /骤降/);
-  assert.throws(() => validateDataset({ ...base, games: [{ ...base.games[0], id: base.games[1].id }, ...base.games.slice(1)] }), /重复/);
+  const previous = { ...base, games: Array.from({ length: 10 }, (_, index) => ({ ...base.games[0], id: `old-${index}`, title: `Old ${index}` })) };
+  assert.throws(() => validateDataset(base, previous), /骤降/);
+  assert.throws(() => validateDataset({ ...base, games: [{ ...base.games[0] }, { ...base.games[0] }] }), /重复/);
+  assert.throws(() => validateDataset({ ...base, games: [{ ...base.games[0], adaptiveTriggers: 'false', hapticFeedback: 'unknown' }] }), /没有 DualSense 增强功能/);
 });

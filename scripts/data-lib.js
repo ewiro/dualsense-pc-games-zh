@@ -20,9 +20,12 @@ export const STATUS_LABELS = {
   true: '支持',
   limited: '有限支持',
   hackable: '需额外调整',
+  'always on': '始终启用',
   false: '不支持',
   unknown: '未知'
 };
+
+export const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 
 export const CONNECTION_LABELS = {
   Wired: '有线',
@@ -82,6 +85,10 @@ export function unwrapCargoRow(row) {
   return row?.title ?? row ?? {};
 }
 
+export function hasEnhancedDualSenseFeature(game) {
+  return ENHANCED_STATUSES.has(game?.adaptiveTriggers) || ENHANCED_STATUSES.has(game?.hapticFeedback);
+}
+
 export function parseCargoResponse(json) {
   if (!json || json.error || !Array.isArray(json.cargoquery)) {
     throw new Error(`PCGamingWiki API 响应无效：${json?.error?.info || '缺少 cargoquery'}`);
@@ -127,11 +134,18 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
   };
   dualSenseRows.forEach((row) => add(row, 'DualSense'));
   edgeRows.forEach((row) => add(row, 'DualSense Edge'));
+  const games = [...merged.values()]
+    .filter(hasEnhancedDualSenseFeature)
+    .sort((a, b) => a.title.localeCompare(b.title, 'en'));
   return {
-    schemaVersion: 1,
+    schemaVersion: 2,
     fetchedAt,
     source: SOURCE_PAGE,
-    games: [...merged.values()].sort((a, b) => a.title.localeCompare(b.title, 'en'))
+    selection: {
+      rule: 'adaptiveTriggers OR hapticFeedback',
+      statuses: [...ENHANCED_STATUSES]
+    },
+    games
   };
 }
 
@@ -139,7 +153,7 @@ export function validateDataset(dataset, previous = null) {
   if (!dataset || !Array.isArray(dataset.games) || dataset.games.length === 0) {
     throw new Error('数据为空，拒绝发布');
   }
-  if (dataset.schemaVersion !== 1 || !dataset.fetchedAt || !dataset.source) {
+  if (dataset.schemaVersion !== 2 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
     throw new Error('数据缺少 schemaVersion、fetchedAt 或 source');
   }
   const ids = new Set();
@@ -150,10 +164,11 @@ export function validateDataset(dataset, previous = null) {
     ids.add(game.id);
     titles.add(game.title.toLocaleLowerCase());
     if (!Array.isArray(game.models) || game.models.length === 0) throw new Error(`游戏缺少手柄型号：${game.title}`);
+    if (!hasEnhancedDualSenseFeature(game)) throw new Error(`游戏没有 DualSense 增强功能：${game.title}`);
   }
   const modelSet = new Set(dataset.games.flatMap((game) => game.models));
   if (!modelSet.has('DualSense') || !modelSet.has('DualSense Edge')) throw new Error('数据必须同时包含 DualSense 和 DualSense Edge');
-  if (previous?.games?.length && dataset.games.length < previous.games.length * 0.8) {
+  if (previous?.schemaVersion === dataset.schemaVersion && previous?.games?.length && dataset.games.length < previous.games.length * 0.8) {
     throw new Error(`记录数从 ${previous.games.length} 降至 ${dataset.games.length}，超过 20% 骤降保护线`);
   }
   return true;

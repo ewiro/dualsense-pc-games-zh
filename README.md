@@ -1,6 +1,6 @@
 # DualSense PC 游戏兼容性中文资料库
 
-面向 [DS5Dongle](https://github.com/awalol/DS5Dongle) 用户的静态中文索引，整理 [PCGamingWiki DualSense 兼容性列表](https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense) 中的 DualSense 与 DualSense Edge 游戏资料。
+面向 [DS5Dongle](https://github.com/awalol/DS5Dongle) 用户的静态中文索引。只保留 [PCGamingWiki DualSense 兼容性列表](https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense) 中有自适应扳机或 DualSense 触觉反馈记录的游戏；仅支持基本游玩、与普通手柄无明显差异的条目会在生成数据时被剔除。
 
 在线地址：启用 Pages 后为 `https://ewiro.github.io/dualsense-pc-games-zh/`。
 
@@ -28,6 +28,6 @@ npm run build  # 生成 dist/ 部署目录
 
 ## 数据与许可
 
-`data/games.json` 的 `schemaVersion` 为 1，公开记录 `fetchedAt`、来源和 `games[]`。游戏名、开发商和发行商保留 PCGamingWiki 原文；界面状态映射为“支持 / 有限支持 / 需额外调整 / 不支持 / 未知”。“有线”表示源站记录的连接方式，不代表本站实测；DS5Dongle 的实际兼容性仍应以具体游戏和设备测试为准。
+`data/games.json` 的 `schemaVersion` 为 2，公开记录 `fetchedAt`、来源、筛选规则和 `games[]`。增强功能状态为“支持 / 有限支持 / 需额外调整 / 始终启用”之一时保留。“有线”表示源站记录的连接方式，不代表本站实测；DS5Dongle 的实际兼容性仍应以具体游戏和设备测试为准。
 
 PCGamingWiki 的派生数据依照 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) 使用并标注来源。本站自行编写的代码依照 [MIT License](LICENSE) 发布。本项目与 Sony、PCGamingWiki 或 DS5Dongle 作者无隶属关系。
