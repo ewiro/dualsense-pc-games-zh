@@ -1,6 +1,6 @@
 {
   "schemaVersion": 5,
-  "fetchedAt": "2026-08-17T06:37:59.135Z",
+  "fetchedAt": "2026-08-17T06:48:56.876Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -25,24 +25,8 @@
           "url": "https://store.steampowered.com/app/3768760/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/007-first-light-182cea"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PJ34M93ZV7Z"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/007-first-light-steam-key--7796-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/007-first-light"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/007-first-light-pc"
         }
       ],
       "developers": [
@@ -83,32 +67,8 @@
           "url": "https://store.steampowered.com/app/1182900/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/a-plague-tale-requiem"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/a_plague_tale_requiem"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N97RC576957"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/a-plague-tale-requiem"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5182-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/a-plague-tale-requiem"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/a-plague-tale-requiem-pc"
         }
       ],
       "developers": [
@@ -149,16 +109,8 @@
       "steamAppId": "",
       "stores": [
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/alan-wake-2"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/alan-wake2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/alan-wake-2-epic-pc"
         }
       ],
       "developers": [
@@ -242,12 +194,8 @@
           "url": "https://store.steampowered.com/app/1172470/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/apex-legends-006cde"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/apex-legends/buy/pc/buy/pc"
         }
       ],
       "developers": [
@@ -289,7 +237,7 @@
       "steamAppId": "",
       "stores": [
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/arknightsendfield-f0f167"
         }
       ],
@@ -337,16 +285,8 @@
           "url": "https://store.steampowered.com/app/3035570/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/assassins-creed-mirage"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NRPWTTJHNBC"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/62ea4f9709372571f2736a72.html"
         }
       ],
       "developers": [
@@ -398,28 +338,8 @@
           "url": "https://store.steampowered.com/app/3159330/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/assassins-creed-shadows"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n86l7wk9qf7"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/660e5a17fbff4e2940488bce.html"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6936-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/assassins-creed-shadows-pc"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6497794841"
         }
       ],
       "developers": [
@@ -476,28 +396,8 @@
           "url": "https://store.steampowered.com/app/2208920/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/assassins-creed-valhalla"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NMHP9SMZHGZ"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/5e849c6c5cdf9a21c0b4e731.html"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/assassins-creed-valhalla"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5389-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/assassins-creed-valhalla-pc"
         }
       ],
       "developers": [
@@ -554,24 +454,8 @@
           "url": "https://store.steampowered.com/app/3751950/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/assassins-creed-black-flag-resynced"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/6995b275b69eda7d3c2e2acc.html"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/assassins-creed-black-flag-resynced"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/8449-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/assassins-creed-black-flag-resynced-pc"
         }
       ],
       "developers": [
@@ -622,22 +506,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/244210/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/assetto-corsa"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/3587-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/assetto-corsa"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/assetto-corsa-pc"
         }
       ],
       "developers": [
@@ -680,24 +548,8 @@
           "url": "https://store.steampowered.com/app/2840770/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/avatar-frontiers-of-pandora"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P8TK8GZ6G6V"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/60c30ca40d253c1914049e93.html"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6693-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora-pc"
         }
       ],
       "developers": [
@@ -753,32 +605,8 @@
           "url": "https://store.steampowered.com/app/1493640/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/banishers-ghosts-of-new-eden-f9e3f2"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/banishers_ghosts_of_new_eden"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NKFS43DLFFL"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/banishers-ghosts-of-new-eden"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6338-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/banishers-ghosts-of-new-eden"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/banishers-ghosts-of-new-eden-pc"
         }
       ],
       "developers": [
@@ -821,12 +649,8 @@
           "url": "https://store.steampowered.com/app/2807960/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/battlefield-6"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/battlefield/battlefield-6/buy/buy/pc"
         }
       ],
       "developers": [
@@ -873,12 +697,8 @@
           "url": "https://store.steampowered.com/app/284160/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/beamngdrive-7f5f3a"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/beamngdrive"
         }
       ],
       "developers": [
@@ -918,22 +738,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2001760/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NXWSWBM4H6T"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/8200-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/dd-beast-of-reincarnation"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/beast-of-reincarnation-pc"
         }
       ],
       "developers": [
@@ -976,16 +780,8 @@
           "url": "https://store.steampowered.com/app/2358720/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/black-myth-wukong-87a72b"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/black-myth-wukong"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/black-myth-wukong-pc"
         }
       ],
       "developers": [
@@ -1026,28 +822,8 @@
           "url": "https://store.steampowered.com/app/1623940/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/bramble-the-mountain-king-c0d1c6"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/bramble_the_mountain_king"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nhdftcl691c"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6305-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/bramble-the-mountain-king"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/bramble-the-mountain-king-pc"
         }
       ],
       "developers": [
@@ -1090,12 +866,8 @@
           "url": "https://store.steampowered.com/app/674140/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/bugsnax"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9p0fq0xcv0lb"
         }
       ],
       "developers": [
@@ -1137,28 +909,8 @@
           "url": "https://store.steampowered.com/app/1588550/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/cairn-2246b4"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/cairn"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/cairn"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7955-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/cairn"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/cairn-pc"
         }
       ],
       "developers": [
@@ -1197,14 +949,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/4384550/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n58qrbg9wdg"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-black-ops-6"
         }
       ],
       "developers": [
@@ -1253,18 +997,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3606480/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9plbm5790l94"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-black-ops-7"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/call-of-duty-black-ops-7-cross-gen-bundle-microsoft-store-download"
         }
       ],
       "developers": [
@@ -1313,26 +1045,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1985810/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N72SFQ24KW8"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-black-ops-cold-war"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/call-of-duty-black-ops-cold-war"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4727-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/call-of-duty-black-ops-cold-war-pc"
         }
       ],
       "developers": [
@@ -1377,14 +1089,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3595230/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P7RQ1QFFF8R"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-modern-warfare-ii"
         }
       ],
       "developers": [
@@ -1433,14 +1137,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3595270/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NDKFJ6XDX2M"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-modern-warfare-iii"
         }
       ],
       "developers": [
@@ -1490,14 +1186,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1962663/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NNFG8BQRCXL"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/call-of-duty-warzone-2"
         }
       ],
       "developers": [
@@ -1546,12 +1234,8 @@
           "url": "https://store.steampowered.com/app/1408610/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/call-of-the-wild-the-angler"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NDC5LJS839S"
         }
       ],
       "developers": [
@@ -1593,7 +1277,7 @@
           "url": "https://store.steampowered.com/app/2070270/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/cloudheim-9fdc70"
         }
       ],
@@ -1632,24 +1316,8 @@
           "url": "https://store.steampowered.com/app/2933080/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/crime-boss"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/crime-boss-rockay-city"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7002-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/crime-boss-rockay-city"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/crime-boss-rockay-city"
         }
       ],
       "developers": [
@@ -1691,28 +1359,8 @@
           "url": "https://store.steampowered.com/app/3321460/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/crimson-desert-6d6135"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9ndmb2smq5q7"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7947-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/crimson-desert"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/crimson-desert-pc"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6747100856"
         }
       ],
       "developers": [
@@ -1754,32 +1402,8 @@
           "url": "https://store.steampowered.com/app/2101960/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/cronos-the-new-dawn-85b409"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/cronos_the_new_dawn"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P7TFLQ7CTXN"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/cronos-the-new-dawn"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7872-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/cronos-the-new-dawn"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/cronos-the-new-dawn-pc"
         }
       ],
       "developers": [
@@ -1822,26 +1446,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2760560/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/cthulhu_the_cosmic_abyss"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/cthulhu-the-cosmic-abyss"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7529-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/cthulhu-the-cosmic-abyss"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/cthulhu-the-cosmic-abyss-pc"
         }
       ],
       "developers": [
@@ -1884,20 +1488,8 @@
           "url": "https://store.steampowered.com/app/1091500/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/cyberpunk-2077"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/cyberpunk_2077"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/cyberpunk-2077"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6633429424"
         }
       ],
       "developers": [
@@ -1945,28 +1537,8 @@
           "url": "https://store.steampowered.com/app/1868140/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/dave-the-diver-ed092a"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PC1ZMD65L0T"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/dave-the-diver-sale"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6824-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/dave-the-diver"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/dave-the-diver-pc"
         }
       ],
       "developers": [
@@ -2007,28 +1579,8 @@
           "url": "https://store.steampowered.com/app/1259420/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/days-gone"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/days_gone"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/days-gone"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5001-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/days-gone"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/days-gone-pc"
         }
       ],
       "developers": [
@@ -2069,22 +1621,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3280350/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/death-stranding-2-on-the-beach"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/8207-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/death-stranding-2-on-the-beach"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/death-stranding-2-on-the-beach-pc"
         }
       ],
       "developers": [
@@ -2128,32 +1664,8 @@
           "url": "https://store.steampowered.com/app/1850570/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/death-stranding-directors-cut"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nqgn8tgnt8p"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/death-stranding-directors-cut"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4392-2"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/death-stranding-directors-cut"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/death-stranding-directors-cut-pc"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6449748961"
         }
       ],
       "developers": [
@@ -2200,28 +1712,8 @@
           "url": "https://store.steampowered.com/app/1252330/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/deathloop"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P5Z4530318L"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/deathloop"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4869-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/deathloop"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/deathloop-pc"
         }
       ],
       "developers": [
@@ -2261,10 +1753,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1477070/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n70sm8985w1"
         }
       ],
       "developers": [
@@ -2305,26 +1793,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/690790/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9MT31ZWMPJCK"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/dirt-rally-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/3839-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/DD-DIRT-RALLY-2-0"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/dirt-rally-20-pc"
         }
       ],
       "developers": [
@@ -2366,10 +1834,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/831050/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/dolmen"
         }
       ],
       "developers": [
@@ -2409,26 +1873,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3017860/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PH9X0760B0T"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/doom-the-dark-ages"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/doom-the-dark-ages"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6997-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/doom-the-dark-ages-pc"
         }
       ],
       "developers": [
@@ -2473,16 +1917,8 @@
           "url": "https://store.steampowered.com/app/1845910/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/dragon-age-the-veilguard"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NHCW3R1JB1C"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/dragon-age/dragon-age-the-veilguard/buy//buy/pc"
         }
       ],
       "developers": [
@@ -2527,28 +1963,8 @@
           "url": "https://store.steampowered.com/app/239140/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/dying-light"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/dying_light_definitive_edition"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/dying-light-essentials-edition"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/2670-31"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/dying-light-essentials-edition"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/dying-light-essentials-edition-pc"
         }
       ],
       "developers": [
@@ -2594,12 +2010,8 @@
           "url": "https://store.steampowered.com/app/534380/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/dying-light-2-stay-human"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/dying-light-2-stay-human-reloaded-edition"
         }
       ],
       "developers": [
@@ -2640,16 +2052,8 @@
           "url": "https://store.steampowered.com/app/1849250/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/ea-sports-wrc-24"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NRDH9Z85Q9B"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/ea-sports-wrc/wrc-24/buy/buy/pc"
         }
       ],
       "developers": [
@@ -2694,12 +2098,8 @@
           "url": "https://store.steampowered.com/app/2377280/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/eriksholm-the-stolen-dream-c90ad9"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/eriksholm_the_stolen_dream"
         }
       ],
       "developers": [
@@ -2740,22 +2140,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/227300/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/euro-truck-simulator-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/1033-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/euro-truck-simulator-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/euro-truck-simulator-2"
         }
       ],
       "developers": [
@@ -2803,18 +2187,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1128920/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/everspace_2"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9pfx7f33kvg8"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/everspace-2"
         }
       ],
       "developers": [
@@ -2852,18 +2224,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1134570/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/f1-2021"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5073-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/f1-2021-pc"
         }
       ],
       "developers": [
@@ -2907,12 +2267,8 @@
           "url": "https://store.steampowered.com/app/1692250/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/f1-22"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/f1/f1-22/buy/pc/buy/pc"
         }
       ],
       "developers": [
@@ -2957,12 +2313,8 @@
           "url": "https://store.steampowered.com/app/2108330/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/f1-23"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/f1/f1-23/buy/pc/buy/pc"
         }
       ],
       "developers": [
@@ -3007,16 +2359,8 @@
           "url": "https://store.steampowered.com/app/2488620/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/f1-24"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n123zccl33b"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/f1/f1-24/buy/pc/buy/pc"
         }
       ],
       "developers": [
@@ -3061,16 +2405,8 @@
           "url": "https://store.steampowered.com/app/3059520/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/f1-25-0729b0"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P1Q06WQV414"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/f1/f1-25/buy/buy/pc"
         }
       ],
       "developers": [
@@ -3113,14 +2449,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2844850/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/fantasian-neo-dimension"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/fantasian-neo-dimension-pc"
         }
       ],
       "developers": [
@@ -3164,32 +2492,8 @@
           "url": "https://store.steampowered.com/app/2369390/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/far-cry-6"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N661LCNBH8J"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/5ecd2cac5cdf9a1528a8c1d2.html"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/far-cry-6"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5934-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/far-cry-6"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/far-cry-6-pc"
         }
       ],
       "developers": [
@@ -3242,12 +2546,8 @@
           "url": "https://store.steampowered.com/app/2272540/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/fbc-firebreak-fc3830"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9pdcn8z4hkrn"
         }
       ],
       "developers": [
@@ -3292,20 +2592,8 @@
           "url": "https://store.steampowered.com/app/2909400/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/final-fantasy-vii-rebirth"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N4728D0T6JN"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/final-fantasy-vii-rebirth"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth-pc"
         }
       ],
       "developers": [
@@ -3346,20 +2634,8 @@
           "url": "https://store.steampowered.com/app/1462040/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/final-fantasy-vii-remake-intergrade"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nrqvq7zrm7z"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/final-fantasy-vii-remake-intergrade"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/final-fantasy-vii-remake-intergrade-pc"
         }
       ],
       "developers": [
@@ -3398,14 +2674,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/39210/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/final-fantasy-14-online-starter-edition"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/final-fantasy-xiv-online-starter-edition"
         }
       ],
       "developers": [
@@ -3454,20 +2722,8 @@
           "url": "https://store.steampowered.com/app/2515020/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/final-fantasy-xvi"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PNN223H8MLZ"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/final-fantasy-xvi"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/final-fantasy-xvi-pc"
         }
       ],
       "developers": [
@@ -3513,20 +2769,8 @@
           "url": "https://store.steampowered.com/app/1680880/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/forspoken"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9p3b7mt34dls"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/forspoken"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/forspoken-pc"
         }
       ],
       "developers": [
@@ -3570,10 +2814,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3010850/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n4pt8hgcdhq"
         }
       ],
       "developers": [
@@ -3612,7 +2852,7 @@
       "steamAppId": "",
       "stores": [
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/genshin-impact"
         }
       ],
@@ -3659,24 +2899,8 @@
           "url": "https://store.steampowered.com/app/2215430/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/ghost-of-tsushima"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/ghost-of-tsushima-directors-cut"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6827-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/ghost-of-tsushima-directors-cut"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/ghost-of-tsushima-directors-cut-pc"
         }
       ],
       "developers": [
@@ -3721,28 +2945,8 @@
           "url": "https://store.steampowered.com/app/1475810/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/ghostwire-tokyo"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PKP39CL0C8D"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/ghostwire-tokyo"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5511-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/ghostwire-tokyotm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/ghostwire-tokyo-pc"
         }
       ],
       "developers": [
@@ -3786,28 +2990,8 @@
           "url": "https://store.steampowered.com/app/1593500/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/god-of-war"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/god_of_war"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/god-of-war"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5377-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/god-of-war"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/god-of-war-pc"
         }
       ],
       "developers": [
@@ -3851,24 +3035,8 @@
           "url": "https://store.steampowered.com/app/2322010/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/god-of-war-ragnarok-3ca641"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/god-of-war-ragnarok"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6962-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/god-of-war-ragnarok"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/god-of-war-ragnarok-pc"
         }
       ],
       "developers": [
@@ -3915,28 +3083,8 @@
           "url": "https://store.steampowered.com/app/3240220/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/grand-theft-auto-v"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NXFX68ZNKK0"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/grand-theft-auto-v-enhanced"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/2625-10"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/grand-theft-auto-v-enhanced"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-pc"
         }
       ],
       "developers": [
@@ -3979,18 +3127,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/12120/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/grand-theft-auto-san-andreas"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/1934-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/grand-theft-auto-san-andreas"
         }
       ],
       "developers": [
@@ -4038,18 +3174,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2806050/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N6J4RNFPKKL"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/8549-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/halo-campaign-evolved-xbox"
         }
       ],
       "developers": [
@@ -4132,28 +3256,8 @@
           "url": "https://store.steampowered.com/app/1620730/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/hell-is-us-b9c06d"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N9097G0XZMB"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/hell-is-us"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5605-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/hell-is-us"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/hell-is-us-pc"
         }
       ],
       "developers": [
@@ -4195,14 +3299,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2461850/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9pmbb7nghv95"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/senua-s-saga-hellblade-ii-download--6928-1"
         }
       ],
       "developers": [
@@ -4245,22 +3341,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/553850/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/helldivers-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6586-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/helldiverstm-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/helldivers-2-pc"
         }
       ],
       "developers": [
@@ -4306,28 +3386,8 @@
           "url": "https://store.steampowered.com/app/1817230/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/hi-fi-rush"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nftc552k3gj"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/hifi-rush"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6120-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/hi-fi-rush"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/hifi-rush-standard-edition-pc"
         }
       ],
       "developers": [
@@ -4372,28 +3432,8 @@
           "url": "https://store.steampowered.com/app/990080/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/hogwarts-legacy"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9MT5NJ5W7B8Z"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/hogwarts-legacy"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5572-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/hogwarts-legacy"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/hogwarts-legacy-pc"
         }
       ],
       "developers": [
@@ -4439,24 +3479,8 @@
           "url": "https://store.steampowered.com/app/2420110/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/horizon-forbidden-west-complete-edition"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/horizon-forbidden-west-complete-edition"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6621-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/horizon-forbidden-westtm-complete-edition"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/horizon-forbidden-west-complete-edition-pc"
         }
       ],
       "developers": [
@@ -4501,24 +3525,8 @@
           "url": "https://store.steampowered.com/app/2561580/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/horizon-zero-dawn-remastered"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/horizon-zero-dawn-remastered"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4699-2"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/horizon-zero-dawntm-remastered"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/horizon-zero-dawn-remastered-pc"
         }
       ],
       "developers": [
@@ -4562,26 +3570,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2677660/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/indiana_jones_and_the_great_circle"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N8FQ28Z6QX3"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/indiana-jones-and-the-great-circle"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6745-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/indiana-jones-and-the-great-circle-pc"
         }
       ],
       "developers": [
@@ -4626,12 +3614,8 @@
           "url": "https://store.steampowered.com/app/3164330/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/infinity-nikki-71fc64"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6502622570"
         }
       ],
       "developers": [
@@ -4715,22 +3699,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2157830/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/john-carpenters-toxic-commando"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7860-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/john-carpenters-toxic-commando"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/john-carpenters-toxic-commando-pc"
         }
       ],
       "developers": [
@@ -4773,32 +3741,8 @@
           "url": "https://store.steampowered.com/app/1771300/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/kingdom-come-deliverance-2-664783"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/kingdom_come_deliverance_ii"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N4W31HSMVVD"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/kingdom-come-deliverance-ii"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6904-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/kingdom-come-deliverance-ii"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/kingdom-come-deliverance-ii-pc"
         }
       ],
       "developers": [
@@ -4839,22 +3783,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2215200/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/lego-batman-legacy-of-the-dark-knight"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/lego-batman-legacy-of-the-dark-knight-steam-key--7837-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/lego-batmantm-legacy-of-the-dark-knight"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/lego-batman-legacy-of-the-dark-knight-pc"
         }
       ],
       "developers": [
@@ -4898,24 +3826,8 @@
           "url": "https://store.steampowered.com/app/2428810/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/lego-horizon-adventures"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/lego-horizon-adventures"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7049-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/lego-horizon-adventurestm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/lego-horizon-adventures-pc"
         }
       ],
       "developers": [
@@ -4956,28 +3868,8 @@
           "url": "https://store.steampowered.com/app/1501750/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/lords-of-the-fallen"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9np4c0x8mdk7"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/lords-of-the-fallen"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6029-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/lords-of-the-fallen-2023"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/lords-of-the-fallen-pc"
         }
       ],
       "developers": [
@@ -5022,24 +3914,8 @@
           "url": "https://store.steampowered.com/app/3378960/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/lost-soul-aside-685c12"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/lost-soul-aside"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7490-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/lost-soul-asidetm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/lost-soul-aside-pc"
         }
       ],
       "developers": [
@@ -5084,7 +3960,7 @@
           "url": "https://store.steampowered.com/app/1729740/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/luto-0a4ab3"
         }
       ],
@@ -5126,22 +4002,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3065800/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/marathon"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/marathon-steam-key--8149-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/marathon"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/marathon-pc"
         }
       ],
       "developers": [
@@ -5181,7 +4041,7 @@
           "url": "https://store.steampowered.com/app/2767030/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/marvel-rivals-182004"
         }
       ],
@@ -5225,24 +4085,8 @@
           "url": "https://store.steampowered.com/app/3787240/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/marvel-tokon-fighting-souls-a3ecbd"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/marvel-tkon-fighting-souls"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7797-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/marvel-tokon-fighting-souls"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/marvel-tokon-fighting-souls-pc"
         }
       ],
       "developers": [
@@ -5287,24 +4131,8 @@
           "url": "https://store.steampowered.com/app/2651280/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/marvels-spider-man-2"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/marvels-spiderman-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7327-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/marvels-spider-man-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc"
         }
       ],
       "developers": [
@@ -5346,24 +4174,8 @@
           "url": "https://store.steampowered.com/app/1817070/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/marvels-spider-man-remastered"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/marvels-spiderman-remastered"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5700-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/marvels-spider-man-remastered"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/marvels-spider-man-remastered-pc"
         }
       ],
       "developers": [
@@ -5408,24 +4220,8 @@
           "url": "https://store.steampowered.com/app/1817190/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/marvels-spider-man-miles-morales"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/marvels-spiderman-miles-morales"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5959-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/marvels-spider-man-miles-morales"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/marvels-spider-man-miles-morales-pc"
         }
       ],
       "developers": [
@@ -5468,10 +4264,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2452280/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N1BZS0V3K0C"
         }
       ],
       "developers": [
@@ -5512,26 +4304,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2417610/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PJLN214RTKQ"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/metal-gear-solid-snake-eater"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6424-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/metal-gear-solid-snake-eater"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/metal-gear-solid-snake-eater-pc"
         }
       ],
       "developers": [
@@ -5576,12 +4348,8 @@
           "url": "https://store.steampowered.com/app/1449560/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/metro-exodus"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/metro_exodus"
         }
       ],
       "developers": [
@@ -5623,12 +4391,8 @@
           "url": "https://store.steampowered.com/app/3265250/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/mindseye-cb0316"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/mindseye"
         }
       ],
       "developers": [
@@ -5672,28 +4436,8 @@
           "url": "https://store.steampowered.com/app/2582320/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/mixtape-f18a26"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nh0msg29x6l"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/mixtape"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7741-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/mixtape"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/mixtape-pc"
         }
       ],
       "developers": [
@@ -5735,22 +4479,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2246340/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/monster-hunter-wilds"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6940-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/monster-hunter-wilds"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/monster-hunter-wilds-pc"
         }
       ],
       "developers": [
@@ -5791,10 +4519,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2584270/"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7809-1"
         }
       ],
       "developers": [
@@ -5835,22 +4559,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2420660/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/neva"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/neva"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7208-1"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6737359999"
         }
       ],
       "developers": [
@@ -5893,12 +4601,8 @@
           "url": "https://store.steampowered.com/app/4706890/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/neverness-to-everness-178ed6"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6754593077"
         }
       ],
       "developers": [
@@ -5940,14 +4644,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2627260/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P0SQ1S72G4J"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7935-1"
         }
       ],
       "developers": [
@@ -5991,18 +4687,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3681010/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/nioh-3"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7792-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/nioh-3"
         }
       ],
       "developers": [
@@ -6042,30 +4726,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/275850/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/no_mans_sky"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/BQVQTL3PCH05"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/no-mans-sky"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4432-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/no-mans-sky"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/no-mans-sky"
         }
       ],
       "developers": [
@@ -6110,7 +4770,7 @@
           "url": "https://store.steampowered.com/app/3659280/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/off-the-grid-7e3cc5"
         }
       ],
@@ -6147,14 +4807,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2357570/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9p36dqx6w9cs"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/overwatch"
         }
       ],
       "developers": [
@@ -6194,28 +4846,8 @@
           "url": "https://store.steampowered.com/app/1458140/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/pacific-drive"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PNKG0WBL61W"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/pacific-drive"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6495-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/pacific-drive"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/pacific-drive-pc"
         }
       ],
       "developers": [
@@ -6256,18 +4888,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2300120/"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7969-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/painkiller"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/painkiller-pc"
         }
       ],
       "developers": [
@@ -6308,10 +4928,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2870350/"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/pipistrello-and-the-cursed-yoyo-pc"
         }
       ],
       "developers": [
@@ -6349,22 +4965,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3357650/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/pragmata"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7681-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/pragmata"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/pragmata-pc"
         }
       ],
       "developers": [
@@ -6407,20 +5007,8 @@
           "url": "https://store.steampowered.com/app/2751000/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/prince-of-persia-the-lost-crown"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PJ8CKFDWWLF"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/6408bd757ee83d203cf3bda2.html"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6498547840"
         }
       ],
       "developers": [
@@ -6510,24 +5098,8 @@
           "url": "https://store.steampowered.com/app/1895880/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/ratchet-clank-rift-apart"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/ratchet-clank-rift-apart"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6395-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/ratchet-clank-rift-apart"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/ratchet-clank-rift-apart-pc"
         }
       ],
       "developers": [
@@ -6570,18 +5142,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1144200/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NBR63PT4FZC"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/ready-or-not"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/ready-or-not-pc"
         }
       ],
       "developers": [
@@ -6622,24 +5182,8 @@
           "url": "https://store.steampowered.com/app/3764200/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/resident-evil-requiem-4ead6d"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/resident-evil-requiem"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7680-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/resident-evil-requiem"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/resident-evil-requiem-pc"
         }
       ],
       "developers": [
@@ -6682,24 +5226,8 @@
           "url": "https://store.steampowered.com/app/1649240/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/returnal"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/returnal"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6073-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/returnaltm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/returnal-pc"
         }
       ],
       "developers": [
@@ -6743,14 +5271,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1340990/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/rise-of-the-ronin"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7460-1"
         }
       ],
       "developers": [
@@ -6793,22 +5313,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1712350/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/riven"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P62C7M1XHW7"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/riven"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id1437437535"
         }
       ],
       "developers": [
@@ -6850,28 +5354,8 @@
           "url": "https://store.steampowered.com/app/2104890/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/roadcraft-b65690"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n4j937wlfpz"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/roadcraft"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7209-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/roadcraft"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/roadcraft-pc"
         }
       ],
       "developers": [
@@ -6911,7 +5395,7 @@
           "url": "https://store.steampowered.com/app/252950/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/rocket-league"
         }
       ],
@@ -6960,28 +5444,8 @@
           "url": "https://store.steampowered.com/app/1643320/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stalker-2-heart-of-chornobyl"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/stalker_2_heart_of_chornobyl_standard_edition"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n3d6v4n58jr"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/stalker-2-heart-of-chornobyl"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5687-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/stalker-2-heart-of-chornobyl-pc"
         }
       ],
       "developers": [
@@ -7026,12 +5490,8 @@
           "url": "https://store.steampowered.com/app/2427430/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stalker-call-of-prypiat-enhanced-edition-c42eea"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/stalker_call_of_prypiat_enhanced_edition"
         }
       ],
       "developers": [
@@ -7069,12 +5529,8 @@
           "url": "https://store.steampowered.com/app/2427420/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stalker-clear-sky-enhanced-edition-055c67"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/stalker_clear_sky_enhanced_edition"
         }
       ],
       "developers": [
@@ -7112,12 +5568,8 @@
           "url": "https://store.steampowered.com/app/2427410/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stalker-shadow-of-chornobyl-enhanced-edition-84ebf8"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/stalker_shadow_of_chornobyl_enhanced_edition"
         }
       ],
       "developers": [
@@ -7155,24 +5607,8 @@
           "url": "https://store.steampowered.com/app/1599660/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/sackboy-a-big-adventure"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/sackboy-a-big-adventure"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5955-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/sackboytm-a-big-adventure"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/sackboy-a-big-adventure-pc"
         }
       ],
       "developers": [
@@ -7214,12 +5650,8 @@
           "url": "https://store.steampowered.com/app/526870/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/satisfactory"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/satisfactory"
         }
       ],
       "developers": [
@@ -7259,12 +5691,8 @@
           "url": "https://store.steampowered.com/app/2814990/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/screamer-c51829"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9p2v2mk7xww5"
         }
       ],
       "developers": [
@@ -7305,14 +5733,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1172620/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9MVQ2J7BXZJD"
-        },
-        {
-          "name": "Battle.net",
-          "url": "https://battle.net/shop/product/sea-of-thieves"
         }
       ],
       "developers": [
@@ -7356,7 +5776,7 @@
           "url": "https://store.steampowered.com/app/695330/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/season"
         }
       ],
@@ -7395,18 +5815,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2535440/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/shadows-of-the-damned-hella-remastered"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7326-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/shadows-of-the-damned-hella-remastered"
         }
       ],
       "developers": [
@@ -7448,14 +5856,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1262350/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9plf2rs7jrzl"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/signalis"
         }
       ],
       "developers": [
@@ -7499,32 +5899,8 @@
           "url": "https://store.steampowered.com/app/2124490/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/silent-hill-2-4542c7"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/silent_hill_2"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9PNVDQKPJRQV"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/silent-hill-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5972-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/silent-hill-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/silent-hill-2-pc"
         }
       ],
       "developers": [
@@ -7569,12 +5945,8 @@
           "url": "https://store.steampowered.com/app/3354750/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/skate-2ddbd6"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/skate/buy/pc"
         }
       ],
       "developers": [
@@ -7616,16 +5988,8 @@
           "url": "https://store.steampowered.com/app/2853730/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/skull-and-bones"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P7X7VL05K48"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/6295077a27efc536e38350a0.html"
         }
       ],
       "developers": [
@@ -7716,20 +6080,8 @@
           "url": "https://store.steampowered.com/app/2486820/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/sonic-racing-crossworlds"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/sonic-racing-crossworlds"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7679-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/sonic-racing-crossworlds-pc"
         }
       ],
       "developers": [
@@ -7772,14 +6124,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2022670/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/sonic-superstars"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/sonic-superstars-pc"
         }
       ],
       "developers": [
@@ -7820,16 +6164,8 @@
           "url": "https://store.steampowered.com/app/1774580/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/star-wars-jedi-survivor"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9MXH73ZJVH4X"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/starwars/jedi/jedi-survivor/buy/pc/buy/pc"
         }
       ],
       "developers": [
@@ -7873,24 +6209,8 @@
           "url": "https://store.steampowered.com/app/2842040/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/star-wars-outlaws"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N59CT2NKDPV"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/645ba713a9ce0448bffa4c12.html"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6876-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/star-wars-outlaws-standard-edition-pc"
         }
       ],
       "developers": [
@@ -7947,24 +6267,8 @@
           "url": "https://store.steampowered.com/app/3489700/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stellar-blade-fa21c3"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/stellar-blade"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7505-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/stellar-bladetm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/stellar-blade-pc"
         }
       ],
       "developers": [
@@ -8009,24 +6313,8 @@
           "url": "https://store.steampowered.com/app/1622910/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/still-wakes-the-deep-698c81"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n88dfrx8wcj"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/still-wakes-the-deep"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6937-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/still-wakes-the-deep"
         }
       ],
       "developers": [
@@ -8069,32 +6357,8 @@
           "url": "https://store.steampowered.com/app/1332010/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/stray-42d658"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NMPDQ2NRX34"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/stray"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5683-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/stray"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/stray-pc"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6451498949"
         }
       ],
       "developers": [
@@ -8138,28 +6402,8 @@
           "url": "https://store.steampowered.com/app/3290690/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/styx-blades-of-greed-4e7fc1"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/styx_blades_of_greed"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/styx-blades-of-greed"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7527-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/styx-blades-of-greed"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/styx-blades-of-greed-pc"
         }
       ],
       "developers": [
@@ -8201,24 +6445,8 @@
           "url": "https://store.steampowered.com/app/315210/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/suicide-squad-kill-the-justice-league"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/suicide-squad-kill-the-justice-league"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5422-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/suicide-squad-kill-the-justice-league"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/suicide-squad-kill-the-justice-league-pc"
         }
       ],
       "developers": [
@@ -8261,7 +6489,7 @@
           "url": "https://store.steampowered.com/app/2453160/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/sword-of-the-sea-385364"
         }
       ],
@@ -8301,10 +6529,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/866570/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/system_shock_2_25th_anniversary_remaster"
         }
       ],
       "developers": [
@@ -8349,10 +6573,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1466060/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/tainted_grail_the_fall_of_avalon"
         }
       ],
       "developers": [
@@ -8393,22 +6613,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1778820/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/tekken-8"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5942-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/tekken-8"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/tekken-8-pc"
         }
       ],
       "developers": [
@@ -8449,10 +6653,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1249970/"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/4667-1"
         }
       ],
       "developers": [
@@ -8494,14 +6694,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1577250/"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/the_chant"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-chant"
         }
       ],
       "developers": [
@@ -8543,16 +6735,8 @@
           "url": "https://store.steampowered.com/app/2698940/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/the-crew-motorfest"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NKBNRKJ9FXS"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/63bc67dbd406ab22f1174305.html"
         }
       ],
       "developers": [
@@ -8594,22 +6778,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2623190/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NQR437K7PQH"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-elder-scrolls-iv-oblivion-remastered"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7605-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/the-elder-scrolls-iv-oblivion-remastered-pc"
         }
       ],
       "developers": [
@@ -8653,18 +6821,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2680010/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-first-berserker-khazan"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7440-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/the-first-berserker-khazan-pc"
         }
       ],
       "developers": [
@@ -8704,10 +6860,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/2074920/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9P8FBXKMCLWC"
         }
       ],
       "developers": [
@@ -8750,24 +6902,8 @@
           "url": "https://store.steampowered.com/app/1888930/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/the-last-of-us-part-1"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-last-of-us-part-i"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6062-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/the-last-of-ustm-part-i"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/the-last-of-us-part-i-pc"
         }
       ],
       "developers": [
@@ -8813,24 +6949,8 @@
           "url": "https://store.steampowered.com/app/2531310/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/the-last-of-us-part-ii-remastered"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-last-of-us-part-ii-remastered"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7437-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/the-last-of-ustm-part-ii-remastered"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered-pc"
         }
       ],
       "developers": [
@@ -8874,20 +6994,8 @@
           "url": "https://store.steampowered.com/app/780310/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/the-riftbreaker"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/the_riftbreaker"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9nn8pgk5jdn5"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-riftbreaker"
         }
       ],
       "developers": [
@@ -8931,24 +7039,8 @@
           "url": "https://store.steampowered.com/app/292030/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/the-witcher-3-wild-hunt"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/the_witcher_3_wild_hunt"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/witcher/the-witcher-wild-hunt/buy/pc"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/the-witcher-3-wild-hunt"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/2672-3"
         }
       ],
       "developers": [
@@ -8992,16 +7084,8 @@
           "url": "https://store.steampowered.com/app/2379390/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/rainbow-six-extraction"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9NK1FQJ1SMCB"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/5cf15f1b39798c0870c076e6.html"
         }
       ],
       "developers": [
@@ -9043,36 +7127,8 @@
           "url": "https://store.steampowered.com/app/359550/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/rainbow-six-siege-x"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N0JJTC4TZV5"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/tom-clancy/tom-clancys-rainbow-six-siege/buy/pc"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/56c494ad88a7e300458b4d5a.html"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/tom-clancys-rainbow-six-siege-year-6"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/2778-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/tom-clancys-rainbow-six-siege"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/tom-clancys-rainbow-six-siege-pc"
         }
       ],
       "developers": [
@@ -9117,32 +7173,8 @@
           "url": "https://store.steampowered.com/app/203160/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/tomb-raider"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/tomb_raider_goty"
-        },
-        {
-          "name": "EA app",
-          "url": "https://www.ea.com/games/tomb-raider/tomb-raider/standard-edition/buy/pc"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/tomb-raider"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/1065-3"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/tomb-raider"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id625206080"
         }
       ],
       "developers": [
@@ -9189,28 +7221,8 @@
           "url": "https://store.steampowered.com/app/2464280/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/tormented-souls-2-28a1eb"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/tormented_souls_2"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/tormented-souls-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7972-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/tormented-souls-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/tormented-souls-2-pc"
         }
       ],
       "developers": [
@@ -9252,24 +7264,8 @@
           "url": "https://store.steampowered.com/app/3936520/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/tour-de-france-2026-efbe51"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/tour-de-france-2026"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/8378-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/tour-de-france-2026"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/tour-de-france-2026-pc"
         }
       ],
       "developers": [
@@ -9312,28 +7308,8 @@
           "url": "https://store.steampowered.com/app/1659420/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/uncharted-legacy-of-thieves-collection"
-        },
-        {
-          "name": "GOG.com",
-          "url": "https://www.gog.com/game/uncharted_legacy_of_thieves_collection"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/uncharted-legacy-of-thieves-collection"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5443-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/unchartedtm-legacy-of-thieves-collection"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/uncharted-legacy-of-thieves-collection"
         }
       ],
       "developers": [
@@ -9377,24 +7353,8 @@
           "url": "https://store.steampowered.com/app/2172010/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/until-dawn"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/until-dawn"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6761-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/until-dawntm"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/until-dawn-pc"
         }
       ],
       "developers": [
@@ -9438,22 +7398,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1604030/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/v-rising"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/6687-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/v-rising"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/v-rising-pc"
         }
       ],
       "developers": [
@@ -9534,7 +7478,7 @@
           "url": "https://store.steampowered.com/app/230410/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/warframe"
         }
       ],
@@ -9583,28 +7527,8 @@
           "url": "https://store.steampowered.com/app/2183900/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/warhammer-40000-space-marine-2"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N9PCZWHVP2L"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/warhammer-40000-space-marine-2"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5451-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/warhammer-40000-space-marine-2"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/warhammer-40000-space-marine-2-pc"
         }
       ],
       "developers": [
@@ -9645,10 +7569,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3564740/"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N76QGDS5GJR"
         }
       ],
       "developers": [
@@ -9691,28 +7611,8 @@
           "url": "https://store.steampowered.com/app/699130/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/world-war-z"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9n015dfdmvk6"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/world-war-z-aftermath"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5302-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/world-war-z-aftermath"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/world-war-z-aftermath-pc"
         }
       ],
       "developers": [
@@ -9752,24 +7652,8 @@
           "url": "https://store.steampowered.com/app/1462810/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/wrc-10"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/wrc-10"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5276-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/wrc-10-fia-world-rally-championship"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/wrc-10-fia-world-rally-championship-pc"
         }
       ],
       "developers": [
@@ -9807,18 +7691,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/1953520/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/wrc-generations-the-fia-wrc-official-game"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/5680-1"
-        },
-        {
-          "name": "GamersGate",
-          "url": "https://www.gamersgate.com/product/wrc-generations-the-fia-wrc-official-game"
         }
       ],
       "developers": [
@@ -9860,16 +7732,8 @@
           "url": "https://store.steampowered.com/app/3513350/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/wuthering-waves-76ebc5"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9p41gs5w1c6l"
-        },
-        {
-          "name": "Mac App Store",
-          "url": "https://apps.apple.com/app/id6475033368"
         }
       ],
       "developers": [
@@ -9910,12 +7774,8 @@
       "steamAppId": "",
       "stores": [
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/xdefiant"
-        },
-        {
-          "name": "Ubisoft Store",
-          "url": "https://store.ubisoft.com/60f03bb70d253c1a30f224bb.html"
         }
       ],
       "developers": [
@@ -9955,18 +7815,6 @@
         {
           "name": "Steam",
           "url": "https://store.steampowered.com/app/3937550/"
-        },
-        {
-          "name": "Humble Store",
-          "url": "https://www.humblebundle.com/store/yakuza-kiwami-3-and-dark-ties"
-        },
-        {
-          "name": "Gamesplanet",
-          "url": "https://gamesplanet.com/game/7930-1"
-        },
-        {
-          "name": "Green Man Gaming",
-          "url": "https://www.greenmangaming.com/games/yakuza-kiwami-3-and-dark-ties-pc"
         }
       ],
       "developers": [
@@ -10010,12 +7858,8 @@
           "url": "https://store.steampowered.com/app/4162040/"
         },
         {
-          "name": "Epic Games Store",
+          "name": "Epic",
           "url": "https://store.epicgames.com/p/zenless-zone-zero-c7c151"
-        },
-        {
-          "name": "Microsoft Store",
-          "url": "https://www.microsoft.com/p/apps/9N4X0WFZ2STM"
         }
       ],
       "developers": [

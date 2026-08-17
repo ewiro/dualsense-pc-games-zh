@@ -2,7 +2,7 @@ const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需�
 const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', 'always on': 'status-good', false: 'status-no', unknown: 'status-unknown' };
 const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（蓝牙）', Wireless: '无线', 'Wireless (USB)': '无线（USB）' };
-const STORE_ORDER = ['Steam', 'Epic Games Store', 'GOG.com', 'Microsoft Store', 'EA app', 'Ubisoft Store', 'Battle.net', 'Humble Store', 'Gamesplanet', 'GamersGate', 'Green Man Gaming', 'itch.io', 'Mac App Store', 'Meta Store', 'ZOOM Platform'];
+const STORE_ORDER = ['Steam', 'Epic'];
 const THEME_KEY = 'dualsense-theme';
 const pageSize = 20;
 let games = [];
@@ -85,7 +85,7 @@ function renderRow(game) {
 }
 function renderCard(game) {
   const model = $('model').value;
-  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><div class="card-detail card-stores"><b>购买平台</b>${storeLinks(game)}</div><div class="card-detail"><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</div><div class="card-detail"><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</div><div class="card-detail"><b>功能</b>${features(game)}</div><div class="card-detail"><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</div></div></article>`;
+  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><div class="card-detail card-stores"><b>购买平台</b>${storeLinks(game)}</div><div class="card-detail"><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</div><div class="card-detail"><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</div><div class="card-detail card-features"><b>功能</b>${features(game)}</div><div class="card-detail"><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</div></div></article>`;
 }
 function render() {
   const result = filteredGames();

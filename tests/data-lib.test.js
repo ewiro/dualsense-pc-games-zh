@@ -27,7 +27,7 @@ test('rejects empty and malformed API responses', () => {
   assert.deepEqual(parseCargoResponse({ cargoquery: [] }), []);
 });
 
-test('parses active storefront rows into direct product links', () => {
+test('keeps only Steam and Epic direct product links', () => {
   const wikitext = `{{Availability|
 {{Availability/row| Epic Games Store | alpha-game | DRM-free | {{Store link|Epic Games Store|alpha-deluxe|Deluxe}} | | Windows }}
 {{Availability/row| GOG.com | alpha_game | DRM-free | | | Windows }}
@@ -37,10 +37,7 @@ test('parses active storefront rows into direct product links', () => {
 }}`;
   assert.deepEqual(parseAvailabilityStores(wikitext, '12345'), [
     { name: 'Steam', url: 'https://store.steampowered.com/app/12345/' },
-    { name: 'Epic Games Store', url: 'https://store.epicgames.com/p/alpha-game' },
-    { name: 'GOG.com', url: 'https://www.gog.com/game/alpha_game' },
-    { name: 'Microsoft Store', url: 'https://www.microsoft.com/p/apps/9ABC123' },
-    { name: 'itch.io', url: 'https://studio.itch.io/alpha' }
+    { name: 'Epic', url: 'https://store.epicgames.com/p/alpha-game' }
   ]);
 });
 

@@ -101,6 +101,7 @@ th { text-align: center; }
   .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
   .card-details .card-detail { display: block; color: var(--muted); font-size: 11px; }
   .card-details .card-detail b { display: block; color: var(--dim); font-size: 10px; font-weight: 500; margin-bottom: 5px; }
+  .card-features .feature { display: inline-flex; width: max-content; max-width: 100%; margin: 0 4px 4px 0; }
   .card-stores { grid-column: 1 / -1; }
   .card-stores .store-links { min-width: 0; gap: 8px; }
   .card-stores .store-link { min-height: 44px; padding: 8px 11px; font-size: 11px; }

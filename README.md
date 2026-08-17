@@ -10,7 +10,7 @@
 ## 功能
 
 - 中文主标题与英文原名，可同时参与搜索；
-- Steam、Epic Games Store、GOG.com、Microsoft Store 等购买平台筛选；
+- Steam、Epic 购买平台筛选；
 - 每个购买平台标签直达对应商店商品页；
 - DualSense / DualSense Edge 型号筛选；
 - 有线、蓝牙连接方式筛选；

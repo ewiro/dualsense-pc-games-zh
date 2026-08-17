@@ -38,33 +38,9 @@ export const CONNECTION_LABELS = {
 
 const STORE_DEFINITIONS = {
   steam: { name: 'Steam', url: (id) => `https://store.steampowered.com/app/${id}/` },
-  'epic games store': { name: 'Epic Games Store', url: (id) => `https://store.epicgames.com/p/${id}` },
-  'gog.com': { name: 'GOG.com', url: (id) => `https://www.gog.com/game/${id}` },
-  gog: { name: 'GOG.com', url: (id) => `https://www.gog.com/game/${id}` },
-  'microsoft store': { name: 'Microsoft Store', url: (id) => `https://www.microsoft.com/p/apps/${id}` },
-  'ea app': { name: 'EA app', url: (id) => `https://www.ea.com/games/${id}/buy/pc` },
-  origin: { name: 'EA app', url: (id) => `https://www.ea.com/games/${id}/buy/pc` },
-  'ubisoft store': { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
-  ubisoft: { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
-  uplay: { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
-  'battle.net': { name: 'Battle.net', url: (id) => `https://battle.net/shop/product/${id}` },
-  battlenet: { name: 'Battle.net', url: (id) => `https://battle.net/shop/product/${id}` },
-  humble: { name: 'Humble Store', url: (id) => `https://www.humblebundle.com/store/${id}` },
-  'humble store': { name: 'Humble Store', url: (id) => `https://www.humblebundle.com/store/${id}` },
-  gamesplanet: { name: 'Gamesplanet', url: (id) => `https://gamesplanet.com/game/${id}` },
-  gamersgate: { name: 'GamersGate', url: (id) => `https://www.gamersgate.com/product/${id}` },
-  'green man gaming': { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
-  greenmangaming: { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
-  gmg: { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
-  'itch.io': { name: 'itch.io', url: (id) => id },
-  macapp: { name: 'Mac App Store', url: (id) => `https://apps.apple.com/app/${id}` },
-  'mac app store': { name: 'Mac App Store', url: (id) => `https://apps.apple.com/app/${id}` },
-  'meta store': { name: 'Meta Store', url: (id) => `https://www.meta.com/en-gb/experiences/pcvr/${id}` },
-  meta: { name: 'Meta Store', url: (id) => `https://www.meta.com/en-gb/experiences/pcvr/${id}` },
-  zoom: { name: 'ZOOM Platform', url: (id) => `https://www.zoom-platform.com/product/${id}` },
-  'zoom platform': { name: 'ZOOM Platform', url: (id) => `https://www.zoom-platform.com/product/${id}` }
+  'epic games store': { name: 'Epic', url: (id) => `https://store.epicgames.com/p/${id}` }
 };
-const STORE_ORDER = ['Steam', 'Epic Games Store', 'GOG.com', 'Microsoft Store', 'EA app', 'Ubisoft Store', 'Battle.net', 'Humble Store', 'Gamesplanet', 'GamersGate', 'Green Man Gaming', 'itch.io', 'Mac App Store', 'Meta Store', 'ZOOM Platform'];
+const STORE_ORDER = ['Steam', 'Epic'];
 
 export function normalizeStatus(value) {
   const key = String(value ?? '').trim().toLowerCase();
