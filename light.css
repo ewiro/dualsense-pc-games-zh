@@ -14,6 +14,8 @@
 
 :root[data-theme="dark"] { color-scheme: dark; --dim: #71879b; }
 
+.stats { margin-top: 72px; }
+.section-heading h1 { font-size: 36px; line-height: 1.1; letter-spacing: -.04em; margin: 0; }
 .controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
 
 [data-theme="light"] body { background: #fff; color: var(--ink); }
@@ -111,6 +113,7 @@ th { text-align: center; }
 }
 
 @media (max-width: 640px) {
+  .stats { margin-top: 48px; }
   .theme-toggle { padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
