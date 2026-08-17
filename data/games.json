@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 4,
-  "fetchedAt": "2026-08-17T04:49:51.708Z",
+  "schemaVersion": 5,
+  "fetchedAt": "2026-08-17T06:37:59.135Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -19,6 +19,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/007_First_Light",
       "coverUrl": "https://images.pcgamingwiki.com/a/a1/007_First_Light_cover.jpg",
       "steamAppId": "3768760",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3768760/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/007-first-light-182cea"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PJ34M93ZV7Z"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/007-first-light-steam-key--7796-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/007-first-light"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/007-first-light-pc"
+        }
+      ],
       "developers": [
         "IO Interactive"
       ],
@@ -51,6 +77,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/A_Plague_Tale%3A_Requiem",
       "coverUrl": "https://images.pcgamingwiki.com/0/0a/A_Plague_Tale_Requiem_cover.png",
       "steamAppId": "1182900",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1182900/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/a-plague-tale-requiem"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/a_plague_tale_requiem"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N97RC576957"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/a-plague-tale-requiem"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5182-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/a-plague-tale-requiem"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/a-plague-tale-requiem-pc"
+        }
+      ],
       "developers": [
         "Asobo Studio"
       ],
@@ -87,6 +147,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Alan_Wake_II",
       "coverUrl": "https://images.pcgamingwiki.com/c/c1/Alan_Wake_2_cover.png",
       "steamAppId": "",
+      "stores": [
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/alan-wake-2"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/alan-wake2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/alan-wake-2-epic-pc"
+        }
+      ],
       "developers": [
         "Remedy Entertainment"
       ],
@@ -123,6 +197,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Animal_Well",
       "coverUrl": "https://images.pcgamingwiki.com/3/3b/Animal_Well_cover.jpg",
       "steamAppId": "813230",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/813230/"
+        }
+      ],
       "developers": [
         "Billy Basso"
       ],
@@ -156,6 +236,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Apex_Legends",
       "coverUrl": "https://images.pcgamingwiki.com/7/75/Apex_Legends_cover.jpg",
       "steamAppId": "1172470",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1172470/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/apex-legends-006cde"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/apex-legends/buy/pc/buy/pc"
+        }
+      ],
       "developers": [
         "Respawn Entertainment"
       ],
@@ -193,6 +287,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Arknights%3A_Endfield",
       "coverUrl": "https://images.pcgamingwiki.com/3/30/Arknights_Endfield_cover.jpg",
       "steamAppId": "",
+      "stores": [
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/arknightsendfield-f0f167"
+        }
+      ],
       "developers": [
         "Hypergryph",
         "Mountain Contour"
@@ -231,6 +331,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Mirage",
       "coverUrl": "https://images.pcgamingwiki.com/d/d9/Assassin%27s_Creed_Mirage_cover.png",
       "steamAppId": "3035570",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3035570/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/assassins-creed-mirage"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NRPWTTJHNBC"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/62ea4f9709372571f2736a72.html"
+        }
+      ],
       "developers": [
         "Ubisoft Bordeaux",
         "Ubisoft Montreal",
@@ -274,6 +392,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Shadows",
       "coverUrl": "https://images.pcgamingwiki.com/6/65/Assassin%27s_Creed_Shadows_cover.jpg",
       "steamAppId": "3159330",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3159330/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/assassins-creed-shadows"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n86l7wk9qf7"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/660e5a17fbff4e2940488bce.html"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6936-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/assassins-creed-shadows-pc"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6497794841"
+        }
+      ],
       "developers": [
         "Ubisoft Quebec",
         "Ubisoft Belgrade",
@@ -322,6 +470,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Valhalla",
       "coverUrl": "https://images.pcgamingwiki.com/7/79/Assassin%27s_Creed_Valhalla_cover.png",
       "steamAppId": "2208920",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2208920/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/assassins-creed-valhalla"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NMHP9SMZHGZ"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/5e849c6c5cdf9a21c0b4e731.html"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/assassins-creed-valhalla"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5389-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/assassins-creed-valhalla-pc"
+        }
+      ],
       "developers": [
         "Ubisoft Montreal",
         "Ubisoft Quebec",
@@ -370,6 +548,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed%3A_Black_Flag_Resynced",
       "coverUrl": "https://images.pcgamingwiki.com/b/bd/Assassins_Creed_Black_Flag_Resynced_cover.jpg",
       "steamAppId": "3751950",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3751950/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/assassins-creed-black-flag-resynced"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/6995b275b69eda7d3c2e2acc.html"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/assassins-creed-black-flag-resynced"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/8449-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/assassins-creed-black-flag-resynced-pc"
+        }
+      ],
       "developers": [
         "Ubisoft Singapore",
         "Ubisoft Barcelona",
@@ -414,6 +618,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Assetto_Corsa",
       "coverUrl": "https://images.pcgamingwiki.com/7/7b/Assetto_Corsa_-_cover.png",
       "steamAppId": "244210",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/244210/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/assetto-corsa"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/3587-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/assetto-corsa"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/assetto-corsa-pc"
+        }
+      ],
       "developers": [
         "Kunos Simulazioni"
       ],
@@ -448,6 +674,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Avatar%3A_Frontiers_of_Pandora",
       "coverUrl": "https://images.pcgamingwiki.com/5/53/Avatar_Frontiers_of_Pandora_cover.jpg",
       "steamAppId": "2840770",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2840770/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/avatar-frontiers-of-pandora"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P8TK8GZ6G6V"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/60c30ca40d253c1914049e93.html"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6693-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/avatar-frontiers-of-pandora-pc"
+        }
+      ],
       "developers": [
         "Massive Entertainment",
         "Ubisoft Shanghai",
@@ -495,6 +747,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Banishers%3A_Ghosts_of_New_Eden",
       "coverUrl": "https://images.pcgamingwiki.com/1/11/Banishers_-_Ghosts_of_New_Eden_cover.jpg",
       "steamAppId": "1493640",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1493640/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/banishers-ghosts-of-new-eden-f9e3f2"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/banishers_ghosts_of_new_eden"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NKFS43DLFFL"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/banishers-ghosts-of-new-eden"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6338-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/banishers-ghosts-of-new-eden"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/banishers-ghosts-of-new-eden-pc"
+        }
+      ],
       "developers": [
         "Don't Nod"
       ],
@@ -529,6 +815,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Battlefield_6",
       "coverUrl": "https://images.pcgamingwiki.com/1/15/Battlefield_6_cover.jpg",
       "steamAppId": "2807960",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2807960/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/battlefield-6"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/battlefield/battlefield-6/buy/buy/pc"
+        }
+      ],
       "developers": [
         "DICE",
         "Ripple Effect Studios",
@@ -567,6 +867,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/BeamNG.drive",
       "coverUrl": "https://images.pcgamingwiki.com/f/f5/BeamNG.drive_cover.jpg",
       "steamAppId": "284160",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/284160/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/beamngdrive-7f5f3a"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/beamngdrive"
+        }
+      ],
       "developers": [
         "BeamNG"
       ],
@@ -600,6 +914,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Beast_of_Reincarnation",
       "coverUrl": "https://images.pcgamingwiki.com/1/1d/Beast_of_Reincarnation_cover.jpg",
       "steamAppId": "2001760",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2001760/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NXWSWBM4H6T"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/8200-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/dd-beast-of-reincarnation"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/beast-of-reincarnation-pc"
+        }
+      ],
       "developers": [
         "Game Freak"
       ],
@@ -634,6 +970,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Black_Myth%3A_Wukong",
       "coverUrl": "https://images.pcgamingwiki.com/e/ef/Black_Myth_Wukong_cover.png",
       "steamAppId": "2358720",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2358720/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/black-myth-wukong-87a72b"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/black-myth-wukong"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/black-myth-wukong-pc"
+        }
+      ],
       "developers": [
         "Game Science"
       ],
@@ -666,6 +1020,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Bramble%3A_The_Mountain_King",
       "coverUrl": "https://images.pcgamingwiki.com/8/86/Bramble_The_Mountain_King_cover.png",
       "steamAppId": "1623940",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1623940/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/bramble-the-mountain-king-c0d1c6"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/bramble_the_mountain_king"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nhdftcl691c"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6305-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/bramble-the-mountain-king"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/bramble-the-mountain-king-pc"
+        }
+      ],
       "developers": [
         "Dimfrost Studio"
       ],
@@ -700,6 +1084,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Bugsnax",
       "coverUrl": "https://images.pcgamingwiki.com/a/a7/Bugsnax_cover.png",
       "steamAppId": "674140",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/674140/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/bugsnax"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9p0fq0xcv0lb"
+        }
+      ],
       "developers": [
         "Young Horses"
       ],
@@ -733,6 +1131,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Cairn",
       "coverUrl": "https://images.pcgamingwiki.com/c/cb/Cairn_cover.jpg",
       "steamAppId": "1588550",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1588550/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/cairn-2246b4"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/cairn"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/cairn"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7955-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/cairn"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/cairn-pc"
+        }
+      ],
       "developers": [
         "The Game Bakers"
       ],
@@ -765,6 +1193,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_6",
       "coverUrl": "https://images.pcgamingwiki.com/f/fa/Call_of_Duty_Black_Ops_6_cover.png",
       "steamAppId": "4384550",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4384550/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n58qrbg9wdg"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-black-ops-6"
+        }
+      ],
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -807,6 +1249,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_7",
       "coverUrl": "https://images.pcgamingwiki.com/d/d7/Call_of_Duty_Black_Ops_7_cover.png",
       "steamAppId": "1938090",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3606480/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9plbm5790l94"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-black-ops-7"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/call-of-duty-black-ops-7-cross-gen-bundle-microsoft-store-download"
+        }
+      ],
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -849,6 +1309,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_Cold_War",
       "coverUrl": "https://images.pcgamingwiki.com/2/2b/Call_of_Duty_Black_Ops_Cold_War_cover.png",
       "steamAppId": "1985810",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1985810/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N72SFQ24KW8"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-black-ops-cold-war"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/call-of-duty-black-ops-cold-war"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4727-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/call-of-duty-black-ops-cold-war-pc"
+        }
+      ],
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -887,6 +1373,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Modern_Warfare_II",
       "coverUrl": "https://images.pcgamingwiki.com/9/9a/Call_of_Duty_Modern_Warfare_II_cover.jpg",
       "steamAppId": "3595230",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3595230/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P7RQ1QFFF8R"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-modern-warfare-ii"
+        }
+      ],
       "developers": [
         "Infinity Ward",
         "Raven Software",
@@ -929,6 +1429,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Modern_Warfare_III",
       "coverUrl": "https://images.pcgamingwiki.com/e/ec/Call_of_Duty_Modern_Warfare_III.jpg",
       "steamAppId": "3595270",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3595270/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NDKFJ6XDX2M"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-modern-warfare-iii"
+        }
+      ],
       "developers": [
         "Sledgehammer Games",
         "Infinity Ward",
@@ -972,6 +1486,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Warzone_2.0",
       "coverUrl": "https://images.pcgamingwiki.com/c/c5/Call_of_Duty_Warzone_2_cover.jpg",
       "steamAppId": "1938090",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1962663/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NNFG8BQRCXL"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/call-of-duty-warzone-2"
+        }
+      ],
       "developers": [
         "Infinity Ward",
         "Raven Software",
@@ -1012,6 +1540,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_the_Wild%3A_The_Angler",
       "coverUrl": "https://images.pcgamingwiki.com/2/2f/TheAnglerCover.jpg",
       "steamAppId": "1408610",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1408610/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/call-of-the-wild-the-angler"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NDC5LJS839S"
+        }
+      ],
       "developers": [
         "Expansive Worlds"
       ],
@@ -1045,6 +1587,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Cloudheim",
       "coverUrl": "https://images.pcgamingwiki.com/d/dd/Cloudheim_Cover.jpg",
       "steamAppId": "2070270",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2070270/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/cloudheim-9fdc70"
+        }
+      ],
       "developers": [
         "Noodle Cat Games"
       ],
@@ -1074,6 +1626,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Crime_Boss%3A_Rockay_City",
       "coverUrl": "https://images.pcgamingwiki.com/1/1b/Crime_Boss_Rockay_City_cover.jpg",
       "steamAppId": "2933080",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2933080/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/crime-boss"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/crime-boss-rockay-city"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7002-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/crime-boss-rockay-city"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/crime-boss-rockay-city"
+        }
+      ],
       "developers": [
         "Ingame Studios"
       ],
@@ -1107,6 +1685,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Crimson_Desert",
       "coverUrl": "https://images.pcgamingwiki.com/a/ac/Crimson_Desert_cover.jpg",
       "steamAppId": "3321460",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3321460/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/crimson-desert-6d6135"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9ndmb2smq5q7"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7947-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/crimson-desert"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/crimson-desert-pc"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6747100856"
+        }
+      ],
       "developers": [
         "Pearl Abyss"
       ],
@@ -1140,6 +1748,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Cronos%3A_The_New_Dawn",
       "coverUrl": "https://images.pcgamingwiki.com/d/d0/Cronos_The_New_Dawn_cover.jpg",
       "steamAppId": "2101960",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2101960/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/cronos-the-new-dawn-85b409"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/cronos_the_new_dawn"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P7TFLQ7CTXN"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/cronos-the-new-dawn"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7872-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/cronos-the-new-dawn"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/cronos-the-new-dawn-pc"
+        }
+      ],
       "developers": [
         "Bloober Team",
         "PixelAnt Games"
@@ -1176,6 +1818,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Cthulhu%3A_The_Cosmic_Abyss",
       "coverUrl": "https://images.pcgamingwiki.com/7/73/Cthulhu_The_Cosmic_Abyss_cover.jpg",
       "steamAppId": "2760560",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2760560/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/cthulhu_the_cosmic_abyss"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/cthulhu-the-cosmic-abyss"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7529-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/cthulhu-the-cosmic-abyss"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/cthulhu-the-cosmic-abyss-pc"
+        }
+      ],
       "developers": [
         "Big Bad Wolf"
       ],
@@ -1210,6 +1878,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Cyberpunk_2077",
       "coverUrl": "https://images.pcgamingwiki.com/3/39/Cyberpunk_2077_cover.png",
       "steamAppId": "1091500",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1091500/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/cyberpunk-2077"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/cyberpunk_2077"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/cyberpunk-2077"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6633429424"
+        }
+      ],
       "developers": [
         "CD Projekt Red",
         "Virtuos"
@@ -1249,6 +1939,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Dave_the_Diver",
       "coverUrl": "https://images.pcgamingwiki.com/d/d4/Dave_the_Diver_cover.jpg",
       "steamAppId": "1868140",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1868140/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/dave-the-diver-ed092a"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PC1ZMD65L0T"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/dave-the-diver-sale"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6824-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/dave-the-diver"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/dave-the-diver-pc"
+        }
+      ],
       "developers": [
         "MINTROCKET"
       ],
@@ -1281,6 +2001,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Days_Gone",
       "coverUrl": "https://images.pcgamingwiki.com/f/f0/Days_Gone_cover.jpg",
       "steamAppId": "1259420",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1259420/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/days-gone"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/days_gone"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/days-gone"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5001-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/days-gone"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/days-gone-pc"
+        }
+      ],
       "developers": [
         "Bend Studio",
         "Climax Studios"
@@ -1315,6 +2065,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Death_Stranding_2%3A_On_the_Beach",
       "coverUrl": "https://images.pcgamingwiki.com/2/2a/Death_Stranding_2_cover.jpg",
       "steamAppId": "3280350",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3280350/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/death-stranding-2-on-the-beach"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/8207-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/death-stranding-2-on-the-beach"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/death-stranding-2-on-the-beach-pc"
+        }
+      ],
       "developers": [
         "Kojima Productions",
         "Guerrilla Games"
@@ -1350,6 +2122,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Death_Stranding_Director's_Cut",
       "coverUrl": "https://images.pcgamingwiki.com/d/d5/Death_Stranding_Director%27s_Cut_cover.jpg",
       "steamAppId": "1850570",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1850570/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/death-stranding-directors-cut"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nqgn8tgnt8p"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/death-stranding-directors-cut"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4392-2"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/death-stranding-directors-cut"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/death-stranding-directors-cut-pc"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6449748961"
+        }
+      ],
       "developers": [
         "Kojima Productions",
         "Guerrilla Games"
@@ -1388,6 +2194,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Deathloop",
       "coverUrl": "https://images.pcgamingwiki.com/a/a7/Deathloop_cover.jpg",
       "steamAppId": "1252330",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1252330/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/deathloop"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P5Z4530318L"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/deathloop"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4869-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/deathloop"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/deathloop-pc"
+        }
+      ],
       "developers": [
         "Arkane Studios"
       ],
@@ -1421,6 +2257,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Depersonalization",
       "coverUrl": "https://images.pcgamingwiki.com/a/a9/DEPERSONALIZATION_Cover.jpg",
       "steamAppId": "1477070",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1477070/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n70sm8985w1"
+        }
+      ],
       "developers": [
         "MeowNature"
       ],
@@ -1455,6 +2301,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/DiRT_Rally_2.0",
       "coverUrl": "https://images.pcgamingwiki.com/1/19/DiRT_Rally_2.0_cover.jpg",
       "steamAppId": "690790",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/690790/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9MT31ZWMPJCK"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/dirt-rally-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/3839-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/DD-DIRT-RALLY-2-0"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/dirt-rally-20-pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1490,6 +2362,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Dolmen",
       "coverUrl": "https://images.pcgamingwiki.com/7/7d/Dolmen_-_Kickstarter_Demo_cover.jpg",
       "steamAppId": "831050",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/831050/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/dolmen"
+        }
+      ],
       "developers": [
         "Massive Work Studio"
       ],
@@ -1523,6 +2405,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Doom%3A_The_Dark_Ages",
       "coverUrl": "https://images.pcgamingwiki.com/5/5f/Doom_The_Dark_Ages_cover.jpg",
       "steamAppId": "3017860",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3017860/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PH9X0760B0T"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/doom-the-dark-ages"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/doom-the-dark-ages"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6997-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/doom-the-dark-ages-pc"
+        }
+      ],
       "developers": [
         "id Software"
       ],
@@ -1559,6 +2467,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Dragon_Age%3A_The_Veilguard",
       "coverUrl": "https://images.pcgamingwiki.com/0/0f/Dragon_Age_The_Veilguard_cover.jpg",
       "steamAppId": "1845910",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1845910/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/dragon-age-the-veilguard"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NHCW3R1JB1C"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/dragon-age/dragon-age-the-veilguard/buy//buy/pc"
+        }
+      ],
       "developers": [
         "BioWare"
       ],
@@ -1595,6 +2521,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Dying_Light",
       "coverUrl": "https://images.pcgamingwiki.com/c/c0/Dying_Light_cover.jpg",
       "steamAppId": "239140",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/239140/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/dying-light"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/dying_light_definitive_edition"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/dying-light-essentials-edition"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/2670-31"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/dying-light-essentials-edition"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/dying-light-essentials-edition-pc"
+        }
+      ],
       "developers": [
         "Techland"
       ],
@@ -1632,6 +2588,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Dying_Light_2_Stay_Human",
       "coverUrl": "https://images.pcgamingwiki.com/c/ca/Dying_Light_2_cover.jpg",
       "steamAppId": "534380",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/534380/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/dying-light-2-stay-human"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/dying-light-2-stay-human-reloaded-edition"
+        }
+      ],
       "developers": [
         "Techland"
       ],
@@ -1664,6 +2634,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/EA_Sports_WRC",
       "coverUrl": "https://images.pcgamingwiki.com/0/0f/EA_Sports_WRC.jpg",
       "steamAppId": "1849250",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1849250/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/ea-sports-wrc-24"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NRDH9Z85Q9B"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/ea-sports-wrc/wrc-24/buy/buy/pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1700,6 +2688,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Eriksholm%3A_The_Stolen_Dream",
       "coverUrl": "https://images.pcgamingwiki.com/9/93/Eriksholm_The_Stolen_Dream_cover.jpg",
       "steamAppId": "2377280",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2377280/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/eriksholm-the-stolen-dream-c90ad9"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/eriksholm_the_stolen_dream"
+        }
+      ],
       "developers": [
         "River End Games"
       ],
@@ -1734,6 +2736,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Euro_Truck_Simulator_2",
       "coverUrl": "https://images.pcgamingwiki.com/0/0e/Euro_Truck_Simulator_2_cover.jpg",
       "steamAppId": "227300",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/227300/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/euro-truck-simulator-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/1033-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/euro-truck-simulator-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/euro-truck-simulator-2"
+        }
+      ],
       "developers": [
         "SCS Software"
       ],
@@ -1775,6 +2799,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Everspace_2",
       "coverUrl": "https://images.pcgamingwiki.com/1/18/Everspace_2_cover.png",
       "steamAppId": "1128920",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1128920/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/everspace_2"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9pfx7f33kvg8"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/everspace-2"
+        }
+      ],
       "developers": [
         "ROCKFISH Games"
       ],
@@ -1806,6 +2848,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/F1_2021",
       "coverUrl": "https://images.pcgamingwiki.com/7/74/F1_2021_cover.jpg",
       "steamAppId": "1134570",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1134570/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/f1-2021"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5073-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/f1-2021-pc"
+        }
+      ],
       "developers": [
         "Codemasters Birmingham"
       ],
@@ -1841,6 +2901,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/F1_22",
       "coverUrl": "https://images.pcgamingwiki.com/6/63/F1_22_cover.jpg",
       "steamAppId": "1692250",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1692250/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/f1-22"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/f1/f1-22/buy/pc/buy/pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1877,6 +2951,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/F1_23",
       "coverUrl": "https://images.pcgamingwiki.com/7/75/F1_23_cover.jpg",
       "steamAppId": "2108330",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2108330/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/f1-23"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/f1/f1-23/buy/pc/buy/pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1913,6 +3001,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/F1_24",
       "coverUrl": "https://images.pcgamingwiki.com/0/0d/F1_24_cover.jpg",
       "steamAppId": "2488620",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2488620/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/f1-24"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n123zccl33b"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/f1/f1-24/buy/pc/buy/pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1949,6 +3055,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/F1_25",
       "coverUrl": "https://images.pcgamingwiki.com/e/e9/F1_25_cover.jpg",
       "steamAppId": "3059520",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3059520/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/f1-25-0729b0"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P1Q06WQV414"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/f1/f1-25/buy/buy/pc"
+        }
+      ],
       "developers": [
         "Codemasters"
       ],
@@ -1985,6 +3109,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Fantasian_Neo_Dimension",
       "coverUrl": "https://images.pcgamingwiki.com/1/10/FantasianNeoDimensionCover.jpg",
       "steamAppId": "2844850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2844850/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/fantasian-neo-dimension"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/fantasian-neo-dimension-pc"
+        }
+      ],
       "developers": [
         "Mistwalker Corporation",
         "Square Enix Creative Studio III"
@@ -2020,6 +3158,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Far_Cry_6",
       "coverUrl": "https://images.pcgamingwiki.com/6/69/Far_Cry_6_-_cover.png",
       "steamAppId": "2369390",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2369390/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/far-cry-6"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N661LCNBH8J"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/5ecd2cac5cdf9a1528a8c1d2.html"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/far-cry-6"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5934-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/far-cry-6"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/far-cry-6-pc"
+        }
+      ],
       "developers": [
         "Ubisoft Toronto",
         "Ubisoft Montreal",
@@ -2064,6 +3236,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/FBC%3A_Firebreak",
       "coverUrl": "https://images.pcgamingwiki.com/3/33/FBC_Firebreak_cover.jpg",
       "steamAppId": "2272540",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2272540/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/fbc-firebreak-fc3830"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9pdcn8z4hkrn"
+        }
+      ],
       "developers": [
         "Remedy Entertainment"
       ],
@@ -2100,6 +3286,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_VII_Rebirth",
       "coverUrl": "https://images.pcgamingwiki.com/5/58/Final_Fantasy_VII_Rebirth_cover.jpg",
       "steamAppId": "2909400",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2909400/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/final-fantasy-vii-rebirth"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N4728D0T6JN"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/final-fantasy-vii-rebirth"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/final-fantasy-vii-rebirth-pc"
+        }
+      ],
       "developers": [
         "Square Enix"
       ],
@@ -2132,6 +3340,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_VII_Remake_Intergrade",
       "coverUrl": "https://images.pcgamingwiki.com/1/18/Final_Fantasy_7_Remake_cover.jpg",
       "steamAppId": "1462040",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1462040/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/final-fantasy-vii-remake-intergrade"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nrqvq7zrm7z"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/final-fantasy-vii-remake-intergrade"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/final-fantasy-vii-remake-intergrade-pc"
+        }
+      ],
       "developers": [
         "Square Enix"
       ],
@@ -2164,6 +3394,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_XIV%3A_A_Realm_Reborn",
       "coverUrl": "https://images.pcgamingwiki.com/8/80/Final_Fantasy_XIV_A_Realm_Reborn_cover.jpg",
       "steamAppId": "39210",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/39210/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/final-fantasy-14-online-starter-edition"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/final-fantasy-xiv-online-starter-edition"
+        }
+      ],
       "developers": [
         "Square Enix Creative Studio III"
       ],
@@ -2204,6 +3448,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_XVI",
       "coverUrl": "https://images.pcgamingwiki.com/c/c6/Final_Fantasy_XVI_cover.jpg",
       "steamAppId": "2515020",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2515020/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/final-fantasy-xvi"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PNN223H8MLZ"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/final-fantasy-xvi"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/final-fantasy-xvi-pc"
+        }
+      ],
       "developers": [
         "Square Enix Creative Studio III",
         "PlatinumGames"
@@ -2241,6 +3507,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Forspoken",
       "coverUrl": "https://images.pcgamingwiki.com/6/63/Forspoken_cover.jpg",
       "steamAppId": "1680880",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1680880/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/forspoken"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9p3b7mt34dls"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/forspoken"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/forspoken-pc"
+        }
+      ],
       "developers": [
         "Luminous Productions"
       ],
@@ -2278,6 +3566,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Gears_of_War%3A_E-Day",
       "coverUrl": "https://images.pcgamingwiki.com/1/1c/Gears_of_War_E-Day_cover.jpg",
       "steamAppId": "3010850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3010850/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n4pt8hgcdhq"
+        }
+      ],
       "developers": [
         "The Coalition",
         "People Can Fly"
@@ -2312,6 +3610,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Genshin_Impact",
       "coverUrl": "https://images.pcgamingwiki.com/0/0a/Genshin_Impact_cover.jpg",
       "steamAppId": "",
+      "stores": [
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/genshin-impact"
+        }
+      ],
       "developers": [
         "miHoYo"
       ],
@@ -2349,6 +3653,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Ghost_of_Tsushima_Director's_Cut",
       "coverUrl": "https://images.pcgamingwiki.com/6/63/Ghost_of_Tsushima_Director%27s_Cut_cover.jpg",
       "steamAppId": "2215430",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2215430/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/ghost-of-tsushima"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/ghost-of-tsushima-directors-cut"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6827-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/ghost-of-tsushima-directors-cut"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/ghost-of-tsushima-directors-cut-pc"
+        }
+      ],
       "developers": [
         "Sucker Punch Productions"
       ],
@@ -2385,6 +3715,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Ghostwire%3A_Tokyo",
       "coverUrl": "https://images.pcgamingwiki.com/e/e1/GhostWire_Tokyo_cover.jpg",
       "steamAppId": "1475810",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1475810/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/ghostwire-tokyo"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PKP39CL0C8D"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/ghostwire-tokyo"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5511-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/ghostwire-tokyotm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/ghostwire-tokyo-pc"
+        }
+      ],
       "developers": [
         "Tango Gameworks"
       ],
@@ -2420,6 +3780,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/God_of_War",
       "coverUrl": "https://images.pcgamingwiki.com/3/36/God_of_War_cover.jpg",
       "steamAppId": "1593500",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1593500/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/god-of-war"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/god_of_war"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/god-of-war"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5377-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/god-of-war"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/god-of-war-pc"
+        }
+      ],
       "developers": [
         "Santa Monica Studio",
         "Valkyrie Entertainment"
@@ -2455,6 +3845,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/God_of_War_Ragnar%C3%B6k",
       "coverUrl": "https://images.pcgamingwiki.com/5/52/God_of_War_Ragnarok_cover.jpg",
       "steamAppId": "2322010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2322010/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/god-of-war-ragnarok-3ca641"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/god-of-war-ragnarok"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6962-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/god-of-war-ragnarok"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/god-of-war-ragnarok-pc"
+        }
+      ],
       "developers": [
         "Santa Monica Studio",
         "Bluepoint Games",
@@ -2493,6 +3909,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Grand_Theft_Auto_V_Enhanced",
       "coverUrl": "https://images.pcgamingwiki.com/b/b5/Grand_Theft_Auto_V_Enhanced_cover.jpg",
       "steamAppId": "3240220",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3240220/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/grand-theft-auto-v"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NXFX68ZNKK0"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/grand-theft-auto-v-enhanced"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/2625-10"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/grand-theft-auto-v-enhanced"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/grand-theft-auto-v-enhanced-pc"
+        }
+      ],
       "developers": [
         "Rockstar North"
       ],
@@ -2529,6 +3975,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Grand_Theft_Auto%3A_San_Andreas",
       "coverUrl": "https://images.pcgamingwiki.com/9/95/Grand_Theft_Auto_San_Andreas_Cover.jpg",
       "steamAppId": "12120",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/12120/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/grand-theft-auto-san-andreas"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/1934-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/grand-theft-auto-san-andreas"
+        }
+      ],
       "developers": [
         "Rockstar North"
       ],
@@ -2570,6 +4034,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Halo%3A_Campaign_Evolved",
       "coverUrl": "https://images.pcgamingwiki.com/4/4b/Halo_Campaign_Evolved_cover.jpg",
       "steamAppId": "2806050",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2806050/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N6J4RNFPKKL"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/8549-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/halo-campaign-evolved-xbox"
+        }
+      ],
       "developers": [
         "Halo Studios"
       ],
@@ -2604,6 +4086,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Haste",
       "coverUrl": "https://images.pcgamingwiki.com/e/ea/Haste_Broken_Worlds_cover.jpg",
       "steamAppId": "1796470",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1796470/"
+        }
+      ],
       "developers": [
         "Landfall Games"
       ],
@@ -2638,6 +4126,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Hell_is_Us",
       "coverUrl": "https://images.pcgamingwiki.com/2/2b/Hell_is_Us_-_Cover.jpg",
       "steamAppId": "1620730",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1620730/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/hell-is-us-b9c06d"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N9097G0XZMB"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/hell-is-us"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5605-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/hell-is-us"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/hell-is-us-pc"
+        }
+      ],
       "developers": [
         "Rogue Factor"
       ],
@@ -2673,6 +4191,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Hellblade_II%3A_Senua's_Saga",
       "coverUrl": "https://images.pcgamingwiki.com/a/a5/Hellblade_II_cover.jpg",
       "steamAppId": "2461850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2461850/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9pmbb7nghv95"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/senua-s-saga-hellblade-ii-download--6928-1"
+        }
+      ],
       "developers": [
         "Ninja Theory"
       ],
@@ -2709,6 +4241,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Helldivers_2",
       "coverUrl": "https://images.pcgamingwiki.com/0/00/Helldivers_2_cover.jpg",
       "steamAppId": "553850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/553850/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/helldivers-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6586-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/helldiverstm-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/helldivers-2-pc"
+        }
+      ],
       "developers": [
         "Arrowhead Game Studios",
         "Toadman Interactive"
@@ -2746,6 +4300,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Hi-Fi_Rush",
       "coverUrl": "https://images.pcgamingwiki.com/5/59/Hi-Fi_RUSH_cover.jpg",
       "steamAppId": "1817230",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1817230/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/hi-fi-rush"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nftc552k3gj"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/hifi-rush"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6120-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/hi-fi-rush"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/hifi-rush-standard-edition-pc"
+        }
+      ],
       "developers": [
         "Tango Gameworks"
       ],
@@ -2782,6 +4366,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Hogwarts_Legacy",
       "coverUrl": "https://images.pcgamingwiki.com/3/33/Hogwarts_Legacy_cover.jpg",
       "steamAppId": "990080",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/990080/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/hogwarts-legacy"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9MT5NJ5W7B8Z"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/hogwarts-legacy"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5572-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/hogwarts-legacy"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/hogwarts-legacy-pc"
+        }
+      ],
       "developers": [
         "Avalanche Software"
       ],
@@ -2819,6 +4433,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Horizon_Forbidden_West",
       "coverUrl": "https://images.pcgamingwiki.com/f/f6/Horizon_Forbidden_West_cover.png",
       "steamAppId": "2420110",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2420110/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/horizon-forbidden-west-complete-edition"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/horizon-forbidden-west-complete-edition"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6621-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/horizon-forbidden-westtm-complete-edition"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/horizon-forbidden-west-complete-edition-pc"
+        }
+      ],
       "developers": [
         "Guerrilla Games"
       ],
@@ -2855,6 +4495,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Horizon_Zero_Dawn_Remastered",
       "coverUrl": "https://images.pcgamingwiki.com/3/30/Horizon_Zero_Dawn_Remastered_cover.jpg",
       "steamAppId": "2561580",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2561580/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/horizon-zero-dawn-remastered"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/horizon-zero-dawn-remastered"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4699-2"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/horizon-zero-dawntm-remastered"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/horizon-zero-dawn-remastered-pc"
+        }
+      ],
       "developers": [
         "Nixxes Software",
         "Guerrilla Games"
@@ -2892,6 +4558,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Indiana_Jones_and_the_Great_Circle",
       "coverUrl": "https://images.pcgamingwiki.com/0/05/Indiana_Jones_and_the_Great_Circle_cover.jpg",
       "steamAppId": "2677660",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2677660/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/indiana_jones_and_the_great_circle"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N8FQ28Z6QX3"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/indiana-jones-and-the-great-circle"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6745-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/indiana-jones-and-the-great-circle-pc"
+        }
+      ],
       "developers": [
         "MachineGames"
       ],
@@ -2928,6 +4620,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Infinity_Nikki",
       "coverUrl": "https://images.pcgamingwiki.com/d/dd/Infinity_Nikki_cover.jpg",
       "steamAppId": "3164330",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3164330/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/infinity-nikki-71fc64"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6502622570"
+        }
+      ],
       "developers": [
         "Infold Games"
       ],
@@ -2966,6 +4672,7 @@
       "source": "https://www.pcgamingwiki.com/wiki/Jak_II_(OpenGOAL)",
       "coverUrl": "https://images.pcgamingwiki.com/6/61/Jak_II_cover.jpg",
       "steamAppId": "",
+      "stores": [],
       "developers": [
         "Naughty Dog"
       ],
@@ -3004,6 +4711,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/John_Carpenter's_Toxic_Commando",
       "coverUrl": "https://images.pcgamingwiki.com/d/da/John_Carpenters_Toxic_Commando_cover.jpg",
       "steamAppId": "2157830",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2157830/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/john-carpenters-toxic-commando"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7860-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/john-carpenters-toxic-commando"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/john-carpenters-toxic-commando-pc"
+        }
+      ],
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -3038,6 +4767,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Kingdom_Come%3A_Deliverance_II",
       "coverUrl": "https://images.pcgamingwiki.com/d/d4/Kingdom_Come_Deliverance_II_cover.png",
       "steamAppId": "1771300",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1771300/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/kingdom-come-deliverance-2-664783"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/kingdom_come_deliverance_ii"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N4W31HSMVVD"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/kingdom-come-deliverance-ii"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6904-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/kingdom-come-deliverance-ii"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/kingdom-come-deliverance-ii-pc"
+        }
+      ],
       "developers": [
         "Warhorse Studios"
       ],
@@ -3072,6 +4835,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Lego_Batman%3A_Legacy_of_the_Dark_Knight",
       "coverUrl": "https://images.pcgamingwiki.com/3/37/Lego_Batman_Legacy_of_the_Dark_Knight_cover.jpg",
       "steamAppId": "2215200",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2215200/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/lego-batman-legacy-of-the-dark-knight"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/lego-batman-legacy-of-the-dark-knight-steam-key--7837-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/lego-batmantm-legacy-of-the-dark-knight"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/lego-batman-legacy-of-the-dark-knight-pc"
+        }
+      ],
       "developers": [
         "TT Games",
         "Rocksteady Studios"
@@ -3107,6 +4892,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Lego_Horizon_Adventures",
       "coverUrl": "https://images.pcgamingwiki.com/4/4c/Lego_Horizon_Adventures_cover.jpg",
       "steamAppId": "2428810",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2428810/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/lego-horizon-adventures"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/lego-horizon-adventures"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7049-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/lego-horizon-adventurestm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/lego-horizon-adventures-pc"
+        }
+      ],
       "developers": [
         "Studio Gobo",
         "Guerrilla Games"
@@ -3139,6 +4950,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Lords_of_the_Fallen_(2023)",
       "coverUrl": "https://images.pcgamingwiki.com/1/1e/The_Lords_of_the_Fallen_cover.jpg",
       "steamAppId": "1501750",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1501750/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/lords-of-the-fallen"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9np4c0x8mdk7"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/lords-of-the-fallen"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6029-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/lords-of-the-fallen-2023"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/lords-of-the-fallen-pc"
+        }
+      ],
       "developers": [
         "HexWorks"
       ],
@@ -3175,6 +5016,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Lost_Soul_Aside",
       "coverUrl": "https://images.pcgamingwiki.com/0/02/Lost_Soul_Aside_cover.jpg",
       "steamAppId": "3378960",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3378960/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/lost-soul-aside-685c12"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/lost-soul-aside"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7490-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/lost-soul-asidetm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/lost-soul-aside-pc"
+        }
+      ],
       "developers": [
         "Ultizero Games"
       ],
@@ -3211,6 +5078,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Luto",
       "coverUrl": "https://images.pcgamingwiki.com/1/11/Luto_cover.png",
       "steamAppId": "1729740",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1729740/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/luto-0a4ab3"
+        }
+      ],
       "developers": [
         "Broken Bird Games"
       ],
@@ -3245,6 +5122,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marathon_(2026)",
       "coverUrl": "https://images.pcgamingwiki.com/2/2e/Marathon_dec_25_cover.jpg",
       "steamAppId": "3065800",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3065800/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/marathon"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/marathon-steam-key--8149-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/marathon"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/marathon-pc"
+        }
+      ],
       "developers": [
         "Bungie"
       ],
@@ -3276,6 +5175,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marvel_Rivals",
       "coverUrl": "https://images.pcgamingwiki.com/1/16/Marvel_Rivals_cover.jpg",
       "steamAppId": "2767030",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2767030/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/marvel-rivals-182004"
+        }
+      ],
       "developers": [
         "NetEase Games"
       ],
@@ -3310,6 +5219,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marvel_T%C5%8Dkon%3A_Fighting_Souls",
       "coverUrl": "https://images.pcgamingwiki.com/9/9e/Marvel_Tokon_Fighting_Souls_cover.jpg",
       "steamAppId": "3787240",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3787240/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/marvel-tokon-fighting-souls-a3ecbd"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/marvel-tkon-fighting-souls"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7797-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/marvel-tokon-fighting-souls"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/marvel-tokon-fighting-souls-pc"
+        }
+      ],
       "developers": [
         "Arc System Works"
       ],
@@ -3346,6 +5281,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man_2",
       "coverUrl": "https://images.pcgamingwiki.com/4/44/Marvel%27s_Spider-Man_2_cover.jpg",
       "steamAppId": "2651280",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2651280/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/marvels-spider-man-2"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/marvels-spiderman-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7327-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/marvels-spider-man-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/marvels-spider-man-2-pc"
+        }
+      ],
       "developers": [
         "Insomniac Games"
       ],
@@ -3379,6 +5340,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man_Remastered",
       "coverUrl": "https://images.pcgamingwiki.com/7/77/Marvel%27s_Spider-Man_Remastered_cover.jpg",
       "steamAppId": "1817070",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1817070/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/marvels-spider-man-remastered"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/marvels-spiderman-remastered"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5700-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/marvels-spider-man-remastered"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/marvels-spider-man-remastered-pc"
+        }
+      ],
       "developers": [
         "Insomniac Games"
       ],
@@ -3415,6 +5402,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man%3A_Miles_Morales",
       "coverUrl": "https://images.pcgamingwiki.com/8/88/Marvel%27s_Spider-Man_-_Miles_Morales_cover.png",
       "steamAppId": "1817190",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1817190/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/marvels-spider-man-miles-morales"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/marvels-spiderman-miles-morales"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5959-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/marvels-spider-man-miles-morales"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/marvels-spider-man-miles-morales-pc"
+        }
+      ],
       "developers": [
         "Insomniac Games"
       ],
@@ -3451,6 +5464,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Mecha_Break",
       "coverUrl": "https://images.pcgamingwiki.com/f/f3/Mecha_break_cover.jpg",
       "steamAppId": "2452280",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2452280/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N1BZS0V3K0C"
+        }
+      ],
       "developers": [
         "Amazing Seasun Games"
       ],
@@ -3485,6 +5508,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Metal_Gear_Solid_%CE%94%3A_Snake_Eater",
       "coverUrl": "https://images.pcgamingwiki.com/b/b9/Metal_Gear_Solid_Delta_Snake_Eater_cover.png",
       "steamAppId": "2417610",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2417610/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PJLN214RTKQ"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/metal-gear-solid-snake-eater"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6424-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/metal-gear-solid-snake-eater"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/metal-gear-solid-snake-eater-pc"
+        }
+      ],
       "developers": [
         "Konami",
         "Virtuos",
@@ -3521,6 +5570,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Metro_Exodus_Enhanced_Edition",
       "coverUrl": "https://images.pcgamingwiki.com/a/a7/Metro_Exodus_PC_Enhanced_Edition_cover.png",
       "steamAppId": "1449560",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1449560/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/metro-exodus"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/metro_exodus"
+        }
+      ],
       "developers": [
         "4A Games"
       ],
@@ -3554,6 +5617,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/MindsEye",
       "coverUrl": "https://images.pcgamingwiki.com/8/8c/MindsEye_cover.jpg",
       "steamAppId": "3265250",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3265250/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/mindseye-cb0316"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/mindseye"
+        }
+      ],
       "developers": [
         "Build a Rocket Boy"
       ],
@@ -3589,6 +5666,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Mixtape",
       "coverUrl": "https://images.pcgamingwiki.com/d/d4/Mixtape_cover.jpg",
       "steamAppId": "2582320",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2582320/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/mixtape-f18a26"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nh0msg29x6l"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/mixtape"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7741-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/mixtape"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/mixtape-pc"
+        }
+      ],
       "developers": [
         "Beethoven &amp",
         "Dinosaur"
@@ -3624,6 +5731,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Monster_Hunter_Wilds",
       "coverUrl": "https://images.pcgamingwiki.com/9/9d/Monster_Hunter_Wilds_cover.jpg",
       "steamAppId": "2246340",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2246340/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/monster-hunter-wilds"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6940-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/monster-hunter-wilds"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/monster-hunter-wilds-pc"
+        }
+      ],
       "developers": [
         "Capcom"
       ],
@@ -3658,6 +5787,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Mortal_Shell_II",
       "coverUrl": "https://images.pcgamingwiki.com/3/32/Mortal_Shell_II_cover.jpg",
       "steamAppId": "2584270",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2584270/"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7809-1"
+        }
+      ],
       "developers": [
         "Cold Symmetry"
       ],
@@ -3692,6 +5831,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Neva",
       "coverUrl": "https://images.pcgamingwiki.com/f/fc/Neva_Cover.jpeg",
       "steamAppId": "2420660",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2420660/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/neva"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/neva"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7208-1"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6737359999"
+        }
+      ],
       "developers": [
         "Nomada Studio"
       ],
@@ -3726,6 +5887,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Neverness_to_Everness",
       "coverUrl": "https://images.pcgamingwiki.com/9/99/NevernessToEverness_CoverArt.png",
       "steamAppId": "4508340",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4706890/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/neverness-to-everness-178ed6"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6754593077"
+        }
+      ],
       "developers": [
         "Hotta Studio"
       ],
@@ -3761,6 +5936,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Ninja_Gaiden_4",
       "coverUrl": "https://images.pcgamingwiki.com/1/19/NinjaGaiden4Cover.jpg",
       "steamAppId": "2627260",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2627260/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P0SQ1S72G4J"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7935-1"
+        }
+      ],
       "developers": [
         "PlatinumGames",
         "Team Ninja"
@@ -3798,6 +5987,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Nioh_3",
       "coverUrl": "https://images.pcgamingwiki.com/4/4e/Nioh_3_cover.jpg",
       "steamAppId": "3681010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3681010/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/nioh-3"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7792-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/nioh-3"
+        }
+      ],
       "developers": [
         "Team Ninja"
       ],
@@ -3831,6 +6038,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/No_Man's_Sky",
       "coverUrl": "https://images.pcgamingwiki.com/e/ea/No_Man%27s_Sky_cover.jpg",
       "steamAppId": "275850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/275850/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/no_mans_sky"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/BQVQTL3PCH05"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/no-mans-sky"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4432-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/no-mans-sky"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/no-mans-sky"
+        }
+      ],
       "developers": [
         "Hello Games"
       ],
@@ -3867,6 +6104,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Off_The_Grid",
       "coverUrl": "https://images.pcgamingwiki.com/1/1a/OffTheGridCover.jpg",
       "steamAppId": "3659280",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3659280/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/off-the-grid-7e3cc5"
+        }
+      ],
       "developers": [
         "Gunzilla Games"
       ],
@@ -3896,6 +6143,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Overwatch_2",
       "coverUrl": "https://images.pcgamingwiki.com/3/3b/Overwatch_2_cover.jpg",
       "steamAppId": "2357570",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2357570/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9p36dqx6w9cs"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/overwatch"
+        }
+      ],
       "developers": [
         "Blizzard Entertainment"
       ],
@@ -3927,6 +6188,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Pacific_Drive",
       "coverUrl": "https://images.pcgamingwiki.com/8/8d/Pacific_Drive_cover.jpg",
       "steamAppId": "1458140",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1458140/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/pacific-drive"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PNKG0WBL61W"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/pacific-drive"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6495-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/pacific-drive"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/pacific-drive-pc"
+        }
+      ],
       "developers": [
         "Ironwood Studios"
       ],
@@ -3961,6 +6252,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Painkiller_(2025)",
       "coverUrl": "https://images.pcgamingwiki.com/3/39/Painkiller_2025_cover.jpg",
       "steamAppId": "2300120",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2300120/"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7969-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/painkiller"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/painkiller-pc"
+        }
+      ],
       "developers": [
         "Anshar Studios"
       ],
@@ -3995,6 +6304,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Pipistrello_and_the_Cursed_Yoyo",
       "coverUrl": "https://images.pcgamingwiki.com/1/1f/Pipistrello_and_the_Cursed_Yoyo_cover.jpg",
       "steamAppId": "2870350",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2870350/"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/pipistrello-and-the-cursed-yoyo-pc"
+        }
+      ],
       "developers": [
         "Pocket Trap"
       ],
@@ -4026,6 +6345,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Pragmata",
       "coverUrl": "https://images.pcgamingwiki.com/f/fb/Pragmata_cover.jpg",
       "steamAppId": "3357650",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3357650/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/pragmata"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7681-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/pragmata"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/pragmata-pc"
+        }
+      ],
       "developers": [
         "Capcom"
       ],
@@ -4060,6 +6401,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Prince_of_Persia%3A_The_Lost_Crown",
       "coverUrl": "https://images.pcgamingwiki.com/4/44/Prince_of_Persia_The_Lost_Crown_cover.jpg",
       "steamAppId": "2751000",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2751000/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/prince-of-persia-the-lost-crown"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PJ8CKFDWWLF"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/6408bd757ee83d203cf3bda2.html"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6498547840"
+        }
+      ],
       "developers": [
         "Ubisoft Montpellier",
         "Ubisoft Bucharest",
@@ -4101,6 +6464,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Project_Colored_Mountains",
       "coverUrl": "https://images.pcgamingwiki.com/d/d2/Project_Colored_Mountains_cover.png",
       "steamAppId": "2340980",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2340980/"
+        }
+      ],
       "developers": [
         "Conabe Games"
       ],
@@ -4135,6 +6504,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Ratchet_%26_Clank%3A_Rift_Apart",
       "coverUrl": "https://images.pcgamingwiki.com/1/1a/Ratchet_%26_Clank_Rift_Apart_cover.jpg",
       "steamAppId": "1895880",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1895880/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/ratchet-clank-rift-apart"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/ratchet-clank-rift-apart"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6395-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/ratchet-clank-rift-apart"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/ratchet-clank-rift-apart-pc"
+        }
+      ],
       "developers": [
         "Insomniac Games"
       ],
@@ -4171,6 +6566,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Ready_or_Not",
       "coverUrl": "https://images.pcgamingwiki.com/d/d0/Ready_Or_Not_cover.jpg",
       "steamAppId": "1144200",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1144200/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NBR63PT4FZC"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/ready-or-not"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/ready-or-not-pc"
+        }
+      ],
       "developers": [
         "VOID Interactive"
       ],
@@ -4203,6 +6616,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Resident_Evil_Requiem",
       "coverUrl": "https://images.pcgamingwiki.com/3/31/Resident_Evil_Requiem_cover.png",
       "steamAppId": "3764200",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3764200/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/resident-evil-requiem-4ead6d"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/resident-evil-requiem"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7680-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/resident-evil-requiem"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/resident-evil-requiem-pc"
+        }
+      ],
       "developers": [
         "Capcom"
       ],
@@ -4237,6 +6676,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Returnal",
       "coverUrl": "https://images.pcgamingwiki.com/1/1b/Returnal_cover.jpg",
       "steamAppId": "1649240",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1649240/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/returnal"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/returnal"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6073-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/returnaltm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/returnal-pc"
+        }
+      ],
       "developers": [
         "Housemarque"
       ],
@@ -4274,6 +6739,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Rise_of_the_Ronin",
       "coverUrl": "https://images.pcgamingwiki.com/2/2c/Rise_of_the_Ronin_cover.jpg",
       "steamAppId": "1340990",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1340990/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/rise-of-the-ronin"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7460-1"
+        }
+      ],
       "developers": [
         "Team Ninja"
       ],
@@ -4310,6 +6789,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Riven_(2024)",
       "coverUrl": "https://images.pcgamingwiki.com/b/b1/Riven_%282024%29_cover.jpg",
       "steamAppId": "1712350",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1712350/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/riven"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P62C7M1XHW7"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/riven"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id1437437535"
+        }
+      ],
       "developers": [
         "Cyan Worlds"
       ],
@@ -4343,6 +6844,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/RoadCraft",
       "coverUrl": "https://images.pcgamingwiki.com/4/48/Roadcraft_-_Cover.jpg",
       "steamAppId": "2104890",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2104890/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/roadcraft-b65690"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n4j937wlfpz"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/roadcraft"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7209-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/roadcraft"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/roadcraft-pc"
+        }
+      ],
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -4374,6 +6905,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Rocket_League",
       "coverUrl": "https://images.pcgamingwiki.com/6/6a/Rocket_League_Cover.jpg",
       "steamAppId": "252950",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/252950/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/rocket-league"
+        }
+      ],
       "developers": [
         "Psyonix"
       ],
@@ -4413,6 +6954,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R._2%3A_Heart_of_Chornobyl",
       "coverUrl": "https://images.pcgamingwiki.com/e/ef/S.T.A.L.K.E.R._2_cover.jpg",
       "steamAppId": "1643320",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1643320/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stalker-2-heart-of-chornobyl"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/stalker_2_heart_of_chornobyl_standard_edition"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n3d6v4n58jr"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/stalker-2-heart-of-chornobyl"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5687-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/stalker-2-heart-of-chornobyl-pc"
+        }
+      ],
       "developers": [
         "GSC Game World"
       ],
@@ -4449,6 +7020,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Call_of_Prypiat_Enhanced_Edition",
       "coverUrl": "https://images.pcgamingwiki.com/2/2c/S.T.A.L.K.E.R._Call_of_Pripyat_Enhanced_Edition_cover.jpg",
       "steamAppId": "2427430",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2427430/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stalker-call-of-prypiat-enhanced-edition-c42eea"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/stalker_call_of_prypiat_enhanced_edition"
+        }
+      ],
       "developers": [
         "GSC Game World"
       ],
@@ -4478,6 +7063,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Clear_Sky_Enhanced_Edition",
       "coverUrl": "https://images.pcgamingwiki.com/d/d6/S.T.A.L.K.E.R._Clear_Sky_Enhanced_Edition_cover.jpg",
       "steamAppId": "2427420",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2427420/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stalker-clear-sky-enhanced-edition-055c67"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/stalker_clear_sky_enhanced_edition"
+        }
+      ],
       "developers": [
         "GSC Game World"
       ],
@@ -4507,6 +7106,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Shadow_of_Chornobyl_Enhanced_Edition",
       "coverUrl": "https://images.pcgamingwiki.com/d/db/S.T.A.L.K.E.R._Shadow_of_Chernobyl_Enhanced_Edition_cover.jpg",
       "steamAppId": "2427410",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2427410/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stalker-shadow-of-chornobyl-enhanced-edition-84ebf8"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/stalker_shadow_of_chornobyl_enhanced_edition"
+        }
+      ],
       "developers": [
         "GSC Game World"
       ],
@@ -4536,6 +7149,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sackboy%3A_A_Big_Adventure",
       "coverUrl": "https://images.pcgamingwiki.com/7/72/Sackboy_A_Big_Adventure_cover.jpg",
       "steamAppId": "1599660",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1599660/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/sackboy-a-big-adventure"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/sackboy-a-big-adventure"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5955-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/sackboytm-a-big-adventure"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/sackboy-a-big-adventure-pc"
+        }
+      ],
       "developers": [
         "Sumo Digital"
       ],
@@ -4569,6 +7208,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Satisfactory",
       "coverUrl": "https://images.pcgamingwiki.com/d/d1/Satisfactory_cover.png",
       "steamAppId": "526870",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/526870/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/satisfactory"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/satisfactory"
+        }
+      ],
       "developers": [
         "Coffee Stain Studios"
       ],
@@ -4600,6 +7253,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Screamer_(2026)",
       "coverUrl": "https://images.pcgamingwiki.com/c/c0/Screamer_2026_cover.jpg",
       "steamAppId": "2814990",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2814990/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/screamer-c51829"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9p2v2mk7xww5"
+        }
+      ],
       "developers": [
         "Milestone"
       ],
@@ -4634,6 +7301,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sea_of_Thieves",
       "coverUrl": "https://images.pcgamingwiki.com/e/e0/Sea_of_Thieves_cover.jpg",
       "steamAppId": "1172620",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1172620/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9MVQ2J7BXZJD"
+        },
+        {
+          "name": "Battle.net",
+          "url": "https://battle.net/shop/product/sea-of-thieves"
+        }
+      ],
       "developers": [
         "Rare",
         "Purple Lamp Studios"
@@ -4669,6 +7350,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/SEASON%3A_A_letter_to_the_future",
       "coverUrl": "https://images.pcgamingwiki.com/5/55/Season_cover.jpg",
       "steamAppId": "695330",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/695330/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/season"
+        }
+      ],
       "developers": [
         "Scavengers Studio"
       ],
@@ -4700,6 +7391,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Shadows_of_the_Damned%3A_Hella_Remastered",
       "coverUrl": "https://images.pcgamingwiki.com/8/8c/Shadows_of_the_Damned_Hella_Remastered_cover.jpg",
       "steamAppId": "2535440",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2535440/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/shadows-of-the-damned-hella-remastered"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7326-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/shadows-of-the-damned-hella-remastered"
+        }
+      ],
       "developers": [
         "Grasshopper Manufacture",
         "Engine Software"
@@ -4735,6 +7444,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Signalis",
       "coverUrl": "https://images.pcgamingwiki.com/9/95/SIGNALIS_cover.jpg",
       "steamAppId": "1262350",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1262350/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9plf2rs7jrzl"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/signalis"
+        }
+      ],
       "developers": [
         "rose-engine"
       ],
@@ -4770,6 +7493,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Silent_Hill_2",
       "coverUrl": "https://images.pcgamingwiki.com/2/22/Silent_Hill_2_cover.jpg",
       "steamAppId": "2124490",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2124490/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/silent-hill-2-4542c7"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/silent_hill_2"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9PNVDQKPJRQV"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/silent-hill-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5972-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/silent-hill-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/silent-hill-2-pc"
+        }
+      ],
       "developers": [
         "Bloober Team"
       ],
@@ -4806,6 +7563,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Skate",
       "coverUrl": "https://images.pcgamingwiki.com/3/3b/Skate_cover.jpg",
       "steamAppId": "3354750",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3354750/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/skate-2ddbd6"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/skate/buy/pc"
+        }
+      ],
       "developers": [
         "Full Circle"
       ],
@@ -4839,6 +7610,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Skull_and_Bones",
       "coverUrl": "https://images.pcgamingwiki.com/d/dc/Skull_%26_Bones_cover.jpg",
       "steamAppId": "2853730",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2853730/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/skull-and-bones"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P7X7VL05K48"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/6295077a27efc536e38350a0.html"
+        }
+      ],
       "developers": [
         "Ubisoft Singapore",
         "Ubisoft Berlin",
@@ -4881,6 +7670,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sleep_Awake",
       "coverUrl": "https://images.pcgamingwiki.com/4/4d/Sleep_Awake_cover.jpg",
       "steamAppId": "2446540",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2446540/"
+        }
+      ],
       "developers": [
         "Eyes Out"
       ],
@@ -4915,6 +7710,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sonic_Racing%3A_CrossWorlds",
       "coverUrl": "https://images.pcgamingwiki.com/8/88/Sonic_Racing_CrossWorlds_cover.jpg",
       "steamAppId": "2486820",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2486820/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/sonic-racing-crossworlds"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/sonic-racing-crossworlds"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7679-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/sonic-racing-crossworlds-pc"
+        }
+      ],
       "developers": [
         "Sonic Team"
       ],
@@ -4951,6 +7768,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sonic_Superstars",
       "coverUrl": "https://images.pcgamingwiki.com/f/fe/Sonic_Superstars_cover.jpg",
       "steamAppId": "2022670",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2022670/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/sonic-superstars"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/sonic-superstars-pc"
+        }
+      ],
       "developers": [
         "Arzest",
         "Sonic Team"
@@ -4983,6 +7814,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Star_Wars_Jedi%3A_Survivor",
       "coverUrl": "https://images.pcgamingwiki.com/1/17/Star_Wars_Jedi_Survivor_cover.jpg",
       "steamAppId": "1774580",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1774580/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/star-wars-jedi-survivor"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9MXH73ZJVH4X"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/starwars/jedi/jedi-survivor/buy/pc/buy/pc"
+        }
+      ],
       "developers": [
         "Respawn Entertainment"
       ],
@@ -5018,6 +7867,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Star_Wars_Outlaws",
       "coverUrl": "https://images.pcgamingwiki.com/9/93/Star_Wars_Outlaws_cover.jpg",
       "steamAppId": "2842040",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2842040/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/star-wars-outlaws"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N59CT2NKDPV"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/645ba713a9ce0448bffa4c12.html"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6876-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/star-wars-outlaws-standard-edition-pc"
+        }
+      ],
       "developers": [
         "Massive Entertainment",
         "Ubisoft Annecy",
@@ -5066,6 +7941,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Stellar_Blade",
       "coverUrl": "https://images.pcgamingwiki.com/4/40/Stellar_Blade_cover.jpg",
       "steamAppId": "3489700",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3489700/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stellar-blade-fa21c3"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/stellar-blade"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7505-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/stellar-bladetm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/stellar-blade-pc"
+        }
+      ],
       "developers": [
         "Shift Up"
       ],
@@ -5102,6 +8003,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Still_Wakes_the_Deep",
       "coverUrl": "https://images.pcgamingwiki.com/e/eb/Still_Wakes_The_Deep_cover.jpg",
       "steamAppId": "1622910",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1622910/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/still-wakes-the-deep-698c81"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n88dfrx8wcj"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/still-wakes-the-deep"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6937-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/still-wakes-the-deep"
+        }
+      ],
       "developers": [
         "The Chinese Room"
       ],
@@ -5136,6 +8063,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Stray",
       "coverUrl": "https://images.pcgamingwiki.com/a/ae/Stray_cover.jpg",
       "steamAppId": "1332010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1332010/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/stray-42d658"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NMPDQ2NRX34"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/stray"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5683-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/stray"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/stray-pc"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6451498949"
+        }
+      ],
       "developers": [
         "BlueTwelve Studio"
       ],
@@ -5171,6 +8132,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Styx%3A_Blades_of_Greed",
       "coverUrl": "https://images.pcgamingwiki.com/5/5c/Styx_Blades_of_Greed_cover.jpg",
       "steamAppId": "3290690",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3290690/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/styx-blades-of-greed-4e7fc1"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/styx_blades_of_greed"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/styx-blades-of-greed"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7527-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/styx-blades-of-greed"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/styx-blades-of-greed-pc"
+        }
+      ],
       "developers": [
         "Cyanide Studio"
       ],
@@ -5204,6 +8195,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Suicide_Squad%3A_Kill_the_Justice_League",
       "coverUrl": "https://images.pcgamingwiki.com/8/80/Suicide_Squad_Kill_The_Justice_League_cover.jpg",
       "steamAppId": "315210",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/315210/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/suicide-squad-kill-the-justice-league"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/suicide-squad-kill-the-justice-league"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5422-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/suicide-squad-kill-the-justice-league"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/suicide-squad-kill-the-justice-league-pc"
+        }
+      ],
       "developers": [
         "Rocksteady Studios",
         "Sumo Digital"
@@ -5238,6 +8255,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Sword_of_the_Sea",
       "coverUrl": "https://images.pcgamingwiki.com/9/93/Sword_of_the_Sea_cover.jpg",
       "steamAppId": "2453160",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2453160/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/sword-of-the-sea-385364"
+        }
+      ],
       "developers": [
         "Giant Squid Studios"
       ],
@@ -5270,6 +8297,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/System_Shock_2%3A_25th_Anniversary_Remaster",
       "coverUrl": "https://images.pcgamingwiki.com/2/21/System_Shock_2_Enhanced_Edition_cover.jpg",
       "steamAppId": "866570",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/866570/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/system_shock_2_25th_anniversary_remaster"
+        }
+      ],
       "developers": [
         "Irrational Games",
         "Looking Glass Studios",
@@ -5308,6 +8345,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tainted_Grail%3A_The_Fall_of_Avalon",
       "coverUrl": "https://images.pcgamingwiki.com/a/a9/Tainted_Grail_The_Fall_of_Avalon_cover.jpg",
       "steamAppId": "1466060",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1466060/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/tainted_grail_the_fall_of_avalon"
+        }
+      ],
       "developers": [
         "Questline"
       ],
@@ -5342,6 +8389,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tekken_8",
       "coverUrl": "https://images.pcgamingwiki.com/e/e0/Tekken_8_cover.jpg",
       "steamAppId": "1778820",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1778820/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/tekken-8"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5942-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/tekken-8"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/tekken-8-pc"
+        }
+      ],
       "developers": [
         "Bandai Namco Studios",
         "Arika"
@@ -5376,6 +8445,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Test_Drive_Unlimited_Solar_Crown",
       "coverUrl": "https://images.pcgamingwiki.com/7/7b/Test_Drive_Unlimited_Solar_Crown_cover.jpg",
       "steamAppId": "1249970",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1249970/"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/4667-1"
+        }
+      ],
       "developers": [
         "Kylotonn"
       ],
@@ -5411,6 +8490,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Chant",
       "coverUrl": "https://images.pcgamingwiki.com/8/88/The_Chant_cover.jpg",
       "steamAppId": "1577250",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1577250/"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/the_chant"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-chant"
+        }
+      ],
       "developers": [
         "Brass Token"
       ],
@@ -5444,6 +8537,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Crew_Motorfest",
       "coverUrl": "https://images.pcgamingwiki.com/e/ea/The_Crew_Motorfest_cover.jpg",
       "steamAppId": "2698940",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2698940/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/the-crew-motorfest"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NKBNRKJ9FXS"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/63bc67dbd406ab22f1174305.html"
+        }
+      ],
       "developers": [
         "Ubisoft Ivory Tower"
       ],
@@ -5479,6 +8590,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Elder_Scrolls_IV%3A_Oblivion_Remastered",
       "coverUrl": "https://images.pcgamingwiki.com/a/af/The_Elder_Scrolls_IV_Oblivion_Remastered_cover.jpg",
       "steamAppId": "2623190",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2623190/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NQR437K7PQH"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-elder-scrolls-iv-oblivion-remastered"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7605-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/the-elder-scrolls-iv-oblivion-remastered-pc"
+        }
+      ],
       "developers": [
         "Virtuos",
         "Bethesda Game Studios"
@@ -5516,6 +8649,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_First_Berserker%3A_Khazan",
       "coverUrl": "https://images.pcgamingwiki.com/6/64/The_First_Berserker_Khazan_cover.jpg",
       "steamAppId": "2680010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2680010/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-first-berserker-khazan"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7440-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/the-first-berserker-khazan-pc"
+        }
+      ],
       "developers": [
         "Neople"
       ],
@@ -5549,6 +8700,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_First_Descendant",
       "coverUrl": "https://images.pcgamingwiki.com/0/05/The_First_Descendant_cover.jpg",
       "steamAppId": "2074920",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2074920/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9P8FBXKMCLWC"
+        }
+      ],
       "developers": [
         "Nexon"
       ],
@@ -5583,6 +8744,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Last_of_Us_Part_I",
       "coverUrl": "https://images.pcgamingwiki.com/8/86/The_Last_of_Us_Part_I_cover.jpg",
       "steamAppId": "1888930",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1888930/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/the-last-of-us-part-1"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-last-of-us-part-i"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6062-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/the-last-of-ustm-part-i"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/the-last-of-us-part-i-pc"
+        }
+      ],
       "developers": [
         "Naughty Dog",
         "Nixxes Software"
@@ -5620,6 +8807,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Last_of_Us_Part_II_Remastered",
       "coverUrl": "https://images.pcgamingwiki.com/2/2a/The_Last_of_Us%E2%84%A2_Part_II_Remastered_cover.jpg",
       "steamAppId": "2531310",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2531310/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/the-last-of-us-part-ii-remastered"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-last-of-us-part-ii-remastered"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7437-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/the-last-of-ustm-part-ii-remastered"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/the-last-of-us-part-ii-remastered-pc"
+        }
+      ],
       "developers": [
         "Naughty Dog"
       ],
@@ -5655,6 +8868,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Riftbreaker",
       "coverUrl": "https://images.pcgamingwiki.com/0/0a/The_Riftbreaker_cover.jpg",
       "steamAppId": "780310",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/780310/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/the-riftbreaker"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/the_riftbreaker"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9nn8pgk5jdn5"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-riftbreaker"
+        }
+      ],
       "developers": [
         "EXOR Studios"
       ],
@@ -5690,6 +8925,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/The_Witcher_3%3A_Wild_Hunt",
       "coverUrl": "https://images.pcgamingwiki.com/a/a4/The_Witcher_3_Wild_Hunt_-_cover.jpg",
       "steamAppId": "292030",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/292030/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/the-witcher-3-wild-hunt"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/the_witcher_3_wild_hunt"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/witcher/the-witcher-wild-hunt/buy/pc"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/the-witcher-3-wild-hunt"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/2672-3"
+        }
+      ],
       "developers": [
         "CD Projekt Red",
         "Fool's Theory"
@@ -5725,6 +8986,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tom_Clancy's_Rainbow_Six_Extraction",
       "coverUrl": "https://images.pcgamingwiki.com/4/4e/Tom_Clancy%27s_Rainbow_Six_Extraction_cover.jpg",
       "steamAppId": "2379390",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2379390/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/rainbow-six-extraction"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9NK1FQJ1SMCB"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/5cf15f1b39798c0870c076e6.html"
+        }
+      ],
       "developers": [
         "Ubisoft Montreal"
       ],
@@ -5758,6 +9037,44 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tom_Clancy's_Rainbow_Six_Siege",
       "coverUrl": "https://images.pcgamingwiki.com/f/fd/Tom_Clancy%27s_Rainbow_Six_-_Siege_Cover.jpg",
       "steamAppId": "359550",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/359550/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/rainbow-six-siege-x"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N0JJTC4TZV5"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/tom-clancy/tom-clancys-rainbow-six-siege/buy/pc"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/56c494ad88a7e300458b4d5a.html"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/tom-clancys-rainbow-six-siege-year-6"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/2778-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/tom-clancys-rainbow-six-siege"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/tom-clancys-rainbow-six-siege-pc"
+        }
+      ],
       "developers": [
         "Ubisoft Montreal"
       ],
@@ -5794,6 +9111,40 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_(2013)",
       "coverUrl": "https://images.pcgamingwiki.com/a/ab/Tomb_Raider_%282013%29_cover.jpg",
       "steamAppId": "203160",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/203160/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/tomb-raider"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/tomb_raider_goty"
+        },
+        {
+          "name": "EA app",
+          "url": "https://www.ea.com/games/tomb-raider/tomb-raider/standard-edition/buy/pc"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/tomb-raider"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/1065-3"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/tomb-raider"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id625206080"
+        }
+      ],
       "developers": [
         "Crystal Dynamics",
         "Eidos-Montréal"
@@ -5832,6 +9183,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tormented_Souls_2",
       "coverUrl": "https://images.pcgamingwiki.com/d/df/Tormented_Souls_2_cover.jpg",
       "steamAppId": "2464280",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2464280/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/tormented-souls-2-28a1eb"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/tormented_souls_2"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/tormented-souls-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7972-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/tormented-souls-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/tormented-souls-2-pc"
+        }
+      ],
       "developers": [
         "Dual Effect"
       ],
@@ -5865,6 +9246,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Tour_de_France_2026",
       "coverUrl": "https://images.pcgamingwiki.com/2/2d/Tour_de_France_2026.jpg",
       "steamAppId": "3936520",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3936520/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/tour-de-france-2026-efbe51"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/tour-de-france-2026"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/8378-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/tour-de-france-2026"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/tour-de-france-2026-pc"
+        }
+      ],
       "developers": [
         "Cyanide Studio"
       ],
@@ -5899,6 +9306,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Uncharted%3A_Legacy_of_Thieves_Collection",
       "coverUrl": "https://images.pcgamingwiki.com/9/90/Uncharted_Legacy_of_Thieves_Collection_cover.jpg",
       "steamAppId": "1659420",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1659420/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/uncharted-legacy-of-thieves-collection"
+        },
+        {
+          "name": "GOG.com",
+          "url": "https://www.gog.com/game/uncharted_legacy_of_thieves_collection"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/uncharted-legacy-of-thieves-collection"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5443-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/unchartedtm-legacy-of-thieves-collection"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/uncharted-legacy-of-thieves-collection"
+        }
+      ],
       "developers": [
         "Naughty Dog"
       ],
@@ -5934,6 +9371,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/Until_Dawn",
       "coverUrl": "https://images.pcgamingwiki.com/3/33/Until_Dawn_cover.jpg",
       "steamAppId": "2172010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2172010/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/until-dawn"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/until-dawn"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6761-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/until-dawntm"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/until-dawn-pc"
+        }
+      ],
       "developers": [
         "Ballistic Moon",
         "Supermassive Games"
@@ -5971,6 +9434,28 @@
       "source": "https://www.pcgamingwiki.com/wiki/V_Rising",
       "coverUrl": "https://images.pcgamingwiki.com/1/14/V_Rising_cover.jpg",
       "steamAppId": "1604030",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1604030/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/v-rising"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/6687-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/v-rising"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/v-rising-pc"
+        }
+      ],
       "developers": [
         "Stunlock Studios"
       ],
@@ -6003,6 +9488,12 @@
       "source": "https://www.pcgamingwiki.com/wiki/War_Robots%3A_Frontiers",
       "coverUrl": "https://images.pcgamingwiki.com/3/36/War_Robots_Frontiers_cover.jpg",
       "steamAppId": "1491000",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1491000/"
+        }
+      ],
       "developers": [
         "Pixonic"
       ],
@@ -6037,6 +9528,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Warframe",
       "coverUrl": "https://images.pcgamingwiki.com/9/92/Warframe_cover.jpg",
       "steamAppId": "230410",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/230410/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/warframe"
+        }
+      ],
       "developers": [
         "Digital Extremes",
         "Sumo Digital"
@@ -6076,6 +9577,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Space_Marine_II",
       "coverUrl": "https://images.pcgamingwiki.com/7/7a/Warhammer_40%2C000_Space_Marine_II_cover.jpg",
       "steamAppId": "2183900",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2183900/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/warhammer-40000-space-marine-2"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N9PCZWHVP2L"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/warhammer-40000-space-marine-2"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5451-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/warhammer-40000-space-marine-2"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/warhammer-40000-space-marine-2-pc"
+        }
+      ],
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -6110,6 +9641,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/Where_Winds_Meet",
       "coverUrl": "https://images.pcgamingwiki.com/e/e6/Where_Winds_Meet_cover.jpg",
       "steamAppId": "3564740",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3564740/"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N76QGDS5GJR"
+        }
+      ],
       "developers": [
         "Everstone Studio"
       ],
@@ -6144,6 +9685,36 @@
       "source": "https://www.pcgamingwiki.com/wiki/World_War_Z",
       "coverUrl": "https://images.pcgamingwiki.com/6/69/World_War_Z_cover.png",
       "steamAppId": "699130",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/699130/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/world-war-z"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9n015dfdmvk6"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/world-war-z-aftermath"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5302-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/world-war-z-aftermath"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/world-war-z-aftermath-pc"
+        }
+      ],
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -6175,6 +9746,32 @@
       "source": "https://www.pcgamingwiki.com/wiki/WRC_10%3A_FIA_World_Rally_Championship",
       "coverUrl": "https://images.pcgamingwiki.com/2/2e/WRC_10_cover.jpg",
       "steamAppId": "1462810",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1462810/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/wrc-10"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/wrc-10"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5276-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/wrc-10-fia-world-rally-championship"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/wrc-10-fia-world-rally-championship-pc"
+        }
+      ],
       "developers": [
         "Kylotonn"
       ],
@@ -6206,6 +9803,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/WRC_Generations",
       "coverUrl": "https://images.pcgamingwiki.com/f/f5/WRC_Generations_cover.jpg",
       "steamAppId": "1953520",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1953520/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/wrc-generations-the-fia-wrc-official-game"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/5680-1"
+        },
+        {
+          "name": "GamersGate",
+          "url": "https://www.gamersgate.com/product/wrc-generations-the-fia-wrc-official-game"
+        }
+      ],
       "developers": [
         "Kylotonn"
       ],
@@ -6239,6 +9854,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Wuthering_Waves",
       "coverUrl": "https://images.pcgamingwiki.com/4/47/Wuthering_Waves_cover.jpg",
       "steamAppId": "3513350",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3513350/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/wuthering-waves-76ebc5"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9p41gs5w1c6l"
+        },
+        {
+          "name": "Mac App Store",
+          "url": "https://apps.apple.com/app/id6475033368"
+        }
+      ],
       "developers": [
         "Kuro Games"
       ],
@@ -6275,6 +9908,16 @@
       "source": "https://www.pcgamingwiki.com/wiki/XDefiant",
       "coverUrl": "https://images.pcgamingwiki.com/3/39/XDefiant_cover.jpg",
       "steamAppId": "",
+      "stores": [
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/xdefiant"
+        },
+        {
+          "name": "Ubisoft Store",
+          "url": "https://store.ubisoft.com/60f03bb70d253c1a30f224bb.html"
+        }
+      ],
       "developers": [
         "Ubisoft San Francisco"
       ],
@@ -6308,6 +9951,24 @@
       "source": "https://www.pcgamingwiki.com/wiki/Yakuza_Kiwami_3_%26_Dark_Ties",
       "coverUrl": "https://images.pcgamingwiki.com/1/10/Yakuza_Kiwami_3_%26_Dark_Ties_-_cover.jpg",
       "steamAppId": "3937550",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3937550/"
+        },
+        {
+          "name": "Humble Store",
+          "url": "https://www.humblebundle.com/store/yakuza-kiwami-3-and-dark-ties"
+        },
+        {
+          "name": "Gamesplanet",
+          "url": "https://gamesplanet.com/game/7930-1"
+        },
+        {
+          "name": "Green Man Gaming",
+          "url": "https://www.greenmangaming.com/games/yakuza-kiwami-3-and-dark-ties-pc"
+        }
+      ],
       "developers": [
         "Ryu Ga Gotoku Studio"
       ],
@@ -6343,6 +10004,20 @@
       "source": "https://www.pcgamingwiki.com/wiki/Zenless_Zone_Zero",
       "coverUrl": "https://images.pcgamingwiki.com/5/53/Zenless_Zone_Zero_cover.jpg",
       "steamAppId": "4162040",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4162040/"
+        },
+        {
+          "name": "Epic Games Store",
+          "url": "https://store.epicgames.com/p/zenless-zone-zero-c7c151"
+        },
+        {
+          "name": "Microsoft Store",
+          "url": "https://www.microsoft.com/p/apps/9N4X0WFZ2STM"
+        }
+      ],
       "developers": [
         "miHoYo"
       ],

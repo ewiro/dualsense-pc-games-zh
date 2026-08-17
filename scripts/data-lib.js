@@ -36,6 +36,36 @@ export const CONNECTION_LABELS = {
   'Wireless (USB)': '无线（USB）'
 };
 
+const STORE_DEFINITIONS = {
+  steam: { name: 'Steam', url: (id) => `https://store.steampowered.com/app/${id}/` },
+  'epic games store': { name: 'Epic Games Store', url: (id) => `https://store.epicgames.com/p/${id}` },
+  'gog.com': { name: 'GOG.com', url: (id) => `https://www.gog.com/game/${id}` },
+  gog: { name: 'GOG.com', url: (id) => `https://www.gog.com/game/${id}` },
+  'microsoft store': { name: 'Microsoft Store', url: (id) => `https://www.microsoft.com/p/apps/${id}` },
+  'ea app': { name: 'EA app', url: (id) => `https://www.ea.com/games/${id}/buy/pc` },
+  origin: { name: 'EA app', url: (id) => `https://www.ea.com/games/${id}/buy/pc` },
+  'ubisoft store': { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
+  ubisoft: { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
+  uplay: { name: 'Ubisoft Store', url: (id) => `https://store.ubisoft.com/${id}.html` },
+  'battle.net': { name: 'Battle.net', url: (id) => `https://battle.net/shop/product/${id}` },
+  battlenet: { name: 'Battle.net', url: (id) => `https://battle.net/shop/product/${id}` },
+  humble: { name: 'Humble Store', url: (id) => `https://www.humblebundle.com/store/${id}` },
+  'humble store': { name: 'Humble Store', url: (id) => `https://www.humblebundle.com/store/${id}` },
+  gamesplanet: { name: 'Gamesplanet', url: (id) => `https://gamesplanet.com/game/${id}` },
+  gamersgate: { name: 'GamersGate', url: (id) => `https://www.gamersgate.com/product/${id}` },
+  'green man gaming': { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
+  greenmangaming: { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
+  gmg: { name: 'Green Man Gaming', url: (id) => `https://www.greenmangaming.com/games/${id}` },
+  'itch.io': { name: 'itch.io', url: (id) => id },
+  macapp: { name: 'Mac App Store', url: (id) => `https://apps.apple.com/app/${id}` },
+  'mac app store': { name: 'Mac App Store', url: (id) => `https://apps.apple.com/app/${id}` },
+  'meta store': { name: 'Meta Store', url: (id) => `https://www.meta.com/en-gb/experiences/pcvr/${id}` },
+  meta: { name: 'Meta Store', url: (id) => `https://www.meta.com/en-gb/experiences/pcvr/${id}` },
+  zoom: { name: 'ZOOM Platform', url: (id) => `https://www.zoom-platform.com/product/${id}` },
+  'zoom platform': { name: 'ZOOM Platform', url: (id) => `https://www.zoom-platform.com/product/${id}` }
+};
+const STORE_ORDER = ['Steam', 'Epic Games Store', 'GOG.com', 'Microsoft Store', 'EA app', 'Ubisoft Store', 'Battle.net', 'Humble Store', 'Gamesplanet', 'GamersGate', 'Green Man Gaming', 'itch.io', 'Mac App Store', 'Meta Store', 'ZOOM Platform'];
+
 export function normalizeStatus(value) {
   const key = String(value ?? '').trim().toLowerCase();
   return Object.hasOwn(STATUS_LABELS, key) ? key : 'unknown';
@@ -70,6 +100,84 @@ export function cleanCoverUrl(value) {
 
 export function cleanSteamAppId(value) {
   return cleanText(value).match(/\d+/)?.[0] || '';
+}
+
+function extractTemplateCalls(wikitext, templateName) {
+  const source = String(wikitext ?? '');
+  const needle = `{{${templateName}`.toLocaleLowerCase();
+  const lower = source.toLocaleLowerCase();
+  const calls = [];
+  let cursor = 0;
+  while ((cursor = lower.indexOf(needle, cursor)) !== -1) {
+    let depth = 0;
+    let end = cursor;
+    for (; end < source.length - 1; end += 1) {
+      const pair = source.slice(end, end + 2);
+      if (pair === '{{') { depth += 1; end += 1; continue; }
+      if (pair === '}}') {
+        depth -= 1;
+        end += 1;
+        if (depth === 0) { calls.push(source.slice(cursor + 2, end - 1)); break; }
+      }
+    }
+    cursor = Math.max(cursor + needle.length, end + 1);
+  }
+  return calls;
+}
+
+function splitTemplateArguments(call) {
+  const parts = [];
+  let current = '';
+  let templateDepth = 0;
+  let linkDepth = 0;
+  for (let index = 0; index < call.length; index += 1) {
+    const pair = call.slice(index, index + 2);
+    if (pair === '{{') { templateDepth += 1; current += pair; index += 1; continue; }
+    if (pair === '}}') { templateDepth -= 1; current += pair; index += 1; continue; }
+    if (pair === '[[') { linkDepth += 1; current += pair; index += 1; continue; }
+    if (pair === ']]') { linkDepth -= 1; current += pair; index += 1; continue; }
+    if (call[index] === '|' && templateDepth === 0 && linkDepth === 0) { parts.push(current.trim()); current = ''; continue; }
+    current += call[index];
+  }
+  parts.push(current.trim());
+  return parts;
+}
+
+function cleanStoreId(value) {
+  const id = String(value ?? '').replace(/<!--[^]*?-->/g, '').trim();
+  if (!id || /[{}\[\]<>\s]/.test(id)) return '';
+  return id;
+}
+
+export function parseAvailabilityStores(wikitext, steamAppId = '') {
+  const stores = new Map();
+  for (const call of extractTemplateCalls(wikitext, 'Availability/row')) {
+    const [template, rawStore, rawId] = splitTemplateArguments(call);
+    if (template.toLocaleLowerCase() !== 'availability/row') continue;
+    const definition = STORE_DEFINITIONS[cleanText(rawStore).toLocaleLowerCase()];
+    const id = cleanStoreId(rawId);
+    if (!definition || !id) continue;
+    const url = definition.url(id);
+    if (!/^https:\/\//i.test(url)) continue;
+    stores.set(definition.name, { name: definition.name, url });
+  }
+  const fallbackSteamId = cleanSteamAppId(steamAppId);
+  if (fallbackSteamId && !stores.has('Steam')) {
+    stores.set('Steam', { name: 'Steam', url: STORE_DEFINITIONS.steam.url(fallbackSteamId) });
+  }
+  return [...stores.values()].sort((a, b) => {
+    const ai = STORE_ORDER.indexOf(a.name);
+    const bi = STORE_ORDER.indexOf(b.name);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.name.localeCompare(b.name, 'en');
+  });
+}
+
+export function attachAvailabilityStores(dataset, pageWikitext = {}) {
+  for (const game of dataset.games) {
+    const wikitext = pageWikitext[game.title.toLocaleLowerCase()] || '';
+    game.stores = parseAvailabilityStores(wikitext, game.steamAppId);
+  }
+  return dataset;
 }
 
 export function cleanCompany(value) {
@@ -126,6 +234,7 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
       source: pageUrl(title),
       coverUrl: '',
       steamAppId: '',
+      stores: [],
       developers: [],
       publishers: [],
       releaseDates: [],
@@ -159,7 +268,7 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     .filter(hasEnhancedDualSenseFeature)
     .sort((a, b) => a.title.localeCompare(b.title, 'en'));
   return {
-    schemaVersion: 4,
+    schemaVersion: 5,
     fetchedAt,
     source: SOURCE_PAGE,
     selection: {
@@ -174,7 +283,7 @@ export function validateDataset(dataset, previous = null) {
   if (!dataset || !Array.isArray(dataset.games) || dataset.games.length === 0) {
     throw new Error('数据为空，拒绝发布');
   }
-  if (dataset.schemaVersion !== 4 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
+  if (dataset.schemaVersion !== 5 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
     throw new Error('数据缺少 schemaVersion、fetchedAt 或 source');
   }
   const ids = new Set();
@@ -185,6 +294,10 @@ export function validateDataset(dataset, previous = null) {
     ids.add(game.id);
     titles.add(game.title.toLocaleLowerCase());
     if (!Array.isArray(game.models) || game.models.length === 0) throw new Error(`游戏缺少手柄型号：${game.title}`);
+    if (!Array.isArray(game.stores)) throw new Error(`游戏缺少购买平台列表：${game.title}`);
+    for (const store of game.stores) {
+      if (!store?.name || !/^https:\/\//i.test(store.url)) throw new Error(`游戏包含无效购买平台链接：${game.title}`);
+    }
     if (!hasEnhancedDualSenseFeature(game)) throw new Error(`游戏没有 DualSense 增强功能：${game.title}`);
   }
   const modelSet = new Set(dataset.games.flatMap((game) => game.models));

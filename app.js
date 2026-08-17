@@ -2,6 +2,7 @@ const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需�
 const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', 'always on': 'status-good', false: 'status-no', unknown: 'status-unknown' };
 const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（蓝牙）', Wireless: '无线', 'Wireless (USB)': '无线（USB）' };
+const STORE_ORDER = ['Steam', 'Epic Games Store', 'GOG.com', 'Microsoft Store', 'EA app', 'Ubisoft Store', 'Battle.net', 'Humble Store', 'Gamesplanet', 'GamersGate', 'Green Man Gaming', 'itch.io', 'Mac App Store', 'Meta Store', 'ZOOM Platform'];
 const THEME_KEY = 'dualsense-theme';
 const pageSize = 20;
 let games = [];
@@ -20,13 +21,15 @@ function modelStatus(game, model) { return game.modelStatuses?.[model] || 'unkno
 function activeStatus(game, model) { return model === 'all' ? (game.modelStatuses?.DualSense || game.controllerSupport) : modelStatus(game, model); }
 function filteredGames() {
   const query = $('search').value.trim().toLocaleLowerCase();
+  const store = $('store').value;
   const model = $('model').value;
   const status = $('status').value;
   const connection = $('connection').value;
   const feature = $('feature').value;
   return games.filter((game) => {
-    const haystack = [game.title, game.titleZh, ...(game.developers || []), ...(game.publishers || []), ...(game.platforms || [])].join(' ').toLocaleLowerCase();
+    const haystack = [game.title, game.titleZh, ...(game.developers || []), ...(game.publishers || []), ...(game.platforms || []), ...(game.stores || []).map((item) => item.name)].join(' ').toLocaleLowerCase();
     if (query && !haystack.includes(query)) return false;
+    if (store !== 'all' && !(game.stores || []).some((item) => item.name === store)) return false;
     if (model !== 'all' && !game.models.includes(model)) return false;
     if (status !== 'all' && activeStatus(game, model) !== status) return false;
     if (connection !== 'all' && !(game.connectionModes || []).includes(connection)) return false;
@@ -38,6 +41,10 @@ function filteredGames() {
     const bv = Array.isArray(b[sortKey]) ? b[sortKey][0] || '' : b[sortKey] || '';
     return String(av).localeCompare(String(bv), sortKey === 'titleZh' ? 'zh-CN' : 'en') * sortDirection;
   });
+}
+function storeLinks(game) {
+  if (!game.stores?.length) return '<span class="muted">—</span>';
+  return `<div class="store-links">${game.stores.map((store) => `<a class="store-link" href="${text(store.url)}" target="_blank" rel="noreferrer" aria-label="前往 ${text(store.name)} 购买：${text(game.titleZh || game.title)}"><span>${text(store.name)}</span><i aria-hidden="true">↗</i></a>`).join('')}</div>`;
 }
 function features(game) {
   const values = [];
@@ -74,11 +81,11 @@ function setupTheme() {
 function renderRow(game) {
   const model = $('model').value;
   const modelList = game.models.map((item) => `<span class="model-tag ${item === 'DualSense Edge' ? 'edge' : ''}">${text(item.replace('DualSense ', ''))}</span>`).join('');
-  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td><div class="platforms">${list(game.platforms)}</div></td><td><div class="model-list">${modelList}</div></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
+  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td>${storeLinks(game)}</td><td><div class="model-list">${modelList}</div></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
 }
 function renderCard(game) {
   const model = $('model').value;
-  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><span><b>平台</b>${list(game.platforms)}</span><span><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</span><span><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</span><span><b>功能</b>${features(game)}</span><span><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</span></div></article>`;
+  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><div class="card-detail card-stores"><b>购买平台</b>${storeLinks(game)}</div><div class="card-detail"><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</div><div class="card-detail"><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</div><div class="card-detail"><b>功能</b>${features(game)}</div><div class="card-detail"><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</div></div></article>`;
 }
 function render() {
   const result = filteredGames();
@@ -104,8 +111,17 @@ function renderStats(dataset) {
   $('footer-updated').textContent = `最后更新：${date}`;
 }
 function renderLegend() { $('legend').innerHTML = Object.entries(STATUS_LABELS).map(([key, value]) => `<span><i class="status-dot ${STATUS_CLASS[key]}"></i>${value}</span>`).join(''); }
+function renderStoreFilter() {
+  const names = [...new Set(games.flatMap((game) => (game.stores || []).map((store) => store.name)))];
+  names.sort((a, b) => {
+    const ai = STORE_ORDER.indexOf(a);
+    const bi = STORE_ORDER.indexOf(b);
+    return (ai === -1 ? 999 : ai) - (bi === -1 ? 999 : bi) || a.localeCompare(b, 'zh-CN');
+  });
+  $('store').innerHTML = '<option value="all">全部购买平台</option>' + names.map((name) => `<option value="${text(name)}">${text(name)}</option>`).join('');
+}
 function listen() {
-  ['search', 'model', 'status', 'connection', 'feature'].forEach((id) => $(id).addEventListener('input', () => { page = 1; render(); }));
+  ['search', 'store', 'model', 'status', 'connection', 'feature'].forEach((id) => $(id).addEventListener('input', () => { page = 1; render(); }));
   document.querySelectorAll('th[data-sort]').forEach((header) => header.addEventListener('click', () => { const key = header.dataset.sort; if (sortKey === key) sortDirection *= -1; else { sortKey = key; sortDirection = 1; } render(); }));
   $('pagination').addEventListener('click', (event) => { const button = event.target.closest('[data-page]'); if (button) { page = Number(button.dataset.page); render(); window.scrollTo({ top: $('catalog').offsetTop - 20, behavior: 'smooth' }); } });
 }
@@ -118,6 +134,7 @@ async function start() {
     const dataset = await response.json();
     if (!Array.isArray(dataset.games)) throw new Error('数据格式无效');
     games = dataset.games;
+    renderStoreFilter();
     renderStats(dataset);
     $('loading').hidden = true;
     listen();

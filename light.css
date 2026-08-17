@@ -14,6 +14,8 @@
 
 :root[data-theme="dark"] { color-scheme: dark; --dim: #71879b; }
 
+.controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
+
 [data-theme="light"] body { background: #fff; color: var(--ink); }
 [data-theme="light"] .site-header { background: rgba(255, 255, 255, .94); border-bottom-color: #d8e2eb; }
 [data-theme="light"] .brand-mark { border-color: var(--teal); color: var(--teal); }
@@ -66,14 +68,45 @@ th { text-align: center; }
 .card-top .game-identity { min-width: 0; flex: 1; }
 .card-top .cover,
 .card-top .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
+.store-links { display: flex; flex-wrap: wrap; gap: 6px; min-width: 150px; }
+.store-link {
+  min-height: 30px;
+  padding: 5px 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: color-mix(in srgb, var(--panel) 88%, var(--teal) 12%);
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 650;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease;
+}
+.store-link i { color: var(--teal); font-size: 10px; font-style: normal; }
+.store-link:hover { border-color: var(--teal); color: var(--teal); background: color-mix(in srgb, var(--panel) 80%, var(--teal) 20%); }
+.store-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+
+@media (max-width: 900px) {
+  .controls { grid-template-columns: 1fr 1fr; }
+}
 
 @media (max-width: 640px) {
   .theme-toggle { padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
   .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
+  .card-details .card-detail { display: block; color: var(--muted); font-size: 11px; }
+  .card-details .card-detail b { display: block; color: var(--dim); font-size: 10px; font-weight: 500; margin-bottom: 5px; }
+  .card-stores { grid-column: 1 / -1; }
+  .card-stores .store-links { min-width: 0; gap: 8px; }
+  .card-stores .store-link { min-height: 44px; padding: 8px 11px; font-size: 11px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .theme-toggle { transition: none; }
+  .theme-toggle,
+  .store-link { transition: none; }
 }
