@@ -31,6 +31,19 @@
   line-height: 1.7;
 }
 .stats-explanation strong { flex: 0 0 auto; color: var(--ink); }
+.stats-explanation-body { min-width: 0; flex: 1; }
+.stats-explanation p { margin: 0; }
+.feature-definitions {
+  margin: 10px 0 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.feature-definitions > div { padding-top: 8px; border-top: 1px solid var(--line); }
+.feature-definitions dt { color: var(--ink); font-weight: 700; }
+.feature-definitions dd { margin: 2px 0 0; }
+.stats-explanation .compatibility-note { margin-top: 10px; }
+.compatibility-note b { color: var(--ink); }
 .section-heading h1 { font-size: 36px; line-height: 1.1; letter-spacing: -.04em; margin: 0; }
 .controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
 
@@ -142,6 +155,7 @@ th { text-align: center; }
     display: block;
   }
   .stats-explanation strong { display: block; margin-bottom: 4px; }
+  .feature-definitions { grid-template-columns: 1fr; gap: 8px; }
   .theme-toggle { padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
