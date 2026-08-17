@@ -14,7 +14,23 @@
 
 :root[data-theme="dark"] { color-scheme: dark; --dim: #71879b; }
 
-.stats { margin-top: 72px; }
+.stats { margin-top: 72px; margin-bottom: 16px; }
+.stats-explanation {
+  width: calc(100% - 64px);
+  max-width: 1176px;
+  margin: 0 auto 96px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  border-left: 3px solid var(--teal);
+  border-radius: 0 9px 9px 0;
+  background: color-mix(in srgb, var(--panel) 92%, var(--teal) 8%);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+.stats-explanation strong { flex: 0 0 auto; color: var(--ink); }
 .section-heading h1 { font-size: 36px; line-height: 1.1; letter-spacing: -.04em; margin: 0; }
 .controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
 
@@ -118,7 +134,14 @@ th { text-align: center; }
 }
 
 @media (max-width: 640px) {
-  .stats { margin-top: 48px; }
+  .stats { margin-top: 48px; margin-bottom: 16px; }
+  .stats-explanation {
+    width: calc(100% - 36px);
+    margin-bottom: 72px;
+    padding: 13px 14px;
+    display: block;
+  }
+  .stats-explanation strong { display: block; margin-bottom: 4px; }
   .theme-toggle { padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
