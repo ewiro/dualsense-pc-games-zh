@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="zh-CN" data-theme="light">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#08121f">
+    <meta name="theme-color" content="#ffffff">
     <meta name="description" content="只收录具有自适应扳机或 DualSense 触觉反馈的 PC 游戏中文资料库">
     <title>DualSense PC 游戏兼容性</title>
+    <script>try{const dark=localStorage.getItem('dualsense-theme')==='dark';document.documentElement.dataset.theme=dark?'dark':'light';document.querySelector('meta[name="theme-color"]').content=dark?'#08121f':'#ffffff'}catch{document.documentElement.dataset.theme='light'}</script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="light.css">
   </head>
@@ -13,6 +14,11 @@
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="./"><span class="brand-mark">DS</span><span>DualSense<br><em>PC 游戏资料库</em></span></a>
+        <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换到黑夜模式" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z"/></svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+          <span id="theme-label">黑夜模式</span>
+        </button>
       </div>
     </header>
     <main>
@@ -45,7 +51,7 @@
         <div id="error" class="message error" hidden></div>
         <div id="loading" class="message">正在加载兼容性数据…</div>
         <div id="table-wrap" class="table-wrap" hidden>
-          <table><thead><tr><th data-sort="titleZh">游戏 <span>↕</span></th><th>平台</th><th data-sort="models">型号</th><th data-sort="controllerSupport">控制器支持</th><th>连接</th><th>沉浸功能</th><th data-sort="releaseDates">发行日 <span>↕</span></th><th>来源</th></tr></thead><tbody id="game-table"></tbody></table>
+          <table><thead><tr><th data-sort="titleZh" aria-sort="ascending">游戏 <span>↕</span></th><th>平台</th><th data-sort="models" aria-sort="none">支持型号</th><th>连接方式</th><th>沉浸功能</th><th data-sort="releaseDates" aria-sort="none">发行日 <span>↕</span></th><th>数据来源</th></tr></thead><tbody id="game-table"></tbody></table>
           <div id="mobile-list" class="mobile-list"></div>
         </div>
         <div id="empty" class="message" hidden>没有找到符合条件的游戏，请调整搜索或筛选条件。</div>

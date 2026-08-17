@@ -2,6 +2,7 @@ const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需�
 const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', 'always on': 'status-good', false: 'status-no', unknown: 'status-unknown' };
 const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（蓝牙）', Wireless: '无线', 'Wireless (USB)': '无线（USB）' };
+const THEME_KEY = 'dualsense-theme';
 const pageSize = 20;
 let games = [];
 let page = 1;
@@ -54,14 +55,30 @@ function coverMarkup(game) {
 function steamUrl(game) {
   return game.steamAppId ? `https://store.steampowered.com/app/${game.steamAppId}/` : `https://store.steampowered.com/search/?term=${encodeURIComponent(game.title)}`;
 }
+function applyTheme(theme) {
+  const isDark = theme === 'dark';
+  document.documentElement.dataset.theme = isDark ? 'dark' : 'light';
+  $('theme-toggle').setAttribute('aria-pressed', String(isDark));
+  $('theme-toggle').setAttribute('aria-label', isDark ? '切换到白天模式' : '切换到黑夜模式');
+  $('theme-label').textContent = isDark ? '白天模式' : '黑夜模式';
+  document.querySelector('meta[name="theme-color"]').content = isDark ? '#08121f' : '#ffffff';
+}
+function setupTheme() {
+  applyTheme(document.documentElement.dataset.theme);
+  $('theme-toggle').addEventListener('click', () => {
+    const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    applyTheme(theme);
+    try { localStorage.setItem(THEME_KEY, theme); } catch {}
+  });
+}
 function renderRow(game) {
   const model = $('model').value;
   const modelList = game.models.map((item) => `<span class="model-tag ${item === 'DualSense Edge' ? 'edge' : ''}">${text(item.replace('DualSense ', ''))}</span>`).join('');
-  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td><div class="platforms">${list(game.platforms)}</div></td><td><div class="model-list">${modelList}</div></td><td>${statusPill(activeStatus(game, model))}<small>${game.controllerSupport === 'true' ? 'PlayStation 控制器' : '控制器支持记录'}</small></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
+  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td><div class="platforms">${list(game.platforms)}</div></td><td><div class="model-list">${modelList}</div></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
 }
 function renderCard(game) {
   const model = $('model').value;
-  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><span><b>平台</b>${list(game.platforms)}</span><span><b>型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</span><span><b>连接</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</span><span><b>功能</b>${features(game)}</span><span><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</span></div></article>`;
+  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><span><b>平台</b>${list(game.platforms)}</span><span><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</span><span><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</span><span><b>功能</b>${features(game)}</span><span><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</span></div></article>`;
 }
 function render() {
   const result = filteredGames();
@@ -74,6 +91,7 @@ function render() {
   $('empty').hidden = result.length !== 0;
   $('table-wrap').hidden = games.length === 0 || result.length === 0;
   $('pagination').innerHTML = totalPages > 1 ? `<button ${page === 1 ? 'disabled' : ''} data-page="${page - 1}">上一页</button><span>第 ${page} / ${totalPages} 页</span><button ${page === totalPages ? 'disabled' : ''} data-page="${page + 1}">下一页</button>` : '';
+  document.querySelectorAll('th[data-sort]').forEach((header) => header.setAttribute('aria-sort', header.dataset.sort === sortKey ? (sortDirection === 1 ? 'ascending' : 'descending') : 'none'));
 }
 function renderStats(dataset) {
   const haptics = games.filter((game) => ENHANCED_STATUSES.has(game.hapticFeedback)).length;
@@ -92,6 +110,7 @@ function listen() {
   $('pagination').addEventListener('click', (event) => { const button = event.target.closest('[data-page]'); if (button) { page = Number(button.dataset.page); render(); window.scrollTo({ top: $('catalog').offsetTop - 20, behavior: 'smooth' }); } });
 }
 async function start() {
+  setupTheme();
   renderLegend();
   try {
     const response = await fetch('data/games.json', { cache: 'no-store' });
