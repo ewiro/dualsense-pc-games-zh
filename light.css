@@ -20,9 +20,6 @@
   max-width: 1176px;
   margin: 0 auto 96px;
   padding: 14px 16px;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
   border-left: 3px solid var(--teal);
   border-radius: 0 9px 9px 0;
   background: color-mix(in srgb, var(--panel) 92%, var(--teal) 8%);
@@ -30,8 +27,7 @@
   font-size: 12px;
   line-height: 1.7;
 }
-.stats-explanation strong { flex: 0 0 auto; color: var(--ink); }
-.stats-explanation-body { min-width: 0; flex: 1; }
+.stats-explanation b { color: var(--ink); }
 .stats-explanation p { margin: 0; }
 .feature-definitions {
   margin: 10px 0 0;
@@ -40,10 +36,9 @@
   gap: 12px;
 }
 .feature-definitions > div { padding-top: 8px; border-top: 1px solid var(--line); }
-.feature-definitions dt { color: var(--ink); font-weight: 700; }
-.feature-definitions dd { margin: 2px 0 0; }
+.feature-definitions dt { display: inline; color: var(--ink); font-weight: 700; }
+.feature-definitions dd { display: inline; margin: 0; }
 .stats-explanation .compatibility-note { margin-top: 10px; }
-.compatibility-note b { color: var(--ink); }
 .section-heading h1 { font-size: 36px; line-height: 1.1; letter-spacing: -.04em; margin: 0; }
 .controls { grid-template-columns: minmax(220px, 1.45fr) repeat(5, minmax(112px, 1fr)); }
 
@@ -154,7 +149,6 @@ th { text-align: center; }
     padding: 13px 14px;
     display: block;
   }
-  .stats-explanation strong { display: block; margin-bottom: 4px; }
   .feature-definitions { grid-template-columns: 1fr; gap: 8px; }
   .theme-toggle { padding: 0 11px; }
   .game-identity { gap: 10px; }
