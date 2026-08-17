@@ -28,6 +28,6 @@ npm run build  # 生成 dist/ 部署目录
 
 ## 数据与许可
 
-`data/games.json` 的 `schemaVersion` 为 2，公开记录 `fetchedAt`、来源、筛选规则和 `games[]`。增强功能状态为“支持 / 有限支持 / 需额外调整 / 始终启用”之一时保留。“有线”表示源站记录的连接方式，不代表本站实测；DS5Dongle 的实际兼容性仍应以具体游戏和设备测试为准。
+`data/games.json` 的 `schemaVersion` 为 4，公开记录 `fetchedAt`、来源、筛选规则和 `games[]`。游戏记录同时保留英文 `title`、中文 `titleZh`、Steam `steamAppId` 和 PCGamingWiki 竖版封面 `coverUrl`；游戏名优先打开对应 Steam App 页面，缺少 App ID 时回退到 Steam 商店搜索。页面通过 [images.weserv.nl](https://images.weserv.nl/) 按显示尺寸代理封面，加载失败时显示本地占位。中文映射来源及 Apache-2.0 归属见 [`data/TITLE_TRANSLATIONS.md`](data/TITLE_TRANSLATIONS.md)。增强功能状态为“支持 / 有限支持 / 需额外调整 / 始终启用”之一时保留。“有线”表示源站记录的连接方式，不代表本站实测；DS5Dongle 的实际兼容性仍应以具体游戏和设备测试为准。
 
 PCGamingWiki 的派生数据依照 [CC BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) 使用并标注来源。本站自行编写的代码依照 [MIT License](LICENSE) 发布。本项目与 Sony、PCGamingWiki 或 DS5Dongle 作者无隶属关系。

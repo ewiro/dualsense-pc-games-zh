@@ -1,6 +1,6 @@
 {
-  "schemaVersion": 2,
-  "fetchedAt": "2026-08-17T04:23:47.437Z",
+  "schemaVersion": 4,
+  "fetchedAt": "2026-08-17T04:49:51.708Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -15,7 +15,10 @@
     {
       "id": "007-first-light",
       "title": "007 First Light",
+      "titleZh": "007 初露锋芒",
       "source": "https://www.pcgamingwiki.com/wiki/007_First_Light",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a1/007_First_Light_cover.jpg",
+      "steamAppId": "3768760",
       "developers": [
         "IO Interactive"
       ],
@@ -44,7 +47,10 @@
     {
       "id": "a-plague-tale-requiem",
       "title": "A Plague Tale: Requiem",
+      "titleZh": "瘟疫传说：安魂曲",
       "source": "https://www.pcgamingwiki.com/wiki/A_Plague_Tale%3A_Requiem",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0a/A_Plague_Tale_Requiem_cover.png",
+      "steamAppId": "1182900",
       "developers": [
         "Asobo Studio"
       ],
@@ -77,7 +83,10 @@
     {
       "id": "alan-wake-ii",
       "title": "Alan Wake II",
+      "titleZh": "心灵杀手 II",
       "source": "https://www.pcgamingwiki.com/wiki/Alan_Wake_II",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c1/Alan_Wake_2_cover.png",
+      "steamAppId": "",
       "developers": [
         "Remedy Entertainment"
       ],
@@ -110,7 +119,10 @@
     {
       "id": "animal-well",
       "title": "Animal Well",
+      "titleZh": "动物井",
       "source": "https://www.pcgamingwiki.com/wiki/Animal_Well",
+      "coverUrl": "https://images.pcgamingwiki.com/3/3b/Animal_Well_cover.jpg",
+      "steamAppId": "813230",
       "developers": [
         "Billy Basso"
       ],
@@ -140,7 +152,10 @@
     {
       "id": "apex-legends",
       "title": "Apex Legends",
+      "titleZh": "Apex 英雄",
       "source": "https://www.pcgamingwiki.com/wiki/Apex_Legends",
+      "coverUrl": "https://images.pcgamingwiki.com/7/75/Apex_Legends_cover.jpg",
+      "steamAppId": "1172470",
       "developers": [
         "Respawn Entertainment"
       ],
@@ -174,7 +189,10 @@
     {
       "id": "arknights-endfield",
       "title": "Arknights: Endfield",
+      "titleZh": "明日方舟：终末地",
       "source": "https://www.pcgamingwiki.com/wiki/Arknights%3A_Endfield",
+      "coverUrl": "https://images.pcgamingwiki.com/3/30/Arknights_Endfield_cover.jpg",
+      "steamAppId": "",
       "developers": [
         "Hypergryph",
         "Mountain Contour"
@@ -209,7 +227,10 @@
     {
       "id": "assassin-s-creed-mirage",
       "title": "Assassin's Creed Mirage",
+      "titleZh": "刺客信条：幻景",
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Mirage",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d9/Assassin%27s_Creed_Mirage_cover.png",
+      "steamAppId": "3035570",
       "developers": [
         "Ubisoft Bordeaux",
         "Ubisoft Montreal",
@@ -249,7 +270,10 @@
     {
       "id": "assassin-s-creed-shadows",
       "title": "Assassin's Creed Shadows",
+      "titleZh": "刺客信条：影",
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Shadows",
+      "coverUrl": "https://images.pcgamingwiki.com/6/65/Assassin%27s_Creed_Shadows_cover.jpg",
+      "steamAppId": "3159330",
       "developers": [
         "Ubisoft Quebec",
         "Ubisoft Belgrade",
@@ -294,7 +318,10 @@
     {
       "id": "assassin-s-creed-valhalla",
       "title": "Assassin's Creed Valhalla",
+      "titleZh": "刺客信条：英灵殿",
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed_Valhalla",
+      "coverUrl": "https://images.pcgamingwiki.com/7/79/Assassin%27s_Creed_Valhalla_cover.png",
+      "steamAppId": "2208920",
       "developers": [
         "Ubisoft Montreal",
         "Ubisoft Quebec",
@@ -339,7 +366,10 @@
     {
       "id": "assassin-s-creed-black-flag-resynced",
       "title": "Assassin's Creed: Black Flag Resynced",
+      "titleZh": "刺客信条：黑旗 Resynced",
       "source": "https://www.pcgamingwiki.com/wiki/Assassin's_Creed%3A_Black_Flag_Resynced",
+      "coverUrl": "https://images.pcgamingwiki.com/b/bd/Assassins_Creed_Black_Flag_Resynced_cover.jpg",
+      "steamAppId": "3751950",
       "developers": [
         "Ubisoft Singapore",
         "Ubisoft Barcelona",
@@ -380,7 +410,10 @@
     {
       "id": "assetto-corsa",
       "title": "Assetto Corsa",
+      "titleZh": "神力科莎",
       "source": "https://www.pcgamingwiki.com/wiki/Assetto_Corsa",
+      "coverUrl": "https://images.pcgamingwiki.com/7/7b/Assetto_Corsa_-_cover.png",
+      "steamAppId": "244210",
       "developers": [
         "Kunos Simulazioni"
       ],
@@ -411,7 +444,10 @@
     {
       "id": "avatar-frontiers-of-pandora",
       "title": "Avatar: Frontiers of Pandora",
+      "titleZh": "阿凡达：潘多拉边境",
       "source": "https://www.pcgamingwiki.com/wiki/Avatar%3A_Frontiers_of_Pandora",
+      "coverUrl": "https://images.pcgamingwiki.com/5/53/Avatar_Frontiers_of_Pandora_cover.jpg",
+      "steamAppId": "2840770",
       "developers": [
         "Massive Entertainment",
         "Ubisoft Shanghai",
@@ -455,7 +491,10 @@
     {
       "id": "banishers-ghosts-of-new-eden",
       "title": "Banishers: Ghosts of New Eden",
+      "titleZh": "放逐者：新伊甸园的幽灵",
       "source": "https://www.pcgamingwiki.com/wiki/Banishers%3A_Ghosts_of_New_Eden",
+      "coverUrl": "https://images.pcgamingwiki.com/1/11/Banishers_-_Ghosts_of_New_Eden_cover.jpg",
+      "steamAppId": "1493640",
       "developers": [
         "Don't Nod"
       ],
@@ -486,7 +525,10 @@
     {
       "id": "battlefield-6",
       "title": "Battlefield 6",
+      "titleZh": "战地 6",
       "source": "https://www.pcgamingwiki.com/wiki/Battlefield_6",
+      "coverUrl": "https://images.pcgamingwiki.com/1/15/Battlefield_6_cover.jpg",
+      "steamAppId": "2807960",
       "developers": [
         "DICE",
         "Ripple Effect Studios",
@@ -521,7 +563,10 @@
     {
       "id": "beamng-drive",
       "title": "BeamNG.drive",
+      "titleZh": "BeamNG.drive",
       "source": "https://www.pcgamingwiki.com/wiki/BeamNG.drive",
+      "coverUrl": "https://images.pcgamingwiki.com/f/f5/BeamNG.drive_cover.jpg",
+      "steamAppId": "284160",
       "developers": [
         "BeamNG"
       ],
@@ -551,7 +596,10 @@
     {
       "id": "beast-of-reincarnation",
       "title": "Beast of Reincarnation",
+      "titleZh": "轮回之兽",
       "source": "https://www.pcgamingwiki.com/wiki/Beast_of_Reincarnation",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1d/Beast_of_Reincarnation_cover.jpg",
+      "steamAppId": "2001760",
       "developers": [
         "Game Freak"
       ],
@@ -582,7 +630,10 @@
     {
       "id": "black-myth-wukong",
       "title": "Black Myth: Wukong",
+      "titleZh": "黑神话：悟空",
       "source": "https://www.pcgamingwiki.com/wiki/Black_Myth%3A_Wukong",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ef/Black_Myth_Wukong_cover.png",
+      "steamAppId": "2358720",
       "developers": [
         "Game Science"
       ],
@@ -611,7 +662,10 @@
     {
       "id": "bramble-the-mountain-king",
       "title": "Bramble: The Mountain King",
+      "titleZh": "荆棘：山王",
       "source": "https://www.pcgamingwiki.com/wiki/Bramble%3A_The_Mountain_King",
+      "coverUrl": "https://images.pcgamingwiki.com/8/86/Bramble_The_Mountain_King_cover.png",
+      "steamAppId": "1623940",
       "developers": [
         "Dimfrost Studio"
       ],
@@ -642,7 +696,10 @@
     {
       "id": "bugsnax",
       "title": "Bugsnax",
+      "titleZh": "虫虫点心",
       "source": "https://www.pcgamingwiki.com/wiki/Bugsnax",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a7/Bugsnax_cover.png",
+      "steamAppId": "674140",
       "developers": [
         "Young Horses"
       ],
@@ -672,7 +729,10 @@
     {
       "id": "cairn",
       "title": "Cairn",
+      "titleZh": "孤山独影",
       "source": "https://www.pcgamingwiki.com/wiki/Cairn",
+      "coverUrl": "https://images.pcgamingwiki.com/c/cb/Cairn_cover.jpg",
+      "steamAppId": "1588550",
       "developers": [
         "The Game Bakers"
       ],
@@ -701,7 +761,10 @@
     {
       "id": "call-of-duty-black-ops-6",
       "title": "Call of Duty: Black Ops 6",
+      "titleZh": "使命召唤：黑色行动 6",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_6",
+      "coverUrl": "https://images.pcgamingwiki.com/f/fa/Call_of_Duty_Black_Ops_6_cover.png",
+      "steamAppId": "4384550",
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -740,7 +803,10 @@
     {
       "id": "call-of-duty-black-ops-7",
       "title": "Call of Duty: Black Ops 7",
+      "titleZh": "使命召唤：黑色行动 7",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_7",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d7/Call_of_Duty_Black_Ops_7_cover.png",
+      "steamAppId": "1938090",
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -779,7 +845,10 @@
     {
       "id": "call-of-duty-black-ops-cold-war",
       "title": "Call of Duty: Black Ops Cold War",
+      "titleZh": "使命召唤：黑色行动 冷战",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Black_Ops_Cold_War",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2b/Call_of_Duty_Black_Ops_Cold_War_cover.png",
+      "steamAppId": "1985810",
       "developers": [
         "Treyarch",
         "Raven Software",
@@ -814,7 +883,10 @@
     {
       "id": "call-of-duty-modern-warfare-ii",
       "title": "Call of Duty: Modern Warfare II",
+      "titleZh": "使命召唤：现代战争 II",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Modern_Warfare_II",
+      "coverUrl": "https://images.pcgamingwiki.com/9/9a/Call_of_Duty_Modern_Warfare_II_cover.jpg",
+      "steamAppId": "3595230",
       "developers": [
         "Infinity Ward",
         "Raven Software",
@@ -853,7 +925,10 @@
     {
       "id": "call-of-duty-modern-warfare-iii",
       "title": "Call of Duty: Modern Warfare III",
+      "titleZh": "使命召唤：现代战争 III",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Modern_Warfare_III",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ec/Call_of_Duty_Modern_Warfare_III.jpg",
+      "steamAppId": "3595270",
       "developers": [
         "Sledgehammer Games",
         "Infinity Ward",
@@ -893,7 +968,10 @@
     {
       "id": "call-of-duty-warzone-2-0",
       "title": "Call of Duty: Warzone 2.0",
+      "titleZh": "使命召唤：战区 2.0",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Warzone_2.0",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c5/Call_of_Duty_Warzone_2_cover.jpg",
+      "steamAppId": "1938090",
       "developers": [
         "Infinity Ward",
         "Raven Software",
@@ -930,7 +1008,10 @@
     {
       "id": "call-of-the-wild-the-angler",
       "title": "Call of the Wild: The Angler",
+      "titleZh": "野性的呼唤：钓鱼者",
       "source": "https://www.pcgamingwiki.com/wiki/Call_of_the_Wild%3A_The_Angler",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2f/TheAnglerCover.jpg",
+      "steamAppId": "1408610",
       "developers": [
         "Expansive Worlds"
       ],
@@ -960,7 +1041,10 @@
     {
       "id": "cloudheim",
       "title": "Cloudheim",
+      "titleZh": "克劳德海姆",
       "source": "https://www.pcgamingwiki.com/wiki/Cloudheim",
+      "coverUrl": "https://images.pcgamingwiki.com/d/dd/Cloudheim_Cover.jpg",
+      "steamAppId": "2070270",
       "developers": [
         "Noodle Cat Games"
       ],
@@ -986,7 +1070,10 @@
     {
       "id": "crime-boss-rockay-city",
       "title": "Crime Boss: Rockay City",
+      "titleZh": "《法外枭雄：滚石城》",
       "source": "https://www.pcgamingwiki.com/wiki/Crime_Boss%3A_Rockay_City",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1b/Crime_Boss_Rockay_City_cover.jpg",
+      "steamAppId": "2933080",
       "developers": [
         "Ingame Studios"
       ],
@@ -1016,7 +1103,10 @@
     {
       "id": "crimson-desert",
       "title": "Crimson Desert",
+      "titleZh": "赤红沙漠",
       "source": "https://www.pcgamingwiki.com/wiki/Crimson_Desert",
+      "coverUrl": "https://images.pcgamingwiki.com/a/ac/Crimson_Desert_cover.jpg",
+      "steamAppId": "3321460",
       "developers": [
         "Pearl Abyss"
       ],
@@ -1046,7 +1136,10 @@
     {
       "id": "cronos-the-new-dawn",
       "title": "Cronos: The New Dawn",
+      "titleZh": "克洛诺斯：新黎明",
       "source": "https://www.pcgamingwiki.com/wiki/Cronos%3A_The_New_Dawn",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d0/Cronos_The_New_Dawn_cover.jpg",
+      "steamAppId": "2101960",
       "developers": [
         "Bloober Team",
         "PixelAnt Games"
@@ -1079,7 +1172,10 @@
     {
       "id": "cthulhu-the-cosmic-abyss",
       "title": "Cthulhu: The Cosmic Abyss",
+      "titleZh": "克苏鲁：宇宙深渊",
       "source": "https://www.pcgamingwiki.com/wiki/Cthulhu%3A_The_Cosmic_Abyss",
+      "coverUrl": "https://images.pcgamingwiki.com/7/73/Cthulhu_The_Cosmic_Abyss_cover.jpg",
+      "steamAppId": "2760560",
       "developers": [
         "Big Bad Wolf"
       ],
@@ -1110,7 +1206,10 @@
     {
       "id": "cyberpunk-2077",
       "title": "Cyberpunk 2077",
+      "titleZh": "赛博朋克 2077",
       "source": "https://www.pcgamingwiki.com/wiki/Cyberpunk_2077",
+      "coverUrl": "https://images.pcgamingwiki.com/3/39/Cyberpunk_2077_cover.png",
+      "steamAppId": "1091500",
       "developers": [
         "CD Projekt Red",
         "Virtuos"
@@ -1146,7 +1245,10 @@
     {
       "id": "dave-the-diver",
       "title": "Dave the Diver",
+      "titleZh": "潜水员戴夫",
       "source": "https://www.pcgamingwiki.com/wiki/Dave_the_Diver",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d4/Dave_the_Diver_cover.jpg",
+      "steamAppId": "1868140",
       "developers": [
         "MINTROCKET"
       ],
@@ -1175,7 +1277,10 @@
     {
       "id": "days-gone",
       "title": "Days Gone",
+      "titleZh": "往日不再",
       "source": "https://www.pcgamingwiki.com/wiki/Days_Gone",
+      "coverUrl": "https://images.pcgamingwiki.com/f/f0/Days_Gone_cover.jpg",
+      "steamAppId": "1259420",
       "developers": [
         "Bend Studio",
         "Climax Studios"
@@ -1206,7 +1311,10 @@
     {
       "id": "death-stranding-2-on-the-beach",
       "title": "Death Stranding 2: On the Beach",
+      "titleZh": "死亡搁浅 2：冥滩之上",
       "source": "https://www.pcgamingwiki.com/wiki/Death_Stranding_2%3A_On_the_Beach",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2a/Death_Stranding_2_cover.jpg",
+      "steamAppId": "3280350",
       "developers": [
         "Kojima Productions",
         "Guerrilla Games"
@@ -1238,7 +1346,10 @@
     {
       "id": "death-stranding-director-s-cut",
       "title": "Death Stranding Director's Cut",
+      "titleZh": "死亡搁浅 导演剪辑版",
       "source": "https://www.pcgamingwiki.com/wiki/Death_Stranding_Director's_Cut",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d5/Death_Stranding_Director%27s_Cut_cover.jpg",
+      "steamAppId": "1850570",
       "developers": [
         "Kojima Productions",
         "Guerrilla Games"
@@ -1273,7 +1384,10 @@
     {
       "id": "deathloop",
       "title": "Deathloop",
+      "titleZh": "死亡循环",
       "source": "https://www.pcgamingwiki.com/wiki/Deathloop",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a7/Deathloop_cover.jpg",
+      "steamAppId": "1252330",
       "developers": [
         "Arkane Studios"
       ],
@@ -1303,7 +1417,10 @@
     {
       "id": "depersonalization",
       "title": "Depersonalization",
+      "titleZh": "人格解体",
       "source": "https://www.pcgamingwiki.com/wiki/Depersonalization",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a9/DEPERSONALIZATION_Cover.jpg",
+      "steamAppId": "1477070",
       "developers": [
         "MeowNature"
       ],
@@ -1334,7 +1451,10 @@
     {
       "id": "dirt-rally-2-0",
       "title": "DiRT Rally 2.0",
+      "titleZh": "尘埃拉力赛 2.0",
       "source": "https://www.pcgamingwiki.com/wiki/DiRT_Rally_2.0",
+      "coverUrl": "https://images.pcgamingwiki.com/1/19/DiRT_Rally_2.0_cover.jpg",
+      "steamAppId": "690790",
       "developers": [
         "Codemasters"
       ],
@@ -1366,7 +1486,10 @@
     {
       "id": "dolmen",
       "title": "Dolmen",
+      "titleZh": "多尔门",
       "source": "https://www.pcgamingwiki.com/wiki/Dolmen",
+      "coverUrl": "https://images.pcgamingwiki.com/7/7d/Dolmen_-_Kickstarter_Demo_cover.jpg",
+      "steamAppId": "831050",
       "developers": [
         "Massive Work Studio"
       ],
@@ -1396,7 +1519,10 @@
     {
       "id": "doom-the-dark-ages",
       "title": "Doom: The Dark Ages",
+      "titleZh": "毁灭战士：黑暗时代",
       "source": "https://www.pcgamingwiki.com/wiki/Doom%3A_The_Dark_Ages",
+      "coverUrl": "https://images.pcgamingwiki.com/5/5f/Doom_The_Dark_Ages_cover.jpg",
+      "steamAppId": "3017860",
       "developers": [
         "id Software"
       ],
@@ -1429,7 +1555,10 @@
     {
       "id": "dragon-age-the-veilguard",
       "title": "Dragon Age: The Veilguard",
+      "titleZh": "龙腾世纪：影障守护者",
       "source": "https://www.pcgamingwiki.com/wiki/Dragon_Age%3A_The_Veilguard",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0f/Dragon_Age_The_Veilguard_cover.jpg",
+      "steamAppId": "1845910",
       "developers": [
         "BioWare"
       ],
@@ -1462,7 +1591,10 @@
     {
       "id": "dying-light",
       "title": "Dying Light",
+      "titleZh": "消逝的光芒",
       "source": "https://www.pcgamingwiki.com/wiki/Dying_Light",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c0/Dying_Light_cover.jpg",
+      "steamAppId": "239140",
       "developers": [
         "Techland"
       ],
@@ -1496,7 +1628,10 @@
     {
       "id": "dying-light-2-stay-human",
       "title": "Dying Light 2 Stay Human",
+      "titleZh": "消逝的光芒 2：人与仁之战",
       "source": "https://www.pcgamingwiki.com/wiki/Dying_Light_2_Stay_Human",
+      "coverUrl": "https://images.pcgamingwiki.com/c/ca/Dying_Light_2_cover.jpg",
+      "steamAppId": "534380",
       "developers": [
         "Techland"
       ],
@@ -1525,7 +1660,10 @@
     {
       "id": "ea-sports-wrc",
       "title": "EA Sports WRC",
+      "titleZh": "EA 体育 WRC",
       "source": "https://www.pcgamingwiki.com/wiki/EA_Sports_WRC",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0f/EA_Sports_WRC.jpg",
+      "steamAppId": "1849250",
       "developers": [
         "Codemasters"
       ],
@@ -1558,7 +1696,10 @@
     {
       "id": "eriksholm-the-stolen-dream",
       "title": "Eriksholm: The Stolen Dream",
+      "titleZh": "埃里克霍姆：被偷走的梦想",
       "source": "https://www.pcgamingwiki.com/wiki/Eriksholm%3A_The_Stolen_Dream",
+      "coverUrl": "https://images.pcgamingwiki.com/9/93/Eriksholm_The_Stolen_Dream_cover.jpg",
+      "steamAppId": "2377280",
       "developers": [
         "River End Games"
       ],
@@ -1589,7 +1730,10 @@
     {
       "id": "euro-truck-simulator-2",
       "title": "Euro Truck Simulator 2",
+      "titleZh": "欧洲卡车模拟 2",
       "source": "https://www.pcgamingwiki.com/wiki/Euro_Truck_Simulator_2",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0e/Euro_Truck_Simulator_2_cover.jpg",
+      "steamAppId": "227300",
       "developers": [
         "SCS Software"
       ],
@@ -1627,7 +1771,10 @@
     {
       "id": "everspace-2",
       "title": "Everspace 2",
+      "titleZh": "永恒空间2",
       "source": "https://www.pcgamingwiki.com/wiki/Everspace_2",
+      "coverUrl": "https://images.pcgamingwiki.com/1/18/Everspace_2_cover.png",
+      "steamAppId": "1128920",
       "developers": [
         "ROCKFISH Games"
       ],
@@ -1655,7 +1802,10 @@
     {
       "id": "f1-2021",
       "title": "F1 2021",
+      "titleZh": "F1 2021",
       "source": "https://www.pcgamingwiki.com/wiki/F1_2021",
+      "coverUrl": "https://images.pcgamingwiki.com/7/74/F1_2021_cover.jpg",
+      "steamAppId": "1134570",
       "developers": [
         "Codemasters Birmingham"
       ],
@@ -1687,7 +1837,10 @@
     {
       "id": "f1-22",
       "title": "F1 22",
+      "titleZh": "F1 22",
       "source": "https://www.pcgamingwiki.com/wiki/F1_22",
+      "coverUrl": "https://images.pcgamingwiki.com/6/63/F1_22_cover.jpg",
+      "steamAppId": "1692250",
       "developers": [
         "Codemasters"
       ],
@@ -1720,7 +1873,10 @@
     {
       "id": "f1-23",
       "title": "F1 23",
+      "titleZh": "F1 23",
       "source": "https://www.pcgamingwiki.com/wiki/F1_23",
+      "coverUrl": "https://images.pcgamingwiki.com/7/75/F1_23_cover.jpg",
+      "steamAppId": "2108330",
       "developers": [
         "Codemasters"
       ],
@@ -1753,7 +1909,10 @@
     {
       "id": "f1-24",
       "title": "F1 24",
+      "titleZh": "F1 24",
       "source": "https://www.pcgamingwiki.com/wiki/F1_24",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0d/F1_24_cover.jpg",
+      "steamAppId": "2488620",
       "developers": [
         "Codemasters"
       ],
@@ -1786,7 +1945,10 @@
     {
       "id": "f1-25",
       "title": "F1 25",
+      "titleZh": "F1 25",
       "source": "https://www.pcgamingwiki.com/wiki/F1_25",
+      "coverUrl": "https://images.pcgamingwiki.com/e/e9/F1_25_cover.jpg",
+      "steamAppId": "3059520",
       "developers": [
         "Codemasters"
       ],
@@ -1819,7 +1981,10 @@
     {
       "id": "fantasian-neo-dimension",
       "title": "Fantasian Neo Dimension",
+      "titleZh": "幻想新维度",
       "source": "https://www.pcgamingwiki.com/wiki/Fantasian_Neo_Dimension",
+      "coverUrl": "https://images.pcgamingwiki.com/1/10/FantasianNeoDimensionCover.jpg",
+      "steamAppId": "2844850",
       "developers": [
         "Mistwalker Corporation",
         "Square Enix Creative Studio III"
@@ -1851,7 +2016,10 @@
     {
       "id": "far-cry-6",
       "title": "Far Cry 6",
+      "titleZh": "孤岛惊魂6",
       "source": "https://www.pcgamingwiki.com/wiki/Far_Cry_6",
+      "coverUrl": "https://images.pcgamingwiki.com/6/69/Far_Cry_6_-_cover.png",
+      "steamAppId": "2369390",
       "developers": [
         "Ubisoft Toronto",
         "Ubisoft Montreal",
@@ -1892,7 +2060,10 @@
     {
       "id": "fbc-firebreak",
       "title": "FBC: Firebreak",
+      "titleZh": "FBC：防火线",
       "source": "https://www.pcgamingwiki.com/wiki/FBC%3A_Firebreak",
+      "coverUrl": "https://images.pcgamingwiki.com/3/33/FBC_Firebreak_cover.jpg",
+      "steamAppId": "2272540",
       "developers": [
         "Remedy Entertainment"
       ],
@@ -1925,7 +2096,10 @@
     {
       "id": "final-fantasy-vii-rebirth",
       "title": "Final Fantasy VII Rebirth",
+      "titleZh": "最终幻想 VII：重生",
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_VII_Rebirth",
+      "coverUrl": "https://images.pcgamingwiki.com/5/58/Final_Fantasy_VII_Rebirth_cover.jpg",
+      "steamAppId": "2909400",
       "developers": [
         "Square Enix"
       ],
@@ -1954,7 +2128,10 @@
     {
       "id": "final-fantasy-vii-remake-intergrade",
       "title": "Final Fantasy VII Remake Intergrade",
+      "titleZh": "最终幻想 VII 重制版 Intergrade",
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_VII_Remake_Intergrade",
+      "coverUrl": "https://images.pcgamingwiki.com/1/18/Final_Fantasy_7_Remake_cover.jpg",
+      "steamAppId": "1462040",
       "developers": [
         "Square Enix"
       ],
@@ -1983,7 +2160,10 @@
     {
       "id": "final-fantasy-xiv-a-realm-reborn",
       "title": "Final Fantasy XIV: A Realm Reborn",
+      "titleZh": "最终幻想 XIV：重生之境",
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_XIV%3A_A_Realm_Reborn",
+      "coverUrl": "https://images.pcgamingwiki.com/8/80/Final_Fantasy_XIV_A_Realm_Reborn_cover.jpg",
+      "steamAppId": "39210",
       "developers": [
         "Square Enix Creative Studio III"
       ],
@@ -2020,7 +2200,10 @@
     {
       "id": "final-fantasy-xvi",
       "title": "Final Fantasy XVI",
+      "titleZh": "最终幻想 XVI",
       "source": "https://www.pcgamingwiki.com/wiki/Final_Fantasy_XVI",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c6/Final_Fantasy_XVI_cover.jpg",
+      "steamAppId": "2515020",
       "developers": [
         "Square Enix Creative Studio III",
         "PlatinumGames"
@@ -2054,7 +2237,10 @@
     {
       "id": "forspoken",
       "title": "Forspoken",
+      "titleZh": "魔咒之地",
       "source": "https://www.pcgamingwiki.com/wiki/Forspoken",
+      "coverUrl": "https://images.pcgamingwiki.com/6/63/Forspoken_cover.jpg",
+      "steamAppId": "1680880",
       "developers": [
         "Luminous Productions"
       ],
@@ -2088,7 +2274,10 @@
     {
       "id": "gears-of-war-e-day",
       "title": "Gears of War: E-Day",
+      "titleZh": "战争机器：事变日",
       "source": "https://www.pcgamingwiki.com/wiki/Gears_of_War%3A_E-Day",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1c/Gears_of_War_E-Day_cover.jpg",
+      "steamAppId": "3010850",
       "developers": [
         "The Coalition",
         "People Can Fly"
@@ -2119,7 +2308,10 @@
     {
       "id": "genshin-impact",
       "title": "Genshin Impact",
+      "titleZh": "原神",
       "source": "https://www.pcgamingwiki.com/wiki/Genshin_Impact",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0a/Genshin_Impact_cover.jpg",
+      "steamAppId": "",
       "developers": [
         "miHoYo"
       ],
@@ -2153,7 +2345,10 @@
     {
       "id": "ghost-of-tsushima-director-s-cut",
       "title": "Ghost of Tsushima Director's Cut",
+      "titleZh": "对马岛之魂 导演剪辑版",
       "source": "https://www.pcgamingwiki.com/wiki/Ghost_of_Tsushima_Director's_Cut",
+      "coverUrl": "https://images.pcgamingwiki.com/6/63/Ghost_of_Tsushima_Director%27s_Cut_cover.jpg",
+      "steamAppId": "2215430",
       "developers": [
         "Sucker Punch Productions"
       ],
@@ -2186,7 +2381,10 @@
     {
       "id": "ghostwire-tokyo",
       "title": "Ghostwire: Tokyo",
+      "titleZh": "幽灵线：东京",
       "source": "https://www.pcgamingwiki.com/wiki/Ghostwire%3A_Tokyo",
+      "coverUrl": "https://images.pcgamingwiki.com/e/e1/GhostWire_Tokyo_cover.jpg",
+      "steamAppId": "1475810",
       "developers": [
         "Tango Gameworks"
       ],
@@ -2218,7 +2416,10 @@
     {
       "id": "god-of-war",
       "title": "God of War",
+      "titleZh": "战神",
       "source": "https://www.pcgamingwiki.com/wiki/God_of_War",
+      "coverUrl": "https://images.pcgamingwiki.com/3/36/God_of_War_cover.jpg",
+      "steamAppId": "1593500",
       "developers": [
         "Santa Monica Studio",
         "Valkyrie Entertainment"
@@ -2250,7 +2451,10 @@
     {
       "id": "god-of-war-ragnar-k",
       "title": "God of War Ragnarök",
+      "titleZh": "战神：诸神黄昏",
       "source": "https://www.pcgamingwiki.com/wiki/God_of_War_Ragnar%C3%B6k",
+      "coverUrl": "https://images.pcgamingwiki.com/5/52/God_of_War_Ragnarok_cover.jpg",
+      "steamAppId": "2322010",
       "developers": [
         "Santa Monica Studio",
         "Bluepoint Games",
@@ -2285,7 +2489,10 @@
     {
       "id": "grand-theft-auto-v-enhanced",
       "title": "Grand Theft Auto V Enhanced",
+      "titleZh": "侠盗猎车手 V 增强版",
       "source": "https://www.pcgamingwiki.com/wiki/Grand_Theft_Auto_V_Enhanced",
+      "coverUrl": "https://images.pcgamingwiki.com/b/b5/Grand_Theft_Auto_V_Enhanced_cover.jpg",
+      "steamAppId": "3240220",
       "developers": [
         "Rockstar North"
       ],
@@ -2318,7 +2525,10 @@
     {
       "id": "grand-theft-auto-san-andreas",
       "title": "Grand Theft Auto: San Andreas",
+      "titleZh": "侠盗猎车手：圣安地列斯",
       "source": "https://www.pcgamingwiki.com/wiki/Grand_Theft_Auto%3A_San_Andreas",
+      "coverUrl": "https://images.pcgamingwiki.com/9/95/Grand_Theft_Auto_San_Andreas_Cover.jpg",
+      "steamAppId": "12120",
       "developers": [
         "Rockstar North"
       ],
@@ -2356,7 +2566,10 @@
     {
       "id": "halo-campaign-evolved",
       "title": "Halo: Campaign Evolved",
+      "titleZh": "光环：战役进化",
       "source": "https://www.pcgamingwiki.com/wiki/Halo%3A_Campaign_Evolved",
+      "coverUrl": "https://images.pcgamingwiki.com/4/4b/Halo_Campaign_Evolved_cover.jpg",
+      "steamAppId": "2806050",
       "developers": [
         "Halo Studios"
       ],
@@ -2387,7 +2600,10 @@
     {
       "id": "haste",
       "title": "Haste",
+      "titleZh": "急速",
       "source": "https://www.pcgamingwiki.com/wiki/Haste",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ea/Haste_Broken_Worlds_cover.jpg",
+      "steamAppId": "1796470",
       "developers": [
         "Landfall Games"
       ],
@@ -2418,7 +2634,10 @@
     {
       "id": "hell-is-us",
       "title": "Hell is Us",
+      "titleZh": "我们就是地狱",
       "source": "https://www.pcgamingwiki.com/wiki/Hell_is_Us",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2b/Hell_is_Us_-_Cover.jpg",
+      "steamAppId": "1620730",
       "developers": [
         "Rogue Factor"
       ],
@@ -2450,7 +2669,10 @@
     {
       "id": "hellblade-ii-senua-s-saga",
       "title": "Hellblade II: Senua's Saga",
+      "titleZh": "塞娜的史诗：地狱之刃 II",
       "source": "https://www.pcgamingwiki.com/wiki/Hellblade_II%3A_Senua's_Saga",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a5/Hellblade_II_cover.jpg",
+      "steamAppId": "2461850",
       "developers": [
         "Ninja Theory"
       ],
@@ -2483,7 +2705,10 @@
     {
       "id": "helldivers-2",
       "title": "Helldivers 2",
+      "titleZh": "绝地潜兵 2",
       "source": "https://www.pcgamingwiki.com/wiki/Helldivers_2",
+      "coverUrl": "https://images.pcgamingwiki.com/0/00/Helldivers_2_cover.jpg",
+      "steamAppId": "553850",
       "developers": [
         "Arrowhead Game Studios",
         "Toadman Interactive"
@@ -2517,7 +2742,10 @@
     {
       "id": "hi-fi-rush",
       "title": "Hi-Fi Rush",
+      "titleZh": "完美音浪",
       "source": "https://www.pcgamingwiki.com/wiki/Hi-Fi_Rush",
+      "coverUrl": "https://images.pcgamingwiki.com/5/59/Hi-Fi_RUSH_cover.jpg",
+      "steamAppId": "1817230",
       "developers": [
         "Tango Gameworks"
       ],
@@ -2550,7 +2778,10 @@
     {
       "id": "hogwarts-legacy",
       "title": "Hogwarts Legacy",
+      "titleZh": "霍格沃茨之遗",
       "source": "https://www.pcgamingwiki.com/wiki/Hogwarts_Legacy",
+      "coverUrl": "https://images.pcgamingwiki.com/3/33/Hogwarts_Legacy_cover.jpg",
+      "steamAppId": "990080",
       "developers": [
         "Avalanche Software"
       ],
@@ -2584,7 +2815,10 @@
     {
       "id": "horizon-forbidden-west",
       "title": "Horizon Forbidden West",
+      "titleZh": "地平线：西之绝境",
       "source": "https://www.pcgamingwiki.com/wiki/Horizon_Forbidden_West",
+      "coverUrl": "https://images.pcgamingwiki.com/f/f6/Horizon_Forbidden_West_cover.png",
+      "steamAppId": "2420110",
       "developers": [
         "Guerrilla Games"
       ],
@@ -2617,7 +2851,10 @@
     {
       "id": "horizon-zero-dawn-remastered",
       "title": "Horizon Zero Dawn Remastered",
+      "titleZh": "地平线：零之曙光 重制版",
       "source": "https://www.pcgamingwiki.com/wiki/Horizon_Zero_Dawn_Remastered",
+      "coverUrl": "https://images.pcgamingwiki.com/3/30/Horizon_Zero_Dawn_Remastered_cover.jpg",
+      "steamAppId": "2561580",
       "developers": [
         "Nixxes Software",
         "Guerrilla Games"
@@ -2651,7 +2888,10 @@
     {
       "id": "indiana-jones-and-the-great-circle",
       "title": "Indiana Jones and the Great Circle",
+      "titleZh": "夺宝奇兵：古老之圈",
       "source": "https://www.pcgamingwiki.com/wiki/Indiana_Jones_and_the_Great_Circle",
+      "coverUrl": "https://images.pcgamingwiki.com/0/05/Indiana_Jones_and_the_Great_Circle_cover.jpg",
+      "steamAppId": "2677660",
       "developers": [
         "MachineGames"
       ],
@@ -2684,7 +2924,10 @@
     {
       "id": "infinity-nikki",
       "title": "Infinity Nikki",
+      "titleZh": "无限暖暖",
       "source": "https://www.pcgamingwiki.com/wiki/Infinity_Nikki",
+      "coverUrl": "https://images.pcgamingwiki.com/d/dd/Infinity_Nikki_cover.jpg",
+      "steamAppId": "3164330",
       "developers": [
         "Infold Games"
       ],
@@ -2719,7 +2962,10 @@
     {
       "id": "jak-ii-opengoal",
       "title": "Jak II (OpenGOAL)",
+      "titleZh": "杰克 II (OpenGOAL)",
       "source": "https://www.pcgamingwiki.com/wiki/Jak_II_(OpenGOAL)",
+      "coverUrl": "https://images.pcgamingwiki.com/6/61/Jak_II_cover.jpg",
+      "steamAppId": "",
       "developers": [
         "Naughty Dog"
       ],
@@ -2754,7 +3000,10 @@
     {
       "id": "john-carpenter-s-toxic-commando",
       "title": "John Carpenter's Toxic Commando",
+      "titleZh": "约翰·卡朋特的有毒突击队",
       "source": "https://www.pcgamingwiki.com/wiki/John_Carpenter's_Toxic_Commando",
+      "coverUrl": "https://images.pcgamingwiki.com/d/da/John_Carpenters_Toxic_Commando_cover.jpg",
+      "steamAppId": "2157830",
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -2785,7 +3034,10 @@
     {
       "id": "kingdom-come-deliverance-ii",
       "title": "Kingdom Come: Deliverance II",
+      "titleZh": "天国：拯救 II",
       "source": "https://www.pcgamingwiki.com/wiki/Kingdom_Come%3A_Deliverance_II",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d4/Kingdom_Come_Deliverance_II_cover.png",
+      "steamAppId": "1771300",
       "developers": [
         "Warhorse Studios"
       ],
@@ -2816,7 +3068,10 @@
     {
       "id": "lego-batman-legacy-of-the-dark-knight",
       "title": "Lego Batman: Legacy of the Dark Knight",
+      "titleZh": "乐高®蝙蝠侠™：黑暗骑士之遗",
       "source": "https://www.pcgamingwiki.com/wiki/Lego_Batman%3A_Legacy_of_the_Dark_Knight",
+      "coverUrl": "https://images.pcgamingwiki.com/3/37/Lego_Batman_Legacy_of_the_Dark_Knight_cover.jpg",
+      "steamAppId": "2215200",
       "developers": [
         "TT Games",
         "Rocksteady Studios"
@@ -2848,7 +3103,10 @@
     {
       "id": "lego-horizon-adventures",
       "title": "Lego Horizon Adventures",
+      "titleZh": "乐高地平线历险记",
       "source": "https://www.pcgamingwiki.com/wiki/Lego_Horizon_Adventures",
+      "coverUrl": "https://images.pcgamingwiki.com/4/4c/Lego_Horizon_Adventures_cover.jpg",
+      "steamAppId": "2428810",
       "developers": [
         "Studio Gobo",
         "Guerrilla Games"
@@ -2877,7 +3135,10 @@
     {
       "id": "lords-of-the-fallen-2023",
       "title": "Lords of the Fallen (2023)",
+      "titleZh": "堕落之主（2023）",
       "source": "https://www.pcgamingwiki.com/wiki/Lords_of_the_Fallen_(2023)",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1e/The_Lords_of_the_Fallen_cover.jpg",
+      "steamAppId": "1501750",
       "developers": [
         "HexWorks"
       ],
@@ -2910,7 +3171,10 @@
     {
       "id": "lost-soul-aside",
       "title": "Lost Soul Aside",
+      "titleZh": "失落之魂",
       "source": "https://www.pcgamingwiki.com/wiki/Lost_Soul_Aside",
+      "coverUrl": "https://images.pcgamingwiki.com/0/02/Lost_Soul_Aside_cover.jpg",
+      "steamAppId": "3378960",
       "developers": [
         "Ultizero Games"
       ],
@@ -2943,7 +3207,10 @@
     {
       "id": "luto",
       "title": "Luto",
+      "titleZh": "哀悼",
       "source": "https://www.pcgamingwiki.com/wiki/Luto",
+      "coverUrl": "https://images.pcgamingwiki.com/1/11/Luto_cover.png",
+      "steamAppId": "1729740",
       "developers": [
         "Broken Bird Games"
       ],
@@ -2974,7 +3241,10 @@
     {
       "id": "marathon-2026",
       "title": "Marathon (2026)",
+      "titleZh": "马拉松（2026）",
       "source": "https://www.pcgamingwiki.com/wiki/Marathon_(2026)",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2e/Marathon_dec_25_cover.jpg",
+      "steamAppId": "3065800",
       "developers": [
         "Bungie"
       ],
@@ -3002,7 +3272,10 @@
     {
       "id": "marvel-rivals",
       "title": "Marvel Rivals",
+      "titleZh": "漫威争锋",
       "source": "https://www.pcgamingwiki.com/wiki/Marvel_Rivals",
+      "coverUrl": "https://images.pcgamingwiki.com/1/16/Marvel_Rivals_cover.jpg",
+      "steamAppId": "2767030",
       "developers": [
         "NetEase Games"
       ],
@@ -3033,7 +3306,10 @@
     {
       "id": "marvel-t-kon-fighting-souls",
       "title": "Marvel Tōkon: Fighting Souls",
+      "titleZh": "《漫威斗魂》",
       "source": "https://www.pcgamingwiki.com/wiki/Marvel_T%C5%8Dkon%3A_Fighting_Souls",
+      "coverUrl": "https://images.pcgamingwiki.com/9/9e/Marvel_Tokon_Fighting_Souls_cover.jpg",
+      "steamAppId": "3787240",
       "developers": [
         "Arc System Works"
       ],
@@ -3066,7 +3342,10 @@
     {
       "id": "marvel-s-spider-man-2",
       "title": "Marvel's Spider-Man 2",
+      "titleZh": "漫威蜘蛛侠 2",
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man_2",
+      "coverUrl": "https://images.pcgamingwiki.com/4/44/Marvel%27s_Spider-Man_2_cover.jpg",
+      "steamAppId": "2651280",
       "developers": [
         "Insomniac Games"
       ],
@@ -3096,7 +3375,10 @@
     {
       "id": "marvel-s-spider-man-remastered",
       "title": "Marvel's Spider-Man Remastered",
+      "titleZh": "漫威蜘蛛侠 重制版",
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man_Remastered",
+      "coverUrl": "https://images.pcgamingwiki.com/7/77/Marvel%27s_Spider-Man_Remastered_cover.jpg",
+      "steamAppId": "1817070",
       "developers": [
         "Insomniac Games"
       ],
@@ -3129,7 +3411,10 @@
     {
       "id": "marvel-s-spider-man-miles-morales",
       "title": "Marvel's Spider-Man: Miles Morales",
+      "titleZh": "漫威蜘蛛侠：迈尔斯·莫拉莱斯",
       "source": "https://www.pcgamingwiki.com/wiki/Marvel's_Spider-Man%3A_Miles_Morales",
+      "coverUrl": "https://images.pcgamingwiki.com/8/88/Marvel%27s_Spider-Man_-_Miles_Morales_cover.png",
+      "steamAppId": "1817190",
       "developers": [
         "Insomniac Games"
       ],
@@ -3162,7 +3447,10 @@
     {
       "id": "mecha-break",
       "title": "Mecha Break",
+      "titleZh": "解限机",
       "source": "https://www.pcgamingwiki.com/wiki/Mecha_Break",
+      "coverUrl": "https://images.pcgamingwiki.com/f/f3/Mecha_break_cover.jpg",
+      "steamAppId": "2452280",
       "developers": [
         "Amazing Seasun Games"
       ],
@@ -3193,7 +3481,10 @@
     {
       "id": "metal-gear-solid-snake-eater",
       "title": "Metal Gear Solid Δ: Snake Eater",
+      "titleZh": "合金装备 Δ：食蛇者",
       "source": "https://www.pcgamingwiki.com/wiki/Metal_Gear_Solid_%CE%94%3A_Snake_Eater",
+      "coverUrl": "https://images.pcgamingwiki.com/b/b9/Metal_Gear_Solid_Delta_Snake_Eater_cover.png",
+      "steamAppId": "2417610",
       "developers": [
         "Konami",
         "Virtuos",
@@ -3226,7 +3517,10 @@
     {
       "id": "metro-exodus-enhanced-edition",
       "title": "Metro Exodus Enhanced Edition",
+      "titleZh": "地铁：离去 增强版",
       "source": "https://www.pcgamingwiki.com/wiki/Metro_Exodus_Enhanced_Edition",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a7/Metro_Exodus_PC_Enhanced_Edition_cover.png",
+      "steamAppId": "1449560",
       "developers": [
         "4A Games"
       ],
@@ -3256,7 +3550,10 @@
     {
       "id": "mindseye",
       "title": "MindsEye",
+      "titleZh": "心灵之眼",
       "source": "https://www.pcgamingwiki.com/wiki/MindsEye",
+      "coverUrl": "https://images.pcgamingwiki.com/8/8c/MindsEye_cover.jpg",
+      "steamAppId": "3265250",
       "developers": [
         "Build a Rocket Boy"
       ],
@@ -3288,7 +3585,10 @@
     {
       "id": "mixtape",
       "title": "Mixtape",
+      "titleZh": "混音带",
       "source": "https://www.pcgamingwiki.com/wiki/Mixtape",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d4/Mixtape_cover.jpg",
+      "steamAppId": "2582320",
       "developers": [
         "Beethoven &amp",
         "Dinosaur"
@@ -3320,7 +3620,10 @@
     {
       "id": "monster-hunter-wilds",
       "title": "Monster Hunter Wilds",
+      "titleZh": "怪物猎人：荒野",
       "source": "https://www.pcgamingwiki.com/wiki/Monster_Hunter_Wilds",
+      "coverUrl": "https://images.pcgamingwiki.com/9/9d/Monster_Hunter_Wilds_cover.jpg",
+      "steamAppId": "2246340",
       "developers": [
         "Capcom"
       ],
@@ -3351,7 +3654,10 @@
     {
       "id": "mortal-shell-ii",
       "title": "Mortal Shell II",
+      "titleZh": "《致命躯壳 II》",
       "source": "https://www.pcgamingwiki.com/wiki/Mortal_Shell_II",
+      "coverUrl": "https://images.pcgamingwiki.com/3/32/Mortal_Shell_II_cover.jpg",
+      "steamAppId": "2584270",
       "developers": [
         "Cold Symmetry"
       ],
@@ -3382,7 +3688,10 @@
     {
       "id": "neva",
       "title": "Neva",
+      "titleZh": "涅瓦",
       "source": "https://www.pcgamingwiki.com/wiki/Neva",
+      "coverUrl": "https://images.pcgamingwiki.com/f/fc/Neva_Cover.jpeg",
+      "steamAppId": "2420660",
       "developers": [
         "Nomada Studio"
       ],
@@ -3413,7 +3722,10 @@
     {
       "id": "neverness-to-everness",
       "title": "Neverness to Everness",
+      "titleZh": "异环",
       "source": "https://www.pcgamingwiki.com/wiki/Neverness_to_Everness",
+      "coverUrl": "https://images.pcgamingwiki.com/9/99/NevernessToEverness_CoverArt.png",
+      "steamAppId": "4508340",
       "developers": [
         "Hotta Studio"
       ],
@@ -3445,7 +3757,10 @@
     {
       "id": "ninja-gaiden-4",
       "title": "Ninja Gaiden 4",
+      "titleZh": "忍者龙剑传 4",
       "source": "https://www.pcgamingwiki.com/wiki/Ninja_Gaiden_4",
+      "coverUrl": "https://images.pcgamingwiki.com/1/19/NinjaGaiden4Cover.jpg",
+      "steamAppId": "2627260",
       "developers": [
         "PlatinumGames",
         "Team Ninja"
@@ -3479,7 +3794,10 @@
     {
       "id": "nioh-3",
       "title": "Nioh 3",
+      "titleZh": "仁王 3",
       "source": "https://www.pcgamingwiki.com/wiki/Nioh_3",
+      "coverUrl": "https://images.pcgamingwiki.com/4/4e/Nioh_3_cover.jpg",
+      "steamAppId": "3681010",
       "developers": [
         "Team Ninja"
       ],
@@ -3509,7 +3827,10 @@
     {
       "id": "no-man-s-sky",
       "title": "No Man's Sky",
+      "titleZh": "无人深空",
       "source": "https://www.pcgamingwiki.com/wiki/No_Man's_Sky",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ea/No_Man%27s_Sky_cover.jpg",
+      "steamAppId": "275850",
       "developers": [
         "Hello Games"
       ],
@@ -3542,7 +3863,10 @@
     {
       "id": "off-the-grid",
       "title": "Off The Grid",
+      "titleZh": "离网",
       "source": "https://www.pcgamingwiki.com/wiki/Off_The_Grid",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1a/OffTheGridCover.jpg",
+      "steamAppId": "3659280",
       "developers": [
         "Gunzilla Games"
       ],
@@ -3568,7 +3892,10 @@
     {
       "id": "overwatch-2",
       "title": "Overwatch 2",
+      "titleZh": "守望先锋 2",
       "source": "https://www.pcgamingwiki.com/wiki/Overwatch_2",
+      "coverUrl": "https://images.pcgamingwiki.com/3/3b/Overwatch_2_cover.jpg",
+      "steamAppId": "2357570",
       "developers": [
         "Blizzard Entertainment"
       ],
@@ -3596,7 +3923,10 @@
     {
       "id": "pacific-drive",
       "title": "Pacific Drive",
+      "titleZh": "超自然车旅",
       "source": "https://www.pcgamingwiki.com/wiki/Pacific_Drive",
+      "coverUrl": "https://images.pcgamingwiki.com/8/8d/Pacific_Drive_cover.jpg",
+      "steamAppId": "1458140",
       "developers": [
         "Ironwood Studios"
       ],
@@ -3627,7 +3957,10 @@
     {
       "id": "painkiller-2025",
       "title": "Painkiller (2025)",
+      "titleZh": "止痛药 (2025)",
       "source": "https://www.pcgamingwiki.com/wiki/Painkiller_(2025)",
+      "coverUrl": "https://images.pcgamingwiki.com/3/39/Painkiller_2025_cover.jpg",
+      "steamAppId": "2300120",
       "developers": [
         "Anshar Studios"
       ],
@@ -3658,7 +3991,10 @@
     {
       "id": "pipistrello-and-the-cursed-yoyo",
       "title": "Pipistrello and the Cursed Yoyo",
+      "titleZh": "皮皮斯特雷罗和被诅咒的溜溜球",
       "source": "https://www.pcgamingwiki.com/wiki/Pipistrello_and_the_Cursed_Yoyo",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1f/Pipistrello_and_the_Cursed_Yoyo_cover.jpg",
+      "steamAppId": "2870350",
       "developers": [
         "Pocket Trap"
       ],
@@ -3686,7 +4022,10 @@
     {
       "id": "pragmata",
       "title": "Pragmata",
+      "titleZh": "虚实万象",
       "source": "https://www.pcgamingwiki.com/wiki/Pragmata",
+      "coverUrl": "https://images.pcgamingwiki.com/f/fb/Pragmata_cover.jpg",
+      "steamAppId": "3357650",
       "developers": [
         "Capcom"
       ],
@@ -3717,7 +4056,10 @@
     {
       "id": "prince-of-persia-the-lost-crown",
       "title": "Prince of Persia: The Lost Crown",
+      "titleZh": "波斯王子：失落王冠",
       "source": "https://www.pcgamingwiki.com/wiki/Prince_of_Persia%3A_The_Lost_Crown",
+      "coverUrl": "https://images.pcgamingwiki.com/4/44/Prince_of_Persia_The_Lost_Crown_cover.jpg",
+      "steamAppId": "2751000",
       "developers": [
         "Ubisoft Montpellier",
         "Ubisoft Bucharest",
@@ -3755,7 +4097,10 @@
     {
       "id": "project-colored-mountains",
       "title": "Project Colored Mountains",
+      "titleZh": "彩色山脉计划",
       "source": "https://www.pcgamingwiki.com/wiki/Project_Colored_Mountains",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d2/Project_Colored_Mountains_cover.png",
+      "steamAppId": "2340980",
       "developers": [
         "Conabe Games"
       ],
@@ -3784,9 +4129,12 @@
       "hdHapticFeedback": "true"
     },
     {
-      "id": "ratchet-amp-clank-rift-apart",
-      "title": "Ratchet &amp; Clank: Rift Apart",
-      "source": "https://www.pcgamingwiki.com/wiki/Ratchet_%26amp%3B_Clank%3A_Rift_Apart",
+      "id": "ratchet-clank-rift-apart",
+      "title": "Ratchet & Clank: Rift Apart",
+      "titleZh": "瑞奇与叮当：时空跳转",
+      "source": "https://www.pcgamingwiki.com/wiki/Ratchet_%26_Clank%3A_Rift_Apart",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1a/Ratchet_%26_Clank_Rift_Apart_cover.jpg",
+      "steamAppId": "1895880",
       "developers": [
         "Insomniac Games"
       ],
@@ -3819,7 +4167,10 @@
     {
       "id": "ready-or-not",
       "title": "Ready or Not",
+      "titleZh": "严阵以待",
       "source": "https://www.pcgamingwiki.com/wiki/Ready_or_Not",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d0/Ready_Or_Not_cover.jpg",
+      "steamAppId": "1144200",
       "developers": [
         "VOID Interactive"
       ],
@@ -3848,7 +4199,10 @@
     {
       "id": "resident-evil-requiem",
       "title": "Resident Evil Requiem",
+      "titleZh": "生化危机：安魂曲",
       "source": "https://www.pcgamingwiki.com/wiki/Resident_Evil_Requiem",
+      "coverUrl": "https://images.pcgamingwiki.com/3/31/Resident_Evil_Requiem_cover.png",
+      "steamAppId": "3764200",
       "developers": [
         "Capcom"
       ],
@@ -3879,7 +4233,10 @@
     {
       "id": "returnal",
       "title": "Returnal",
+      "titleZh": "死亡回归",
       "source": "https://www.pcgamingwiki.com/wiki/Returnal",
+      "coverUrl": "https://images.pcgamingwiki.com/1/1b/Returnal_cover.jpg",
+      "steamAppId": "1649240",
       "developers": [
         "Housemarque"
       ],
@@ -3913,7 +4270,10 @@
     {
       "id": "rise-of-the-ronin",
       "title": "Rise of the Ronin",
+      "titleZh": "浪人崛起",
       "source": "https://www.pcgamingwiki.com/wiki/Rise_of_the_Ronin",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2c/Rise_of_the_Ronin_cover.jpg",
+      "steamAppId": "1340990",
       "developers": [
         "Team Ninja"
       ],
@@ -3946,7 +4306,10 @@
     {
       "id": "riven-2024",
       "title": "Riven (2024)",
+      "titleZh": "里文（2024）",
       "source": "https://www.pcgamingwiki.com/wiki/Riven_(2024)",
+      "coverUrl": "https://images.pcgamingwiki.com/b/b1/Riven_%282024%29_cover.jpg",
+      "steamAppId": "1712350",
       "developers": [
         "Cyan Worlds"
       ],
@@ -3976,7 +4339,10 @@
     {
       "id": "roadcraft",
       "title": "RoadCraft",
+      "titleZh": "筑路者",
       "source": "https://www.pcgamingwiki.com/wiki/RoadCraft",
+      "coverUrl": "https://images.pcgamingwiki.com/4/48/Roadcraft_-_Cover.jpg",
+      "steamAppId": "2104890",
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -4004,7 +4370,10 @@
     {
       "id": "rocket-league",
       "title": "Rocket League",
+      "titleZh": "火箭联盟",
       "source": "https://www.pcgamingwiki.com/wiki/Rocket_League",
+      "coverUrl": "https://images.pcgamingwiki.com/6/6a/Rocket_League_Cover.jpg",
+      "steamAppId": "252950",
       "developers": [
         "Psyonix"
       ],
@@ -4040,7 +4409,10 @@
     {
       "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
       "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl",
+      "titleZh": "潜行者 2：切尔诺贝利之心",
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R._2%3A_Heart_of_Chornobyl",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ef/S.T.A.L.K.E.R._2_cover.jpg",
+      "steamAppId": "1643320",
       "developers": [
         "GSC Game World"
       ],
@@ -4073,7 +4445,10 @@
     {
       "id": "s-t-a-l-k-e-r-call-of-prypiat-enhanced-edition",
       "title": "S.T.A.L.K.E.R.: Call of Prypiat Enhanced Edition",
+      "titleZh": "《潜行者：普里皮亚季的召唤》增强版",
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Call_of_Prypiat_Enhanced_Edition",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2c/S.T.A.L.K.E.R._Call_of_Pripyat_Enhanced_Edition_cover.jpg",
+      "steamAppId": "2427430",
       "developers": [
         "GSC Game World"
       ],
@@ -4099,7 +4474,10 @@
     {
       "id": "s-t-a-l-k-e-r-clear-sky-enhanced-edition",
       "title": "S.T.A.L.K.E.R.: Clear Sky Enhanced Edition",
+      "titleZh": "《潜行者：晴空》增强版",
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Clear_Sky_Enhanced_Edition",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d6/S.T.A.L.K.E.R._Clear_Sky_Enhanced_Edition_cover.jpg",
+      "steamAppId": "2427420",
       "developers": [
         "GSC Game World"
       ],
@@ -4125,7 +4503,10 @@
     {
       "id": "s-t-a-l-k-e-r-shadow-of-chornobyl-enhanced-edition",
       "title": "S.T.A.L.K.E.R.: Shadow of Chornobyl Enhanced Edition",
+      "titleZh": "《潜行者：切尔诺贝利的阴影》增强版",
       "source": "https://www.pcgamingwiki.com/wiki/S.T.A.L.K.E.R.%3A_Shadow_of_Chornobyl_Enhanced_Edition",
+      "coverUrl": "https://images.pcgamingwiki.com/d/db/S.T.A.L.K.E.R._Shadow_of_Chernobyl_Enhanced_Edition_cover.jpg",
+      "steamAppId": "2427410",
       "developers": [
         "GSC Game World"
       ],
@@ -4151,7 +4532,10 @@
     {
       "id": "sackboy-a-big-adventure",
       "title": "Sackboy: A Big Adventure",
+      "titleZh": "麻布仔大冒险",
       "source": "https://www.pcgamingwiki.com/wiki/Sackboy%3A_A_Big_Adventure",
+      "coverUrl": "https://images.pcgamingwiki.com/7/72/Sackboy_A_Big_Adventure_cover.jpg",
+      "steamAppId": "1599660",
       "developers": [
         "Sumo Digital"
       ],
@@ -4181,7 +4565,10 @@
     {
       "id": "satisfactory",
       "title": "Satisfactory",
+      "titleZh": "幸福工厂",
       "source": "https://www.pcgamingwiki.com/wiki/Satisfactory",
+      "coverUrl": "https://images.pcgamingwiki.com/d/d1/Satisfactory_cover.png",
+      "steamAppId": "526870",
       "developers": [
         "Coffee Stain Studios"
       ],
@@ -4209,7 +4596,10 @@
     {
       "id": "screamer-2026",
       "title": "Screamer (2026)",
+      "titleZh": "Screamer（2026）",
       "source": "https://www.pcgamingwiki.com/wiki/Screamer_(2026)",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c0/Screamer_2026_cover.jpg",
+      "steamAppId": "2814990",
       "developers": [
         "Milestone"
       ],
@@ -4240,7 +4630,10 @@
     {
       "id": "sea-of-thieves",
       "title": "Sea of Thieves",
+      "titleZh": "盗贼之海",
       "source": "https://www.pcgamingwiki.com/wiki/Sea_of_Thieves",
+      "coverUrl": "https://images.pcgamingwiki.com/e/e0/Sea_of_Thieves_cover.jpg",
+      "steamAppId": "1172620",
       "developers": [
         "Rare",
         "Purple Lamp Studios"
@@ -4272,7 +4665,10 @@
     {
       "id": "season-a-letter-to-the-future",
       "title": "SEASON: A letter to the future",
+      "titleZh": "SEASON：给未来的信",
       "source": "https://www.pcgamingwiki.com/wiki/SEASON%3A_A_letter_to_the_future",
+      "coverUrl": "https://images.pcgamingwiki.com/5/55/Season_cover.jpg",
+      "steamAppId": "695330",
       "developers": [
         "Scavengers Studio"
       ],
@@ -4300,7 +4696,10 @@
     {
       "id": "shadows-of-the-damned-hella-remastered",
       "title": "Shadows of the Damned: Hella Remastered",
+      "titleZh": "暗影诅咒：地狱复刻版",
       "source": "https://www.pcgamingwiki.com/wiki/Shadows_of_the_Damned%3A_Hella_Remastered",
+      "coverUrl": "https://images.pcgamingwiki.com/8/8c/Shadows_of_the_Damned_Hella_Remastered_cover.jpg",
+      "steamAppId": "2535440",
       "developers": [
         "Grasshopper Manufacture",
         "Engine Software"
@@ -4332,7 +4731,10 @@
     {
       "id": "signalis",
       "title": "Signalis",
+      "titleZh": "SIGNALIS（信号）",
       "source": "https://www.pcgamingwiki.com/wiki/Signalis",
+      "coverUrl": "https://images.pcgamingwiki.com/9/95/SIGNALIS_cover.jpg",
+      "steamAppId": "1262350",
       "developers": [
         "rose-engine"
       ],
@@ -4364,7 +4766,10 @@
     {
       "id": "silent-hill-2",
       "title": "Silent Hill 2",
+      "titleZh": "寂静岭 2",
       "source": "https://www.pcgamingwiki.com/wiki/Silent_Hill_2",
+      "coverUrl": "https://images.pcgamingwiki.com/2/22/Silent_Hill_2_cover.jpg",
+      "steamAppId": "2124490",
       "developers": [
         "Bloober Team"
       ],
@@ -4397,7 +4802,10 @@
     {
       "id": "skate",
       "title": "Skate",
+      "titleZh": "极速滑板",
       "source": "https://www.pcgamingwiki.com/wiki/Skate",
+      "coverUrl": "https://images.pcgamingwiki.com/3/3b/Skate_cover.jpg",
+      "steamAppId": "3354750",
       "developers": [
         "Full Circle"
       ],
@@ -4427,7 +4835,10 @@
     {
       "id": "skull-and-bones",
       "title": "Skull and Bones",
+      "titleZh": "碧海黑帆",
       "source": "https://www.pcgamingwiki.com/wiki/Skull_and_Bones",
+      "coverUrl": "https://images.pcgamingwiki.com/d/dc/Skull_%26_Bones_cover.jpg",
+      "steamAppId": "2853730",
       "developers": [
         "Ubisoft Singapore",
         "Ubisoft Berlin",
@@ -4466,7 +4877,10 @@
     {
       "id": "sleep-awake",
       "title": "Sleep Awake",
+      "titleZh": "沉睡与苏醒",
       "source": "https://www.pcgamingwiki.com/wiki/Sleep_Awake",
+      "coverUrl": "https://images.pcgamingwiki.com/4/4d/Sleep_Awake_cover.jpg",
+      "steamAppId": "2446540",
       "developers": [
         "Eyes Out"
       ],
@@ -4497,7 +4911,10 @@
     {
       "id": "sonic-racing-crossworlds",
       "title": "Sonic Racing: CrossWorlds",
+      "titleZh": "索尼克赛车：交叉世界",
       "source": "https://www.pcgamingwiki.com/wiki/Sonic_Racing%3A_CrossWorlds",
+      "coverUrl": "https://images.pcgamingwiki.com/8/88/Sonic_Racing_CrossWorlds_cover.jpg",
+      "steamAppId": "2486820",
       "developers": [
         "Sonic Team"
       ],
@@ -4530,7 +4947,10 @@
     {
       "id": "sonic-superstars",
       "title": "Sonic Superstars",
+      "titleZh": "索尼克 超级巨星",
       "source": "https://www.pcgamingwiki.com/wiki/Sonic_Superstars",
+      "coverUrl": "https://images.pcgamingwiki.com/f/fe/Sonic_Superstars_cover.jpg",
+      "steamAppId": "2022670",
       "developers": [
         "Arzest",
         "Sonic Team"
@@ -4559,7 +4979,10 @@
     {
       "id": "star-wars-jedi-survivor",
       "title": "Star Wars Jedi: Survivor",
+      "titleZh": "星球大战 绝地：幸存者",
       "source": "https://www.pcgamingwiki.com/wiki/Star_Wars_Jedi%3A_Survivor",
+      "coverUrl": "https://images.pcgamingwiki.com/1/17/Star_Wars_Jedi_Survivor_cover.jpg",
+      "steamAppId": "1774580",
       "developers": [
         "Respawn Entertainment"
       ],
@@ -4591,7 +5014,10 @@
     {
       "id": "star-wars-outlaws",
       "title": "Star Wars Outlaws",
+      "titleZh": "星球大战：亡命之徒",
       "source": "https://www.pcgamingwiki.com/wiki/Star_Wars_Outlaws",
+      "coverUrl": "https://images.pcgamingwiki.com/9/93/Star_Wars_Outlaws_cover.jpg",
+      "steamAppId": "2842040",
       "developers": [
         "Massive Entertainment",
         "Ubisoft Annecy",
@@ -4636,7 +5062,10 @@
     {
       "id": "stellar-blade",
       "title": "Stellar Blade",
+      "titleZh": "剑星",
       "source": "https://www.pcgamingwiki.com/wiki/Stellar_Blade",
+      "coverUrl": "https://images.pcgamingwiki.com/4/40/Stellar_Blade_cover.jpg",
+      "steamAppId": "3489700",
       "developers": [
         "Shift Up"
       ],
@@ -4669,7 +5098,10 @@
     {
       "id": "still-wakes-the-deep",
       "title": "Still Wakes the Deep",
+      "titleZh": "深海惊醒",
       "source": "https://www.pcgamingwiki.com/wiki/Still_Wakes_the_Deep",
+      "coverUrl": "https://images.pcgamingwiki.com/e/eb/Still_Wakes_The_Deep_cover.jpg",
+      "steamAppId": "1622910",
       "developers": [
         "The Chinese Room"
       ],
@@ -4700,7 +5132,10 @@
     {
       "id": "stray",
       "title": "Stray",
+      "titleZh": "迷失",
       "source": "https://www.pcgamingwiki.com/wiki/Stray",
+      "coverUrl": "https://images.pcgamingwiki.com/a/ae/Stray_cover.jpg",
+      "steamAppId": "1332010",
       "developers": [
         "BlueTwelve Studio"
       ],
@@ -4732,7 +5167,10 @@
     {
       "id": "styx-blades-of-greed",
       "title": "Styx: Blades of Greed",
+      "titleZh": "冥河：贪婪之刃",
       "source": "https://www.pcgamingwiki.com/wiki/Styx%3A_Blades_of_Greed",
+      "coverUrl": "https://images.pcgamingwiki.com/5/5c/Styx_Blades_of_Greed_cover.jpg",
+      "steamAppId": "3290690",
       "developers": [
         "Cyanide Studio"
       ],
@@ -4762,7 +5200,10 @@
     {
       "id": "suicide-squad-kill-the-justice-league",
       "title": "Suicide Squad: Kill the Justice League",
+      "titleZh": "自杀小队：消灭正义联盟",
       "source": "https://www.pcgamingwiki.com/wiki/Suicide_Squad%3A_Kill_the_Justice_League",
+      "coverUrl": "https://images.pcgamingwiki.com/8/80/Suicide_Squad_Kill_The_Justice_League_cover.jpg",
+      "steamAppId": "315210",
       "developers": [
         "Rocksteady Studios",
         "Sumo Digital"
@@ -4793,7 +5234,10 @@
     {
       "id": "sword-of-the-sea",
       "title": "Sword of the Sea",
+      "titleZh": "海之剑",
       "source": "https://www.pcgamingwiki.com/wiki/Sword_of_the_Sea",
+      "coverUrl": "https://images.pcgamingwiki.com/9/93/Sword_of_the_Sea_cover.jpg",
+      "steamAppId": "2453160",
       "developers": [
         "Giant Squid Studios"
       ],
@@ -4822,7 +5266,10 @@
     {
       "id": "system-shock-2-25th-anniversary-remaster",
       "title": "System Shock 2: 25th Anniversary Remaster",
+      "titleZh": "网络奇兵 2：25 周年重制版",
       "source": "https://www.pcgamingwiki.com/wiki/System_Shock_2%3A_25th_Anniversary_Remaster",
+      "coverUrl": "https://images.pcgamingwiki.com/2/21/System_Shock_2_Enhanced_Edition_cover.jpg",
+      "steamAppId": "866570",
       "developers": [
         "Irrational Games",
         "Looking Glass Studios",
@@ -4857,7 +5304,10 @@
     {
       "id": "tainted-grail-the-fall-of-avalon",
       "title": "Tainted Grail: The Fall of Avalon",
+      "titleZh": "污痕圣杯：阿瓦隆的陨落",
       "source": "https://www.pcgamingwiki.com/wiki/Tainted_Grail%3A_The_Fall_of_Avalon",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a9/Tainted_Grail_The_Fall_of_Avalon_cover.jpg",
+      "steamAppId": "1466060",
       "developers": [
         "Questline"
       ],
@@ -4888,7 +5338,10 @@
     {
       "id": "tekken-8",
       "title": "Tekken 8",
+      "titleZh": "铁拳 8",
       "source": "https://www.pcgamingwiki.com/wiki/Tekken_8",
+      "coverUrl": "https://images.pcgamingwiki.com/e/e0/Tekken_8_cover.jpg",
+      "steamAppId": "1778820",
       "developers": [
         "Bandai Namco Studios",
         "Arika"
@@ -4919,7 +5372,10 @@
     {
       "id": "test-drive-unlimited-solar-crown",
       "title": "Test Drive Unlimited Solar Crown",
+      "titleZh": "无限试驾：太阳王冠",
       "source": "https://www.pcgamingwiki.com/wiki/Test_Drive_Unlimited_Solar_Crown",
+      "coverUrl": "https://images.pcgamingwiki.com/7/7b/Test_Drive_Unlimited_Solar_Crown_cover.jpg",
+      "steamAppId": "1249970",
       "developers": [
         "Kylotonn"
       ],
@@ -4951,7 +5407,10 @@
     {
       "id": "the-chant",
       "title": "The Chant",
+      "titleZh": "圣歌",
       "source": "https://www.pcgamingwiki.com/wiki/The_Chant",
+      "coverUrl": "https://images.pcgamingwiki.com/8/88/The_Chant_cover.jpg",
+      "steamAppId": "1577250",
       "developers": [
         "Brass Token"
       ],
@@ -4981,7 +5440,10 @@
     {
       "id": "the-crew-motorfest",
       "title": "The Crew Motorfest",
+      "titleZh": "飙酷车神：轰鸣盛典",
       "source": "https://www.pcgamingwiki.com/wiki/The_Crew_Motorfest",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ea/The_Crew_Motorfest_cover.jpg",
+      "steamAppId": "2698940",
       "developers": [
         "Ubisoft Ivory Tower"
       ],
@@ -5013,7 +5475,10 @@
     {
       "id": "the-elder-scrolls-iv-oblivion-remastered",
       "title": "The Elder Scrolls IV: Oblivion Remastered",
+      "titleZh": "上古卷轴 IV：湮灭 重制版",
       "source": "https://www.pcgamingwiki.com/wiki/The_Elder_Scrolls_IV%3A_Oblivion_Remastered",
+      "coverUrl": "https://images.pcgamingwiki.com/a/af/The_Elder_Scrolls_IV_Oblivion_Remastered_cover.jpg",
+      "steamAppId": "2623190",
       "developers": [
         "Virtuos",
         "Bethesda Game Studios"
@@ -5047,7 +5512,10 @@
     {
       "id": "the-first-berserker-khazan",
       "title": "The First Berserker: Khazan",
+      "titleZh": "第一狂战士：卡赞",
       "source": "https://www.pcgamingwiki.com/wiki/The_First_Berserker%3A_Khazan",
+      "coverUrl": "https://images.pcgamingwiki.com/6/64/The_First_Berserker_Khazan_cover.jpg",
+      "steamAppId": "2680010",
       "developers": [
         "Neople"
       ],
@@ -5077,7 +5545,10 @@
     {
       "id": "the-first-descendant",
       "title": "The First Descendant",
+      "titleZh": "第一后裔",
       "source": "https://www.pcgamingwiki.com/wiki/The_First_Descendant",
+      "coverUrl": "https://images.pcgamingwiki.com/0/05/The_First_Descendant_cover.jpg",
+      "steamAppId": "2074920",
       "developers": [
         "Nexon"
       ],
@@ -5108,7 +5579,10 @@
     {
       "id": "the-last-of-us-part-i",
       "title": "The Last of Us Part I",
+      "titleZh": "最后生还者 第一部",
       "source": "https://www.pcgamingwiki.com/wiki/The_Last_of_Us_Part_I",
+      "coverUrl": "https://images.pcgamingwiki.com/8/86/The_Last_of_Us_Part_I_cover.jpg",
+      "steamAppId": "1888930",
       "developers": [
         "Naughty Dog",
         "Nixxes Software"
@@ -5142,7 +5616,10 @@
     {
       "id": "the-last-of-us-part-ii-remastered",
       "title": "The Last of Us Part II Remastered",
+      "titleZh": "最后生还者 第二部 重制版",
       "source": "https://www.pcgamingwiki.com/wiki/The_Last_of_Us_Part_II_Remastered",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2a/The_Last_of_Us%E2%84%A2_Part_II_Remastered_cover.jpg",
+      "steamAppId": "2531310",
       "developers": [
         "Naughty Dog"
       ],
@@ -5174,7 +5651,10 @@
     {
       "id": "the-riftbreaker",
       "title": "The Riftbreaker",
+      "titleZh": "银河破裂者",
       "source": "https://www.pcgamingwiki.com/wiki/The_Riftbreaker",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0a/The_Riftbreaker_cover.jpg",
+      "steamAppId": "780310",
       "developers": [
         "EXOR Studios"
       ],
@@ -5206,7 +5686,10 @@
     {
       "id": "the-witcher-3-wild-hunt",
       "title": "The Witcher 3: Wild Hunt",
+      "titleZh": "巫师 3：狂猎",
       "source": "https://www.pcgamingwiki.com/wiki/The_Witcher_3%3A_Wild_Hunt",
+      "coverUrl": "https://images.pcgamingwiki.com/a/a4/The_Witcher_3_Wild_Hunt_-_cover.jpg",
+      "steamAppId": "292030",
       "developers": [
         "CD Projekt Red",
         "Fool's Theory"
@@ -5238,7 +5721,10 @@
     {
       "id": "tom-clancy-s-rainbow-six-extraction",
       "title": "Tom Clancy's Rainbow Six Extraction",
+      "titleZh": "汤姆·克兰西：彩虹六号 异种",
       "source": "https://www.pcgamingwiki.com/wiki/Tom_Clancy's_Rainbow_Six_Extraction",
+      "coverUrl": "https://images.pcgamingwiki.com/4/4e/Tom_Clancy%27s_Rainbow_Six_Extraction_cover.jpg",
+      "steamAppId": "2379390",
       "developers": [
         "Ubisoft Montreal"
       ],
@@ -5268,7 +5754,10 @@
     {
       "id": "tom-clancy-s-rainbow-six-siege",
       "title": "Tom Clancy's Rainbow Six Siege",
+      "titleZh": "汤姆克兰西：彩虹六号 围攻",
       "source": "https://www.pcgamingwiki.com/wiki/Tom_Clancy's_Rainbow_Six_Siege",
+      "coverUrl": "https://images.pcgamingwiki.com/f/fd/Tom_Clancy%27s_Rainbow_Six_-_Siege_Cover.jpg",
+      "steamAppId": "359550",
       "developers": [
         "Ubisoft Montreal"
       ],
@@ -5301,7 +5790,10 @@
     {
       "id": "tomb-raider-2013",
       "title": "Tomb Raider (2013)",
+      "titleZh": "古墓丽影（2013）",
       "source": "https://www.pcgamingwiki.com/wiki/Tomb_Raider_(2013)",
+      "coverUrl": "https://images.pcgamingwiki.com/a/ab/Tomb_Raider_%282013%29_cover.jpg",
+      "steamAppId": "203160",
       "developers": [
         "Crystal Dynamics",
         "Eidos-Montréal"
@@ -5336,7 +5828,10 @@
     {
       "id": "tormented-souls-2",
       "title": "Tormented Souls 2",
+      "titleZh": "折磨之魂 2",
       "source": "https://www.pcgamingwiki.com/wiki/Tormented_Souls_2",
+      "coverUrl": "https://images.pcgamingwiki.com/d/df/Tormented_Souls_2_cover.jpg",
+      "steamAppId": "2464280",
       "developers": [
         "Dual Effect"
       ],
@@ -5366,7 +5861,10 @@
     {
       "id": "tour-de-france-2026",
       "title": "Tour de France 2026",
+      "titleZh": "环法自行车赛 2026",
       "source": "https://www.pcgamingwiki.com/wiki/Tour_de_France_2026",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2d/Tour_de_France_2026.jpg",
+      "steamAppId": "3936520",
       "developers": [
         "Cyanide Studio"
       ],
@@ -5397,7 +5895,10 @@
     {
       "id": "uncharted-legacy-of-thieves-collection",
       "title": "Uncharted: Legacy of Thieves Collection",
+      "titleZh": "神秘海域：盗贼传奇合辑",
       "source": "https://www.pcgamingwiki.com/wiki/Uncharted%3A_Legacy_of_Thieves_Collection",
+      "coverUrl": "https://images.pcgamingwiki.com/9/90/Uncharted_Legacy_of_Thieves_Collection_cover.jpg",
+      "steamAppId": "1659420",
       "developers": [
         "Naughty Dog"
       ],
@@ -5429,7 +5930,10 @@
     {
       "id": "until-dawn",
       "title": "Until Dawn",
+      "titleZh": "直到黎明",
       "source": "https://www.pcgamingwiki.com/wiki/Until_Dawn",
+      "coverUrl": "https://images.pcgamingwiki.com/3/33/Until_Dawn_cover.jpg",
+      "steamAppId": "2172010",
       "developers": [
         "Ballistic Moon",
         "Supermassive Games"
@@ -5463,7 +5967,10 @@
     {
       "id": "v-rising",
       "title": "V Rising",
+      "titleZh": "吸血鬼崛起",
       "source": "https://www.pcgamingwiki.com/wiki/V_Rising",
+      "coverUrl": "https://images.pcgamingwiki.com/1/14/V_Rising_cover.jpg",
+      "steamAppId": "1604030",
       "developers": [
         "Stunlock Studios"
       ],
@@ -5492,7 +5999,10 @@
     {
       "id": "war-robots-frontiers",
       "title": "War Robots: Frontiers",
+      "titleZh": "机甲战队：前线",
       "source": "https://www.pcgamingwiki.com/wiki/War_Robots%3A_Frontiers",
+      "coverUrl": "https://images.pcgamingwiki.com/3/36/War_Robots_Frontiers_cover.jpg",
+      "steamAppId": "1491000",
       "developers": [
         "Pixonic"
       ],
@@ -5523,7 +6033,10 @@
     {
       "id": "warframe",
       "title": "Warframe",
+      "titleZh": "星际战甲",
       "source": "https://www.pcgamingwiki.com/wiki/Warframe",
+      "coverUrl": "https://images.pcgamingwiki.com/9/92/Warframe_cover.jpg",
+      "steamAppId": "230410",
       "developers": [
         "Digital Extremes",
         "Sumo Digital"
@@ -5559,7 +6072,10 @@
     {
       "id": "warhammer-40-000-space-marine-ii",
       "title": "Warhammer 40,000: Space Marine II",
+      "titleZh": "战锤 40K：星际战士 II",
       "source": "https://www.pcgamingwiki.com/wiki/Warhammer_40%2C000%3A_Space_Marine_II",
+      "coverUrl": "https://images.pcgamingwiki.com/7/7a/Warhammer_40%2C000_Space_Marine_II_cover.jpg",
+      "steamAppId": "2183900",
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -5590,7 +6106,10 @@
     {
       "id": "where-winds-meet",
       "title": "Where Winds Meet",
+      "titleZh": "燕云十六声",
       "source": "https://www.pcgamingwiki.com/wiki/Where_Winds_Meet",
+      "coverUrl": "https://images.pcgamingwiki.com/e/e6/Where_Winds_Meet_cover.jpg",
+      "steamAppId": "3564740",
       "developers": [
         "Everstone Studio"
       ],
@@ -5621,7 +6140,10 @@
     {
       "id": "world-war-z",
       "title": "World War Z",
+      "titleZh": "僵尸世界大战",
       "source": "https://www.pcgamingwiki.com/wiki/World_War_Z",
+      "coverUrl": "https://images.pcgamingwiki.com/6/69/World_War_Z_cover.png",
+      "steamAppId": "699130",
       "developers": [
         "Saber Interactive Russia"
       ],
@@ -5649,7 +6171,10 @@
     {
       "id": "wrc-10-fia-world-rally-championship",
       "title": "WRC 10: FIA World Rally Championship",
+      "titleZh": "WRC 10：世界汽车拉力锦标赛",
       "source": "https://www.pcgamingwiki.com/wiki/WRC_10%3A_FIA_World_Rally_Championship",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2e/WRC_10_cover.jpg",
+      "steamAppId": "1462810",
       "developers": [
         "Kylotonn"
       ],
@@ -5677,7 +6202,10 @@
     {
       "id": "wrc-generations",
       "title": "WRC Generations",
+      "titleZh": "WRC 世代",
       "source": "https://www.pcgamingwiki.com/wiki/WRC_Generations",
+      "coverUrl": "https://images.pcgamingwiki.com/f/f5/WRC_Generations_cover.jpg",
+      "steamAppId": "1953520",
       "developers": [
         "Kylotonn"
       ],
@@ -5707,7 +6235,10 @@
     {
       "id": "wuthering-waves",
       "title": "Wuthering Waves",
+      "titleZh": "鸣潮",
       "source": "https://www.pcgamingwiki.com/wiki/Wuthering_Waves",
+      "coverUrl": "https://images.pcgamingwiki.com/4/47/Wuthering_Waves_cover.jpg",
+      "steamAppId": "3513350",
       "developers": [
         "Kuro Games"
       ],
@@ -5740,7 +6271,10 @@
     {
       "id": "xdefiant",
       "title": "XDefiant",
+      "titleZh": "不羁联盟",
       "source": "https://www.pcgamingwiki.com/wiki/XDefiant",
+      "coverUrl": "https://images.pcgamingwiki.com/3/39/XDefiant_cover.jpg",
+      "steamAppId": "",
       "developers": [
         "Ubisoft San Francisco"
       ],
@@ -5768,9 +6302,12 @@
       "hdHapticFeedback": "unknown"
     },
     {
-      "id": "yakuza-kiwami-3-amp-dark-ties",
-      "title": "Yakuza Kiwami 3 &amp; Dark Ties",
-      "source": "https://www.pcgamingwiki.com/wiki/Yakuza_Kiwami_3_%26amp%3B_Dark_Ties",
+      "id": "yakuza-kiwami-3-dark-ties",
+      "title": "Yakuza Kiwami 3 & Dark Ties",
+      "titleZh": "如龙 极 3 & Dark Ties",
+      "source": "https://www.pcgamingwiki.com/wiki/Yakuza_Kiwami_3_%26_Dark_Ties",
+      "coverUrl": "https://images.pcgamingwiki.com/1/10/Yakuza_Kiwami_3_%26_Dark_Ties_-_cover.jpg",
+      "steamAppId": "3937550",
       "developers": [
         "Ryu Ga Gotoku Studio"
       ],
@@ -5802,7 +6339,10 @@
     {
       "id": "zenless-zone-zero",
       "title": "Zenless Zone Zero",
+      "titleZh": "绝区零",
       "source": "https://www.pcgamingwiki.com/wiki/Zenless_Zone_Zero",
+      "coverUrl": "https://images.pcgamingwiki.com/5/53/Zenless_Zone_Zero_cover.jpg",
+      "steamAppId": "4162040",
       "developers": [
         "miHoYo"
       ],

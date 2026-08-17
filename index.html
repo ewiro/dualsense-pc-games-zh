@@ -7,12 +7,12 @@
     <meta name="description" content="只收录具有自适应扳机或 DualSense 触觉反馈的 PC 游戏中文资料库">
     <title>DualSense PC 游戏兼容性</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="light.css">
   </head>
   <body>
     <header class="site-header">
       <div class="header-inner">
         <a class="brand" href="./"><span class="brand-mark">DS</span><span>DualSense<br><em>PC 游戏资料库</em></span></a>
-        <a class="source-link" href="https://github.com/awalol/DS5Dongle" target="_blank" rel="noreferrer">为 DS5Dongle 用户准备 ↗</a>
       </div>
     </header>
     <main>
@@ -35,7 +35,7 @@
       <section id="catalog" class="catalog" aria-labelledby="catalog-title">
         <div class="section-heading"><div><p class="eyebrow">COMPATIBILITY INDEX</p><h2 id="catalog-title">游戏兼容性</h2></div><p id="result-count" class="result-count"></p></div>
         <div class="controls">
-          <label class="search-wrap"><span class="sr-only">搜索游戏</span><span class="search-icon">⌕</span><input id="search" type="search" placeholder="搜索游戏、厂商或平台…" autocomplete="off"></label>
+          <label class="search-wrap"><span class="sr-only">搜索游戏</span><span class="search-icon">⌕</span><input id="search" type="search" autocomplete="off"></label>
           <label><span class="sr-only">手柄型号</span><select id="model"><option value="all">全部型号</option><option value="DualSense">DualSense</option><option value="DualSense Edge">DualSense Edge</option></select></label>
           <label><span class="sr-only">支持状态</span><select id="status"><option value="all">全部状态</option><option value="true">支持</option><option value="limited">有限支持</option><option value="hackable">需额外调整</option><option value="always on">始终启用</option><option value="false">不支持</option><option value="unknown">未知</option></select></label>
           <label><span class="sr-only">连接方式</span><select id="connection"><option value="all">全部连接</option><option value="Wired">有线</option><option value="Wireless (Bluetooth)">无线（蓝牙）</option></select></label>
@@ -45,7 +45,7 @@
         <div id="error" class="message error" hidden></div>
         <div id="loading" class="message">正在加载兼容性数据…</div>
         <div id="table-wrap" class="table-wrap" hidden>
-          <table><thead><tr><th data-sort="title">游戏 <span>↕</span></th><th>平台</th><th data-sort="models">型号</th><th data-sort="controllerSupport">控制器支持</th><th>连接</th><th>沉浸功能</th><th data-sort="releaseDates">发行日 <span>↕</span></th><th>来源</th></tr></thead><tbody id="game-table"></tbody></table>
+          <table><thead><tr><th data-sort="titleZh">游戏 <span>↕</span></th><th>平台</th><th data-sort="models">型号</th><th data-sort="controllerSupport">控制器支持</th><th>连接</th><th>沉浸功能</th><th data-sort="releaseDates">发行日 <span>↕</span></th><th>来源</th></tr></thead><tbody id="game-table"></tbody></table>
           <div id="mobile-list" class="mobile-list"></div>
         </div>
         <div id="empty" class="message" hidden>没有找到符合条件的游戏，请调整搜索或筛选条件。</div>

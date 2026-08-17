@@ -23,7 +23,7 @@ test('build output serves index, script, styles and data', async () => {
   await new Promise((resolvePromise) => server.listen(0, '127.0.0.1', resolvePromise));
   try {
     const port = server.address().port;
-    for (const path of ['/', '/app.js', '/styles.css', '/data/games.json']) {
+    for (const path of ['/', '/app.js', '/styles.css', '/light.css', '/data/games.json']) {
       const response = await fetch(`http://127.0.0.1:${port}${path}`);
       assert.equal(response.status, 200, path);
     }

@@ -6,6 +6,8 @@ export const QUERY_FIELDS = [
   'Infobox_game._pageName=Page',
   'Infobox_game.Developers',
   'Infobox_game.Publishers',
+  'Infobox_game.Cover_URL',
+  'Infobox_game.Steam_AppID',
   'Infobox_game.Released',
   'Infobox_game.Available_on',
   'Input.Playstation_controller_support',
@@ -53,7 +55,21 @@ export function cleanText(value) {
     .replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2')
     .replace(/\[\[([^\]]+)\]\]/g, '$1')
     .replace(/''+/g, '')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#39;|&apos;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
     .trim();
+}
+
+export function cleanCoverUrl(value) {
+  const url = cleanText(value);
+  return /^https?:\/\//i.test(url) ? url : '';
+}
+
+export function cleanSteamAppId(value) {
+  return cleanText(value).match(/\d+/)?.[0] || '';
 }
 
 export function cleanCompany(value) {
@@ -96,7 +112,7 @@ export function parseCargoResponse(json) {
   return json.cargoquery;
 }
 
-export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toISOString()) {
+export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toISOString(), translations = {}) {
   const merged = new Map();
   const add = (row, model) => {
     const item = unwrapCargoRow(row);
@@ -106,7 +122,10 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     const current = merged.get(key) ?? {
       id: key.replace(/[^a-z0-9]+/gi, '-').replace(/^-|-$/g, '') || `game-${merged.size + 1}`,
       title,
+      titleZh: translations[title] || title,
       source: pageUrl(title),
+      coverUrl: '',
+      steamAppId: '',
       developers: [],
       publishers: [],
       releaseDates: [],
@@ -121,6 +140,8 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     };
     current.developers = [...new Set([...current.developers, ...cleanCompanies(item.Developers)])];
     current.publishers = [...new Set([...current.publishers, ...cleanCompanies(item.Publishers)])];
+    current.coverUrl ||= cleanCoverUrl(item['Cover URL']);
+    current.steamAppId ||= cleanSteamAppId(item['Steam AppID']);
     current.releaseDates = [...new Set([...current.releaseDates, ...cleanDates(item.Released)])];
     current.platforms = [...new Set([...current.platforms, ...cleanPlatforms(item['Available on'])])];
     current.controllerSupport = normalizeStatus(item['Playstation controller support']);
@@ -138,7 +159,7 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     .filter(hasEnhancedDualSenseFeature)
     .sort((a, b) => a.title.localeCompare(b.title, 'en'));
   return {
-    schemaVersion: 2,
+    schemaVersion: 4,
     fetchedAt,
     source: SOURCE_PAGE,
     selection: {
@@ -153,13 +174,13 @@ export function validateDataset(dataset, previous = null) {
   if (!dataset || !Array.isArray(dataset.games) || dataset.games.length === 0) {
     throw new Error('数据为空，拒绝发布');
   }
-  if (dataset.schemaVersion !== 2 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
+  if (dataset.schemaVersion !== 4 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
     throw new Error('数据缺少 schemaVersion、fetchedAt 或 source');
   }
   const ids = new Set();
   const titles = new Set();
   for (const game of dataset.games) {
-    if (!game.id || !game.title || !game.source) throw new Error('存在缺少 id、title 或 source 的记录');
+    if (!game.id || !game.title || !game.titleZh || !game.source) throw new Error('存在缺少 id、title、titleZh 或 source 的记录');
     if (ids.has(game.id) || titles.has(game.title.toLocaleLowerCase())) throw new Error(`发现重复游戏：${game.title}`);
     ids.add(game.id);
     titles.add(game.title.toLocaleLowerCase());

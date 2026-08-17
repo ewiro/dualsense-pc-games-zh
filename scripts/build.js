@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 const root = fileURLToPath(new URL('..', import.meta.url));
 const dist = resolve(root, 'dist');
 await mkdir(dist, { recursive: true });
-for (const file of ['index.html', 'styles.css', 'app.js', '404.html']) await cp(resolve(root, file), resolve(dist, file));
+for (const file of ['index.html', 'styles.css', 'light.css', 'app.js', '404.html']) await cp(resolve(root, file), resolve(dist, file));
 await cp(resolve(root, 'data'), resolve(dist, 'data'), { recursive: true });
 const marker = '<!-- BUILD_DATA -->';
 const htmlPath = resolve(dist, 'index.html');

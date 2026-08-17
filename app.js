@@ -5,7 +5,7 @@ const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（�
 const pageSize = 20;
 let games = [];
 let page = 1;
-let sortKey = 'title';
+let sortKey = 'titleZh';
 let sortDirection = 1;
 
 const $ = (id) => document.getElementById(id);
@@ -24,7 +24,7 @@ function filteredGames() {
   const connection = $('connection').value;
   const feature = $('feature').value;
   return games.filter((game) => {
-    const haystack = [game.title, ...(game.developers || []), ...(game.publishers || []), ...(game.platforms || [])].join(' ').toLocaleLowerCase();
+    const haystack = [game.title, game.titleZh, ...(game.developers || []), ...(game.publishers || []), ...(game.platforms || [])].join(' ').toLocaleLowerCase();
     if (query && !haystack.includes(query)) return false;
     if (model !== 'all' && !game.models.includes(model)) return false;
     if (status !== 'all' && activeStatus(game, model) !== status) return false;
@@ -35,7 +35,7 @@ function filteredGames() {
   }).sort((a, b) => {
     const av = Array.isArray(a[sortKey]) ? a[sortKey][0] || '' : a[sortKey] || '';
     const bv = Array.isArray(b[sortKey]) ? b[sortKey][0] || '' : b[sortKey] || '';
-    return String(av).localeCompare(String(bv), 'en') * sortDirection;
+    return String(av).localeCompare(String(bv), sortKey === 'titleZh' ? 'zh-CN' : 'en') * sortDirection;
   });
 }
 function features(game) {
@@ -44,14 +44,24 @@ function features(game) {
   if (ENHANCED_STATUSES.has(game.hapticFeedback)) values.push(`<span class="feature feature-haptic">触觉 · ${labelStatus(game.hapticFeedback)}</span>`);
   return values.join('') || '<span class="muted">—</span>';
 }
+function coverMarkup(game) {
+  const title = game.titleZh || game.title;
+  const fallback = text(title.slice(0, 2).toUpperCase());
+  if (!game.coverUrl) return `<span class="cover-placeholder" aria-hidden="true">${fallback}</span>`;
+  const coverUrl = `https://images.weserv.nl/?url=${encodeURIComponent(game.coverUrl)}&w=120&h=180&fit=cover&output=webp`;
+  return `<img class="cover" src="${text(coverUrl)}" alt="${text(title)} 封面" loading="lazy" width="48" height="72" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="cover-placeholder" aria-hidden="true" hidden>${fallback}</span>`;
+}
+function steamUrl(game) {
+  return game.steamAppId ? `https://store.steampowered.com/app/${game.steamAppId}/` : `https://store.steampowered.com/search/?term=${encodeURIComponent(game.title)}`;
+}
 function renderRow(game) {
   const model = $('model').value;
   const modelList = game.models.map((item) => `<span class="model-tag ${item === 'DualSense Edge' ? 'edge' : ''}">${text(item.replace('DualSense ', ''))}</span>`).join('');
-  return `<tr><td><a class="game-title" href="${text(game.source)}" target="_blank" rel="noreferrer">${text(game.title)}</a><small>${list(game.developers)}</small></td><td><div class="platforms">${list(game.platforms)}</div></td><td><div class="model-list">${modelList}</div></td><td>${statusPill(activeStatus(game, model))}<small>${game.controllerSupport === 'true' ? 'PlayStation 控制器' : '控制器支持记录'}</small></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
+  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td><div class="platforms">${list(game.platforms)}</div></td><td><div class="model-list">${modelList}</div></td><td>${statusPill(activeStatus(game, model))}<small>${game.controllerSupport === 'true' ? 'PlayStation 控制器' : '控制器支持记录'}</small></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
 }
 function renderCard(game) {
   const model = $('model').value;
-  return `<article class="game-card"><div class="card-top"><div><a class="game-title" href="${text(game.source)}" target="_blank" rel="noreferrer">${text(game.title)}</a><small>${list(game.developers)}</small></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><span><b>平台</b>${list(game.platforms)}</span><span><b>型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</span><span><b>连接</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</span><span><b>功能</b>${features(game)}</span><span><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</span></div></article>`;
+  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><span><b>平台</b>${list(game.platforms)}</span><span><b>型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</span><span><b>连接</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</span><span><b>功能</b>${features(game)}</span><span><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</span></div></article>`;
 }
 function render() {
   const result = filteredGames();
