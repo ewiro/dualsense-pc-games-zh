@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, attachInputFeatures, validateDataset } from './data-lib.js';
+import { updateNoteTranslations } from './note-translations.js';
 
 const userAgent = process.env.PCGW_USER_AGENT || `dualsense-pc-games-zh/1.0 (${process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : DEFAULT_REPOSITORY_URL})`;
 const outputPath = new URL('../data/games.json', import.meta.url);
@@ -33,7 +34,8 @@ async function queryPageWikitext(titles) {
 }
 
 const dataset = JSON.parse(await readFile(outputPath, 'utf8'));
-attachInputFeatures(dataset, await queryPageWikitext(dataset.games.map((game) => game.title)));
+const pageWikitext = await queryPageWikitext(dataset.games.map((game) => game.title));
+attachInputFeatures(dataset, pageWikitext, await updateNoteTranslations(pageWikitext));
 validateDataset(dataset);
 await writeFile(outputPath, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
 console.log(`已为 ${dataset.games.length} 条游戏补充按键提示、体感、灯条和手柄小喇叭状态`);

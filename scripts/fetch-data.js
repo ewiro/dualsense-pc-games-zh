@@ -1,5 +1,6 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, QUERY_FIELDS, attachAvailabilityStores, attachInputFeatures, mergeRecords, parseCargoResponse, validateDataset } from './data-lib.js';
+import { updateNoteTranslations } from './note-translations.js';
 
 const userAgent = process.env.PCGW_USER_AGENT || `dualsense-pc-games-zh/1.0 (${process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : DEFAULT_REPOSITORY_URL})`;
 const outputPath = new URL('../data/games.json', import.meta.url);
@@ -88,7 +89,7 @@ const translations = await readTranslations();
 const dataset = mergeRecords(dualSenseRows, edgeRows, new Date().toISOString(), translations);
 const pageWikitext = await queryPageWikitext(dataset.games.map((game) => game.title));
 attachAvailabilityStores(dataset, pageWikitext);
-attachInputFeatures(dataset, pageWikitext);
+attachInputFeatures(dataset, pageWikitext, await updateNoteTranslations(pageWikitext));
 validateDataset(dataset, await readPrevious());
 await writeFile(outputPath, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
 console.log(`已从 ${dualSenseRows.length} 条 DualSense / ${edgeRows.length} 条 Edge 原始记录中筛选 ${dataset.games.length} 条增强功能游戏`);

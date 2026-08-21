@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { attachAvailabilityStores, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
   { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', 'Cover URL': 'https://example.com/alpha.jpg', 'Steam AppID': '12345,67890', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth),Wireless (USB)', 'Controller haptic feedback hd': 'unknown' } },
@@ -40,6 +41,13 @@ test('keeps only Steam and Epic direct product links', () => {
     { name: 'Steam', url: 'https://store.steampowered.com/app/12345/' },
     { name: 'Epic', url: 'https://store.epicgames.com/p/alpha-game' }
   ]);
+});
+
+test('keeps a complete Chinese feature note translation cache', async () => {
+  const translations = await readNoteTranslations();
+  assert.equal(translations['Named Type B.'], '名称为 B 型。');
+  assert.ok(Object.keys(translations).length >= 250);
+  assert.ok(Object.values(translations).every((note) => /[\u3400-\u9fff]/u.test(note)));
 });
 
 test('parses PlayStation features and explicit controller speaker evidence', () => {
@@ -90,12 +98,12 @@ test('merges model rows and removes games without DualSense enhancements', () =>
   assert.equal(alpha.titleZh, '阿尔法游戏');
   attachAvailabilityStores(dataset, { 'alpha game': '{{Availability/row|Steam|12345|Steam||||Windows}}' });
   assert.deepEqual(alpha.stores, [{ name: 'Steam', url: 'https://store.steampowered.com/app/12345/' }]);
-  attachInputFeatures(dataset, { 'alpha game': '{{Input\n|playstation prompts=true\n|playstation motion sensors=false\n|light bar support=true\n|playstation speaker=true\n}}' });
+  attachInputFeatures(dataset, { 'alpha game': '{{Input\n|playstation prompts=true\n|playstation prompts notes=DualSense button prompts.\n|playstation motion sensors=false\n|light bar support=true\n|playstation speaker=true\n}}' }, { 'DualSense button prompts.': '支持 DualSense 按键提示。' });
   assert.equal(alpha.playstationPrompts, 'true');
   assert.equal(alpha.motionSensors, 'false');
   assert.equal(alpha.lightBar, 'true');
   assert.equal(alpha.controllerSpeaker, 'true');
-  assert.deepEqual(alpha.featureNotes, {});
+  assert.deepEqual(alpha.featureNotes, { playstationPrompts: '支持 DualSense 按键提示。' });
   assert.equal(hasEnhancedDualSenseFeature(alpha), true);
   assert.equal(dataset.games.some((game) => game.title === 'Beta Game'), false);
   assert.equal(dataset.games.some((game) => game.title === 'Gamma Game'), false);

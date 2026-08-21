@@ -280,7 +280,7 @@ export function attachAvailabilityStores(dataset, pageWikitext = {}) {
   return dataset;
 }
 
-export function attachInputFeatures(dataset, pageWikitext = {}) {
+export function attachInputFeatures(dataset, pageWikitext = {}, noteTranslations = {}) {
   for (const game of dataset.games) {
     const features = parseInputFeatures(pageWikitext[game.title.toLocaleLowerCase()] || '');
     if (features.playstationPrompts !== 'unknown' || !game.playstationPrompts) game.playstationPrompts = features.playstationPrompts;
@@ -289,7 +289,7 @@ export function attachInputFeatures(dataset, pageWikitext = {}) {
     game.controllerSpeaker = features.controllerSpeaker;
     if (features.adaptiveTriggers !== 'unknown') game.adaptiveTriggers = features.adaptiveTriggers;
     if (features.hapticFeedback !== 'unknown') game.hapticFeedback = features.hapticFeedback;
-    game.featureNotes = features.featureNotes;
+    game.featureNotes = Object.fromEntries(Object.entries(features.featureNotes).map(([key, note]) => [key, noteTranslations[note] || note]));
   }
   dataset.schemaVersion = 7;
   return dataset;
