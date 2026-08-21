@@ -240,9 +240,9 @@ th { text-align: center; }
     display: block;
   }
   .feature-definitions { grid-template-columns: 1fr; gap: 8px; }
-  .theme-toggle { padding: 0 11px; }
-  .feedback-link { width: 44px; flex: 0 0 44px; padding: 0; }
-  .feedback-link span { display: none; }
+  .theme-toggle { width: 44px; flex: 0 0 44px; padding: 0; }
+  .theme-toggle #theme-label { display: none; }
+  .feedback-link { width: auto; flex: 0 0 auto; padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
   .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
