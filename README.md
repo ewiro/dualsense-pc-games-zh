@@ -20,6 +20,12 @@
 - 白天 / 黑夜模式，选择会保存在浏览器中；
 - 每周自动抓取、校验并部署最新数据。
 
+## 数据纠错与补充
+
+如果发现游戏资料有误、缺失、过时或链接失效，请通过 [游戏数据纠错与补充表单](https://github.com/ewiro/dualsense-pc-games-zh/issues/new?template=game-data.yml) 提交 Issue。
+
+提交时请至少提供一种可核验的证据，例如 PCGamingWiki 页面、官方公告、商店页面、截图、视频或个人测试记录。本站会先核验内容，再决定更新 PCGamingWiki 或本站数据；Issue 不会自动修改网站数据。
+
 ## 快速开始
 
 需要 Node.js 20 或更高版本。项目不依赖第三方 npm 包。

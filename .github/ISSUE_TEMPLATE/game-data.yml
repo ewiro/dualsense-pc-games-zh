@@ -1,0 +1,128 @@
+name: 游戏数据纠错与补充
+description: 纠正错误、补充缺失信息、更新过时内容或报告失效链接
+title: "[游戏数据] "
+labels:
+  - 数据反馈
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你帮助完善 DualSense PC 游戏资料库。本站会先核验提交内容，再决定更新 PCGamingWiki 或本站数据；提交 Issue 不会自动修改数据。
+
+  - type: dropdown
+    id: feedback-type
+    attributes:
+      label: 反馈类型
+      description: 请选择最符合本次反馈的类型。
+      options:
+        - 纠正现有错误
+        - 补充缺失信息
+        - 更新过时内容
+        - 报告失效链接
+    validations:
+      required: true
+
+  - type: input
+    id: game-name
+    attributes:
+      label: 游戏名称
+      description: 请填写本站显示的中文名或英文原名。
+      placeholder: "例如：暗影诅咒：地狱复刻版 / Shadows of the Damned: Hella Remastered"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: data-categories
+    attributes:
+      label: 涉及的数据
+      description: 可多选，请勾选所有需要纠正或补充的内容。
+      multiple: true
+      options:
+        - 游戏名称
+        - 封面
+        - 购买平台或商店链接
+        - 支持型号
+        - 连接方式
+        - PlayStation 按键提示
+        - 体感
+        - 灯条
+        - 自适应扳机
+        - DualSense 触觉反馈
+        - 手柄小喇叭
+        - 功能说明
+        - 参考链接
+        - 其他游戏资料
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-data
+    attributes:
+      label: 当前内容
+      description: 请说明本站现在显示了什么；如果是补充缺失信息，可填写“暂无”或“未知”。
+      placeholder: 例如：当前显示“自适应扳机：不支持”。
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-data
+    attributes:
+      label: 建议内容
+      description: 请清楚说明你认为正确或需要补充的内容。
+      placeholder: 例如：应改为“有限支持”，仅在有线连接且关闭 Steam Input 时可用。
+    validations:
+      required: true
+
+  - type: dropdown
+    id: evidence-types
+    attributes:
+      label: 证据类型
+      description: 可多选，至少选择一种可用于核验的证据。
+      multiple: true
+      options:
+        - PCGamingWiki 页面或条目
+        - 游戏官方公告或文档
+        - Steam、Epic 商店页面或更新公告
+        - 截图或视频
+        - 个人实际测试
+        - 其他可核验来源
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据材料
+      description: 请提供链接、引用内容或测试记录；截图和视频可以直接拖放到此处上传。
+      placeholder: |
+        - 来源链接：
+        - 关键内容或测试结果：
+    validations:
+      required: true
+
+  - type: textarea
+    id: test-environment
+    attributes:
+      label: 个人测试环境（选填）
+      description: 如果证据包含个人测试，请尽量补充以下信息；不涉及个人测试时可留空。
+      value: |
+        - 商店平台：
+        - 手柄型号：
+        - 连接方式：
+        - Steam Input：
+
+  - type: textarea
+    id: additional-information
+    attributes:
+      label: 其他补充（选填）
+      description: 可填写其他有助于核验或理解此反馈的信息。
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: 提交确认
+      options:
+        - label: 我已搜索现有 Issue，确认没有内容相同的反馈。
+          required: true
+        - label: 我理解此内容需要维护者核验，提交 Issue 不会自动修改网站或 PCGamingWiki 数据。
+          required: true

@@ -77,10 +77,36 @@
   font: inherit;
   font-size: 12px;
   font-weight: 650;
+  white-space: nowrap;
   cursor: pointer;
   transition: color .18s ease, border-color .18s ease, background-color .18s ease;
 }
 .header-actions { display: flex; align-items: center; gap: 8px; }
+.feedback-link {
+  min-height: 44px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--panel);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 650;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color .18s ease, border-color .18s ease, background-color .18s ease;
+}
+.feedback-link svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
 .github-link {
   width: 44px;
   height: 44px;
@@ -95,6 +121,7 @@
   transition: color .18s ease, border-color .18s ease, background-color .18s ease;
 }
 .github-link svg { width: 19px; height: 19px; fill: currentColor; }
+.feedback-link:hover,
 .github-link:hover { border-color: var(--teal); color: var(--teal); }
 .theme-toggle:hover { border-color: var(--teal); color: var(--teal); }
 .theme-icon { width: 17px; height: 17px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
@@ -214,6 +241,8 @@ th { text-align: center; }
   }
   .feature-definitions { grid-template-columns: 1fr; gap: 8px; }
   .theme-toggle { padding: 0 11px; }
+  .feedback-link { width: 44px; flex: 0 0 44px; padding: 0; }
+  .feedback-link span { display: none; }
   .game-identity { gap: 10px; }
   .cover,
   .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
@@ -232,6 +261,7 @@ th { text-align: center; }
 
 @media (prefers-reduced-motion: reduce) {
   .theme-toggle,
+  .feedback-link,
   .github-link,
   .store-link,
   .feature-info,

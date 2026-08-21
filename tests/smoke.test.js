@@ -27,5 +27,8 @@ test('build output serves index, script, styles and data', async () => {
       const response = await fetch(`http://127.0.0.1:${port}${path}`);
       assert.equal(response.status, 200, path);
     }
+    const html = await (await fetch(`http://127.0.0.1:${port}/`)).text();
+    assert.match(html, /class="feedback-link"/);
+    assert.match(html, /issues\/new\?template=game-data\.yml/);
   } finally { server.close(); }
 });
