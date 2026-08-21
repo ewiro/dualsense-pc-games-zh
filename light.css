@@ -64,8 +64,10 @@
 [data-theme="light"] .site-footer { background: #fff; }
 
 .theme-toggle {
+  width: 44px;
+  flex: 0 0 44px;
   min-height: 44px;
-  padding: 0 14px;
+  padding: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -81,6 +83,7 @@
   cursor: pointer;
   transition: color .18s ease, border-color .18s ease, background-color .18s ease;
 }
+.theme-toggle #theme-label { display: none; }
 .header-actions { display: flex; align-items: center; gap: 8px; }
 .feedback-link {
   min-height: 44px;
@@ -229,6 +232,7 @@ th { text-align: center; }
 
 @media (max-width: 900px) {
   .controls { grid-template-columns: 1fr 1fr; }
+  .feedback-link { width: auto; flex: 0 0 auto; padding: 0 11px; }
 }
 
 @media (max-width: 640px) {
@@ -240,9 +244,6 @@ th { text-align: center; }
     display: block;
   }
   .feature-definitions { grid-template-columns: 1fr; gap: 8px; }
-  .theme-toggle { width: 44px; flex: 0 0 44px; padding: 0; }
-  .theme-toggle #theme-label { display: none; }
-  .feedback-link { width: auto; flex: 0 0 auto; padding: 0 11px; }
   .game-identity { gap: 10px; }
   .cover,
   .cover-placeholder { width: 52px; height: 78px; flex-basis: 52px; }
