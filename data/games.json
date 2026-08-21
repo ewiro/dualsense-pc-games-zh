@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 6,
+  "schemaVersion": 7,
   "fetchedAt": "2026-08-17T06:58:00.872Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
@@ -56,7 +56,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Switches colors depending on situation",
+        "hapticFeedback": "Haptics is wired only, use Force Rumble for regular rumble on wireless"
+      }
     },
     {
       "id": "a-plague-tale-requiem",
@@ -106,7 +110,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "alan-wake-ii",
@@ -152,7 +160,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；added in The Anniversary Update.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired connection only."
+      }
     },
     {
       "id": "animal-well",
@@ -195,7 +208,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "apex-legends",
@@ -245,7 +261,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Added in the Breakout update.",
+        "hapticFeedback": "Wired only. Added in the Breakout update."
+      }
     },
     {
       "id": "arknights-endfield",
@@ -293,7 +313,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线、无线（蓝牙）",
+        "hapticFeedback": "Not available over Bluetooth connection.",
+        "controllerSpeaker": "Controller speaker and vibration not available over Bluetooth connection."
+      }
     },
     {
       "id": "assassin-s-creed-mirage",
@@ -350,7 +375,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense button prompts.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "assassin-s-creed-shadows",
@@ -412,7 +441,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "assassin-s-creed-valhalla",
@@ -474,7 +507,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "assassin-s-creed-black-flag-resynced",
@@ -532,7 +569,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock and DualSense button prompts.",
+        "adaptiveTriggers": "模式：有线；Can be set to Light / Off via the Adaptive Triggers option within the Controls/Controller section of the system menu.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "assetto-corsa",
@@ -576,7 +618,12 @@
       "playstationPrompts": "hackable",
       "motionSensors": "unknown",
       "lightBar": "hackable",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "PlayStation steering wheels display the correct prompts when using Content Manager.",
+        "lightBar": "Supports Logitech G Lightsync technology. Requires RGB lighting middleware wrapper like Project Aurora or Project Artemis to work with light bar.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Custom config (requires DSX). Adaptive Triggers for tires slipping or locking."
+      }
     },
     {
       "id": "avatar-frontiers-of-pandora",
@@ -637,7 +684,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Gyro aiming functionality added in title update 3 .",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble if connected via Bluetooth."
+      }
     },
     {
       "id": "banishers-ghosts-of-new-eden",
@@ -685,7 +737,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线、无线（蓝牙）",
+        "hapticFeedback": "Basic rumble only. Wired, Wireless."
+      }
     },
     {
       "id": "battlefield-6",
@@ -737,7 +793,11 @@
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Requires binding the Motion Sensor Tilt to Look Up/Down/Left/Right in Infantry/Passenger Control Mappings section , but you won't have access to traditional Joystick Camera movement in the process.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "beamng-drive",
@@ -784,7 +844,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Wired only",
+        "hapticFeedback": "regular rumble"
+      }
     },
     {
       "id": "beast-of-reincarnation",
@@ -828,7 +892,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Referred to as Button Icons Type A.",
+        "adaptiveTriggers": "模式：有线、无线"
+      }
     },
     {
       "id": "black-myth-wukong",
@@ -874,7 +942,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Named Type B.",
+        "adaptiveTriggers": "模式：有线（USB）；Pressing R2 offers resistance and there's two levels of pressure, but it's not tied to actual feedback of anything in-game; The game doesn't seem to take advantage of the two levels of pressure either."
+      }
     },
     {
       "id": "bramble-the-mountain-king",
@@ -922,7 +994,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "bugsnax",
@@ -969,7 +1045,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Pink light when using Buggy ball.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "cairn",
@@ -1015,7 +1095,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "adaptiveTriggers": "Modes: Off, Weak, Medium & Strong.",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "DualSense speaker support.；General, Voice, Music, SFX & DualSense Speaker sliders."
+      }
     },
     {
       "id": "call-of-duty-black-ops-6",
@@ -1067,7 +1153,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Labeled as Motion Sensor Function Behavior (under Controller > Controller). Various adjustments can be made within the Motion Sensor Function Behavior menu (under Controller > Aiming).",
+        "adaptiveTriggers": "模式：有线（USB）；Can be adjusted with the Trigger Effect option (under Controller > Controller) with Off, Weapon Fire Threshold and Full Haptics options available. By default, it is set to Off.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "call-of-duty-black-ops-7",
@@ -1119,7 +1210,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "call-of-duty-black-ops-cold-war",
@@ -1167,7 +1263,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "call-of-duty-modern-warfare-ii",
@@ -1219,7 +1318,13 @@
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "motionSensors": "模式：镜头控制；Gyro Aiming is only available on Multiplayer.",
+        "adaptiveTriggers": "模式：有线（USB）；Can be adjusted with the Trigger Effect option (under Controller>Controller) with Off, Weapon Fire Threshold and Full Haptics options available.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "call-of-duty-modern-warfare-iii",
@@ -1272,7 +1377,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Labeled as Motion Sensor Function Behavior (under Controller > Controller). Various adjustments can be made within the Motion Sensor Function Behavior menu (under Controller > Aiming).",
+        "adaptiveTriggers": "模式：有线（USB）；Can be adjusted with the Trigger Effect option (under Controller > Controller) with Off, Weapon Fire Threshold and Full Haptics options available.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "call-of-duty-warzone-2-0",
@@ -1322,7 +1432,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "USB Only"
+      }
     },
     {
       "id": "call-of-the-wild-the-angler",
@@ -1369,7 +1484,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense Prompts. Some part of the game's UI are still showing the Xbox prompts.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "cloudheim",
@@ -1412,7 +1531,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "crime-boss-rockay-city",
@@ -1459,7 +1579,11 @@
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Xbox prompts only. on the Steam version: DualSense prompts is only available when Steam Input is enabled.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "crimson-desert",
@@ -1506,7 +1630,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "Adaptive trigger support has been added in 1.04 version.",
+        "hapticFeedback": "Basic rumble only."
+      }
     },
     {
       "id": "cronos-the-new-dawn",
@@ -1556,7 +1684,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）；Sensitivity slider from 0 to 1.",
+        "hapticFeedback": "Wired only. Sensitivity slider from 0 to 1."
+      }
     },
     {
       "id": "cthulhu-the-cosmic-abyss",
@@ -1600,7 +1732,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线、无线",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "cyberpunk-2077",
@@ -1653,7 +1789,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {}
     },
     {
       "id": "dave-the-diver",
@@ -1699,7 +1836,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Off on the surface, blue when diving, red when low on oxygen, purple when using the UV Light, for example.",
+        "adaptiveTriggers": "模式：有线（USB）；Added in v1.0.4.1635 (Windows) / v1.0.4.582 (Mac OS). Felt when using the harpoon, for instance.",
+        "hapticFeedback": "wired only"
+      }
     },
     {
       "id": "days-gone",
@@ -1747,7 +1889,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense prompts are supported",
+        "motionSensors": "模式：镜头控制；The in-game \"Motion Sensor Function Aiming\" option works on USB. Gyro aiming has acceleration that cannot be disabled.",
+        "lightBar": "Full light effect.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "USB only."
+      }
     },
     {
       "id": "death-stranding-2-on-the-beach",
@@ -1792,7 +1941,10 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：手势、镜头控制"
+      }
     },
     {
       "id": "death-stranding-director-s-cut",
@@ -1844,7 +1996,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Both DualShock 4 and DualSense icons are available.",
+        "motionSensors": "模式：手势；Gyro sensors are supported and can be used for Controls for Soothing BB.",
+        "lightBar": "Light bar color changes according to the ingame situation.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Support over wireless connectivity was added in version 1.003.",
+        "hapticFeedback": "Only works over wired connectivity."
+      }
     },
     {
       "id": "deathloop",
@@ -1891,7 +2050,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Gyro Aiming was added in Goldenloop Update.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "depersonalization",
@@ -1935,7 +2099,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "dirt-rally-2-0",
@@ -1979,7 +2144,11 @@
       "playstationPrompts": "false",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Games do show the DualShock 4 prompt, but only when a PlayStation-compatible racing wheel is connected. (See Controller support)",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Use RacingDSX"
+      }
     },
     {
       "id": "dolmen",
@@ -2022,7 +2191,11 @@
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "doom-the-dark-ages",
@@ -2068,7 +2241,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "Enabled by default when using a DualSense controller with no option to disable.",
+        "hapticFeedback": "Regular vibration."
+      }
     },
     {
       "id": "dragon-age-the-veilguard",
@@ -2118,7 +2295,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "dying-light",
@@ -2169,7 +2350,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Windows only. Any third party controller solutions have to be disabled. DualSense modification has extended lightbar support",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Adaptive triggers for guns and melee weapons",
+        "hapticFeedback": "Haptic feedback for weapon swinging, climbing, flashlight, trap remote etc."
+      }
     },
     {
       "id": "dying-light-2-stay-human",
@@ -2214,7 +2400,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only"
+      }
     },
     {
       "id": "ea-sports-wrc",
@@ -2264,7 +2454,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Both DualShock 4 and DualSense button prompts.",
+        "hapticFeedback": "Use the Shake-It Bass Shaker function of Simhub to emulate haptic feedback from the controller's VCA motors."
+      }
     },
     {
       "id": "eriksholm-the-stolen-dream",
@@ -2312,7 +2506,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "Wired only"
+      }
     },
     {
       "id": "euro-truck-simulator-2",
@@ -2363,7 +2560,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense button prompts",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Custom config (requires DSX and Steam).",
+        "hapticFeedback": "standard rumble only."
+      }
     },
     {
       "id": "everspace-2",
@@ -2404,7 +2606,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "f1-2021",
@@ -2448,7 +2653,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "React to start signals and flags.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "There is no vibration audio signal even when wired."
+      }
     },
     {
       "id": "f1-22",
@@ -2497,7 +2707,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock prompts.",
+        "lightBar": "React to start signals and flags.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "f1-23",
@@ -2546,7 +2762,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Based on DualShock 4's buttons.",
+        "lightBar": "React to start signal and flags.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "f1-24",
@@ -2595,7 +2817,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock prompts.",
+        "lightBar": "React to start signal and flags.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "f1-25",
@@ -2644,7 +2872,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock prompts.",
+        "lightBar": "React to start signal and flags.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "fantasian-neo-dimension",
@@ -2689,7 +2923,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "far-cry-6",
@@ -2747,7 +2982,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "fbc-firebreak",
@@ -2797,7 +3036,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "motionSensors": "模式：镜头控制；Motion Sensor Function Aiming: Off, ADS, Hipfire Always (Off) Motion Sensor Function Horizontal Sensitivity: 0 - 100 (10) Motion Sensor Function Vertical Sensitivity: 0 - 100 (10)",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Can be disabled via the Adaptive Trigger toggle within the Gameplay tab in the Options menu.",
+        "hapticFeedback": "Wired only. Haptics strength adjustment is shared with regular rumble via the Vibration Intensity slider within the Gameplay tab in the Options menu."
+      }
     },
     {
       "id": "final-fantasy-vii-rebirth",
@@ -2843,7 +3088,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "motionSensors": "模式：手势、镜头控制；Labeled as Motion Sensor Function. Used on some minigames. On or off toggle available.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Option to adjust the strength of the effect, from 0 to 3.",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "Separate controls for master, background music, special effects, character speech, cutscenes songs and DualSense speaker."
+      }
     },
     {
       "id": "final-fantasy-vii-remake-intergrade",
@@ -2889,7 +3140,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "limited",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock and DualSense prompts. Use this mod (DualShock 4) or this mod (DualSense) to force DualShock 4 or DualSense button prompts regardless of which controller or wrapper is being used.",
+        "lightBar": "Blue on the Dualshock 4.",
+        "adaptiveTriggers": "模式：有线（USB）；Only used during the motorcycle minigame.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "final-fantasy-xiv-a-realm-reborn",
@@ -2938,7 +3195,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 3, DualShock 4 and DualSense button prompts. Selectable under Systemconfig -> Controller. As of Patch 7.5, these options are labelled as “×○□△ (Type 1)”, “×○□△ + Touch Pad (Type 2)” and “×○□△ + Touch Pad (Type 3)”, respectively",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "final-fantasy-xvi",
@@ -2989,7 +3251,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts only",
+        "adaptiveTriggers": "模式：有线（USB）；Adaptive Triggers under the Controller Setting menu.",
+        "hapticFeedback": "Wired only",
+        "controllerSpeaker": "Also supports built-in speaker for sound effects, and has a separate volume control for it.；Music, Voice-over, Effects, and volume of Controller that has a speaker"
+      }
     },
     {
       "id": "forspoken",
@@ -3039,7 +3307,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock and DualSense button prompts.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "gears-of-war-e-day",
@@ -3083,7 +3356,8 @@
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "genshin-impact",
@@ -3130,7 +3404,12 @@
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Gyro aiming functionality was added since Version 4.0 . DualSense Edge not supported.",
+        "adaptiveTriggers": "模式：有线（USB）；DualSense Edge not supported.",
+        "hapticFeedback": "Requires manual configuration on the controller's audio device. Wired only."
+      }
     },
     {
       "id": "ghost-of-tsushima-director-s-cut",
@@ -3180,7 +3459,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "motionSensors": "模式：手势；during Iki's Island expansion: The Flute minigame uses the controller's motion sensor functionality to adjust the pitch of the flute cursor.",
+        "lightBar": "Static white.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；On the Steam version, it also works with Steam Input enabled on both connection modes.",
+        "hapticFeedback": "Standard rumble functions over both wired and wireless connectivity, and on the Steam version, works with Steam Input on or off for both connection modes. Extra haptics that are absent with other controllers (e.g. feedback when switching selections on the main menu, swinging a sword, etc.) require the DualSense controller to be wired and Steam Input to be disabled, and that the game is NOT launched from Steam's Big Picture mode.",
+        "controllerSpeaker": "Supports the controllers' built-in speaker with a wired connection, but not with bluetooth (on the Steam version Steam Input must also be disabled). Dualshock 4 doesn't output any rumble wirelessly."
+      }
     },
     {
       "id": "ghostwire-tokyo",
@@ -3229,7 +3515,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Button Icon Type > Type 2.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "god-of-war",
@@ -3278,7 +3569,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock button prompts.",
+        "lightBar": "Сolor changes depending on the situation.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Custom config. Requires DSX and DualSense AT (see Custom config)."
+      }
     },
     {
       "id": "god-of-war-ragnar-k",
@@ -3330,7 +3626,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "Global, Dialogue, Music, SFX, Controller Speaker Volume sliders from 0 to 10."
+      }
     },
     {
       "id": "grand-theft-auto-v-enhanced",
@@ -3380,7 +3682,14 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "false"
+      "controllerSpeaker": "false",
+      "featureNotes": {
+        "playstationPrompts": "DualSense prompts only.",
+        "lightBar": "Lightbar changes based on in-game events. (e.g. Playable character's color scheme when playing GTA5 Story mode, or while under Police/Military alert)",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Standard rumble only.",
+        "controllerSpeaker": "Touchpad is supported. Adaptive triggers are partially supported. Speaker and Haptic Feedback functions are not supported."
+      }
     },
     {
       "id": "grand-theft-auto-san-andreas",
@@ -3431,7 +3740,14 @@
       "playstationPrompts": "hackable",
       "motionSensors": "hackable",
       "lightBar": "hackable",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Uses generic button prompts. PlayStation prompts can be used with GInput.",
+        "motionSensors": "模式：摇动",
+        "lightBar": "Use GTASense",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Use GTASense and DSX.",
+        "hapticFeedback": "Standard rumble"
+      }
     },
     {
       "id": "halo-campaign-evolved",
@@ -3475,7 +3791,12 @@
       "playstationPrompts": "hackable",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Can be added using the DualSense Button Prompts mod.",
+        "lightBar": "Controller Light Bar Enabled toggle.",
+        "adaptiveTriggers": "模式：有线"
+      }
     },
     {
       "id": "haste",
@@ -3519,7 +3840,11 @@
       "playstationPrompts": "true",
       "motionSensors": "hackable",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；See Hasty Controls.",
+        "hapticFeedback": "Added in Patch 1.7a, Wired connectivity only. Bluetooth support can be enabled via Hasty Controls."
+      }
     },
     {
       "id": "hell-is-us",
@@ -3568,7 +3893,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "controllerSpeaker": "Sliders for Music, Voice, Ambient, Sound Effects, and Controller Speaker."
+      }
     },
     {
       "id": "hellblade-ii-senua-s-saga",
@@ -3614,7 +3942,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "helldivers-2",
@@ -3661,7 +3994,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Gyro Aiming functionality (as Motion Sensor Aiming, Can be found under Options > Controller) is supported.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only"
+      }
     },
     {
       "id": "hi-fi-rush",
@@ -3711,7 +4049,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Referred to as Controller Buttons Icon Type B. Type A (Xbox Button Icon) is selected by default, and must be changed via Options > Accessibility > User Interface > Controller Button Icon",
+        "adaptiveTriggers": "模式：有线（USB）；Adaptive Trigger can be disabled via Options > Gameplay > Adaptive Trigger",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "hogwarts-legacy",
@@ -3762,7 +4105,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "horizon-forbidden-west",
@@ -3812,7 +4158,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 & DualSense",
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；The Steam version also have adaptive trigger support with the use of Steam Input.",
+        "hapticFeedback": "Wired only. Fallback to simple rumble on Bluetooth.",
+        "controllerSpeaker": "Also support the built-in speaker on the controllers in wired connection."
+      }
     },
     {
       "id": "horizon-zero-dawn-remastered",
@@ -3863,7 +4216,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；The Steam version also have adaptive trigger support with the use of Steam Input.",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble if either connected via Bluetooth or enable Steam Input.",
+        "controllerSpeaker": "Also support the built-in speaker on the controllers in wired connection, alongside Touchpad navigation while on Map.；Master, Music, Speech, Sound Effects, Controller Speaker."
+      }
     },
     {
       "id": "indiana-jones-and-the-great-circle",
@@ -3909,7 +4268,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts only.",
+        "lightBar": "Shows enemy alarm state and player health.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Added in Update 4.",
+        "hapticFeedback": "Added in Update 4. Wired only. Fall back to regular rumble on Bluetooth."
+      }
     },
     {
       "id": "infinity-nikki",
@@ -3961,7 +4326,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "jak-ii-opengoal",
@@ -4004,7 +4370,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Lightbar color changes based on in-game events, such as turning into Dark Jax, each gun's colors, health, etc.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Triggers in-game events, such as Gun Shooting effects and Resistance while changing to Dark Jax."
+      }
     },
     {
       "id": "john-carpenter-s-toxic-commando",
@@ -4048,7 +4418,8 @@
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "kingdom-come-deliverance-ii",
@@ -4096,7 +4467,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "lego-batman-legacy-of-the-dark-knight",
@@ -4141,7 +4513,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "hapticFeedback": "Will fall back to regular rumble if connected via Bluetooth or if the controller was connected after the game started.",
+        "controllerSpeaker": "Music, sound effects, dialogue and controller speaker"
+      }
     },
     {
       "id": "lego-horizon-adventures",
@@ -4187,7 +4563,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts across both DualShock 4 and DualSense",
+        "hapticFeedback": "wired only"
+      }
     },
     {
       "id": "lords-of-the-fallen-2023",
@@ -4237,7 +4617,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts. See Force PS5 button prompts for displaying DualSense button prompts when using a DualShock 4.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "lost-soul-aside",
@@ -4287,7 +4671,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "limited",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense prompts only",
+        "lightBar": "Static blue for DualShock 4 controllers",
+        "hapticFeedback": "Wired only"
+      }
     },
     {
       "id": "luto",
@@ -4335,7 +4724,8 @@
       "playstationPrompts": "false",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "marathon-2026",
@@ -4376,7 +4766,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Color changes depending on game state (grey in menus and full health while in match, turns to red upon shield depletion).",
+        "adaptiveTriggers": "PS5 version does not have support either",
+        "hapticFeedback": "Wired"
+      }
     },
     {
       "id": "marvel-rivals",
@@ -4424,7 +4819,13 @@
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "limited",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Dualsense prompts only. If using DualShock 4: it'll use Xbox prompts instead.",
+        "lightBar": "Static blue lights only on the DualShock 4.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "marvel-t-kon-fighting-souls",
@@ -4474,7 +4875,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "playstationPrompts": "DualSense prompts listed as Type 2 prompts.",
+        "lightBar": "Static Blue (or Red for Player 2) lights only",
+        "controllerSpeaker": "Music, Sound Effects, Voice, Ambient and Controller Speaker."
+      }
     },
     {
       "id": "marvel-s-spider-man-2",
@@ -4521,7 +4927,11 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制；Gyro Aiming is supported.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
+      }
     },
     {
       "id": "marvel-s-spider-man-remastered",
@@ -4571,7 +4981,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Native Bluetooth support and and Steam Input support for the feature were added since v.2.512.0.0.",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "No vibration and internal speaker support over Bluetooth connectivity.；Music, Speech, UI, SFX sliders. Separate Gamepad Speaker slider also available."
+      }
     },
     {
       "id": "marvel-s-spider-man-miles-morales",
@@ -4621,7 +5036,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Native Bluetooth support and and Steam Input support for the feature were added since v.2.516.0.0.",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "No vibration and internal speaker support with Bluetooth connectivity.；Master, Music, Speech, UI, SFX sliders. Separate Controller Speaker and Audio Balance sliders also available."
+      }
     },
     {
       "id": "mecha-break",
@@ -4665,7 +5085,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "lightBar": "Color changes depending on the mech's health.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Can be turned off with the Adaptive Triggers setting in the Overall Control tab within the Controller tab in Settings menu.",
+        "hapticFeedback": "Use standard rumble."
+      }
     },
     {
       "id": "metal-gear-solid-snake-eater",
@@ -4711,7 +5137,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "For controllers other than DualSense, use this to force proper prompts.",
+        "hapticFeedback": "Wired connection only."
+      }
     },
     {
       "id": "metro-exodus-enhanced-edition",
@@ -4758,7 +5188,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "both DualShock 4 and Dualsense prompts are supported.",
+        "lightBar": "Light meter indicator is missing. on DualShock 4: it'll be Static Blue only while DualSense's lightbar is unused beyond Player LED info.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "mindseye",
@@ -4807,7 +5242,8 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "mixtape",
@@ -4856,7 +5292,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "monster-hunter-wilds",
@@ -4900,7 +5337,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "\"Type 3\" (DualSense) and \"Type 4\" (DualShock 4) can be selected via \"Controller Button Icons\" under Options > Controls.",
+        "motionSensors": "Gyro Aiming support is only available when Steam Input API mode is enabled, see Steam Input for more info.",
+        "adaptiveTriggers": "模式：有线（USB）；USB Only, requires Steam Input API Adaptive Trigger is used to control the Map's Zoom action.",
+        "hapticFeedback": "USB only, requires Steam Input API."
+      }
     },
     {
       "id": "mortal-shell-ii",
@@ -4944,7 +5387,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "When firing a gun.",
+        "hapticFeedback": "Only during events/cutscenes."
+      }
     },
     {
       "id": "neva",
@@ -4988,7 +5435,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Follows predominant scene color."
+      }
     },
     {
       "id": "neverness-to-everness",
@@ -5037,7 +5487,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Game automatically switches prompts.",
+        "lightBar": "Needs to be enabled in Settings under System Features",
+        "adaptiveTriggers": "Needs to be enabled in Settings under System Features",
+        "hapticFeedback": "Only available when using wired connection."
+      }
     },
     {
       "id": "ninja-gaiden-4",
@@ -5084,7 +5540,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts. For some odd reasons, it always show the Xbox button prompts over Bluetooth when using a DualShock 4.",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble on Bluetooth."
+      }
     },
     {
       "id": "nioh-3",
@@ -5127,7 +5587,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "Labelled as Immersive under the Vibration setting."
+      }
     },
     {
       "id": "no-man-s-sky",
@@ -5173,7 +5636,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；The Steam version requires the Steam Input API to use Adaptive Triggers.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "off-the-grid",
@@ -5216,7 +5683,11 @@
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "when using DualShock 4 controller and while in-game: it'll use Xbox prompts only.",
+        "motionSensors": "模式：镜头控制；Gyro Aiming added in May 23th update DualSense only"
+      }
     },
     {
       "id": "overwatch-2",
@@ -5257,7 +5728,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "pacific-drive",
@@ -5305,7 +5779,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble on Bluetooth."
+      }
     },
     {
       "id": "painkiller-2025",
@@ -5349,7 +5827,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "pipistrello-and-the-cursed-yoyo",
@@ -5390,7 +5869,10 @@
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "e.g. Light bar is white on the title screen, blue in-game, red on Game Over, pink when receiving \"Auntie's help\"."
+      }
     },
     {
       "id": "pragmata",
@@ -5434,7 +5916,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "As Type B (DualSense prompts)",
+        "motionSensors": "模式：镜头控制",
+        "lightBar": "Lightbar color changes based on in-game events, such as taking damage.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
+      }
     },
     {
       "id": "prince-of-persia-the-lost-crown",
@@ -5489,7 +5977,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense button prompts.",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "Also support speaker on both the DualSense and DualSense Edge over USB."
+      }
     },
     {
       "id": "project-colored-mountains",
@@ -5533,7 +6026,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Always shows prompts for a white DualSense",
+        "lightBar": "Doesn't actually do anything, just static white (on PC) or green (on PS5)"
+      }
     },
     {
       "id": "ratchet-clank-rift-apart",
@@ -5583,7 +6080,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线；In addition to native support, the Steam version also has adaptive trigger support with the use of Steam Input.",
+        "hapticFeedback": "Only works over wired connectivity with Steam Input disabled. Will fall back to regular rumble if either connected via Bluetooth or enable Steam Input.",
+        "controllerSpeaker": "Also supports the built-in speaker on the controllers in wired connection. Native DualSense Edge support have been broken following a Windows OS update in February 2026 and require a workaround. (See Broken native DualSense Edge support over USB)"
+      }
     },
     {
       "id": "ready-or-not",
@@ -5625,7 +6127,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts only. DualShock 4 controller will instead use Xbox prompts.",
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "resident-evil-requiem",
@@ -5673,7 +6180,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "\"Type B\" (DualSense only) can be selected via \"Controller Button Icons\" under Options > Controls.",
+        "motionSensors": "模式：镜头控制；Added in an update released on May 8, 2026.",
+        "lightBar": "Added in an update released on May 8, 2026.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Added in an update released on May 8, 2026.",
+        "hapticFeedback": "Added in an update released on May 8, 2026."
+      }
     },
     {
       "id": "returnal",
@@ -5723,7 +6237,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "rise-of-the-ronin",
@@ -5769,7 +6287,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense prompts.",
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "riven-2024",
@@ -5812,7 +6334,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "roadcraft",
@@ -5857,7 +6380,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "rocket-league",
@@ -5910,7 +6434,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "hackable",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Use Aurora to add DS4 light bar support.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Custom config (requires DSX)."
+      }
     },
     {
       "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
@@ -5960,7 +6488,11 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "controllerSpeaker": "PlayStation controller support is added in Version 1.7 Speaker function is also supported."
+      }
     },
     {
       "id": "s-t-a-l-k-e-r-call-of-prypiat-enhanced-edition",
@@ -6003,7 +6535,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "s-t-a-l-k-e-r-clear-sky-enhanced-edition",
@@ -6046,7 +6579,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "s-t-a-l-k-e-r-shadow-of-chornobyl-enhanced-edition",
@@ -6089,7 +6623,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "controllerSpeaker": "SFX, music, controller speaker."
+      }
     },
     {
       "id": "sackboy-a-big-adventure",
@@ -6136,7 +6673,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：手势；Wired only. The player character can tilt/move their head/torsos. [Tilt Platform] segments can be disabled in-game.",
+        "adaptiveTriggers": "模式：有线（USB）；There are no options in-game to disable this.",
+        "hapticFeedback": "Wired only. There are also no options in-game to disable this."
+      }
     },
     {
       "id": "satisfactory",
@@ -6181,7 +6723,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "Also support built-in speaker, whose volume can be adjusted via the Wireless controller speaker volume option.；Master, Dialogue, Effects, UI, Music, Ambient, Consumables, Creatures, Player Foley. Equipment, Factory, Vehicle, Weapons and Wireless Controller Speaker Volume."
+      }
     },
     {
       "id": "screamer-2026",
@@ -6229,7 +6775,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense prompts are supported",
+        "lightBar": "Lightbar change based on UI (i.e; gearshift)",
+        "adaptiveTriggers": "模式：有线、无线（蓝牙）；Adaptive Triggers is supported on both Native and Steam Input API."
+      }
     },
     {
       "id": "sea-of-thieves",
@@ -6274,7 +6825,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "season-a-letter-to-the-future",
@@ -6319,7 +6871,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "shadows-of-the-damned-hella-remastered",
@@ -6364,7 +6919,13 @@
       "playstationPrompts": "hackable",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Use this mod.",
+        "motionSensors": "模式：镜头控制；On/Off toggle. A Motion Sensitivity slider is also available.",
+        "lightBar": "Static pink (DualShock 4 only).",
+        "adaptiveTriggers": "Enabled by default when using a DualSense controller with no option to disable."
+      }
     },
     {
       "id": "signalis",
@@ -6409,7 +6970,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "silent-hill-2",
@@ -6459,7 +7023,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Labelled as Type B in the settings.",
+        "lightBar": "Color changes based on James' health.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "skate",
@@ -6506,7 +7076,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "Wired only. Will fall back to regular rumble on Bluetooth."
+      }
     },
     {
       "id": "skull-and-bones",
@@ -6562,7 +7135,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "Work over Bluetooth. Can be adjusted via the Trigger Intensity slider within the Controller tab in the Settings menu.",
+        "hapticFeedback": "Wired only. Will fail back to regular rumble on Bluetooth."
+      }
     },
     {
       "id": "sleep-awake",
@@ -6606,7 +7183,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "controllerSpeaker": "Sliders for Main, Sound Effects, Music, Dialogue, User Interface, and Controller Speaker."
+      }
     },
     {
       "id": "sonic-racing-crossworlds",
@@ -6656,7 +7236,11 @@
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 (Type 1) and DualSense (Type 2) prompts are available. Face buttons will be using Universal Face button prompts, but Bumpers and Trigger buttons will be using PlayStation-specific prompts.",
+        "hapticFeedback": "While not explicitly listed in the patch note, support via Steam Input API was added in version 1.4.1 update, and will fallback to Standard rumble when either connected via Bluetooth or disabling the controller's audio device. Due to the limitation in Steam Input API, reconnecting the same controller (either using the same USB connectivity, or from USB to Bluetooth) will make its haptic/rumble nonfunctional until the game is restarted."
+      }
     },
     {
       "id": "sonic-superstars",
@@ -6698,7 +7282,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Need to enable in the options menu",
+        "hapticFeedback": "Only supports standard vibration"
+      }
     },
     {
       "id": "star-wars-jedi-survivor",
@@ -6746,7 +7334,13 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts.",
+        "lightBar": "According to the color change of lightsaber.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "star-wars-outlaws",
@@ -6808,7 +7402,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble if connected via Bluetooth."
+      }
     },
     {
       "id": "stellar-blade",
@@ -6858,7 +7457,14 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense button prompts.",
+        "motionSensors": "模式：手势；Fish minigame only.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only. Will fall back to regular rumble if either connected via Bluetooth or enable Steam Input.",
+        "controllerSpeaker": "Also supports built-in speaker, for which the volume can be adjusted using the Controller Speaker Volume option.；Sliders present for Master Volume, Effects Volume, Music Volume, Voice Volume and Controller Speaker Volume."
+      }
     },
     {
       "id": "still-wakes-the-deep",
@@ -6906,7 +7512,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense",
+        "lightBar": "Blue on DualShock 4, unused on DualSense."
+      }
     },
     {
       "id": "stray",
@@ -6955,7 +7565,11 @@
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Steam Input needs to be activated for DualShock 4 and Dualsense.",
+        "lightBar": "Static Blue on DualShock 4, unused on DualSense"
+      }
     },
     {
       "id": "styx-blades-of-greed",
@@ -7002,7 +7616,8 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "suicide-squad-kill-the-justice-league",
@@ -7050,7 +7665,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "sword-of-the-sea",
@@ -7096,7 +7714,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "DualSense light bar supported, Dualshock 4 not tested.",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "system-shock-2-25th-anniversary-remaster",
@@ -7144,7 +7766,10 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制"
+      }
     },
     {
       "id": "tainted-grail-the-fall-of-avalon",
@@ -7188,7 +7813,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "Wired",
+        "hapticFeedback": "Wired"
+      }
     },
     {
       "id": "tekken-8",
@@ -7232,7 +7861,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Uses DualSense button prompts. Requires Steam Input to be disabled and to be plugged in via USB. Colored DualSense prompts can be forced using this mod"
+      }
     },
     {
       "id": "test-drive-unlimited-solar-crown",
@@ -7276,7 +7908,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense button prompts."
+      }
     },
     {
       "id": "the-chant",
@@ -7319,7 +7954,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "the-crew-motorfest",
@@ -7368,7 +8006,12 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense prompts.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "the-elder-scrolls-iv-oblivion-remastered",
@@ -7415,7 +8058,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Requires disabling Steam Input on the Steam version.",
+        "adaptiveTriggers": "Also supported over Bluetooth. Used for bow, shield, and stamina-related effect."
+      }
     },
     {
       "id": "the-first-berserker-khazan",
@@ -7458,7 +8105,11 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "The intensity of the haptic feedback is customizable for every action that can trigger it."
+      }
     },
     {
       "id": "the-first-descendant",
@@ -7502,7 +8153,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "the-last-of-us-part-i",
@@ -7553,7 +8208,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制、手势；Certain Gesture actions (such as Flashlight Shake) can be disabled. To disable Roll Axis or adjust Axis sensitivity multiplier while using Gyro Aim, see Disable gyroscope roll input.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
+        "hapticFeedback": "Wired connection only."
+      }
     },
     {
       "id": "the-last-of-us-part-ii-remastered",
@@ -7602,7 +8262,10 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：手势、镜头控制"
+      }
     },
     {
       "id": "the-riftbreaker",
@@ -7651,7 +8314,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "the-witcher-3-wild-hunt",
@@ -7700,7 +8366,11 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Blue on the Main Menu, Green in Gameplay, Red on Game Over.",
+        "adaptiveTriggers": "模式：有线（USB）；Added in Next-Gen (Patch 4.0) Update."
+      }
     },
     {
       "id": "tom-clancy-s-rainbow-six-extraction",
@@ -7747,7 +8417,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "tom-clancy-s-rainbow-six-siege",
@@ -7797,7 +8470,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 and DualSense button prompts.",
+        "lightBar": "Used for displaying health condition during gameplay.",
+        "adaptiveTriggers": "模式：有线（USB）；Can be disabled via the \"Trigger Effect\" toggle within the \"Controls\" tab in the \"Options\" menu.",
+        "hapticFeedback": "Regular rumble only."
+      }
     },
     {
       "id": "tomb-raider-2013",
@@ -7849,7 +8528,13 @@
       "playstationPrompts": "hackable",
       "motionSensors": "unknown",
       "lightBar": "hackable",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "Use this mod for DirectX 11. Use this mod for DirectX 9.",
+        "lightBar": "Use Tomb Raider DualSense Mod",
+        "adaptiveTriggers": "模式：有线、无线；Use Tomb Raider DualSense Mod",
+        "hapticFeedback": "Use Tomb Raider DualSense Mod"
+      }
     },
     {
       "id": "tormented-souls-2",
@@ -7896,7 +8581,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "tour-de-france-2026",
@@ -7944,7 +8630,8 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "uncharted-legacy-of-thieves-collection",
@@ -7993,7 +8680,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Standard Blue, DualShock 4 Only",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "until-dawn",
@@ -8044,7 +8736,13 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "true"
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "motionSensors": "模式：手势；Motion Controls is primarily used for the \"Don’t Move\" QTE mechanic but can be replaced with an alternative QTE mechanic (Stay Calm) or enable Auto-Complete Don't Move/Stay Calm QTE.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only.",
+        "controllerSpeaker": "Dialogue, Music, Sound Effects, Videos and Controller Speaker sliders from 0 to 100."
+      }
     },
     {
       "id": "v-rising",
@@ -8086,7 +8784,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
+      }
     },
     {
       "id": "war-robots-frontiers",
@@ -8130,7 +8831,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "Static Blue"
+      }
     },
     {
       "id": "warframe",
@@ -8183,7 +8887,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "When set to 'Autodetect', it will automatically switch to DualShock 4 prompts when either DualShock 4, DualSense or DualSense Edge are connected over USB natively and over Bluetooth with Steam Input enabled.",
+        "lightBar": "React the damage received.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Added in Update 34.",
+        "hapticFeedback": "Use regular rumble."
+      }
     },
     {
       "id": "warhammer-40-000-space-marine-ii",
@@ -8231,7 +8941,10 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
+      }
     },
     {
       "id": "where-winds-meet",
@@ -8275,7 +8988,12 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "Used when aiming the bow.",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Wired only."
+      }
     },
     {
       "id": "world-war-z",
@@ -8320,7 +9038,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "wrc-10-fia-world-rally-championship",
@@ -8365,7 +9086,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "模式：有线（USB）"
+      }
     },
     {
       "id": "wrc-generations",
@@ -8408,7 +9132,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "disable steaminput and delete uwp folder",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "Standard rumble only."
+      }
     },
     {
       "id": "wuthering-waves",
@@ -8458,7 +9187,10 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "Per in-game settings: \"Please note that this function is only available in certain parts of the game.\""
+      }
     },
     {
       "id": "xdefiant",
@@ -8501,7 +9233,8 @@
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {}
     },
     {
       "id": "yakuza-kiwami-3-dark-ties",
@@ -8546,7 +9279,12 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
-      "controllerSpeaker": "unknown"
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualSense (Type 2) and DualShock 4 (Type 3) button prompts are supported.",
+        "lightBar": "Static Lights for DualShock 4 only.",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Cannot be disabled in-game."
+      }
     },
     {
       "id": "zenless-zone-zero",
@@ -8597,7 +9335,15 @@
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
-      "controllerSpeaker": "limited"
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "playstationPrompts": "DualShock and DualSense buttons prompts. (controller-dependent)",
+        "motionSensors": "模式：手势；\"Gyroscope Function\" originally added in Version 2.1 but now used in Version 2.3 for Divination activity.",
+        "lightBar": "Added in Version 3.1. Wired only. Lightbar function is used for various In-Game events, such as Agent's color palette (during highlighted dialogue, regular gameplay or Agent selection), and peforming Signal Searches",
+        "adaptiveTriggers": "模式：有线（USB）；Used in fishing minigame.",
+        "hapticFeedback": "Wired only. Requires manual configuration on the controller's audio device.",
+        "controllerSpeaker": "No rumble support on DualShock 4. Also support the built-in speaker for both DualSense and DualSense Edge since Version 2.5.；Wired only. Requires manual configuration on the controller's audio device."
+      }
     }
   ]
 }

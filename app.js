@@ -53,10 +53,17 @@ function storeLinks(game) {
   if (!game.stores?.length) return '<span class="muted">—</span>';
   return `<div class="store-links">${game.stores.map((store) => `<a class="store-link" href="${text(store.url)}" target="_blank" rel="noreferrer" aria-label="前往 ${text(store.name)} 购买：${text(game.titleZh || game.title)}"><span>${text(store.name)}</span><i aria-hidden="true">↗</i></a>`).join('')}</div>`;
 }
-function features(game) {
+function featureInfoIcon() {
+  return '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"></circle><path d="M10 8.6v5M10 6.2h.01"></path></svg>';
+}
+function features(game, context) {
   return FEATURE_DEFINITIONS.map(({ key, label }) => {
     const status = Object.hasOwn(STATUS_LABELS, game[key]) ? game[key] : 'unknown';
-    return `<span class="feature"><span>${label}</span><i class="${STATUS_CLASS[status] || STATUS_CLASS.unknown}">${labelStatus(status)}</i></span>`;
+    const note = game.featureNotes?.[key]?.trim();
+    const noteId = `feature-note-${context}-${game.id}-${key}`;
+    const info = note ? `<button class="feature-info" type="button" aria-expanded="false" aria-controls="${text(noteId)}" aria-label="查看${text(game.titleZh || game.title)}的${text(label)}说明">${featureInfoIcon()}</button>` : '';
+    const details = note ? `<span class="feature-note" id="${text(noteId)}" role="note" hidden>${text(note)}</span>` : '';
+    return `<span class="feature-item"><span class="feature"><span>${label}</span><i class="${STATUS_CLASS[status] || STATUS_CLASS.unknown}">${labelStatus(status)}</i>${info}</span>${details}</span>`;
   }).join('');
 }
 function coverMarkup(game) {
@@ -88,11 +95,28 @@ function setupTheme() {
 function renderRow(game) {
   const model = $('model').value;
   const modelList = game.models.map((item) => `<span class="model-tag ${item === 'DualSense Edge' ? 'edge' : ''}">${text(item.replace('DualSense ', ''))}</span>`).join('');
-  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td>${storeLinks(game)}</td><td><div class="model-list">${modelList}</div></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game)}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
+  return `<tr><td><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div></td><td>${storeLinks(game)}</td><td><div class="model-list">${modelList}</div></td><td><div class="connections">${(game.connectionModes || []).map((item) => `<span>${text(CONNECTION_LABELS[item] || item)}</span>`).join('') || '<span class="muted">—</span>'}</div></td><td><div class="features">${features(game, 'table')}</div></td><td class="date-cell">${text(formatDate(game.releaseDates?.[0]))}</td><td><a class="source" href="${text(game.source)}" target="_blank" rel="noreferrer">查看 ↗</a></td></tr>`;
 }
 function renderCard(game) {
   const model = $('model').value;
-  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><div class="card-detail card-stores"><b>购买平台</b>${storeLinks(game)}</div><div class="card-detail"><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</div><div class="card-detail"><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</div><div class="card-detail card-features"><b>功能</b>${features(game)}</div><div class="card-detail"><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</div></div></article>`;
+  return `<article class="game-card"><div class="card-top"><div class="game-identity">${coverMarkup(game)}<div><a class="game-title" href="${text(steamUrl(game))}" target="_blank" rel="noreferrer"><span class="title-zh">${text(game.titleZh || game.title)}</span><small class="title-en">${text(game.title)}</small></a></div></div>${statusPill(activeStatus(game, model))}</div><div class="card-details"><div class="card-detail card-stores"><b>购买平台</b>${storeLinks(game)}</div><div class="card-detail"><b>支持型号</b>${game.models.map((item) => text(item.replace('DualSense ', ''))).join(' / ')}</div><div class="card-detail"><b>连接方式</b>${(game.connectionModes || []).map((item) => text(CONNECTION_LABELS[item] || item)).join('、') || '—'}</div><div class="card-detail card-features"><b>功能</b><div class="features">${features(game, 'card')}</div></div><div class="card-detail"><b>发行</b>${text(formatDate(game.releaseDates?.[0]))}</div></div></article>`;
+}
+function toggleFeatureNote(button) {
+  const item = button.closest('.feature-item');
+  const note = document.getElementById(button.getAttribute('aria-controls'));
+  if (!item || !note) return;
+  const willOpen = button.getAttribute('aria-expanded') !== 'true';
+  const scope = button.closest('tr, .game-card');
+  scope?.querySelectorAll('.feature-info[aria-expanded="true"]').forEach((openButton) => {
+    if (openButton === button) return;
+    openButton.setAttribute('aria-expanded', 'false');
+    openButton.closest('.feature-item')?.classList.remove('is-expanded');
+    const openNote = document.getElementById(openButton.getAttribute('aria-controls'));
+    if (openNote) openNote.hidden = true;
+  });
+  button.setAttribute('aria-expanded', String(willOpen));
+  item.classList.toggle('is-expanded', willOpen);
+  note.hidden = !willOpen;
 }
 function render() {
   const result = filteredGames();
@@ -131,6 +155,12 @@ function listen() {
   ['search', 'store', 'model', 'status', 'connection', 'feature'].forEach((id) => $(id).addEventListener('input', () => { page = 1; render(); }));
   document.querySelectorAll('th[data-sort]').forEach((header) => header.addEventListener('click', () => { const key = header.dataset.sort; if (sortKey === key) sortDirection *= -1; else { sortKey = key; sortDirection = 1; } render(); }));
   $('pagination').addEventListener('click', (event) => { const button = event.target.closest('[data-page]'); if (button) { page = Number(button.dataset.page); render(); window.scrollTo({ top: $('catalog').offsetTop - 20, behavior: 'smooth' }); } });
+  $('table-wrap').addEventListener('click', (event) => { const button = event.target.closest('.feature-info'); if (button) toggleFeatureNote(button); });
+  $('table-wrap').addEventListener('keydown', (event) => {
+    if (event.key !== 'Escape') return;
+    const button = event.target.closest('.feature-info');
+    if (button?.getAttribute('aria-expanded') === 'true') { toggleFeatureNote(button); button.focus(); }
+  });
 }
 async function start() {
   setupTheme();
