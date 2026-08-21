@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 5,
+  "schemaVersion": 6,
   "fetchedAt": "2026-08-17T06:58:00.872Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
@@ -52,7 +52,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "a-plague-tale-requiem",
@@ -98,7 +102,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "alan-wake-ii",
@@ -140,7 +148,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "animal-well",
@@ -179,7 +191,11 @@
       ],
       "adaptiveTriggers": "unknown",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "apex-legends",
@@ -225,7 +241,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "arknights-endfield",
@@ -269,7 +289,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "assassin-s-creed-mirage",
@@ -322,7 +346,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "assassin-s-creed-shadows",
@@ -380,7 +408,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "assassin-s-creed-valhalla",
@@ -438,7 +470,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "assassin-s-creed-black-flag-resynced",
@@ -492,7 +528,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "assetto-corsa",
@@ -532,7 +572,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "hackable",
+      "motionSensors": "unknown",
+      "lightBar": "hackable",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "avatar-frontiers-of-pandora",
@@ -589,7 +633,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "banishers-ghosts-of-new-eden",
@@ -633,7 +681,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "battlefield-6",
@@ -681,7 +733,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "limited",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "beamng-drive",
@@ -724,7 +780,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "beast-of-reincarnation",
@@ -764,7 +824,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "black-myth-wukong",
@@ -806,7 +870,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "bramble-the-mountain-king",
@@ -850,7 +918,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "bugsnax",
@@ -893,7 +965,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "cairn",
@@ -935,7 +1011,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "true"
     },
     {
       "id": "call-of-duty-black-ops-6",
@@ -983,7 +1063,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-duty-black-ops-7",
@@ -1031,7 +1115,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-duty-black-ops-cold-war",
@@ -1075,7 +1163,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-duty-modern-warfare-ii",
@@ -1123,7 +1215,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "limited",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-duty-modern-warfare-iii",
@@ -1172,7 +1268,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-duty-warzone-2-0",
@@ -1218,7 +1318,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "call-of-the-wild-the-angler",
@@ -1261,7 +1365,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "cloudheim",
@@ -1300,7 +1408,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "crime-boss-rockay-city",
@@ -1343,7 +1455,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "limited",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "crimson-desert",
@@ -1386,7 +1502,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "cronos-the-new-dawn",
@@ -1432,7 +1552,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "cthulhu-the-cosmic-abyss",
@@ -1472,7 +1596,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "cyberpunk-2077",
@@ -1521,7 +1649,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "true"
     },
     {
       "id": "dave-the-diver",
@@ -1563,7 +1695,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "days-gone",
@@ -1607,7 +1743,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "death-stranding-2-on-the-beach",
@@ -1648,7 +1788,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "death-stranding-director-s-cut",
@@ -1696,7 +1840,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "deathloop",
@@ -1739,7 +1887,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "depersonalization",
@@ -1779,7 +1931,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "dirt-rally-2-0",
@@ -1819,7 +1975,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "false",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "dolmen",
@@ -1858,7 +2018,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "doom-the-dark-ages",
@@ -1900,7 +2064,11 @@
       ],
       "adaptiveTriggers": "always on",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "dragon-age-the-veilguard",
@@ -1946,7 +2114,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "dying-light",
@@ -1993,7 +2165,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "dying-light-2-stay-human",
@@ -2034,7 +2210,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "ea-sports-wrc",
@@ -2080,7 +2260,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "eriksholm-the-stolen-dream",
@@ -2124,7 +2308,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "euro-truck-simulator-2",
@@ -2171,7 +2359,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "everspace-2",
@@ -2208,7 +2400,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "f1-2021",
@@ -2248,7 +2444,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "f1-22",
@@ -2293,7 +2493,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable"
+      "hdHapticFeedback": "hackable",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "f1-23",
@@ -2338,7 +2542,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable"
+      "hdHapticFeedback": "hackable",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "f1-24",
@@ -2383,7 +2591,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable"
+      "hdHapticFeedback": "hackable",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "f1-25",
@@ -2428,7 +2640,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "fantasian-neo-dimension",
@@ -2469,7 +2685,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "far-cry-6",
@@ -2523,7 +2743,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "fbc-firebreak",
@@ -2569,7 +2793,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "final-fantasy-vii-rebirth",
@@ -2611,7 +2839,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "final-fantasy-vii-remake-intergrade",
@@ -2653,7 +2885,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "limited",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "final-fantasy-xiv-a-realm-reborn",
@@ -2698,7 +2934,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "final-fantasy-xvi",
@@ -2745,7 +2985,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "forspoken",
@@ -2791,7 +3035,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "gears-of-war-e-day",
@@ -2831,7 +3079,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "genshin-impact",
@@ -2874,7 +3126,11 @@
       ],
       "adaptiveTriggers": "limited",
       "hapticFeedback": "hackable",
-      "hdHapticFeedback": "hackable"
+      "hdHapticFeedback": "hackable",
+      "playstationPrompts": "true",
+      "motionSensors": "limited",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "ghost-of-tsushima-director-s-cut",
@@ -2920,7 +3176,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "ghostwire-tokyo",
@@ -2965,7 +3225,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "god-of-war",
@@ -3010,7 +3274,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "god-of-war-ragnar-k",
@@ -3058,7 +3326,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "true"
     },
     {
       "id": "grand-theft-auto-v-enhanced",
@@ -3104,7 +3376,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "false"
     },
     {
       "id": "grand-theft-auto-san-andreas",
@@ -3151,7 +3427,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "hackable",
+      "motionSensors": "hackable",
+      "lightBar": "hackable",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "halo-campaign-evolved",
@@ -3191,7 +3471,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "hackable",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "haste",
@@ -3231,7 +3515,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "hackable",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "hell-is-us",
@@ -3276,7 +3564,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "hellblade-ii-senua-s-saga",
@@ -3318,7 +3610,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "helldivers-2",
@@ -3361,7 +3657,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "hi-fi-rush",
@@ -3407,7 +3707,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "hogwarts-legacy",
@@ -3454,7 +3758,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "horizon-forbidden-west",
@@ -3500,7 +3808,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "horizon-zero-dawn-remastered",
@@ -3547,7 +3859,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "indiana-jones-and-the-great-circle",
@@ -3589,7 +3905,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "infinity-nikki",
@@ -3637,7 +3957,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "false"
+      "hdHapticFeedback": "false",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "jak-ii-opengoal",
@@ -3676,7 +4000,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "john-carpenter-s-toxic-commando",
@@ -3716,7 +4044,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "kingdom-come-deliverance-ii",
@@ -3760,7 +4092,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "lego-batman-legacy-of-the-dark-knight",
@@ -3801,7 +4137,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "true"
     },
     {
       "id": "lego-horizon-adventures",
@@ -3843,7 +4183,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "lords-of-the-fallen-2023",
@@ -3889,7 +4233,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "lost-soul-aside",
@@ -3935,7 +4283,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "limited",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "luto",
@@ -3979,7 +4331,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "false"
+      "hdHapticFeedback": "false",
+      "playstationPrompts": "false",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "marathon-2026",
@@ -4016,7 +4372,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "marvel-rivals",
@@ -4060,7 +4420,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "limited",
+      "motionSensors": "false",
+      "lightBar": "limited",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "marvel-t-kon-fighting-souls",
@@ -4106,7 +4470,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "marvel-s-spider-man-2",
@@ -4149,7 +4517,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "marvel-s-spider-man-remastered",
@@ -4195,7 +4567,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "marvel-s-spider-man-miles-morales",
@@ -4241,7 +4617,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "mecha-break",
@@ -4281,7 +4661,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "metal-gear-solid-snake-eater",
@@ -4323,7 +4707,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "metro-exodus-enhanced-edition",
@@ -4366,7 +4754,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "mindseye",
@@ -4411,7 +4803,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "mixtape",
@@ -4456,7 +4852,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "monster-hunter-wilds",
@@ -4496,7 +4896,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "mortal-shell-ii",
@@ -4536,7 +4940,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "neva",
@@ -4576,7 +4984,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "neverness-to-everness",
@@ -4621,7 +5033,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "ninja-gaiden-4",
@@ -4664,7 +5080,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "nioh-3",
@@ -4703,7 +5123,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "no-man-s-sky",
@@ -4745,7 +5169,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "off-the-grid",
@@ -4784,7 +5212,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "limited",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "overwatch-2",
@@ -4821,7 +5253,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "pacific-drive",
@@ -4865,7 +5301,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "painkiller-2025",
@@ -4905,7 +5345,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "pipistrello-and-the-cursed-yoyo",
@@ -4942,7 +5386,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "pragmata",
@@ -4982,7 +5430,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "prince-of-persia-the-lost-crown",
@@ -5033,7 +5485,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "project-colored-mountains",
@@ -5073,7 +5529,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "ratchet-clank-rift-apart",
@@ -5119,7 +5579,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "limited",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "limited"
     },
     {
       "id": "ready-or-not",
@@ -5157,7 +5621,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "resident-evil-requiem",
@@ -5201,7 +5669,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "returnal",
@@ -5247,7 +5719,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "rise-of-the-ronin",
@@ -5289,7 +5765,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "riven-2024",
@@ -5328,7 +5808,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "roadcraft",
@@ -5369,7 +5853,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "rocket-league",
@@ -5418,7 +5906,11 @@
       ],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "hackable",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "s-t-a-l-k-e-r-2-heart-of-chornobyl",
@@ -5464,7 +5956,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "true"
     },
     {
       "id": "s-t-a-l-k-e-r-call-of-prypiat-enhanced-edition",
@@ -5503,7 +5999,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "s-t-a-l-k-e-r-clear-sky-enhanced-edition",
@@ -5542,7 +6042,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "s-t-a-l-k-e-r-shadow-of-chornobyl-enhanced-edition",
@@ -5581,7 +6085,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "true"
     },
     {
       "id": "sackboy-a-big-adventure",
@@ -5624,7 +6132,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "satisfactory",
@@ -5665,7 +6177,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "screamer-2026",
@@ -5709,7 +6225,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "sea-of-thieves",
@@ -5750,7 +6270,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "season-a-letter-to-the-future",
@@ -5791,7 +6315,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "shadows-of-the-damned-hella-remastered",
@@ -5832,7 +6360,11 @@
       ],
       "adaptiveTriggers": "always on",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "hackable",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "signalis",
@@ -5873,7 +6405,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "silent-hill-2",
@@ -5919,7 +6455,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "skate",
@@ -5962,7 +6502,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "skull-and-bones",
@@ -6014,7 +6558,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "sleep-awake",
@@ -6054,7 +6602,11 @@
       ],
       "adaptiveTriggers": "unknown",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "true"
     },
     {
       "id": "sonic-racing-crossworlds",
@@ -6100,7 +6652,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "limited",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "sonic-superstars",
@@ -6138,7 +6694,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "star-wars-jedi-survivor",
@@ -6182,7 +6742,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "star-wars-outlaws",
@@ -6240,7 +6804,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "stellar-blade",
@@ -6286,7 +6854,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "controllerSpeaker": "true"
     },
     {
       "id": "still-wakes-the-deep",
@@ -6330,7 +6902,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "stray",
@@ -6375,7 +6951,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "limited",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "styx-blades-of-greed",
@@ -6418,7 +6998,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "suicide-squad-kill-the-justice-league",
@@ -6462,7 +7046,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "sword-of-the-sea",
@@ -6504,7 +7092,11 @@
       ],
       "adaptiveTriggers": "unknown",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "system-shock-2-25th-anniversary-remaster",
@@ -6548,7 +7140,11 @@
       ],
       "adaptiveTriggers": "unknown",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tainted-grail-the-fall-of-avalon",
@@ -6588,7 +7184,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tekken-8",
@@ -6628,7 +7228,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "test-drive-unlimited-solar-crown",
@@ -6668,7 +7272,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-chant",
@@ -6707,7 +7315,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-crew-motorfest",
@@ -6752,7 +7364,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-elder-scrolls-iv-oblivion-remastered",
@@ -6795,7 +7411,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-first-berserker-khazan",
@@ -6834,7 +7454,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-first-descendant",
@@ -6874,7 +7498,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-last-of-us-part-i",
@@ -6921,7 +7549,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-last-of-us-part-ii-remastered",
@@ -6966,7 +7598,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-riftbreaker",
@@ -7011,7 +7647,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "the-witcher-3-wild-hunt",
@@ -7056,7 +7696,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tom-clancy-s-rainbow-six-extraction",
@@ -7099,7 +7743,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tom-clancy-s-rainbow-six-siege",
@@ -7145,7 +7793,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tomb-raider-2013",
@@ -7193,7 +7845,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "hackable",
       "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "hackable",
+      "motionSensors": "unknown",
+      "lightBar": "hackable",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tormented-souls-2",
@@ -7236,7 +7892,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "tour-de-france-2026",
@@ -7280,7 +7940,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "uncharted-legacy-of-thieves-collection",
@@ -7325,7 +7989,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "until-dawn",
@@ -7372,7 +8040,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "true"
     },
     {
       "id": "v-rising",
@@ -7410,7 +8082,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "war-robots-frontiers",
@@ -7450,7 +8126,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "warframe",
@@ -7499,7 +8179,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "warhammer-40-000-space-marine-ii",
@@ -7543,7 +8227,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "where-winds-meet",
@@ -7583,7 +8271,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "true"
+      "hdHapticFeedback": "true",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "world-war-z",
@@ -7624,7 +8316,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "wrc-10-fia-world-rally-championship",
@@ -7665,7 +8361,11 @@
       "connectionModes": [],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "wrc-generations",
@@ -7704,7 +8404,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "wuthering-waves",
@@ -7750,7 +8454,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "xdefiant",
@@ -7789,7 +8497,11 @@
       ],
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown"
+      "hdHapticFeedback": "unknown",
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "yakuza-kiwami-3-dark-ties",
@@ -7830,7 +8542,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
-      "hdHapticFeedback": "false"
+      "hdHapticFeedback": "false",
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "controllerSpeaker": "unknown"
     },
     {
       "id": "zenless-zone-zero",
@@ -7877,7 +8593,11 @@
       ],
       "adaptiveTriggers": "true",
       "hapticFeedback": "hackable",
-      "hdHapticFeedback": "hackable"
+      "hdHapticFeedback": "hackable",
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "true",
+      "controllerSpeaker": "limited"
     }
   ]
 }

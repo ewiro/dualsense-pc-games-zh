@@ -1,5 +1,5 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, QUERY_FIELDS, attachAvailabilityStores, mergeRecords, parseCargoResponse, validateDataset } from './data-lib.js';
+import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, QUERY_FIELDS, attachAvailabilityStores, attachInputFeatures, mergeRecords, parseCargoResponse, validateDataset } from './data-lib.js';
 
 const userAgent = process.env.PCGW_USER_AGENT || `dualsense-pc-games-zh/1.0 (${process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : DEFAULT_REPOSITORY_URL})`;
 const outputPath = new URL('../data/games.json', import.meta.url);
@@ -61,9 +61,14 @@ async function queryPageWikitext(titles) {
       rvprop: 'content', rvslots: 'main', redirects: '1', titles: titles.slice(index, index + 50).join('|')
     });
     const json = await requestJson(params);
+    const redirects = new Map((json.query?.redirects || []).map((item) => [item.to.toLocaleLowerCase(), item.from.toLocaleLowerCase()]));
     for (const page of json.query?.pages || []) {
       const content = page.revisions?.[0]?.slots?.main?.content;
-      if (content) result[page.title.toLocaleLowerCase()] = content;
+      if (content) {
+        const key = page.title.toLocaleLowerCase();
+        result[key] = content;
+        if (redirects.has(key)) result[redirects.get(key)] = content;
+      }
     }
   }
   return result;
@@ -81,7 +86,9 @@ const dualSenseRows = await queryModel('DualSense');
 const edgeRows = await queryModel('DualSense Edge');
 const translations = await readTranslations();
 const dataset = mergeRecords(dualSenseRows, edgeRows, new Date().toISOString(), translations);
-attachAvailabilityStores(dataset, await queryPageWikitext(dataset.games.map((game) => game.title)));
+const pageWikitext = await queryPageWikitext(dataset.games.map((game) => game.title));
+attachAvailabilityStores(dataset, pageWikitext);
+attachInputFeatures(dataset, pageWikitext);
 validateDataset(dataset, await readPrevious());
 await writeFile(outputPath, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
 console.log(`已从 ${dualSenseRows.length} 条 DualSense / ${edgeRows.length} 条 Edge 原始记录中筛选 ${dataset.games.length} 条增强功能游戏`);

@@ -2,6 +2,14 @@ const STATUS_LABELS = { true: '支持', limited: '有限支持', hackable: '需�
 const STATUS_CLASS = { true: 'status-good', limited: 'status-limited', hackable: 'status-adjust', 'always on': 'status-good', false: 'status-no', unknown: 'status-unknown' };
 const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
 const CONNECTION_LABELS = { Wired: '有线', 'Wireless (Bluetooth)': '无线（蓝牙）', Wireless: '无线', 'Wireless (USB)': '无线（USB）' };
+const FEATURE_DEFINITIONS = [
+  { key: 'playstationPrompts', label: '按键提示' },
+  { key: 'motionSensors', label: '体感' },
+  { key: 'lightBar', label: '灯条' },
+  { key: 'adaptiveTriggers', label: '自适应扳机' },
+  { key: 'hapticFeedback', label: '触觉反馈' },
+  { key: 'controllerSpeaker', label: '手柄小喇叭' }
+];
 const STORE_ORDER = ['Steam', 'Epic'];
 const THEME_KEY = 'dualsense-theme';
 const pageSize = 20;
@@ -33,8 +41,7 @@ function filteredGames() {
     if (model !== 'all' && !game.models.includes(model)) return false;
     if (status !== 'all' && activeStatus(game, model) !== status) return false;
     if (connection !== 'all' && !(game.connectionModes || []).includes(connection)) return false;
-    if (feature === 'adaptiveTriggers' && !ENHANCED_STATUSES.has(game.adaptiveTriggers)) return false;
-    if (feature === 'hapticFeedback' && !ENHANCED_STATUSES.has(game.hapticFeedback)) return false;
+    if (feature !== 'all' && !ENHANCED_STATUSES.has(game[feature])) return false;
     return true;
   }).sort((a, b) => {
     const av = Array.isArray(a[sortKey]) ? a[sortKey][0] || '' : a[sortKey] || '';
@@ -47,10 +54,10 @@ function storeLinks(game) {
   return `<div class="store-links">${game.stores.map((store) => `<a class="store-link" href="${text(store.url)}" target="_blank" rel="noreferrer" aria-label="前往 ${text(store.name)} 购买：${text(game.titleZh || game.title)}"><span>${text(store.name)}</span><i aria-hidden="true">↗</i></a>`).join('')}</div>`;
 }
 function features(game) {
-  const values = [];
-  if (ENHANCED_STATUSES.has(game.adaptiveTriggers)) values.push(`<span class="feature feature-trigger">扳机 · ${labelStatus(game.adaptiveTriggers)}</span>`);
-  if (ENHANCED_STATUSES.has(game.hapticFeedback)) values.push(`<span class="feature feature-haptic">触觉 · ${labelStatus(game.hapticFeedback)}</span>`);
-  return values.join('') || '<span class="muted">—</span>';
+  return FEATURE_DEFINITIONS.map(({ key, label }) => {
+    const status = Object.hasOwn(STATUS_LABELS, game[key]) ? game[key] : 'unknown';
+    return `<span class="feature"><span>${label}</span><i class="${STATUS_CLASS[status] || STATUS_CLASS.unknown}">${labelStatus(status)}</i></span>`;
+  }).join('');
 }
 function coverMarkup(game) {
   const title = game.titleZh || game.title;

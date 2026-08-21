@@ -11,6 +11,9 @@ export const QUERY_FIELDS = [
   'Infobox_game.Released',
   'Infobox_game.Available_on',
   'Input.Playstation_controller_support',
+  'Input.Playstation_prompts',
+  'Input.Playstation_motion_sensors',
+  'Input.Playstation_light_bar_support',
   'Input.DualSense_adaptive_trigger_support',
   'Input.DualSense_haptic_feedback_support',
   'Input.PlayStation_controller_models',
@@ -28,6 +31,15 @@ export const STATUS_LABELS = {
 };
 
 export const ENHANCED_STATUSES = new Set(['true', 'limited', 'hackable', 'always on']);
+
+export const FEATURE_KEYS = [
+  'playstationPrompts',
+  'motionSensors',
+  'lightBar',
+  'adaptiveTriggers',
+  'hapticFeedback',
+  'controllerSpeaker'
+];
 
 export const CONNECTION_LABELS = {
   Wired: '有线',
@@ -119,6 +131,56 @@ function splitTemplateArguments(call) {
   return parts;
 }
 
+function templateParameters(wikitext, templateName) {
+  const call = extractTemplateCalls(wikitext, templateName)[0];
+  if (!call) return {};
+  const parameters = {};
+  for (const argument of splitTemplateArguments(call).slice(1)) {
+    const separator = argument.indexOf('=');
+    if (separator === -1) continue;
+    const key = argument.slice(0, separator).trim().toLocaleLowerCase().replace(/\s+/g, ' ');
+    parameters[key] = argument.slice(separator + 1).trim();
+  }
+  return parameters;
+}
+
+export function detectControllerSpeakerSupport(wikitext, inputParameters = templateParameters(wikitext, 'Input')) {
+  const direct = normalizeStatus(inputParameters['playstation speaker']);
+  if (direct !== 'unknown') return direct;
+
+  const evidence = String(wikitext ?? '')
+    .split(/\r?\n/)
+    .filter((line) => /speaker/i.test(line) && (
+      /^\|playstation controllers notes\s*=/i.test(line)
+      || /(?:controller|dualsense|dualshock|gamepad|built[- ]?in|internal|wireless controller).{0,100}speaker/i.test(line)
+      || /speaker.{0,100}(?:controller|dualsense|dualshock|gamepad)/i.test(line)
+    ))
+    .join(' ');
+  if (!evidence) return 'unknown';
+  if (/(?:speaker(?: and .{0,50})? functions?\s+(?:are|is)\s+not supported|speaker support\s+(?:is\s+)?(?:not supported|unsupported)|does not support.{0,60}speaker)/i.test(evidence)) return 'false';
+  if (/(?:wired|\busb\b|not (?:available|supported|working|work) (?:over|with) bluetooth|not with bluetooth|no .{0,50}speaker support (?:over|with) bluetooth)/i.test(evidence)) return 'limited';
+  return 'true';
+}
+
+export function parseInputFeatures(wikitext) {
+  const parameters = templateParameters(wikitext, 'Input');
+  const status = (...keys) => {
+    for (const key of keys) {
+      const value = normalizeStatus(parameters[key]);
+      if (value !== 'unknown') return value;
+    }
+    return 'unknown';
+  };
+  return {
+    playstationPrompts: status('playstation prompts', 'dualshock prompts'),
+    motionSensors: status('playstation motion sensors'),
+    lightBar: status('light bar support'),
+    adaptiveTriggers: status('dualsense adaptive trigger support'),
+    hapticFeedback: status('dualsense haptics support'),
+    controllerSpeaker: detectControllerSpeakerSupport(wikitext, parameters)
+  };
+}
+
 function cleanStoreId(value) {
   const id = String(value ?? '').replace(/<!--[^]*?-->/g, '').trim();
   if (!id || /[{}\[\]<>\s]/.test(id)) return '';
@@ -153,6 +215,20 @@ export function attachAvailabilityStores(dataset, pageWikitext = {}) {
     const wikitext = pageWikitext[game.title.toLocaleLowerCase()] || '';
     game.stores = parseAvailabilityStores(wikitext, game.steamAppId);
   }
+  return dataset;
+}
+
+export function attachInputFeatures(dataset, pageWikitext = {}) {
+  for (const game of dataset.games) {
+    const features = parseInputFeatures(pageWikitext[game.title.toLocaleLowerCase()] || '');
+    if (features.playstationPrompts !== 'unknown' || !game.playstationPrompts) game.playstationPrompts = features.playstationPrompts;
+    if (features.motionSensors !== 'unknown' || !game.motionSensors) game.motionSensors = features.motionSensors;
+    if (features.lightBar !== 'unknown' || !game.lightBar) game.lightBar = features.lightBar;
+    game.controllerSpeaker = features.controllerSpeaker;
+    if (features.adaptiveTriggers !== 'unknown') game.adaptiveTriggers = features.adaptiveTriggers;
+    if (features.hapticFeedback !== 'unknown') game.hapticFeedback = features.hapticFeedback;
+  }
+  dataset.schemaVersion = 6;
   return dataset;
 }
 
@@ -220,9 +296,13 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
       models: [],
       controllerSupport: 'unknown',
       connectionModes: [],
+      playstationPrompts: 'unknown',
+      motionSensors: 'unknown',
+      lightBar: 'unknown',
       adaptiveTriggers: 'unknown',
       hapticFeedback: 'unknown',
-      hdHapticFeedback: 'unknown'
+      hdHapticFeedback: 'unknown',
+      controllerSpeaker: 'unknown'
     };
     current.developers = [...new Set([...current.developers, ...cleanCompanies(item.Developers)])];
     current.publishers = [...new Set([...current.publishers, ...cleanCompanies(item.Publishers)])];
@@ -232,6 +312,9 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     current.platforms = [...new Set([...current.platforms, ...cleanPlatforms(item['Available on'])])];
     current.controllerSupport = normalizeStatus(item['Playstation controller support']);
     current.connectionModes = [...new Set([...current.connectionModes, ...cleanConnections(item['Playstation connection modes'])])];
+    current.playstationPrompts = normalizeStatus(item['Playstation prompts']);
+    current.motionSensors = normalizeStatus(item['Playstation motion sensors']);
+    current.lightBar = normalizeStatus(item['Playstation light bar support']);
     current.adaptiveTriggers = normalizeStatus(item['DualSense adaptive trigger support']);
     current.hapticFeedback = normalizeStatus(item['DualSense haptic feedback support']);
     current.hdHapticFeedback = normalizeStatus(item['Controller haptic feedback hd']);
@@ -245,7 +328,7 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     .filter(hasEnhancedDualSenseFeature)
     .sort((a, b) => a.title.localeCompare(b.title, 'en'));
   return {
-    schemaVersion: 5,
+    schemaVersion: 6,
     fetchedAt,
     source: SOURCE_PAGE,
     selection: {
@@ -260,7 +343,7 @@ export function validateDataset(dataset, previous = null) {
   if (!dataset || !Array.isArray(dataset.games) || dataset.games.length === 0) {
     throw new Error('数据为空，拒绝发布');
   }
-  if (dataset.schemaVersion !== 5 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
+  if (dataset.schemaVersion !== 6 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
     throw new Error('数据缺少 schemaVersion、fetchedAt 或 source');
   }
   const ids = new Set();
@@ -272,6 +355,9 @@ export function validateDataset(dataset, previous = null) {
     titles.add(game.title.toLocaleLowerCase());
     if (!Array.isArray(game.models) || game.models.length === 0) throw new Error(`游戏缺少手柄型号：${game.title}`);
     if (!Array.isArray(game.stores)) throw new Error(`游戏缺少购买平台列表：${game.title}`);
+    for (const key of FEATURE_KEYS) {
+      if (!Object.hasOwn(STATUS_LABELS, game[key])) throw new Error(`游戏包含无效功能状态 ${key}：${game.title}`);
+    }
     for (const store of game.stores) {
       if (!store?.name || !/^https:\/\//i.test(store.url)) throw new Error(`游戏包含无效购买平台链接：${game.title}`);
     }

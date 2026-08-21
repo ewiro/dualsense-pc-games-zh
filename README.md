@@ -3,7 +3,7 @@
 [![更新数据并部署 GitHub Pages](https://github.com/ewiro/dualsense-pc-games-zh/actions/workflows/pages.yml/badge.svg)](https://github.com/ewiro/dualsense-pc-games-zh/actions/workflows/pages.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-0f766e.svg)](LICENSE)
 
-一个面向中文玩家的 DualSense PC 游戏兼容性索引。项目从 PCGamingWiki 获取数据，只收录明确记录了自适应扳机或 DualSense 触觉反馈的游戏，并提供中文名称、竖版封面、购买平台、商店商品链接、支持型号、连接方式与功能状态。
+一个面向中文玩家的 DualSense PC 游戏兼容性索引。项目从 PCGamingWiki 获取数据，只收录明确记录了自适应扳机或 DualSense 触觉反馈的游戏，并提供中文名称、竖版封面、购买平台、商店商品链接、支持型号、连接方式与完整功能适配状态。
 
 **在线访问：** [ewiro.github.io/dualsense-pc-games-zh](https://ewiro.github.io/dualsense-pc-games-zh/)
 
@@ -14,7 +14,7 @@
 - 每个购买平台标签直达对应商店商品页；
 - DualSense / DualSense Edge 型号筛选；
 - 有线、蓝牙连接方式筛选；
-- 自适应扳机与触觉反馈状态展示；
+- PlayStation 按键提示、体感、灯条、自适应扳机、DualSense 触觉反馈与手柄小喇叭状态展示及筛选；
 - 游戏名称链接到 Steam，另提供 PCGamingWiki 数据来源链接；
 - 桌面表格、移动卡片和分页；
 - 白天 / 黑夜模式，选择会保存在浏览器中；
@@ -42,6 +42,7 @@ npm run fetch
 | 命令 | 说明 |
 | --- | --- |
 | `npm run fetch` | 分页抓取并校验 PCGamingWiki Cargo API 数据 |
+| `npm run enrich` | 从游戏页面补充按键提示、体感、灯条和手柄小喇叭状态 |
 | `npm test` | 运行数据清洗、合并、保护规则及静态站点 smoke test |
 | `npm run build` | 生成可部署的 `dist/` 静态站点 |
 
@@ -55,6 +56,7 @@ npm run fetch
 │   └── title-translations.json  # 中英文名称映射
 ├── scripts/
 │   ├── fetch-data.js            # Cargo API 抓取器
+│   ├── enrich-features.js       # 游戏页面功能状态补充器
 │   ├── data-lib.js              # 清洗、合并与校验逻辑
 │   └── build.js                 # 静态构建脚本
 ├── tests/                       # Node.js 测试
@@ -66,7 +68,7 @@ npm run fetch
 
 ## 数据更新与保护
 
-抓取器分别分页获取 DualSense 与 DualSense Edge 记录，合并去重后只保留自适应扳机或触觉反馈状态为“支持”“有限支持”“需额外调整”或“始终启用”的游戏。购买平台和商品 ID 来自各游戏页面的 `Availability` 记录；只有能生成明确商品页链接的平台才会展示。
+抓取器分别分页获取 DualSense 与 DualSense Edge 记录，合并去重后只保留自适应扳机或触觉反馈状态为“支持”“有限支持”“需额外调整”或“始终启用”的游戏。购买平台和商品 ID 来自各游戏页面的 `Availability` 记录；按键提示、体感和灯条来自 `Input` 模板。PCGamingWiki 暂无稳定的手柄扬声器统一字段，因此仅在页面存在明确控制器扬声器记录时标记支持，其余保留为“未知”。
 
 为避免异常数据被发布，更新流程会拒绝：
 

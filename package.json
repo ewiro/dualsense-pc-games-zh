@@ -6,6 +6,7 @@
   "description": "PCGamingWiki DualSense compatibility data in Chinese",
   "scripts": {
     "fetch": "node scripts/fetch-data.js",
+    "enrich": "node scripts/enrich-features.js",
     "build": "node scripts/build.js",
     "test": "node --test"
   },

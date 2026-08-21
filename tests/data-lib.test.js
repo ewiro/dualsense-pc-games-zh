@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { attachAvailabilityStores, cleanCompanies, cleanSteamAppId, cleanText, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { attachAvailabilityStores, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, detectControllerSpeakerSupport, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
 
 const dualSenseFixture = [
   { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', 'Cover URL': 'https://example.com/alpha.jpg', 'Steam AppID': '12345,67890', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth),Wireless (USB)', 'Controller haptic feedback hd': 'unknown' } },
@@ -41,9 +41,31 @@ test('keeps only Steam and Epic direct product links', () => {
   ]);
 });
 
+test('parses PlayStation features and explicit controller speaker evidence', () => {
+  const wikitext = `{{Input
+|playstation prompts = true
+|playstation motion sensors = false
+|light bar support = limited
+|dualsense adaptive trigger support = true
+|dualsense haptics support = hackable
+|playstation controllers notes = Also supports the built-in speaker on the controllers in wired connection.
+}}`;
+  assert.deepEqual(parseInputFeatures(wikitext), {
+    playstationPrompts: 'true',
+    motionSensors: 'false',
+    lightBar: 'limited',
+    adaptiveTriggers: 'true',
+    hapticFeedback: 'hackable',
+    controllerSpeaker: 'limited'
+  });
+  assert.equal(detectControllerSpeakerSupport('{{Input\n|playstation speaker = true\n}}'), 'true');
+  assert.equal(detectControllerSpeakerSupport('{{Input\n|playstation controllers notes = Speaker and Haptic Feedback functions are not supported.\n}}'), 'false');
+  assert.equal(detectControllerSpeakerSupport('{{Audio\n|subtitles notes = Speaker names can be shown.\n}}'), 'unknown');
+});
+
 test('merges model rows and removes games without DualSense enhancements', () => {
   const dataset = mergeRecords(dualSenseFixture, edgeFixture, '2026-08-17T00:00:00.000Z', { 'Alpha Game': '阿尔法游戏' });
-  assert.equal(dataset.schemaVersion, 5);
+  assert.equal(dataset.schemaVersion, 6);
   assert.equal(dataset.games.length, 1);
   const alpha = dataset.games.find((game) => game.title === 'Alpha Game');
   assert.deepEqual(alpha.models.sort(), ['DualSense', 'DualSense Edge']);
@@ -58,6 +80,11 @@ test('merges model rows and removes games without DualSense enhancements', () =>
   assert.equal(alpha.titleZh, '阿尔法游戏');
   attachAvailabilityStores(dataset, { 'alpha game': '{{Availability/row|Steam|12345|Steam||||Windows}}' });
   assert.deepEqual(alpha.stores, [{ name: 'Steam', url: 'https://store.steampowered.com/app/12345/' }]);
+  attachInputFeatures(dataset, { 'alpha game': '{{Input\n|playstation prompts=true\n|playstation motion sensors=false\n|light bar support=true\n|playstation speaker=true\n}}' });
+  assert.equal(alpha.playstationPrompts, 'true');
+  assert.equal(alpha.motionSensors, 'false');
+  assert.equal(alpha.lightBar, 'true');
+  assert.equal(alpha.controllerSpeaker, 'true');
   assert.equal(hasEnhancedDualSenseFeature(alpha), true);
   assert.equal(dataset.games.some((game) => game.title === 'Beta Game'), false);
   assert.equal(dataset.games.some((game) => game.title === 'Gamma Game'), false);
@@ -65,7 +92,7 @@ test('merges model rows and removes games without DualSense enhancements', () =>
 });
 
 test('rejects empty, malformed, incomplete and sharply reduced datasets', () => {
-  assert.throws(() => validateDataset({ schemaVersion: 5, fetchedAt: 'x', source: 'x', selection: {}, games: [] }), /数据为空/);
+  assert.throws(() => validateDataset({ schemaVersion: 6, fetchedAt: 'x', source: 'x', selection: {}, games: [] }), /数据为空/);
   const base = mergeRecords(dualSenseFixture, edgeFixture);
   assert.throws(() => validateDataset({ ...base, games: base.games.map((game) => ({ ...game, models: ['DualSense'] })) }), /DualSense 和 DualSense Edge/);
   const previous = { ...base, games: Array.from({ length: 10 }, (_, index) => ({ ...base.games[0], id: `old-${index}`, title: `Old ${index}` })) };

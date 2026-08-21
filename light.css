@@ -136,6 +136,8 @@ th { text-align: center; }
 .store-link i { color: var(--teal); font-size: 10px; font-style: normal; }
 .store-link:hover { border-color: var(--teal); color: var(--teal); background: color-mix(in srgb, var(--panel) 80%, var(--teal) 20%); }
 .store-link:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.feature { display: inline-flex; align-items: center; gap: 5px; border-color: var(--line); color: var(--ink); }
+.feature i { font-style: normal; font-weight: 700; }
 
 @media (max-width: 900px) {
   .controls { grid-template-columns: 1fr 1fr; }
