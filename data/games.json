@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 7,
+  "schemaVersion": 8,
   "fetchedAt": "2026-08-17T06:58:00.872Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
@@ -60,7 +60,8 @@
       "featureNotes": {
         "lightBar": "灯条会根据游戏情境切换颜色。",
         "hapticFeedback": "触觉反馈仅限有线连接；无线连接时可使用 Force Rumble 获得普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "a-plague-tale-requiem",
@@ -114,7 +115,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "alan-wake-ii",
@@ -165,7 +167,8 @@
         "motionSensors": "模式：镜头控制；添加在周年纪念更新中。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "animal-well",
@@ -211,7 +214,8 @@
       "controllerSpeaker": "limited",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "apex-legends",
@@ -265,7 +269,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；添加到突破更新中。",
         "hapticFeedback": "仅限有线连接。添加到突破更新中。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "arknights-endfield",
@@ -318,7 +323,8 @@
         "adaptiveTriggers": "模式：有线、无线（蓝牙）",
         "hapticFeedback": "无法通过蓝牙连接使用。",
         "controllerSpeaker": "控制器扬声器和振动无法通过蓝牙连接使用。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "assassin-s-creed-mirage",
@@ -379,6 +385,24 @@
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "DualShock 4",
+            "url": "https://www.pcgamingwiki.com/wiki/DualShock_4"
+          },
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ],
+        "lightBar": [
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -445,7 +469,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "assassin-s-creed-valhalla",
@@ -511,7 +536,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "assassin-s-creed-black-flag-resynced",
@@ -574,7 +600,8 @@
         "playstationPrompts": "DualShock 和 DualSense 按键提示。",
         "adaptiveTriggers": "模式：有线；可以通过系统菜单的控制/控制器部分中的自适应扳机选项设置为轻/关闭。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "assetto-corsa",
@@ -623,6 +650,32 @@
         "playstationPrompts": "使用内容管理器时，PlayStation 方向盘会显示正确的提示。",
         "lightBar": "支持罗技 G Lightsync 技术。需要 RGB 照明中间件包装器（如 Project Aurora 或 Project Artemis）才能与灯条配合使用。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自定义配置（需要 DSX）。轮胎打滑或抱死的自适应扳机。"
+      },
+      "featureNoteLinks": {
+        "lightBar": [
+          {
+            "label": "RGB灯光中间件",
+            "url": "https://www.pcgamingwiki.com/wiki/RGB_lighting_middleware"
+          },
+          {
+            "label": "极光计划",
+            "url": "https://www.pcgamingwiki.com/wiki/RGB_lighting_middleware#Project_Aurora"
+          },
+          {
+            "label": "阿尔忒弥斯计划",
+            "url": "https://www.pcgamingwiki.com/wiki/RGB_lighting_middleware#Project_Artemis"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "自定义配置",
+            "url": "https://www.racedepartment.com/downloads/dualsensexlink-dualsense-adaptive-trigger-and-led-effects.48675/"
+          },
+          {
+            "label": "DSX",
+            "url": "https://www.pcgamingwiki.com/wiki/Controller%3ADualSense#DSX"
+          }
+        ]
       }
     },
     {
@@ -689,7 +742,8 @@
         "motionSensors": "模式：镜头控制；第 3 次游戏更新 中添加了陀螺仪瞄准功能。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。如果通过蓝牙连接，将恢复普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "banishers-ghosts-of-new-eden",
@@ -741,7 +795,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线、无线（蓝牙）",
         "hapticFeedback": "只有基本的震动。有线、无线。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "battlefield-6",
@@ -797,7 +852,8 @@
       "featureNotes": {
         "motionSensors": "模式：镜头控制；需要在步兵/乘客控制映射部分将体感倾斜绑定到向上/向下/向左/向右查找，但在此过程中您将无法访问传统的操纵杆摄像机运动。",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "beamng-drive",
@@ -848,7 +904,8 @@
       "featureNotes": {
         "lightBar": "仅限有线连接。",
         "hapticFeedback": "仅支持普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "beast-of-reincarnation",
@@ -896,7 +953,8 @@
       "featureNotes": {
         "playstationPrompts": "称为 A 型按键图标。",
         "adaptiveTriggers": "模式：有线、无线"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "black-myth-wukong",
@@ -946,7 +1004,8 @@
       "featureNotes": {
         "playstationPrompts": "名称为 B 型。",
         "adaptiveTriggers": "模式：有线（USB）；按 R2 会产生阻力，并且有两个级别的压力，但它与游戏中任何内容的实际反馈无关；游戏似乎也没有利用这两个级别的压力。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "bramble-the-mountain-king",
@@ -998,7 +1057,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "bugsnax",
@@ -1049,7 +1109,8 @@
       "featureNotes": {
         "lightBar": "使用越野球时会发出粉红色的光。",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "cairn",
@@ -1101,7 +1162,8 @@
         "adaptiveTriggers": "可选关闭、弱、中、强四档。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "DualSense 扬声器支持；常规、语音、音乐、SFX 和 DualSense 扬声器滑块。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-black-ops-6",
@@ -1158,7 +1220,8 @@
         "motionSensors": "模式：镜头控制；标记为体感功能行为（在控制器 > 控制器下）。可以在体感功能行为菜单（控制器 > 瞄准下）中进行各种调整。",
         "adaptiveTriggers": "模式：有线（USB）；可以使用“扳机效果”选项（在“控制器”>“控制器”下）进行调整，并提供“关闭”、“武器火力阈值”和“完整触觉反馈”选项。默认情况下，它设置为关闭。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-black-ops-7",
@@ -1215,7 +1278,8 @@
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-black-ops-cold-war",
@@ -1266,7 +1330,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-modern-warfare-ii",
@@ -1324,7 +1389,8 @@
         "motionSensors": "模式：镜头控制；陀螺仪瞄准仅适用于多人游戏。",
         "adaptiveTriggers": "模式：有线（USB）；可以使用“扳机效果”选项（在“控制器”>“控制器”下）进行调整，并提供“关闭”、“武器火力阈值”和“完整触觉反馈”选项。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-modern-warfare-iii",
@@ -1382,7 +1448,8 @@
         "motionSensors": "模式：镜头控制；标记为体感功能行为（在控制器 > 控制器下）。可以在体感功能行为菜单（控制器 > 瞄准下）中进行各种调整。",
         "adaptiveTriggers": "模式：有线（USB）；可以使用“扳机效果”选项（在“控制器”>“控制器”下）进行调整，并提供“关闭”、“武器火力阈值”和“完整触觉反馈”选项。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-duty-warzone-2-0",
@@ -1437,7 +1504,8 @@
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限 USB 有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "call-of-the-wild-the-angler",
@@ -1488,7 +1556,8 @@
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。游戏 UI 的某些部分仍然显示 Xbox 提示。",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "cloudheim",
@@ -1532,7 +1601,15 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "SimHub",
+            "url": "https://www.pcgamingwiki.com/wiki/Topic:Ynvyfmk6e1ljh7vr"
+          }
+        ]
+      }
     },
     {
       "id": "crime-boss-rockay-city",
@@ -1583,6 +1660,14 @@
       "featureNotes": {
         "playstationPrompts": "仅 Xbox 提示。在 Steam 版本上：DualSense 按键提示仅在启用 Steam Input时可用。",
         "adaptiveTriggers": "模式：有线（USB）"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -1634,7 +1719,8 @@
       "featureNotes": {
         "adaptiveTriggers": "1.04版本中添加了自适应扳机支持。",
         "hapticFeedback": "仅支持普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "cronos-the-new-dawn",
@@ -1688,7 +1774,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）；灵敏度滑块从 0 到 1。",
         "hapticFeedback": "仅限有线连接。灵敏度滑块从 0 到 1。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "cthulhu-the-cosmic-abyss",
@@ -1736,7 +1823,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线、无线",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "cyberpunk-2077",
@@ -1790,7 +1878,8 @@
       "motionSensors": "false",
       "lightBar": "true",
       "controllerSpeaker": "true",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "dave-the-diver",
@@ -1841,7 +1930,8 @@
         "lightBar": "例如，在水面上关闭，潜水时呈蓝色，缺氧时呈红色，使用紫外线时呈紫色。",
         "adaptiveTriggers": "模式：有线（USB）；在 v1.0.4.1635 (Windows) / v1.0.4.582 (Mac OS) 中添加。例如，使用鱼叉时的感觉。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "days-gone",
@@ -1896,7 +1986,8 @@
         "lightBar": "光效十足。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限 USB 有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "death-stranding-2-on-the-beach",
@@ -1944,7 +2035,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：手势、镜头控制"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "death-stranding-director-s-cut",
@@ -2003,7 +2095,8 @@
         "lightBar": "灯条颜色根据游戏情况而变化。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；1.003 版中添加了对无线连接的支持。",
         "hapticFeedback": "仅适用于有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "deathloop",
@@ -2055,7 +2148,8 @@
         "motionSensors": "模式：镜头控制；Goldenloop 更新中添加了陀螺仪瞄准。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "depersonalization",
@@ -2100,7 +2194,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "dirt-rally-2-0",
@@ -2148,6 +2243,20 @@
       "featureNotes": {
         "playstationPrompts": "游戏确实会显示 DualShock 4 提示，但仅限于连接了 PlayStation 兼容赛车方向盘时。 （请参阅控制器支持）",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；使用 RacingDSX"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "控制器支持",
+            "url": "https://www.pcgamingwiki.com/wiki/DiRT_Rally_2.0#Controller_support"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "RacingDSX",
+            "url": "https://github.com/cosmii02/RacingDSX"
+          }
+        ]
       }
     },
     {
@@ -2195,7 +2304,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "doom-the-dark-ages",
@@ -2245,7 +2355,8 @@
       "featureNotes": {
         "adaptiveTriggers": "使用 DualSense 控制器时默认启用，且无法禁用。",
         "hapticFeedback": "仅支持普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "dragon-age-the-veilguard",
@@ -2299,7 +2410,8 @@
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "dying-light",
@@ -2355,6 +2467,14 @@
         "lightBar": "仅限 Windows。必须禁用任何第三方控制器解决方案。 DualSense 修改扩展了灯条支持",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；枪支和近战武器的自适应扳机",
         "hapticFeedback": "武器摆动、攀爬、手电筒、陷阱遥控器等的触觉反馈。"
+      },
+      "featureNoteLinks": {
+        "lightBar": [
+          {
+            "label": "《消逝的光芒：完美的 Dualshock 4》支持 - Marioysikax - YouTube",
+            "url": "https://www.youtube.com/watch?v=nC-FQUWBuHo"
+          }
+        ]
       }
     },
     {
@@ -2404,7 +2524,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "ea-sports-wrc",
@@ -2458,6 +2579,20 @@
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
         "hapticFeedback": "使用 Simhub 的 Shake-It Bass Shaker 功能来模拟控制器 VCA 电机的触觉反馈。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "Logitech G29",
+            "url": "https://www.pcgamingwiki.com/wiki/Logitech_G29"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "SimHub",
+            "url": "https://www.simhubdash.com/"
+          }
+        ]
       }
     },
     {
@@ -2509,7 +2644,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "euro-truck-simulator-2",
@@ -2565,6 +2701,22 @@
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自定义配置（需要 DSX 和 Steam）。",
         "hapticFeedback": "仅标准震动。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "自定义配置",
+            "url": "https://github.com/josealissonbr/DualSenseAT/wiki/Tutorial-for-Euro-Truck-Simulator-2"
+          },
+          {
+            "label": "DSX",
+            "url": "https://www.pcgamingwiki.com/wiki/Controller%3ADualSense#DSX"
+          },
+          {
+            "label": "Steam",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam"
+          }
+        ]
       }
     },
     {
@@ -2609,7 +2761,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "f1-2021",
@@ -2658,7 +2811,8 @@
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "即使接线也没有振动音频信号。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "f1-22",
@@ -2713,7 +2867,8 @@
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "f1-23",
@@ -2768,7 +2923,8 @@
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "f1-24",
@@ -2823,7 +2979,8 @@
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "f1-25",
@@ -2878,7 +3035,8 @@
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "fantasian-neo-dimension",
@@ -2924,7 +3082,8 @@
       "motionSensors": "false",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "far-cry-6",
@@ -2986,7 +3145,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "fbc-firebreak",
@@ -3042,7 +3202,8 @@
         "motionSensors": "模式：镜头控制；体感功能 瞄准：关闭、ADS、腰射 始终（关闭） 体感功能水平灵敏度：0 - 100 (10) 体感功能垂直灵敏度：0 - 100 (10)",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；可以通过“选项”菜单的“游戏”选项卡中的“自适应扳机”切换来禁用。",
         "hapticFeedback": "仅限有线连接。通过“选项”菜单中“游戏”选项卡中的“振动强度”滑块，可与普通震动共享触觉强度调整。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "final-fantasy-vii-rebirth",
@@ -3094,6 +3255,14 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；调整效果强度的选项，从 0 到 3。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "主控、背景音乐、特效、角色语音、过场动画歌曲和 DualSense 扬声器的独立控制。"
+      },
+      "featureNoteLinks": {
+        "controllerSpeaker": [
+          {
+            "label": "双感扬声器",
+            "url": "https://www.pcgamingwiki.com/wiki/Controller%3ADualSense"
+          }
+        ]
       }
     },
     {
@@ -3146,6 +3315,18 @@
         "lightBar": "Dualshock 4 上的蓝色。",
         "adaptiveTriggers": "模式：有线（USB）；仅在摩托车迷你游戏期间使用。",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/finalfantasy7remake/mods/291"
+          },
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/finalfantasy7remake/mods/366"
+          }
+        ]
       }
     },
     {
@@ -3200,7 +3381,8 @@
         "playstationPrompts": "DualShock 3、DualShock 4 和 DualSense 按键提示。可在系统配置 -> 控制器下选择。从补丁 7.5 开始，这些选项分别标记为“×○□△（类型 1）”、“×○□△ + 触摸板（类型 2）”和“×○□△ + 触摸板（类型 3）”",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "final-fantasy-xvi",
@@ -3257,7 +3439,8 @@
         "adaptiveTriggers": "模式：有线（USB）；控制器设置菜单下的自适应扳机。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "还支持内置扬声器音效，并有单独的音量控制；音乐、画外音、效果以及带扬声器的控制器的音量"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "forspoken",
@@ -3312,7 +3495,8 @@
         "playstationPrompts": "DualShock 和 DualSense 按键提示。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "gears-of-war-e-day",
@@ -3357,7 +3541,8 @@
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "genshin-impact",
@@ -3409,7 +3594,8 @@
         "motionSensors": "模式：镜头控制；从4.0版本开始增加了陀螺仪瞄准功能。不支持 DualSense Edge。",
         "adaptiveTriggers": "模式：有线（USB）；不支持 DualSense Edge。",
         "hapticFeedback": "需要在控制器的音频设备上进行手动配置。仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "ghost-of-tsushima-director-s-cut",
@@ -3466,6 +3652,32 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；在 Steam 版本上，它还可以在两种连接模式下启用 Steam Input的情况下使用。",
         "hapticFeedback": "标准震动功能可通过有线和无线连接实现，并且在 Steam 版本上，可在两种连接模式下打开或关闭 Steam Input。其他控制器所没有的额外触觉（例如，在主菜单上切换选择、挥舞剑等时的反馈）需要连接 DualSense 控制器并禁用 Steam Input，并且游戏不是从 Steam 的大屏幕模式启动。",
         "controllerSpeaker": "支持有线连接的控制器内置扬声器，但不支持蓝牙（在 Steam 版本上还必须禁用 Steam Input）。 Dualshock 4 不会以无线方式输出任何震动。"
+      },
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "壹岐岛扩张期间",
+            "url": "https://twitter.com/AL2009man/status/1590570548614303745"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ],
+        "controllerSpeaker": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -3520,7 +3732,8 @@
         "playstationPrompts": "按键图标类型 > 类型 2。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "god-of-war",
@@ -3574,6 +3787,18 @@
         "playstationPrompts": "DualShock 按键提示。",
         "lightBar": "颜色根据情况而变化。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自定义配置。需要 DSX 和 DualSense AT（请参阅自定义配置）。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "自定义配置",
+            "url": "https://www.nexusmods.com/godofwar/mods/145"
+          },
+          {
+            "label": "DSX",
+            "url": "https://www.pcgamingwiki.com/wiki/Controller%3ADualSense#DSX"
+          }
+        ]
       }
     },
     {
@@ -3632,7 +3857,8 @@
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "全局、对话、音乐、SFX、控制器扬声器音量滑块从 0 到 10。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "grand-theft-auto-v-enhanced",
@@ -3689,7 +3915,8 @@
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅支持普通震动。",
         "controllerSpeaker": "支持触摸板。部分支持自适应扳机。不支持扬声器和触觉反馈功能。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "grand-theft-auto-san-andreas",
@@ -3747,6 +3974,26 @@
         "lightBar": "使用 GTASense",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；使用 GTASense 和 DSX。",
         "hapticFeedback": "标准震动"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "GInput",
+            "url": "https://www.pcgamingwiki.com/wiki/Grand_Theft_Auto%3A_San_Andreas#GInput"
+          }
+        ],
+        "lightBar": [
+          {
+            "label": "GTASense",
+            "url": "https://github.com/theGENreel/GTASense"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "GTASense",
+            "url": "https://github.com/theGENreel/GTASense"
+          }
+        ]
       }
     },
     {
@@ -3796,6 +4043,14 @@
         "playstationPrompts": "可以使用 DualSense 按键提示 mod 添加。",
         "lightBar": "控制器灯条启用切换。",
         "adaptiveTriggers": "模式：有线"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "DualSense 按键提示",
+            "url": "https://www.nexusmods.com/halocampaignevolved/mods/117"
+          }
+        ]
       }
     },
     {
@@ -3844,6 +4099,20 @@
       "featureNotes": {
         "motionSensors": "模式：镜头控制；请参阅仓促控制。",
         "hapticFeedback": "在补丁 1.7a 中添加，仅限有线连接。可以通过 Hasty Controls 启用蓝牙支持。"
+      },
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "Hasty Controls",
+            "url": "https://www.pcgamingwiki.com/wiki/Haste#Hasty_Controls"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "Hasty Controls",
+            "url": "https://www.pcgamingwiki.com/wiki/Haste#Hasty_Controls"
+          }
+        ]
       }
     },
     {
@@ -3896,7 +4165,8 @@
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "用于音乐、语音、环境、音效和控制器扬声器的滑块。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "hellblade-ii-senua-s-saga",
@@ -3947,7 +4217,8 @@
         "playstationPrompts": "支持 DualSense 按键提示。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "helldivers-2",
@@ -3999,7 +4270,8 @@
         "motionSensors": "模式：镜头控制；支持陀螺仪瞄准功能（作为体感瞄准，可以在“选项”>“控制器”下找到）。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "hi-fi-rush",
@@ -4054,7 +4326,8 @@
         "playstationPrompts": "称为手柄按键图标类型 B。默认选择类型 A（Xbox 按键图标），必须通过选项 > 辅助功能 > 用户界面 > 手柄按键图标进行更改",
         "adaptiveTriggers": "模式：有线（USB）；可以通过选项 > 游戏 > 自适应扳机禁用自适应扳机",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "hogwarts-legacy",
@@ -4108,6 +4381,14 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -4165,6 +4446,14 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Steam 版本还通过使用 Steam Input提供自适应扳机支持。",
         "hapticFeedback": "仅限有线连接。回退到蓝牙上的简单震动。",
         "controllerSpeaker": "还支持有线连接控制器上的内置扬声器。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -4222,6 +4511,14 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Steam 版本还通过使用 Steam Input提供自适应扳机支持。",
         "hapticFeedback": "仅限有线连接。如果通过蓝牙连接或启用 Steam Input，则会恢复到普通震动。",
         "controllerSpeaker": "还支持有线连接控制器上的内置扬声器，以及地图上的触摸板导航；主控、音乐、语音、音效、控制器扬声器。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -4274,6 +4571,18 @@
         "lightBar": "显示敌人警报状态和玩家健康状况。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；在更新 4 中添加。",
         "hapticFeedback": "在更新 4 中添加。仅限有线。恢复到蓝牙上的普通震动。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "DualShock 4",
+            "url": "https://www.pcgamingwiki.com/wiki/DualShock_4"
+          },
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -4327,7 +4636,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "jak-ii-opengoal",
@@ -4374,7 +4684,8 @@
       "featureNotes": {
         "lightBar": "灯条颜色根据游戏内事件而变化，例如变成黑暗贾克斯、每支枪的颜色、生命值等。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；触发游戏内事件，例如射击效果和抵抗，同时变为黑暗贾克斯。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "john-carpenter-s-toxic-commando",
@@ -4419,7 +4730,8 @@
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "kingdom-come-deliverance-ii",
@@ -4468,7 +4780,8 @@
       "motionSensors": "unknown",
       "lightBar": "true",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "lego-batman-legacy-of-the-dark-knight",
@@ -4517,7 +4830,8 @@
       "featureNotes": {
         "hapticFeedback": "如果通过蓝牙连接或在游戏开始后连接控制器，则会恢复到普通震动。",
         "controllerSpeaker": "音乐、音效、对话和控制器扬声器"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "lego-horizon-adventures",
@@ -4567,7 +4881,8 @@
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 上的 DualSense 按键提示",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "lords-of-the-fallen-2023",
@@ -4621,6 +4936,14 @@
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。有关使用 DualShock 4 时显示 DualSense 按键提示的信息，请参阅强制 PS5 按键提示。",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "强制 PS5 按键提示",
+            "url": "https://www.pcgamingwiki.com/wiki/Lords_of_the_Fallen_(2023)#Force_PS5_button_prompts"
+          }
+        ]
       }
     },
     {
@@ -4676,7 +4999,8 @@
         "playstationPrompts": "仅 DualSense 按键提示",
         "lightBar": "DualShock 4 控制器的静态蓝色",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "luto",
@@ -4725,7 +5049,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "marathon-2026",
@@ -4771,7 +5096,8 @@
         "lightBar": "颜色根据游戏状态而变化（菜单中为灰色，比赛中健康状况良好，盾牌耗尽时变为红色）。",
         "adaptiveTriggers": "PS5版本也不支持",
         "hapticFeedback": "有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "marvel-rivals",
@@ -4825,7 +5151,8 @@
         "lightBar": "仅 DualShock 4 上有静态蓝灯。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "marvel-t-kon-fighting-souls",
@@ -4880,7 +5207,8 @@
         "playstationPrompts": "DualSense 按键提示列为类型 2 提示。",
         "lightBar": "仅静态蓝色（或玩家 2 为红色）灯",
         "controllerSpeaker": "音乐、音效、语音、环境和控制器扬声器。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "marvel-s-spider-man-2",
@@ -4931,7 +5259,8 @@
       "featureNotes": {
         "motionSensors": "模式：镜头控制；支持陀螺仪瞄准。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "marvel-s-spider-man-remastered",
@@ -4986,6 +5315,14 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自 v.2.512.0.0 起添加了本机蓝牙支持和 Steam Input支持。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "通过蓝牙连接无振动和内部扬声器支持；音乐、语音、UI、SFX 滑块。还提供单独的游戏手柄扬声器滑块。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -5041,6 +5378,14 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自 v.2.516.0.0 起添加了本机蓝牙支持和 Steam Input支持。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "无振动，支持蓝牙连接的内置扬声器；Master、Music、Speech、UI、SFX 滑块。还提供单独的控制器扬声器和音频平衡滑块。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -5091,7 +5436,8 @@
         "lightBar": "颜色会根据机甲的健康状况而变化。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；可以通过“设置”菜单的“控制器”选项卡内的“整体控制”选项卡中的“自适应扳机”设置来关闭。",
         "hapticFeedback": "使用标准震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "metal-gear-solid-snake-eater",
@@ -5141,6 +5487,14 @@
       "featureNotes": {
         "playstationPrompts": "对于 DualSense 以外的控制器，请使用它来强制发出正确的提示。",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/metalgearsoliddeltasnakeeater/mods/104"
+          }
+        ]
       }
     },
     {
@@ -5193,7 +5547,8 @@
         "playstationPrompts": "支持 DualShock 4 和 Dualsense 提示。",
         "lightBar": "测光表指示器缺失。在 DualShock 4 上：仅当 DualSense 的灯条在播放器 LED 信息之外未使用时，它才会为静态蓝色。",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "mindseye",
@@ -5243,7 +5598,8 @@
       "motionSensors": "true",
       "lightBar": "true",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "mixtape",
@@ -5293,7 +5649,8 @@
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "monster-hunter-wilds",
@@ -5343,6 +5700,26 @@
         "motionSensors": "陀螺仪瞄准支持仅在启用 Steam Input API 模式时可用，请参阅 Steam Input了解更多信息。",
         "adaptiveTriggers": "模式：有线（USB）；仅限 USB，需要 Steam Input API 自适应扳机用于控制地图的缩放操作。",
         "hapticFeedback": "仅 USB，需要 Steam Input API。"
+      },
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          }
+        ]
       }
     },
     {
@@ -5391,7 +5768,8 @@
       "featureNotes": {
         "adaptiveTriggers": "开枪时。",
         "hapticFeedback": "仅在事件/过场动画期间。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "neva",
@@ -5438,6 +5816,14 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "遵循主要场景颜色。"
+      },
+      "featureNoteLinks": {
+        "lightBar": [
+          {
+            "label": "辅助功能更新",
+            "url": "https://store.steampowered.com/news/app/2420660/view/666066819517252950"
+          }
+        ]
       }
     },
     {
@@ -5493,7 +5879,8 @@
         "lightBar": "需要在“系统功能”下的“设置”中启用",
         "adaptiveTriggers": "需要在“系统功能”下的“设置”中启用",
         "hapticFeedback": "仅在使用有线连接时可用。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "ninja-gaiden-4",
@@ -5544,6 +5931,14 @@
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。由于一些奇怪的原因，在使用 DualShock 4 时，它总是通过蓝牙显示 Xbox 按键提示。",
         "hapticFeedback": "仅限有线连接。将恢复为蓝牙上的普通震动。"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -5590,7 +5985,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "在振动设置下标记为沉浸式。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "no-man-s-sky",
@@ -5640,6 +6036,14 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Steam 版本需要 Steam Input API 才能使用自适应扳机。",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          }
+        ]
       }
     },
     {
@@ -5687,7 +6091,8 @@
       "featureNotes": {
         "playstationPrompts": "使用 DualShock 4 控制器以及在游戏中时：它将仅使用 Xbox 提示。",
         "motionSensors": "模式：镜头控制；陀螺仪瞄准仅在 5 月 23 日更新 DualSense 时添加"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "overwatch-2",
@@ -5731,7 +6136,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "pacific-drive",
@@ -5783,7 +6189,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。将恢复为蓝牙上的普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "painkiller-2025",
@@ -5828,7 +6235,8 @@
       "motionSensors": "unknown",
       "lightBar": "true",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "pipistrello-and-the-cursed-yoyo",
@@ -5872,7 +6280,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "例如标题画面上的灯条为白色，游戏中为蓝色，Game Over 时为红色，收到“阿姨的帮助”时为粉红色。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "pragmata",
@@ -5922,7 +6331,8 @@
         "motionSensors": "模式：镜头控制",
         "lightBar": "灯条颜色会根据游戏中的事件（例如受到伤害）而变化。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "prince-of-persia-the-lost-crown",
@@ -5982,7 +6392,8 @@
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "还支持 DualSense 和 DualSense Edge over USB 上的扬声器。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "project-colored-mountains",
@@ -6030,7 +6441,8 @@
       "featureNotes": {
         "playstationPrompts": "始终显示白色 DualSense 的提示",
         "lightBar": "实际上没有做任何事情，只是静态白色（在 PC 上）或绿色（在 PS5 上）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "ratchet-clank-rift-apart",
@@ -6085,6 +6497,24 @@
         "adaptiveTriggers": "模式：有线（USB）、无线；除了原生支持之外，Steam 版本还具有使用 Steam Input的自适应扳机支持。",
         "hapticFeedback": "仅在禁用 Steam Input的情况下通过有线连接工作。如果通过蓝牙连接或启用 Steam Input，则会恢复到普通震动。",
         "controllerSpeaker": "还支持有线连接控制器上的内置扬声器。 2026 年 2 月 Windows 操作系统更新后，本机 DualSense Edge 支持已被破坏，需要解决方法。 （请参阅通过 USB 的本机 DualSense Edge 支持损坏）"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          },
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ],
+        "controllerSpeaker": [
+          {
+            "label": "通过 USB 的原生 DualSense Edge 支持已损坏",
+            "url": "https://www.pcgamingwiki.com/wiki/Ratchet_%26_Clank%3A_Rift_Apart#Broken_native_DualSense_Edge_support_over_USB"
+          }
+        ]
       }
     },
     {
@@ -6132,7 +6562,8 @@
         "playstationPrompts": "仅 DualSense 按键提示。 DualShock 4 控制器将改为使用 Xbox 提示。",
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "resident-evil-requiem",
@@ -6187,7 +6618,8 @@
         "lightBar": "添加于 2026 年 5 月 8 日发布的更新中。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；添加于 2026 年 5 月 8 日发布的更新中。",
         "hapticFeedback": "添加于 2026 年 5 月 8 日发布的更新中。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "returnal",
@@ -6241,7 +6673,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "rise-of-the-ronin",
@@ -6291,7 +6724,8 @@
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。",
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "riven-2024",
@@ -6335,7 +6769,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "roadcraft",
@@ -6381,7 +6816,8 @@
       "motionSensors": "false",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "rocket-league",
@@ -6438,6 +6874,24 @@
       "featureNotes": {
         "lightBar": "使用 Aurora 添加 DS4 灯条支持。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自定义配置（需要 DSX）。"
+      },
+      "featureNoteLinks": {
+        "lightBar": [
+          {
+            "label": "极光",
+            "url": "https://www.project-aurora.com/"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "自定义配置",
+            "url": "https://github.com/josealissonbr/DualSenseAT"
+          },
+          {
+            "label": "DSX",
+            "url": "https://www.pcgamingwiki.com/wiki/Controller%3ADualSense#DSX"
+          }
+        ]
       }
     },
     {
@@ -6492,7 +6946,8 @@
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
         "controllerSpeaker": "1.7 版本中添加了 PlayStation 控制器支持，还支持扬声器功能。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "s-t-a-l-k-e-r-call-of-prypiat-enhanced-edition",
@@ -6536,7 +6991,8 @@
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "s-t-a-l-k-e-r-clear-sky-enhanced-edition",
@@ -6580,7 +7036,8 @@
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "s-t-a-l-k-e-r-shadow-of-chornobyl-enhanced-edition",
@@ -6626,7 +7083,8 @@
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "SFX、音乐、控制器扬声器。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "sackboy-a-big-adventure",
@@ -6678,7 +7136,8 @@
         "motionSensors": "模式：手势；仅限有线连接。玩家角色可以倾斜/移动他们的头部/躯干。 [倾斜平台] 部分可以在游戏中禁用。",
         "adaptiveTriggers": "模式：有线（USB）；游戏中没有选项可以禁用此功能。",
         "hapticFeedback": "仅限有线连接。游戏中也没有选项可以禁用此功能。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "satisfactory",
@@ -6727,6 +7186,14 @@
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "还支持内置扬声器，可通过无线控制器扬声器音量选项调节音量；Master、Dialogue、Effects、UI、Music、Ambient、Consumables、Creatures、Player Foley。设备、工厂、车辆、武器和无线控制器扬声器音量。"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "SimHub",
+            "url": "https://www.pcgamingwiki.com/wiki/Topic:Ynvyfmk6e1ljh7vr"
+          }
+        ]
       }
     },
     {
@@ -6780,6 +7247,24 @@
         "playstationPrompts": "支持 DualShock 4 和 DualSense 按键提示",
         "lightBar": "灯条根据 UI 进行更改（即换档）",
         "adaptiveTriggers": "模式：有线、无线（蓝牙）；本机和 Steam Input API 均支持自适应扳机。"
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "DualShock 4",
+            "url": "https://www.pcgamingwiki.com/wiki/DualShock_4"
+          },
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -6826,7 +7311,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "season-a-letter-to-the-future",
@@ -6874,7 +7360,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "shadows-of-the-damned-hella-remastered",
@@ -6925,6 +7412,14 @@
         "motionSensors": "模式：镜头控制；开/关切换。还提供运动灵敏度滑块。",
         "lightBar": "静态粉红色（仅限 DualShock 4）。",
         "adaptiveTriggers": "使用 DualSense 控制器时默认启用，且无法禁用。"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/shadowofthedamnedhellaremastered/mods/6"
+          }
+        ]
       }
     },
     {
@@ -6973,7 +7468,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "silent-hill-2",
@@ -7029,7 +7525,8 @@
         "lightBar": "颜色根据詹姆斯的健康状况而变化。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "skate",
@@ -7079,7 +7576,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。将恢复为蓝牙上的普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "skull-and-bones",
@@ -7139,7 +7637,8 @@
       "featureNotes": {
         "adaptiveTriggers": "通过蓝牙工作。可以通过“设置”菜单中“控制器”选项卡中的“触发强度”滑块进行调整。",
         "hapticFeedback": "仅限有线连接。将无法恢复到蓝牙上的普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "sleep-awake",
@@ -7186,7 +7685,8 @@
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "主要、音效、音乐、对话、用户界面和控制器扬声器的滑块。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "sonic-racing-crossworlds",
@@ -7240,6 +7740,18 @@
       "featureNotes": {
         "playstationPrompts": "DualShock 4（类型 1）和 DualSense（类型 2）提示可用。正面按键将使用通用面部按键提示，但肩键和扳机键将使用 PlayStation 特定的提示。",
         "hapticFeedback": "虽然补丁说明中没有明确列出，但在版本 1.4.1 更新中添加了通过 Steam Input API 的支持，并且当通过蓝牙连接或禁用控制器的音频设备时，将回退到标准震动。由于 Steam Input API 的限制，重新连接同一控制器（使用相同的 USB 连接，或从 USB 连接到蓝牙）将使其触觉/震动不起作用，直到游戏重新启动为止。"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "Steam Input API",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input_API"
+          },
+          {
+            "label": "DualSense Edge",
+            "url": "https://www.pcgamingwiki.com/wiki/DualSense_Edge"
+          }
+        ]
       }
     },
     {
@@ -7286,7 +7798,8 @@
       "featureNotes": {
         "playstationPrompts": "需要在选项菜单中启用",
         "hapticFeedback": "仅支持标准振动"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "star-wars-jedi-survivor",
@@ -7340,7 +7853,8 @@
         "lightBar": "根据光剑的颜色变化。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "star-wars-outlaws",
@@ -7407,7 +7921,8 @@
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。如果通过蓝牙连接，将恢复普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "stellar-blade",
@@ -7464,7 +7979,8 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。如果通过蓝牙连接或启用 Steam Input，则会恢复到普通震动。",
         "controllerSpeaker": "还支持内置扬声器，可使用控制器扬声器音量选项调节音量；滑块显示主音量、效果音量、音乐音量、语音音量和控制器扬声器音量。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "still-wakes-the-deep",
@@ -7514,9 +8030,10 @@
       "lightBar": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
-        "playstationPrompts": "双感",
+        "playstationPrompts": "DualSense",
         "lightBar": "DualShock 4 上为蓝色，DualSense 上未使用。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "stray",
@@ -7569,7 +8086,8 @@
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 Dualsense 需要激活 Steam Input。",
         "lightBar": "DualShock 4 上为静态蓝色，DualSense 上未使用"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "styx-blades-of-greed",
@@ -7617,7 +8135,8 @@
       "motionSensors": "true",
       "lightBar": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "suicide-squad-kill-the-justice-league",
@@ -7668,7 +8187,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "sword-of-the-sea",
@@ -7718,7 +8238,8 @@
       "featureNotes": {
         "lightBar": "支持 DualSense 灯条，Dualshock 4 未测试。",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "system-shock-2-25th-anniversary-remaster",
@@ -7769,7 +8290,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "tainted-grail-the-fall-of-avalon",
@@ -7817,7 +8339,8 @@
       "featureNotes": {
         "adaptiveTriggers": "有线连接。",
         "hapticFeedback": "有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "tekken-8",
@@ -7864,6 +8387,18 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用 DualSense 按键提示。需要禁用 Steam Input并通过 USB 插入。使用此模组可以强制使用彩色 DualSense 按键提示"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/tekken8/mods/13?tab=description"
+          },
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
       }
     },
     {
@@ -7911,7 +8446,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-chant",
@@ -7957,7 +8493,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-crew-motorfest",
@@ -8011,7 +8548,8 @@
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-elder-scrolls-iv-oblivion-remastered",
@@ -8062,7 +8600,8 @@
       "featureNotes": {
         "playstationPrompts": "需要在 Steam 版本上禁用 Steam Input。",
         "adaptiveTriggers": "还支持蓝牙。用于弓、盾和耐力相关的效果。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-first-berserker-khazan",
@@ -8109,7 +8648,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "触觉反馈的强度可以针对每个可以触发它的动作进行定制。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-first-descendant",
@@ -8157,7 +8697,8 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-last-of-us-part-i",
@@ -8213,6 +8754,14 @@
         "motionSensors": "模式：镜头控制、手势；可以禁用某些手势操作（例如手电筒摇动）。要在使用陀螺仪瞄准时禁用横滚轴或调整轴灵敏度乘数，请参阅禁用陀螺仪横滚输入。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "禁用陀螺仪滚动输入",
+            "url": "https://www.patreon.com/posts/last-of-us-roll-118830465"
+          }
+        ]
       }
     },
     {
@@ -8265,7 +8814,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：手势、镜头控制"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-riftbreaker",
@@ -8317,7 +8867,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "the-witcher-3-wild-hunt",
@@ -8370,7 +8921,8 @@
       "featureNotes": {
         "lightBar": "主菜单为蓝色，游戏玩法为绿色，游戏结束为红色。",
         "adaptiveTriggers": "模式：有线（USB）；添加到下一代（补丁 4.0）更新中。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "tom-clancy-s-rainbow-six-extraction",
@@ -8420,7 +8972,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "tom-clancy-s-rainbow-six-siege",
@@ -8476,7 +9029,8 @@
         "lightBar": "用于在游戏过程中显示健康状况。",
         "adaptiveTriggers": "模式：有线（USB）；可以通过“选项”菜单中“控制”选项卡中的“扳机效果”切换来禁用。",
         "hapticFeedback": "仅定期震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "tomb-raider-2013",
@@ -8534,6 +9088,36 @@
         "lightBar": "使用古墓丽影 DualSense 模组",
         "adaptiveTriggers": "模式：有线、无线；使用古墓丽影 DualSense 模组",
         "hapticFeedback": "使用古墓丽影 DualSense 模组"
+      },
+      "featureNoteLinks": {
+        "playstationPrompts": [
+          {
+            "label": "这个模组",
+            "url": "https://www.nexusmods.com/tombraider2013/mods/36"
+          },
+          {
+            "label": "这个模组",
+            "url": "https://www.tombraiderforums.com/showpost.php?p=6748994&postcount=7"
+          }
+        ],
+        "lightBar": [
+          {
+            "label": "古墓丽影 DualSense 模组",
+            "url": "https://www.nexusmods.com/tombraider2013/mods/125"
+          }
+        ],
+        "adaptiveTriggers": [
+          {
+            "label": "古墓丽影 DualSense 模组",
+            "url": "https://www.nexusmods.com/tombraider2013/mods/125"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "古墓丽影 DualSense 模组",
+            "url": "https://www.nexusmods.com/tombraider2013/mods/125"
+          }
+        ]
       }
     },
     {
@@ -8582,7 +9166,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "tour-de-france-2026",
@@ -8631,7 +9216,8 @@
       "motionSensors": "false",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "uncharted-legacy-of-thieves-collection",
@@ -8685,7 +9271,8 @@
         "lightBar": "标准蓝色，仅限 DualShock 4",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "until-dawn",
@@ -8742,7 +9329,8 @@
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。",
         "controllerSpeaker": "对话、音乐、音效、视频和控制器扬声器滑块从 0 到 100。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "v-rising",
@@ -8787,7 +9375,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "war-robots-frontiers",
@@ -8834,7 +9423,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "静态蓝"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "warframe",
@@ -8893,7 +9483,8 @@
         "lightBar": "对收到的伤害做出反应。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；在更新 34 中添加。",
         "hapticFeedback": "使用普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "warhammer-40-000-space-marine-ii",
@@ -8944,7 +9535,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "where-winds-meet",
@@ -8993,7 +9585,8 @@
         "motionSensors": "瞄准弓时使用。",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "world-war-z",
@@ -9041,7 +9634,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "wrc-10-fia-world-rally-championship",
@@ -9089,7 +9683,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "wrc-generations",
@@ -9137,7 +9732,8 @@
         "playstationPrompts": "禁用steaminput并删除uwp文件夹",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅支持普通震动。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "wuthering-waves",
@@ -9190,7 +9786,8 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "根据游戏内设置：“请注意，此功能仅在游戏的某些部分可用。”"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "xdefiant",
@@ -9234,7 +9831,8 @@
       "motionSensors": "unknown",
       "lightBar": "false",
       "controllerSpeaker": "unknown",
-      "featureNotes": {}
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "yakuza-kiwami-3-dark-ties",
@@ -9284,7 +9882,8 @@
         "playstationPrompts": "支持 DualSense（类型 2）和 DualShock 4（类型 3）按键提示。",
         "lightBar": "仅适用于 DualShock 4 的静态灯。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；无法在游戏中禁用。"
-      }
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "zenless-zone-zero",
@@ -9343,6 +9942,20 @@
         "adaptiveTriggers": "模式：有线（USB）；用于钓鱼小游戏。",
         "hapticFeedback": "仅限有线连接。需要在控制器的音频设备上进行手动配置。",
         "controllerSpeaker": "DualShock 4 不支持震动。自 2.5 版本起，还支持 DualSense 和 DualSense Edge 的内置扬声器；仅限有线。需要在控制器的音频设备上进行手动配置。"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "原神",
+            "url": "https://www.pcgamingwiki.com/wiki/Genshin_Impact"
+          }
+        ],
+        "controllerSpeaker": [
+          {
+            "label": "原神",
+            "url": "https://www.pcgamingwiki.com/wiki/Genshin_Impact"
+          }
+        ]
       }
     }
   ]

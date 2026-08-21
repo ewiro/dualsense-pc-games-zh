@@ -97,6 +97,25 @@ export function cleanWikiNote(value) {
   return cleanText(note).replace(/\s+/g, ' ').trim();
 }
 
+export function extractWikiNoteLinks(value, sourceUrl = SOURCE_PAGE) {
+  const source = String(value ?? '');
+  const links = new Map();
+  const add = (url, rawLabel) => {
+    try {
+      const parsed = new URL(url);
+      if (!['http:', 'https:'].includes(parsed.protocol)) return;
+      const label = cleanWikiNote(rawLabel) || '相关链接';
+      links.set(`${parsed.href}\n${label}`, { label, url: parsed.href });
+    } catch {}
+  };
+  for (const match of source.matchAll(/\[(https?:\/\/[^\s\]]+)(?:\s+([^\]]+))?\]/gi)) add(match[1], match[2]);
+  for (const match of source.matchAll(/\[\[([^\]|]+)(?:\|([^\]]+))?\]\]/g)) {
+    const target = match[1].trim();
+    add(target.startsWith('#') ? new URL(target.replaceAll(' ', '_'), sourceUrl).href : pageUrl(target), match[2] || target);
+  }
+  return [...links.values()];
+}
+
 export function cleanCoverUrl(value) {
   const url = cleanText(value);
   return /^https?:\/\//i.test(url) ? url : '';
@@ -200,22 +219,35 @@ function featureNote(parameters, notesKeys, modesKeys = []) {
   return [mode, note].filter(Boolean).join('；');
 }
 
-function controllerSpeakerNote(wikitext, parameters) {
-  const direct = featureNote(parameters, ['playstation speaker notes'], ['playstation speaker modes']);
-  if (direct) return direct;
-  const evidence = String(wikitext ?? '')
+function featureLinks(parameters, notesKeys, sourceUrl) {
+  const links = notesKeys.flatMap((key) => extractWikiNoteLinks(parameters[key], sourceUrl));
+  return [...new Map(links.map((link) => [`${link.url}\n${link.label}`, link])).values()];
+}
+
+function controllerSpeakerNoteSources(wikitext, parameters) {
+  const direct = [parameters['playstation speaker notes']].filter(Boolean);
+  if (direct.length) return direct;
+  return String(wikitext ?? '')
     .split(/\r?\n/)
     .filter((line) => /speaker/i.test(line) && (
       /^\|playstation controllers notes\s*=/i.test(line)
       || /(?:controller|dualsense|dualshock|gamepad|built[- ]?in|internal|wireless controller).{0,100}speaker/i.test(line)
       || /speaker.{0,100}(?:controller|dualsense|dualshock|gamepad)/i.test(line)
     ))
-    .map((line) => cleanWikiNote(line.replace(/^\|[^=]+=/, '')))
+    .map((line) => line.replace(/^\|[^=]+=/, '').trim())
+    .filter(Boolean);
+}
+
+function controllerSpeakerNote(wikitext, parameters) {
+  const direct = featureNote(parameters, ['playstation speaker notes'], ['playstation speaker modes']);
+  if (direct) return direct;
+  const evidence = controllerSpeakerNoteSources(wikitext, parameters)
+    .map(cleanWikiNote)
     .filter(Boolean);
   return [...new Set(evidence)].join('；');
 }
 
-export function parseInputFeatures(wikitext) {
+export function parseInputFeatures(wikitext, sourceUrl = SOURCE_PAGE) {
   const parameters = templateParameters(wikitext, 'Input');
   const status = (...keys) => {
     for (const key of keys) {
@@ -232,6 +264,14 @@ export function parseInputFeatures(wikitext) {
     hapticFeedback: featureNote(parameters, ['dualsense haptics support notes'], ['dualsense haptics support modes']),
     controllerSpeaker: controllerSpeakerNote(wikitext, parameters)
   };
+  const featureNoteLinks = {
+    playstationPrompts: featureLinks(parameters, ['playstation prompts notes', 'dualshock prompts notes'], sourceUrl),
+    motionSensors: featureLinks(parameters, ['playstation motion sensors notes'], sourceUrl),
+    lightBar: featureLinks(parameters, ['light bar support notes'], sourceUrl),
+    adaptiveTriggers: featureLinks(parameters, ['dualsense adaptive trigger support notes'], sourceUrl),
+    hapticFeedback: featureLinks(parameters, ['dualsense haptics support notes'], sourceUrl),
+    controllerSpeaker: controllerSpeakerNoteSources(wikitext, parameters).flatMap((note) => extractWikiNoteLinks(note, sourceUrl))
+  };
   return {
     playstationPrompts: status('playstation prompts', 'dualshock prompts'),
     motionSensors: status('playstation motion sensors'),
@@ -239,7 +279,8 @@ export function parseInputFeatures(wikitext) {
     adaptiveTriggers: status('dualsense adaptive trigger support'),
     hapticFeedback: status('dualsense haptics support'),
     controllerSpeaker: detectControllerSpeakerSupport(wikitext, parameters),
-    featureNotes: Object.fromEntries(Object.entries(featureNotes).filter(([, note]) => note))
+    featureNotes: Object.fromEntries(Object.entries(featureNotes).filter(([, note]) => note)),
+    featureNoteLinks: Object.fromEntries(Object.entries(featureNoteLinks).filter(([, links]) => links.length))
   };
 }
 
@@ -282,7 +323,7 @@ export function attachAvailabilityStores(dataset, pageWikitext = {}) {
 
 export function attachInputFeatures(dataset, pageWikitext = {}, noteTranslations = {}) {
   for (const game of dataset.games) {
-    const features = parseInputFeatures(pageWikitext[game.title.toLocaleLowerCase()] || '');
+    const features = parseInputFeatures(pageWikitext[game.title.toLocaleLowerCase()] || '', game.source);
     if (features.playstationPrompts !== 'unknown' || !game.playstationPrompts) game.playstationPrompts = features.playstationPrompts;
     if (features.motionSensors !== 'unknown' || !game.motionSensors) game.motionSensors = features.motionSensors;
     if (features.lightBar !== 'unknown' || !game.lightBar) game.lightBar = features.lightBar;
@@ -290,8 +331,9 @@ export function attachInputFeatures(dataset, pageWikitext = {}, noteTranslations
     if (features.adaptiveTriggers !== 'unknown') game.adaptiveTriggers = features.adaptiveTriggers;
     if (features.hapticFeedback !== 'unknown') game.hapticFeedback = features.hapticFeedback;
     game.featureNotes = Object.fromEntries(Object.entries(features.featureNotes).map(([key, note]) => [key, noteTranslations[note] || note]));
+    game.featureNoteLinks = Object.fromEntries(Object.entries(features.featureNoteLinks).map(([key, links]) => [key, links.map((link) => ({ ...link, label: noteTranslations[link.label] || link.label }))]));
   }
-  dataset.schemaVersion = 7;
+  dataset.schemaVersion = 8;
   return dataset;
 }
 
@@ -318,7 +360,10 @@ export function cleanConnections(value) {
 }
 
 export function pageUrl(title) {
-  return `https://www.pcgamingwiki.com/wiki/${encodeURIComponent(String(title).replaceAll(' ', '_'))}`;
+  const [page, ...fragmentParts] = String(title).split('#');
+  const base = `https://www.pcgamingwiki.com/wiki/${encodeURIComponent(page.replaceAll(' ', '_'))}`;
+  const fragment = fragmentParts.join('#').replaceAll(' ', '_');
+  return fragment ? `${base}#${encodeURIComponent(fragment)}` : base;
 }
 
 export function unwrapCargoRow(row) {
@@ -366,7 +411,8 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
       hapticFeedback: 'unknown',
       hdHapticFeedback: 'unknown',
       controllerSpeaker: 'unknown',
-      featureNotes: {}
+      featureNotes: {},
+      featureNoteLinks: {}
     };
     current.developers = [...new Set([...current.developers, ...cleanCompanies(item.Developers)])];
     current.publishers = [...new Set([...current.publishers, ...cleanCompanies(item.Publishers)])];
@@ -392,7 +438,7 @@ export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toI
     .filter(hasEnhancedDualSenseFeature)
     .sort((a, b) => a.title.localeCompare(b.title, 'en'));
   return {
-    schemaVersion: 7,
+    schemaVersion: 8,
     fetchedAt,
     source: SOURCE_PAGE,
     selection: {
@@ -407,7 +453,7 @@ export function validateDataset(dataset, previous = null) {
   if (!dataset || !Array.isArray(dataset.games) || dataset.games.length === 0) {
     throw new Error('数据为空，拒绝发布');
   }
-  if (dataset.schemaVersion !== 7 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
+  if (dataset.schemaVersion !== 8 || !dataset.fetchedAt || !dataset.source || !dataset.selection) {
     throw new Error('数据缺少 schemaVersion、fetchedAt 或 source');
   }
   const ids = new Set();
@@ -427,6 +473,15 @@ export function validateDataset(dataset, previous = null) {
     }
     for (const [key, note] of Object.entries(game.featureNotes)) {
       if (!FEATURE_KEYS.includes(key) || typeof note !== 'string' || !note.trim()) throw new Error(`游戏包含无效功能说明 ${key}：${game.title}`);
+    }
+    if (!game.featureNoteLinks || typeof game.featureNoteLinks !== 'object' || Array.isArray(game.featureNoteLinks)) {
+      throw new Error(`游戏缺少功能说明链接对象：${game.title}`);
+    }
+    for (const [key, links] of Object.entries(game.featureNoteLinks)) {
+      if (!FEATURE_KEYS.includes(key) || !Array.isArray(links)) throw new Error(`游戏包含无效功能说明链接 ${key}：${game.title}`);
+      for (const link of links) {
+        if (!link?.label || !/^https?:\/\//i.test(link.url)) throw new Error(`游戏包含无效功能说明链接 ${key}：${game.title}`);
+      }
     }
     for (const store of game.stores) {
       if (!store?.name || !/^https:\/\//i.test(store.url)) throw new Error(`游戏包含无效购买平台链接：${game.title}`);

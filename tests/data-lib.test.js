@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { attachAvailabilityStores, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { attachAvailabilityStores, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
 import { readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
@@ -21,6 +21,13 @@ test('normalizes statuses and list values', () => {
   assert.equal(cleanText('Ratchet &amp; Clank'), 'Ratchet & Clank');
   assert.equal(cleanSteamAppId('12345,67890'), '12345');
   assert.equal(cleanWikiNote("Named '''Type B'''.<ref>{{Refcheck|user=Test}}</ref>"), 'Named Type B.');
+  assert.deepEqual(extractWikiNoteLinks('Use [https://example.com/mod this mod] or [[Controller:DualSense|DualSense guide]].'), [
+    { label: 'this mod', url: 'https://example.com/mod' },
+    { label: 'DualSense guide', url: 'https://www.pcgamingwiki.com/wiki/Controller%3ADualSense' }
+  ]);
+  assert.deepEqual(extractWikiNoteLinks('See [[#Controller support|controller support]].', 'https://www.pcgamingwiki.com/wiki/Test_Game'), [
+    { label: 'controller support', url: 'https://www.pcgamingwiki.com/wiki/Test_Game#Controller_support' }
+  ]);
 });
 
 test('rejects empty and malformed API responses', () => {
@@ -47,13 +54,15 @@ test('keeps a complete Chinese feature note translation cache', async () => {
   const translations = await readNoteTranslations();
   assert.equal(translations['Named Type B.'], '名称为 B 型。');
   assert.ok(Object.keys(translations).length >= 250);
-  assert.ok(Object.values(translations).every((note) => /[\u3400-\u9fff]/u.test(note)));
+  assert.ok(Object.values(translations).every((note) => typeof note === 'string' && note.trim()));
+  assert.match(translations['Use this mod.'], /[\u3400-\u9fff]/u);
+  assert.equal(translations['DualSense Edge'], 'DualSense Edge');
 });
 
 test('parses PlayStation features and explicit controller speaker evidence', () => {
   const wikitext = `{{Input
 |playstation prompts = true
-|playstation prompts notes = Named '''Type B'''.
+|playstation prompts notes = Use [https://example.com/mod this mod].
 |playstation motion sensors = false
 |light bar support = limited
 |dualsense adaptive trigger support = true
@@ -71,9 +80,12 @@ test('parses PlayStation features and explicit controller speaker evidence', () 
     hapticFeedback: 'hackable',
     controllerSpeaker: 'limited',
     featureNotes: {
-      playstationPrompts: 'Named Type B.',
+      playstationPrompts: 'Use this mod.',
       adaptiveTriggers: '模式：有线（USB）；Pressing R2 offers resistance.',
       controllerSpeaker: 'Also supports the built-in speaker on the controllers in wired connection.'
+    },
+    featureNoteLinks: {
+      playstationPrompts: [{ label: 'this mod', url: 'https://example.com/mod' }]
     }
   });
   assert.equal(detectControllerSpeakerSupport('{{Input\n|playstation speaker = true\n}}'), 'true');
@@ -83,7 +95,7 @@ test('parses PlayStation features and explicit controller speaker evidence', () 
 
 test('merges model rows and removes games without DualSense enhancements', () => {
   const dataset = mergeRecords(dualSenseFixture, edgeFixture, '2026-08-17T00:00:00.000Z', { 'Alpha Game': '阿尔法游戏' });
-  assert.equal(dataset.schemaVersion, 7);
+  assert.equal(dataset.schemaVersion, 8);
   assert.equal(dataset.games.length, 1);
   const alpha = dataset.games.find((game) => game.title === 'Alpha Game');
   assert.deepEqual(alpha.models.sort(), ['DualSense', 'DualSense Edge']);
@@ -98,12 +110,13 @@ test('merges model rows and removes games without DualSense enhancements', () =>
   assert.equal(alpha.titleZh, '阿尔法游戏');
   attachAvailabilityStores(dataset, { 'alpha game': '{{Availability/row|Steam|12345|Steam||||Windows}}' });
   assert.deepEqual(alpha.stores, [{ name: 'Steam', url: 'https://store.steampowered.com/app/12345/' }]);
-  attachInputFeatures(dataset, { 'alpha game': '{{Input\n|playstation prompts=true\n|playstation prompts notes=DualSense button prompts.\n|playstation motion sensors=false\n|light bar support=true\n|playstation speaker=true\n}}' }, { 'DualSense button prompts.': '支持 DualSense 按键提示。' });
+  attachInputFeatures(dataset, { 'alpha game': '{{Input\n|playstation prompts=true\n|playstation prompts notes=Use [https://example.com/mod this mod].\n|playstation motion sensors=false\n|light bar support=true\n|playstation speaker=true\n}}' }, { 'Use this mod.': '使用这个模组。', 'this mod': '这个模组' });
   assert.equal(alpha.playstationPrompts, 'true');
   assert.equal(alpha.motionSensors, 'false');
   assert.equal(alpha.lightBar, 'true');
   assert.equal(alpha.controllerSpeaker, 'true');
-  assert.deepEqual(alpha.featureNotes, { playstationPrompts: '支持 DualSense 按键提示。' });
+  assert.deepEqual(alpha.featureNotes, { playstationPrompts: '使用这个模组。' });
+  assert.deepEqual(alpha.featureNoteLinks, { playstationPrompts: [{ label: '这个模组', url: 'https://example.com/mod' }] });
   assert.equal(hasEnhancedDualSenseFeature(alpha), true);
   assert.equal(dataset.games.some((game) => game.title === 'Beta Game'), false);
   assert.equal(dataset.games.some((game) => game.title === 'Gamma Game'), false);
@@ -111,7 +124,7 @@ test('merges model rows and removes games without DualSense enhancements', () =>
 });
 
 test('rejects empty, malformed, incomplete and sharply reduced datasets', () => {
-  assert.throws(() => validateDataset({ schemaVersion: 7, fetchedAt: 'x', source: 'x', selection: {}, games: [] }), /数据为空/);
+  assert.throws(() => validateDataset({ schemaVersion: 8, fetchedAt: 'x', source: 'x', selection: {}, games: [] }), /数据为空/);
   const base = mergeRecords(dualSenseFixture, edgeFixture);
   assert.throws(() => validateDataset({ ...base, games: base.games.map((game) => ({ ...game, models: ['DualSense'] })) }), /DualSense 和 DualSense Edge/);
   const previous = { ...base, games: Array.from({ length: 10 }, (_, index) => ({ ...base.games[0], id: `old-${index}`, title: `Old ${index}` })) };

@@ -56,13 +56,48 @@ function storeLinks(game) {
 function featureInfoIcon() {
   return '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"></circle><path d="M10 8.6v5M10 6.2h.01"></path></svg>';
 }
+function externalLinkIcon() {
+  return '<svg class="external-link-icon" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3h7v7M13 3 6.5 9.5M11 8.5V13H3V5h4.5"></path></svg>';
+}
+function validFeatureLinks(links) {
+  if (!Array.isArray(links)) return [];
+  return links.flatMap((link) => {
+    try {
+      const url = new URL(link?.url);
+      const label = String(link?.label || '').trim();
+      return label && ['http:', 'https:'].includes(url.protocol) ? [{ label, url: url.href }] : [];
+    } catch { return []; }
+  });
+}
+function featureNoteContent(note, rawLinks) {
+  const links = validFeatureLinks(rawLinks);
+  const matched = new Set();
+  let cursor = 0;
+  let content = '';
+  for (const [index, link] of links.entries()) {
+    const position = note.indexOf(link.label, cursor);
+    if (position === -1) continue;
+    content += text(note.slice(cursor, position));
+    content += `<a class="feature-note-link" href="${text(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${text(link.label)}（在新窗口打开）">${text(link.label)}${externalLinkIcon()}</a>`;
+    cursor = position + link.label.length;
+    matched.add(index);
+  }
+  content += text(note.slice(cursor));
+  const unmatched = links.filter((_, index) => !matched.has(index));
+  if (unmatched.length) {
+    content += `<span class="feature-note-links"><b>相关链接：</b>${unmatched.map((link) => `<a class="feature-note-link" href="${text(link.url)}" target="_blank" rel="noopener noreferrer" aria-label="${text(link.label)}（在新窗口打开）">${text(link.label)}${externalLinkIcon()}</a>`).join('、')}</span>`;
+  }
+  return content;
+}
 function features(game, context) {
   return FEATURE_DEFINITIONS.map(({ key, label }) => {
     const status = Object.hasOwn(STATUS_LABELS, game[key]) ? game[key] : 'unknown';
-    const note = game.featureNotes?.[key]?.trim();
+    const note = game.featureNotes?.[key]?.trim() || '';
+    const links = validFeatureLinks(game.featureNoteLinks?.[key]);
+    const hasDetails = Boolean(note || links.length);
     const noteId = `feature-note-${context}-${game.id}-${key}`;
-    const info = note ? `<button class="feature-info" type="button" aria-expanded="false" aria-controls="${text(noteId)}" aria-label="查看${text(game.titleZh || game.title)}的${text(label)}说明">${featureInfoIcon()}</button>` : '';
-    const details = note ? `<span class="feature-note" id="${text(noteId)}" role="note" hidden>${text(note)}</span>` : '';
+    const info = hasDetails ? `<button class="feature-info" type="button" aria-expanded="false" aria-controls="${text(noteId)}" aria-label="查看${text(game.titleZh || game.title)}的${text(label)}说明">${featureInfoIcon()}</button>` : '';
+    const details = hasDetails ? `<span class="feature-note" id="${text(noteId)}" role="note" hidden>${featureNoteContent(note, links)}</span>` : '';
     return `<span class="feature-item"><span class="feature"><span>${label}</span><i class="${STATUS_CLASS[status] || STATUS_CLASS.unknown}">${labelStatus(status)}</i>${info}</span>${details}</span>`;
   }).join('');
 }

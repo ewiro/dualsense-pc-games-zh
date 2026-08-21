@@ -18,6 +18,22 @@ const commonTranslations = {
   'Basic rumble only.': '仅支持普通震动。',
   'Regular vibration.': '仅支持普通震动。',
   'Use regular rumble.': '使用普通震动。',
+  'DualSense': 'DualSense',
+  'DualSense Edge': 'DualSense Edge',
+  'DualShock 4': 'DualShock 4',
+  'Genshin Impact': '原神',
+  'GInput': 'GInput',
+  'GTASense': 'GTASense',
+  'Hasty Controls': 'Hasty Controls',
+  'Logitech G29': 'Logitech G29',
+  'RacingDSX': 'RacingDSX',
+  'Simhub': 'SimHub',
+  'SimHub': 'SimHub',
+  'Steam': 'Steam',
+  'Steam Input': 'Steam Input',
+  'Steam Input API': 'Steam Input API',
+  'this': '这个模组',
+  'this mod': '这个模组',
   'Named Type B.': '名称为 B 型。',
   'Modes: Off, Weak, Medium & Strong.': '可选关闭、弱、中、强四档。',
   'Switches colors depending on situation': '灯条会根据游戏情境切换颜色。',
@@ -94,15 +110,26 @@ export async function readNoteTranslations() {
 
 export async function updateNoteTranslations(pageWikitext) {
   const translations = await readNoteTranslations();
-  const notes = [...new Set(Object.values(pageWikitext).flatMap((wikitext) => Object.values(parseInputFeatures(wikitext).featureNotes)))];
-  const missing = notes.filter((note) => !translations[note]);
+  const parsedFeatures = Object.values(pageWikitext).map((wikitext) => parseInputFeatures(wikitext));
+  const notes = [...new Set(parsedFeatures.flatMap((features) => Object.values(features.featureNotes)))];
+  const linkLabels = [...new Set(parsedFeatures.flatMap((features) =>
+    Object.values(features.featureNoteLinks).flatMap((links) => links.map((link) => link.label))
+  ))];
+  const missingNotes = notes.filter((note) => !translations[note]);
+  const missingLabels = linkLabels.filter((label) => !translations[label] && !missingNotes.includes(label));
+  const missing = [...missingNotes, ...missingLabels];
   if (missing.length) {
     let cursor = 0;
     const workers = Array.from({ length: Math.min(4, missing.length) }, async () => {
       while (cursor < missing.length) {
         const note = missing[cursor];
         cursor += 1;
-        translations[note] = await translateNote(note);
+        try {
+          translations[note] = await translateNote(note);
+        } catch (error) {
+          if (!missingLabels.includes(note)) throw error;
+          translations[note] = note;
+        }
       }
     });
     await Promise.all(workers);
