@@ -52,9 +52,45 @@
 .telemetry-list div { padding: 12px 0; display: flex; justify-content: space-between; gap: 20px; border-top: 1px solid var(--line); }
 .telemetry-list dt { color: var(--muted); font-size: 11px; }
 .telemetry-list dd { margin: 0; color: var(--ink); font: 11px ui-monospace, monospace; text-align: right; }
-.motion-orb { width: 126px; aspect-ratio: 1; margin: 26px auto 0; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--blue) 35%, transparent); border-radius: 50%; transform: rotate(25deg) scaleY(.65); }
-.motion-orb::before { content: ""; grid-area: 1 / 1; width: 82%; height: 82%; border: 1px solid color-mix(in srgb, var(--teal) 36%, transparent); border-radius: 50%; transform: rotate(70deg) scaleX(.64); }
-#motion-core { grid-area: 1 / 1; width: 62px; height: 48px; display: grid; place-items: center; border: 1px solid var(--teal); border-radius: 13px; color: var(--teal); background: var(--panel); font: 9px ui-monospace, monospace; transform: scaleY(1.54); transition: transform .06s linear; }
+.motion-visual { margin: 22px 0 0; padding: 14px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--teal) 30%, var(--line)); border-radius: 16px; background: radial-gradient(circle at 50% 42%, color-mix(in srgb, var(--teal) 13%, transparent), transparent 48%), color-mix(in srgb, var(--bg) 76%, var(--panel)); }
+.motion-caption { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.motion-caption span { color: var(--ink); font-size: 12px; font-weight: 700; }
+.motion-caption small { color: var(--dim); font-size: 9px; text-align: right; }
+.motion-attitude { position: relative; min-height: 218px; display: grid; place-items: center; perspective: 620px; isolation: isolate; }
+.motion-attitude::before { content: ""; position: absolute; inset: 21px 1px 18px; z-index: -2; opacity: .34; background-image: linear-gradient(color-mix(in srgb, var(--line) 70%, transparent) 1px, transparent 1px), linear-gradient(90deg, color-mix(in srgb, var(--line) 70%, transparent) 1px, transparent 1px); background-size: 22px 22px; mask-image: radial-gradient(circle, black 22%, transparent 72%); }
+.motion-horizon { position: absolute; width: 194px; height: 164px; overflow: hidden; border: 1px solid color-mix(in srgb, var(--blue) 52%, var(--line)); border-radius: 50%; background: linear-gradient(to bottom, color-mix(in srgb, var(--blue) 10%, transparent) 0 50%, color-mix(in srgb, var(--teal) 9%, transparent) 50% 100%); box-shadow: inset 0 0 26px color-mix(in srgb, var(--bg) 68%, transparent); }
+.motion-horizon::before, .motion-horizon::after { content: ""; position: absolute; z-index: 2; background: color-mix(in srgb, var(--ink) 45%, transparent); }
+.motion-horizon::before { top: 50%; left: 8%; right: 8%; height: 1px; }
+.motion-horizon::after { top: 12%; bottom: 12%; left: 50%; width: 1px; }
+.motion-horizon-plane { position: absolute; left: -30%; top: 50%; width: 160%; height: 85%; transform-origin: 50% 0; border-top: 2px solid var(--teal); background: linear-gradient(to bottom, color-mix(in srgb, var(--teal) 22%, transparent), color-mix(in srgb, var(--teal) 4%, transparent)); transition: transform .06s linear; }
+.motion-horizon-plane::before, .motion-horizon-plane::after { content: ""; position: absolute; top: -6px; width: 32px; height: 5px; border-top: 1px solid var(--teal); }
+.motion-horizon-plane::before { left: calc(50% - 54px); }
+.motion-horizon-plane::after { right: calc(50% - 54px); }
+.motion-center-mark { position: absolute; z-index: 3; top: 50%; left: 50%; width: 35px; height: 10px; transform: translate(-50%, -50%); border-bottom: 2px solid var(--ink); }
+.motion-center-mark::before, .motion-center-mark::after { content: ""; position: absolute; bottom: -2px; width: 11px; border-bottom: 2px solid var(--ink); }
+.motion-center-mark::before { left: -9px; transform: rotate(20deg); transform-origin: right; }
+.motion-center-mark::after { right: -9px; transform: rotate(-20deg); transform-origin: left; }
+.motion-center-mark i { position: absolute; left: 50%; bottom: -4px; width: 6px; height: 6px; transform: translateX(-50%) rotate(45deg); border: 1px solid var(--ink); background: var(--panel); }
+.motion-yaw-track { position: absolute; top: 12px; left: 50%; width: 150px; height: 20px; transform: translateX(-50%); border-top: 1px solid color-mix(in srgb, var(--ink) 42%, transparent); }
+.motion-yaw-track::before, .motion-yaw-track::after { content: ""; position: absolute; top: -4px; width: 1px; height: 7px; background: color-mix(in srgb, var(--ink) 42%, transparent); }
+.motion-yaw-track::before { left: 0; }
+.motion-yaw-track::after { right: 0; }
+.motion-yaw-track span { position: absolute; top: 4px; left: 50%; transform: translateX(-50%); color: var(--dim); font: 8px ui-monospace, monospace; letter-spacing: .12em; }
+.motion-yaw-track i { position: absolute; top: -5px; left: 50%; width: 9px; height: 9px; transform: translateX(-50%); border: 2px solid var(--panel); border-radius: 50%; background: var(--blue); box-shadow: 0 0 10px color-mix(in srgb, var(--blue) 58%, transparent); transition: transform .06s linear; }
+.motion-controller { position: relative; z-index: 4; width: min(194px, 72vw); transform-style: preserve-3d; transition: transform .06s linear; filter: drop-shadow(0 14px 11px color-mix(in srgb, var(--bg) 70%, transparent)); }
+.motion-controller svg { display: block; width: 100%; overflow: visible; }
+.motion-controller-shell { fill: color-mix(in srgb, var(--panel) 90%, var(--teal) 10%); stroke: var(--teal); stroke-width: 2; stroke-linejoin: round; }
+.motion-controller-panel, .motion-controller-stick { fill: color-mix(in srgb, var(--bg) 72%, var(--panel)); stroke: color-mix(in srgb, var(--ink) 66%, var(--line)); stroke-width: 1.5; }
+.motion-controller-light { fill: none; stroke: var(--blue); stroke-width: 2.5; stroke-linecap: round; }
+.motion-controller-detail { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; }
+.motion-controller-button { fill: var(--panel); stroke: var(--ink); stroke-width: 1.5; }
+.motion-axis-label { position: absolute; z-index: 5; color: color-mix(in srgb, var(--muted) 74%, transparent); font: 8px ui-monospace, monospace; letter-spacing: .08em; }
+.motion-axis-roll { right: 1px; bottom: 17px; }
+.motion-axis-pitch { left: 0; top: 50%; transform: rotate(-90deg) translateY(-10px); transform-origin: left top; }
+.motion-pose-values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
+.motion-pose-values div { min-width: 0; padding: 8px 7px; display: grid; gap: 3px; border: 1px solid var(--line); border-radius: 9px; background: color-mix(in srgb, var(--panel) 78%, transparent); }
+.motion-pose-values span { overflow: hidden; color: var(--dim); font: 8px ui-monospace, monospace; text-overflow: ellipsis; white-space: nowrap; }
+.motion-pose-values output { color: var(--ink); font: 700 13px ui-monospace, monospace; font-variant-numeric: tabular-nums; }
 .range-row { display: block; margin: 17px 0; }
 .range-row > span { display: flex; justify-content: space-between; margin-bottom: 8px; color: var(--muted); font-size: 12px; }
 .range-row output { color: var(--ink); font: 700 12px ui-monospace, monospace; }
@@ -127,5 +163,5 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .connection-dot, .primary-button, .secondary-button, .preset-grid button, .input-chip, .meter i, #motion-core { transition: none; }
+  .connection-dot, .primary-button, .secondary-button, .preset-grid button, .input-chip, .meter i, .motion-controller, .motion-horizon-plane, .motion-yaw-track i { transition: none; }
 }

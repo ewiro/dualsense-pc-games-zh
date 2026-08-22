@@ -1,6 +1,15 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOutputReport, detectConnectionType, parseInputReport, triggerEffects } from '../tester-lib.js';
+import { buildOutputReport, calculateMotionPose, detectConnectionType, parseInputReport, triggerEffects } from '../tester-lib.js';
+
+test('calculates a bounded controller pose from motion sensors', () => {
+  assert.deepEqual(calculateMotionPose([0, 0, 8192], [0, 0, 0]), { roll: 0, pitch: 0, yawRate: 0 });
+  const tilted = calculateMotionPose([-8192, 8192, 8192], [0, 0, 16384]);
+  assert.equal(Math.round(tilted.roll), 45);
+  assert.equal(Math.round(tilted.pitch), 35);
+  assert.equal(tilted.yawRate, 16);
+  assert.deepEqual(calculateMotionPose([0, 1, -1], [0, 0, 999999]), { roll: 60, pitch: 0, yawRate: 32 });
+});
 
 test('detects DualSense USB and Bluetooth report layouts', () => {
   const collection = (reportSize, reportCount) => [{ usagePage: 1, usage: 5, inputReports: [{ items: [{ reportSize, reportCount }] }] }];

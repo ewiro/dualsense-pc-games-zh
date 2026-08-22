@@ -1,4 +1,4 @@
-import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, buildOutputReport, detectConnectionType, parseInputReport, triggerEffects } from './tester-lib.js';
+import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, buildOutputReport, calculateMotionPose, detectConnectionType, parseInputReport, triggerEffects } from './tester-lib.js';
 import { createHapticPattern, hapticPatternLabels } from './haptics-audio.js';
 
 const THEME_KEY = 'dualsense-theme';
@@ -462,6 +462,7 @@ async function disconnect(close = true) {
   device = null;
   link = 'unknown';
   latestInput = null;
+  renderMotionPose();
   setConnectionState('idle', '尚未连接', '推荐使用 Chrome 或 Edge。首次连接时请选择“Wireless Controller”。');
   $('link-type').textContent = '—';
 }
@@ -470,6 +471,18 @@ function placeStick(id, stick, pressed) {
   const dot = $(id);
   dot.style.transform = `translate(calc(-50% + ${clamp(stick.x, -1, 1) * 52}px), calc(-50% + ${clamp(stick.y, -1, 1) * 52}px))`;
   dot.classList.toggle('is-pressed', pressed);
+}
+
+function renderMotionPose(accelerometer = [0, 0, 0], gyro = [0, 0, 0]) {
+  const { roll, pitch, yawRate } = calculateMotionPose(accelerometer, gyro);
+  const yawTilt = yawRate * 0.56;
+  const yawOffset = yawRate / 32 * 58;
+  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateY(${yawTilt}deg) rotateZ(${roll}deg)`;
+  $('motion-horizon-plane').style.transform = `translateY(${pitch * 0.52}px) rotate(${-roll}deg)`;
+  $('motion-yaw-indicator').style.transform = `translateX(calc(-50% + ${yawOffset}px))`;
+  $('motion-roll-value').textContent = `${Math.round(roll)}°`;
+  $('motion-pitch-value').textContent = `${Math.round(pitch)}°`;
+  $('motion-yaw-value').textContent = `${yawRate >= 0 ? '+' : ''}${Math.round(yawRate)}`;
 }
 
 function renderInput() {
@@ -491,9 +504,7 @@ function renderInput() {
     $('touch-one-value').textContent = touch[0].active ? `${touch[0].x}, ${touch[0].y}` : '未触摸';
     $('touch-two-value').textContent = touch[1].active ? `${touch[1].x}, ${touch[1].y}` : '未触摸';
     $('battery-value').textContent = `${battery.level}%${battery.full ? ' · 已充满' : battery.charging ? ' · 充电中' : ''}`;
-    const roll = Math.atan2(accelerometer[1], accelerometer[2]) * 180 / Math.PI;
-    const pitch = Math.atan2(-accelerometer[0], Math.hypot(accelerometer[1], accelerometer[2])) * 180 / Math.PI;
-    $('motion-core').style.transform = `scaleY(1.54) rotateX(${clamp(pitch, -45, 45)}deg) rotateZ(${clamp(roll, -45, 45)}deg)`;
+    renderMotionPose(accelerometer, gyro);
   }
   const now = performance.now();
   if (now - sampleStartedAt >= 750) {

@@ -36,6 +36,9 @@ test('build output serves index, script, styles and data', async () => {
     assert.match(tester, /id="setup-haptic-audio"/);
     assert.match(tester, /id="haptic-output-select"/);
     assert.match(tester, /id="activate-haptic-audio"/);
+    assert.match(tester, /id="motion-controller"/);
+    assert.match(tester, /id="motion-horizon-plane"/);
+    assert.match(tester, /id="motion-roll-value"/);
     assert.match(tester, /type="module" src="tester\.js"/);
     const testerScript = await (await fetch(`http://127.0.0.1:${port}/tester.js`)).text();
     assert.match(testerScript, /enumerateAudioOutputs/);

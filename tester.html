@@ -72,7 +72,35 @@
             <div><dt>触控点 1</dt><dd id="touch-one-value">未触摸</dd></div>
             <div><dt>触控点 2</dt><dd id="touch-two-value">未触摸</dd></div>
           </dl>
-          <div class="motion-orb" aria-hidden="true"><div id="motion-core"><span>6 AXIS</span></div></div>
+          <figure class="motion-visual" aria-labelledby="motion-visual-title">
+            <figcaption class="motion-caption"><span id="motion-visual-title">实时手柄姿态</span><small>倾斜或转动手柄查看变化</small></figcaption>
+            <div class="motion-attitude" aria-hidden="true">
+              <div class="motion-horizon">
+                <div id="motion-horizon-plane" class="motion-horizon-plane"></div>
+                <span class="motion-center-mark"><i></i></span>
+              </div>
+              <div class="motion-yaw-track"><span>YAW</span><i id="motion-yaw-indicator"></i></div>
+              <div id="motion-controller" class="motion-controller">
+                <svg viewBox="0 0 240 140" focusable="false">
+                  <path class="motion-controller-shell" d="M66 25C48 26 36 39 30 57L13 108c-5 15 10 27 23 17l29-26c9-8 19-12 31-12h48c12 0 22 4 31 12l29 26c13 10 28-2 23-17l-17-51c-6-18-18-31-36-32-14-1-25 5-36 12h-36c-11-7-22-13-36-12Z"/>
+                  <path class="motion-controller-panel" d="M93 39h54l-4 31H97l-4-31Z"/>
+                  <path class="motion-controller-light" d="M98 72h44"/>
+                  <circle class="motion-controller-stick" cx="88" cy="83" r="10"/>
+                  <circle class="motion-controller-stick" cx="152" cy="83" r="10"/>
+                  <path class="motion-controller-detail" d="M57 55v20M47 65h20"/>
+                  <circle class="motion-controller-button" cx="183" cy="51" r="3"/><circle class="motion-controller-button" cx="194" cy="62" r="3"/><circle class="motion-controller-button" cx="172" cy="62" r="3"/><circle class="motion-controller-button" cx="183" cy="73" r="3"/>
+                  <path class="motion-controller-detail" d="M110 82h20M116 90h8"/>
+                </svg>
+              </div>
+              <span class="motion-axis-label motion-axis-roll">ROLL 横滚</span>
+              <span class="motion-axis-label motion-axis-pitch">PITCH 俯仰</span>
+            </div>
+            <div class="motion-pose-values">
+              <div><span>横滚 ROLL</span><output id="motion-roll-value">0°</output></div>
+              <div><span>俯仰 PITCH</span><output id="motion-pitch-value">0°</output></div>
+              <div><span>旋转 YAW</span><output id="motion-yaw-value">+0</output></div>
+            </div>
+          </figure>
         </article>
 
         <article class="test-card output-card">
