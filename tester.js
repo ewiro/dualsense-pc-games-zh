@@ -22,7 +22,7 @@ let sampleStartedAt = performance.now();
 let latestInput = null;
 let lastEffect = 'off';
 let hapticAudio = null;
-const output = { rumbleLeft: 0, rumbleRight: 0, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
+const output = { rumbleLeft: 0, rumbleRight: 0, audioHaptics: false, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
 function applyTheme(theme) {
   const dark = theme === 'dark';
@@ -201,10 +201,17 @@ function stopAudioHaptics(immediate = false) {
 }
 
 async function closeHapticAudio() {
-  if (!hapticAudio) return;
+  if (!hapticAudio) {
+    output.audioHaptics = false;
+    return;
+  }
   const audio = hapticAudio;
   stopAudioHaptics(true);
   hapticAudio = null;
+  output.audioHaptics = false;
+  output.rumbleLeft = 0;
+  output.rumbleRight = 0;
+  await sendOutput();
   try { await audio.context.close(); } catch {}
   updateHapticAvailability(Boolean(device?.opened));
 }
@@ -299,6 +306,10 @@ async function activateHapticAudio(deviceId = $('haptic-output-select').value, d
     context.destination.channelCountMode = 'explicit';
     context.destination.channelInterpretation = 'discrete';
     hapticAudio = { context, deviceLabel, playing: null };
+    output.rumbleLeft = 0;
+    output.rumbleRight = 0;
+    output.audioHaptics = true;
+    await sendOutput();
     context = null;
     $('haptic-output-picker').hidden = true;
     updateHapticAvailability(true);
@@ -318,6 +329,10 @@ async function playAudioHaptic(name) {
   stopAudioHaptics(true);
   const { context } = hapticAudio;
   if (context.state === 'suspended') await context.resume();
+  output.rumbleLeft = 0;
+  output.rumbleRight = 0;
+  output.audioHaptics = true;
+  await sendOutput();
   const intensity = Number($('haptic-intensity').value) / 100;
   const pattern = createHapticPattern(name, { sampleRate: context.sampleRate, intensity });
   const buffer = context.createBuffer(2, pattern.left.length, pattern.sampleRate);
@@ -344,7 +359,7 @@ async function playAudioHaptic(name) {
     }
   };
   $('haptic-audio-status').textContent = `正在播放：${hapticPatternLabels[name]} · ${$('haptic-intensity').value}%`;
-  source.start();
+  source.start(context.currentTime + 0.05);
 }
 
 function clearPatternTimers() {
@@ -360,6 +375,7 @@ function clearPatternTimers() {
 function setRumble(left, right) {
   output.rumbleLeft = left;
   output.rumbleRight = right;
+  output.audioHaptics = Boolean(hapticAudio && left === 0 && right === 0);
   $('rumble-left').value = left;
   $('rumble-right').value = right;
   $('rumble-left-value').textContent = left;
@@ -422,6 +438,7 @@ function resetOutputs() {
   clearPatternTimers();
   stopAudioHaptics(true);
   setRumble(0, 0);
+  output.audioHaptics = false;
   output.leftTrigger = triggerEffects.off();
   output.rightTrigger = triggerEffects.off();
   lastEffect = 'off';
@@ -496,6 +513,7 @@ function setupControls() {
     input.addEventListener('input', () => {
       clearPatternTimers();
       output[`rumble${side[0].toUpperCase()}${side.slice(1)}`] = Number(input.value);
+      output.audioHaptics = Boolean(hapticAudio && output.rumbleLeft === 0 && output.rumbleRight === 0);
       $(`rumble-${side}-value`).textContent = input.value;
     });
   }

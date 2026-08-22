@@ -83,7 +83,7 @@ export function detectConnectionType(collections = []) {
   return 'unknown';
 }
 
-export function buildOutputReport({ link, sequence = 1, rumbleLeft = 0, rumbleRight = 0, leftTrigger = triggerEffects.off(), rightTrigger = triggerEffects.off() }) {
+export function buildOutputReport({ link, sequence = 1, rumbleLeft = 0, rumbleRight = 0, audioHaptics = false, leftTrigger = triggerEffects.off(), rightTrigger = triggerEffects.off() }) {
   if (!['usb', 'bluetooth'].includes(link)) throw new Error('未知的 DualSense 连接方式');
   const bluetooth = link === 'bluetooth';
   const reportId = bluetooth ? 0x31 : 0x02;
@@ -93,7 +93,9 @@ export function buildOutputReport({ link, sequence = 1, rumbleLeft = 0, rumbleRi
     data[0] = (sequence & 0x0f) << 4;
     data[1] = 0x10;
   }
-  data[commonOffset] = 0x0f;
+  // Bit 1 selects the haptics path; bit 0 additionally selects classic rumble.
+  // Leave bit 0 clear while streaming PCM so the voice coils stay on audio haptics.
+  data[commonOffset] = audioHaptics ? 0x0e : 0x0f;
   data[commonOffset + 2] = clamp(Math.round(rumbleRight), 0, 255);
   data[commonOffset + 3] = clamp(Math.round(rumbleLeft), 0, 255);
   data.set(rightTrigger.slice(0, 11), commonOffset + 10);
