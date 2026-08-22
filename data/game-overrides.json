@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "overrides": [
+    {
+      "title": "Days Gone",
+      "issue": 1,
+      "reason": "社区中有多名玩家在满足有线连接等条件后仍无法获得 DualSense 触觉反馈，本站据此标记为不支持。",
+      "statuses": {
+        "hapticFeedback": "false",
+        "hdHapticFeedback": "false"
+      },
+      "featureNotes": {
+        "hapticFeedback": "多名玩家报告在 USB 有线连接、关闭 Steam Input 并检查音频设置后仍无触觉反馈；本站据此标记为不支持。"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "本站数据反馈 #1",
+            "url": "https://github.com/ewiro/dualsense-pc-games-zh/issues/1"
+          },
+          {
+            "label": "Steam 社区反馈",
+            "url": "https://steamcommunity.com/app/1259420/discussions/0/839501596191673437/"
+          }
+        ]
+      }
+    }
+  ]
+}
