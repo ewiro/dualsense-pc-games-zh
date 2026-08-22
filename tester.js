@@ -1,8 +1,9 @@
-import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, buildOutputReport, calculateMotionPose, detectConnectionType, parseInputReport, triggerEffects } from './tester-lib.js';
+import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, applyMotionDeadzone, buildOutputReport, calculateMotionPose, calibrateMotionSensors, detectConnectionType, isMotionStable, parseInputReport, parseMotionCalibration, smoothMotionPose, triggerEffects } from './tester-lib.js';
 import { createHapticPattern, hapticPatternLabels } from './haptics-audio.js';
 
 const THEME_KEY = 'dualsense-theme';
-const MOTION_CALIBRATION_FRAMES = 36;
+const MOTION_CALIBRATION_FRAMES = 48;
+const MOTION_TELEMETRY_INTERVAL = 125;
 const $ = (id) => document.getElementById(id);
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const buttonLabels = {
@@ -25,6 +26,10 @@ let lastEffect = 'off';
 let hapticAudio = null;
 let motionNeutral = { roll: 0, pitch: 0, yawRate: 0 };
 let motionCalibration = null;
+let motionFactoryCalibration = null;
+let motionFiltered = null;
+let motionTelemetryFiltered = null;
+let motionTelemetryUpdatedAt = 0;
 const output = { rumbleLeft: 0, rumbleRight: 0, audioHaptics: false, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
 function hapticReadyMessage(audio = hapticAudio) {
@@ -135,7 +140,8 @@ async function openDevice(candidate) {
   if (!device.opened) await device.open();
   link = detectConnectionType(device.collections);
   device.oninputreport = handleInputReport;
-  try { await device.receiveFeatureReport(0x05); } catch {}
+  motionFactoryCalibration = null;
+  try { motionFactoryCalibration = parseMotionCalibration(await device.receiveFeatureReport(0x05)); } catch {}
   const model = device.productId === 0x0df2 ? 'DualSense Edge' : 'DualSense';
   setConnectionState('connected', '已连接', `${model} · ${link === 'usb' ? 'USB 有线' : link === 'bluetooth' ? '蓝牙' : '正在识别连接方式'}`);
   $('link-type').textContent = link === 'usb' ? 'USB' : link === 'bluetooth' ? 'Bluetooth' : 'Detecting';
@@ -469,7 +475,11 @@ async function disconnect(close = true) {
   latestInput = null;
   motionNeutral = { roll: 0, pitch: 0, yawRate: 0 };
   motionCalibration = null;
-  $('motion-calibration-status').textContent = '连接后自动校准正向';
+  motionFactoryCalibration = null;
+  motionFiltered = null;
+  motionTelemetryFiltered = null;
+  motionTelemetryUpdatedAt = 0;
+  $('motion-calibration-status').textContent = '连接后请静置，自动校准';
   renderMotionPose();
   setConnectionState('idle', '尚未连接', '推荐使用 Chrome 或 Edge。首次连接时请选择“Wireless Controller”。');
   $('link-type').textContent = '—';
@@ -483,46 +493,87 @@ function placeStick(id, stick, pressed) {
 
 function beginMotionCalibration(automatic = false) {
   if (!device?.opened) return;
-  motionCalibration = { roll: 0, pitch: 0, yawRate: 0, frames: 0 };
+  motionCalibration = { roll: 0, pitch: 0, yawRate: 0, frames: 0, automatic };
+  motionFiltered = null;
   $('calibrate-motion').disabled = true;
-  $('motion-calibration-status').textContent = automatic ? '正常握持，正在自动校准…' : '保持正常握持，正在校准…';
+  $('motion-calibration-status').textContent = automatic ? '正常握持并静置，正在自动校准…' : '保持正常握持并静置，正在校准…';
 }
 
 function renderMotionPose(accelerometer = [0, 0, 0], gyro = [0, 0, 0]) {
   const rawPose = calculateMotionPose(accelerometer, gyro);
   if (motionCalibration) {
-    motionCalibration.roll += rawPose.roll;
-    motionCalibration.pitch += rawPose.pitch;
-    motionCalibration.yawRate += rawPose.yawRate;
-    motionCalibration.frames += 1;
-    if (motionCalibration.frames >= MOTION_CALIBRATION_FRAMES) {
-      motionNeutral = {
-        roll: motionCalibration.roll / motionCalibration.frames,
-        pitch: motionCalibration.pitch / motionCalibration.frames,
-        yawRate: motionCalibration.yawRate / motionCalibration.frames
-      };
-      motionCalibration = null;
-      $('calibrate-motion').disabled = !device?.opened;
-      $('motion-calibration-status').textContent = '已按当前握持姿势归零';
+    if (!isMotionStable(gyro, accelerometer)) {
+      motionCalibration.roll = 0;
+      motionCalibration.pitch = 0;
+      motionCalibration.yawRate = 0;
+      motionCalibration.frames = 0;
+      $('motion-calibration-status').textContent = '检测到移动，请正常握持并保持静止…';
+    } else {
+      $('motion-calibration-status').textContent = motionCalibration.automatic ? '正常握持并静置，正在自动校准…' : '保持正常握持并静置，正在校准…';
+      motionCalibration.roll += rawPose.roll;
+      motionCalibration.pitch += rawPose.pitch;
+      motionCalibration.yawRate += rawPose.yawRate;
+      motionCalibration.frames += 1;
+      if (motionCalibration.frames >= MOTION_CALIBRATION_FRAMES) {
+        motionNeutral = {
+          roll: motionCalibration.roll / motionCalibration.frames,
+          pitch: motionCalibration.pitch / motionCalibration.frames,
+          yawRate: motionCalibration.yawRate / motionCalibration.frames
+        };
+        motionCalibration = null;
+        motionFiltered = null;
+        $('calibrate-motion').disabled = !device?.opened;
+        $('motion-calibration-status').textContent = '已归零 · 稳定滤波已开启';
+      }
     }
   }
   const calibrating = Boolean(motionCalibration);
-  const roll = calibrating ? 0 : clamp(rawPose.roll - motionNeutral.roll, -60, 60);
-  const pitch = calibrating ? 0 : clamp(rawPose.pitch - motionNeutral.pitch, -50, 50);
-  const calibratedYawRate = calibrating ? 0 : clamp(rawPose.yawRate - motionNeutral.yawRate, -32, 32);
-  const yawRate = Math.abs(calibratedYawRate) < 0.5 ? 0 : calibratedYawRate;
+  const centeredPose = calibrating ? { roll: 0, pitch: 0, yawRate: 0 } : {
+    roll: clamp(rawPose.roll - motionNeutral.roll, -60, 60),
+    pitch: clamp(rawPose.pitch - motionNeutral.pitch, -50, 50),
+    yawRate: clamp(rawPose.yawRate - motionNeutral.yawRate, -32, 32)
+  };
+  motionFiltered = smoothMotionPose(motionFiltered, centeredPose);
+  const { roll, pitch, yawRate } = applyMotionDeadzone(motionFiltered);
   const yawOffset = -yawRate / 32 * 58;
-  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateZ(${roll}deg)`;
-  $('motion-horizon-plane').style.transform = `translateY(${-pitch * 0.52}px) rotate(${-roll}deg)`;
+  // In the player-facing top view, CSS's downward Y axis already matches pitch perspective;
+  // roll still needs inversion so lifting the right side lifts the SVG's right side.
+  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateZ(${-roll}deg)`;
+  $('motion-horizon-plane').style.transform = `translateY(${-pitch * 0.52}px) rotate(${roll}deg)`;
   $('motion-yaw-indicator').style.transform = `translateX(calc(-50% + ${yawOffset}px))`;
   $('motion-roll-value').textContent = `${Math.round(roll)}°`;
   $('motion-pitch-value').textContent = `${Math.round(pitch)}°`;
   $('motion-yaw-value').textContent = `${yawRate >= 0 ? '+' : ''}${Math.round(yawRate)}`;
 }
 
+function renderMotionTelemetry(gyro, accelerometer) {
+  const next = { gyro: [...gyro], accelerometer: [...accelerometer] };
+  if (!motionTelemetryFiltered) {
+    motionTelemetryFiltered = next;
+  } else {
+    for (const key of ['gyro', 'accelerometer']) {
+      motionTelemetryFiltered[key] = next[key].map((value, index) => motionTelemetryFiltered[key][index] + (value - motionTelemetryFiltered[key][index]) * 0.08);
+    }
+  }
+  const now = performance.now();
+  if (now - motionTelemetryUpdatedAt < MOTION_TELEMETRY_INTERVAL) return;
+  motionTelemetryUpdatedAt = now;
+  const gyroValues = motionTelemetryFiltered.gyro.map((value) => {
+    const degreesPerSecond = value / 1024;
+    return Math.abs(degreesPerSecond) < 1 ? 0 : degreesPerSecond;
+  });
+  const accelerationValues = motionTelemetryFiltered.accelerometer.map((value) => {
+    const gravity = value / 8192;
+    return Math.abs(gravity) < 0.01 ? 0 : gravity;
+  });
+  $('gyro-value').textContent = gyroValues.map((value) => value.toFixed(1)).join(' / ');
+  $('accelerometer-value').textContent = accelerationValues.map((value) => value.toFixed(2)).join(' / ');
+}
+
 function renderInput() {
   if (latestInput) {
     const { sticks, triggers, buttons, gyro, accelerometer, touch, battery } = latestInput;
+    const motion = calibrateMotionSensors(gyro, accelerometer, motionFactoryCalibration);
     const leftPercent = Math.round(triggers.left * 100);
     const rightPercent = Math.round(triggers.right * 100);
     $('left-trigger-meter').style.width = `${leftPercent}%`;
@@ -534,12 +585,11 @@ function renderInput() {
     $('left-stick-value').textContent = `${sticks.left.x.toFixed(2)}, ${sticks.left.y.toFixed(2)}`;
     $('right-stick-value').textContent = `${sticks.right.x.toFixed(2)}, ${sticks.right.y.toFixed(2)}`;
     document.querySelectorAll('[data-input]').forEach((chip) => chip.classList.toggle('is-active', Boolean(buttons[chip.dataset.input])));
-    $('gyro-value').textContent = gyro.map((value) => Math.round(value / 1024)).join(' / ');
-    $('accelerometer-value').textContent = accelerometer.map((value) => (value / 8192).toFixed(2)).join(' / ');
+    renderMotionTelemetry(motion.gyro, motion.accelerometer);
     $('touch-one-value').textContent = touch[0].active ? `${touch[0].x}, ${touch[0].y}` : '未触摸';
     $('touch-two-value').textContent = touch[1].active ? `${touch[1].x}, ${touch[1].y}` : '未触摸';
     $('battery-value').textContent = `${battery.level}%${battery.full ? ' · 已充满' : battery.charging ? ' · 充电中' : ''}`;
-    renderMotionPose(accelerometer, gyro);
+    renderMotionPose(motion.accelerometer, motion.gyro);
   }
   const now = performance.now();
   if (now - sampleStartedAt >= 750) {

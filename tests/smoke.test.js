@@ -47,6 +47,8 @@ test('build output serves index, script, styles and data', async () => {
     assert.match(testerScript, /getUserMedia\(\{ audio: true \}\)/);
     assert.match(testerScript, /track\.stop\(\)/);
     assert.match(testerScript, /beginMotionCalibration\(true\)/);
+    assert.match(testerScript, /rotateX\(\$\{pitch\}deg\) rotateZ\(\$\{-roll\}deg\)/);
+    assert.match(testerScript, /translateY\(\$\{-pitch \* 0\.52\}px\) rotate\(\$\{roll\}deg\)/);
     assert.doesNotMatch(testerScript, /rotateY\(/);
     assert.doesNotMatch(testerScript, /selectAudioOutput && window\.AudioContext/);
   } finally { server.close(); }

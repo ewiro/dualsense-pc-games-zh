@@ -67,14 +67,14 @@
           <div class="card-heading"><div><p class="card-kicker">TELEMETRY</p><h2>体感与状态</h2></div><span id="link-type" class="card-tag">—</span></div>
           <dl class="telemetry-list">
             <div><dt>电量</dt><dd id="battery-value">—</dd></div>
-            <div><dt>陀螺仪 X / Y / Z</dt><dd id="gyro-value">0 / 0 / 0</dd></div>
-            <div><dt>加速度 X / Y / Z</dt><dd id="accelerometer-value">0 / 0 / 0</dd></div>
+            <div><dt>陀螺仪 X / Y / Z（°/s）</dt><dd id="gyro-value">0.0 / 0.0 / 0.0</dd></div>
+            <div><dt>加速度 X / Y / Z（g）</dt><dd id="accelerometer-value">0.00 / 0.00 / 0.00</dd></div>
             <div><dt>触控点 1</dt><dd id="touch-one-value">未触摸</dd></div>
             <div><dt>触控点 2</dt><dd id="touch-two-value">未触摸</dd></div>
           </dl>
           <figure class="motion-visual" aria-labelledby="motion-visual-title">
             <figcaption class="motion-caption">
-              <span class="motion-caption-copy"><strong id="motion-visual-title">实时手柄姿态</strong><small id="motion-calibration-status" role="status" aria-live="polite">连接后自动校准正向</small></span>
+              <span class="motion-caption-copy"><strong id="motion-visual-title">实时手柄姿态</strong><small id="motion-calibration-status" role="status" aria-live="polite">连接后请静置，自动校准</small></span>
               <button id="calibrate-motion" class="secondary-button motion-calibrate" type="button" disabled>校准正向</button>
             </figcaption>
             <div class="motion-attitude" aria-hidden="true">

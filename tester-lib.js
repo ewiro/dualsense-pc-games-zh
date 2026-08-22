@@ -2,18 +2,93 @@ export const SONY_VENDOR_ID = 0x054c;
 export const DUALSENSE_PRODUCT_IDS = [0x0ce6, 0x0df2];
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+const toFinite = (value) => Number.isFinite(Number(value)) ? Number(value) : 0;
+
+function toBytes(source) {
+  if (source instanceof ArrayBuffer) return new Uint8Array(source);
+  if (ArrayBuffer.isView(source)) return new Uint8Array(source.buffer, source.byteOffset, source.byteLength);
+  return new Uint8Array();
+}
+
+export function parseMotionCalibration(source) {
+  const bytes = toBytes(source);
+  const offset = bytes[0] === 0x05 ? 1 : 0;
+  if (bytes.byteLength - offset < 34) return null;
+
+  const read = (index) => signed16(bytes[offset + index], bytes[offset + index + 1]);
+  const gyroBias = [0, 2, 4].map(read);
+  const gyroPlus = [6, 8, 10].map(read);
+  const gyroMinus = [12, 14, 16].map(read);
+  const speedNumerator = (read(18) + read(20)) * 1024;
+  const accelerometerPlus = [22, 24, 26].map(read);
+  const accelerometerMinus = [28, 30, 32].map(read);
+  const gyro = gyroBias.map((bias, index) => ({
+    bias,
+    sensitivity: speedNumerator / (gyroPlus[index] - gyroMinus[index])
+  }));
+  const accelerometer = accelerometerPlus.map((plus, index) => {
+    const range = plus - accelerometerMinus[index];
+    return { bias: plus - range / 2, sensitivity: 16384 / range };
+  });
+  const valid = [...gyro, ...accelerometer].every(({ bias, sensitivity }, index) => {
+    const expected = index < 3 ? 64 : 1;
+    return Math.abs(bias) <= 1024 && Number.isFinite(sensitivity) && sensitivity > 0 && Math.abs(1 - sensitivity / expected) <= 0.5;
+  });
+  return valid ? { gyro, accelerometer } : null;
+}
+
+export function calibrateMotionSensors(gyro = [], accelerometer = [], calibration = null) {
+  return {
+    // A calibrated DualSense gyro uses 1024 canonical units per degree/second.
+    gyro: [0, 1, 2].map((index) => {
+      const value = toFinite(gyro[index]);
+      const factor = calibration?.gyro?.[index];
+      return factor ? (value - factor.bias) * factor.sensitivity : value * 64;
+    }),
+    accelerometer: [0, 1, 2].map((index) => {
+      const value = toFinite(accelerometer[index]);
+      const factor = calibration?.accelerometer?.[index];
+      return factor ? (value - factor.bias) * factor.sensitivity : value;
+    })
+  };
+}
 
 export function calculateMotionPose(accelerometer = [], gyro = []) {
-  const [accelerationX = 0, accelerationY = 0, accelerationZ = 0] = accelerometer.map((value) => Number(value) || 0);
-  const yawRate = (Number(gyro[2]) || 0) / 1024;
-  // Player-facing top view: X drives side-to-side roll and Y drives front-to-back pitch.
-  const roll = Math.atan2(-accelerationX, accelerationZ) * 180 / Math.PI;
-  const pitch = Math.atan2(-accelerationY, Math.hypot(accelerationX, accelerationZ)) * 180 / Math.PI;
+  const [accelerationX = 0, accelerationY = 0, accelerationZ = 0] = accelerometer.map(toFinite);
+  // DualSense axes: X points right, Y is the resting gravity axis, Z points toward the shoulder buttons.
+  const roll = Math.atan2(accelerationX, Math.hypot(accelerationY, accelerationZ)) * 180 / Math.PI;
+  const pitch = Math.atan2(-accelerationZ, accelerationY) * 180 / Math.PI;
+  const yawRate = toFinite(gyro[1]) / 1024;
   return {
     roll: Math.abs(roll) < 1e-9 ? 0 : clamp(roll, -60, 60),
     pitch: Math.abs(pitch) < 1e-9 ? 0 : clamp(pitch, -50, 50),
     yawRate: clamp(yawRate, -32, 32)
   };
+}
+
+export function smoothMotionPose(previous, current, alpha = 0.12) {
+  const amount = clamp(toFinite(alpha), 0, 1);
+  if (!previous) return { roll: toFinite(current?.roll), pitch: toFinite(current?.pitch), yawRate: toFinite(current?.yawRate) };
+  return Object.fromEntries(['roll', 'pitch', 'yawRate'].map((key) => [key, toFinite(previous[key]) + (toFinite(current?.[key]) - toFinite(previous[key])) * amount]));
+}
+
+export function applyMotionDeadzone(pose, angleThreshold = 1.25, yawThreshold = 1.5) {
+  const suppress = (value, threshold) => {
+    const numeric = toFinite(value);
+    const magnitude = Math.abs(numeric);
+    return magnitude <= threshold ? 0 : Math.sign(numeric) * (magnitude - threshold);
+  };
+  return {
+    roll: suppress(pose?.roll, angleThreshold),
+    pitch: suppress(pose?.pitch, angleThreshold),
+    yawRate: suppress(pose?.yawRate, yawThreshold)
+  };
+}
+
+export function isMotionStable(gyro = [], accelerometer = []) {
+  const maximumAngularSpeed = Math.max(...[0, 1, 2].map((index) => Math.abs(toFinite(gyro[index]) / 1024)));
+  const gravity = Math.hypot(...[0, 1, 2].map((index) => toFinite(accelerometer[index]))) / 8192;
+  return maximumAngularSpeed <= 4 && gravity >= 0.72 && gravity <= 1.28;
 }
 
 const crcTable = (() => {

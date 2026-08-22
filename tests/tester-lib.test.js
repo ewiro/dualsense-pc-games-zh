@@ -1,13 +1,44 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { buildOutputReport, calculateMotionPose, detectConnectionType, parseInputReport, triggerEffects } from '../tester-lib.js';
+import { applyMotionDeadzone, buildOutputReport, calculateMotionPose, calibrateMotionSensors, detectConnectionType, isMotionStable, parseInputReport, parseMotionCalibration, smoothMotionPose, triggerEffects } from '../tester-lib.js';
 
 test('calculates a bounded controller pose from motion sensors', () => {
-  assert.deepEqual(calculateMotionPose([0, 0, 8192], [0, 0, 0]), { roll: 0, pitch: 0, yawRate: 0 });
-  assert.deepEqual(calculateMotionPose([-8192, 0, 8192], [0, 0, 0]), { roll: 45, pitch: 0, yawRate: 0 });
-  assert.deepEqual(calculateMotionPose([0, -8192, 8192], [0, 0, 0]), { roll: 0, pitch: 45, yawRate: 0 });
-  assert.deepEqual(calculateMotionPose([0, 8192, 8192], [0, 0, 16384]), { roll: 0, pitch: -45, yawRate: 16 });
-  assert.deepEqual(calculateMotionPose([-1, 0, -1], [0, 0, 999999]), { roll: 60, pitch: 0, yawRate: 32 });
+  assert.deepEqual(calculateMotionPose([0, 8192, 0], [0, 0, 0]), { roll: 0, pitch: 0, yawRate: 0 });
+  assert.deepEqual(calculateMotionPose([8192, 8192, 0], [0, 0, 0]), { roll: 45, pitch: 0, yawRate: 0 });
+  assert.deepEqual(calculateMotionPose([0, 8192, -8192], [0, 0, 0]), { roll: 0, pitch: 45, yawRate: 0 });
+  assert.deepEqual(calculateMotionPose([0, 8192, 8192], [0, 16384, 0]), { roll: 0, pitch: -45, yawRate: 16 });
+  assert.deepEqual(calculateMotionPose([999999, 1, 0], [0, 999999, 0]), { roll: 60, pitch: 0, yawRate: 32 });
+});
+
+test('parses and applies the DualSense factory motion calibration', () => {
+  const bytes = new Uint8Array(35);
+  bytes[0] = 0x05;
+  const write = (offset, value) => new DataView(bytes.buffer).setInt16(offset + 1, value, true);
+  [10, -5, 3].forEach((value, index) => write(index * 2, value));
+  [16000, 16000, 16000].forEach((value, index) => write(6 + index * 2, value));
+  [-16000, -16000, -16000].forEach((value, index) => write(12 + index * 2, value));
+  write(18, 1000);
+  write(20, 1000);
+  [8192, 8192, 8192].forEach((value, index) => write(22 + index * 2, value));
+  [-8192, -8192, -8192].forEach((value, index) => write(28 + index * 2, value));
+
+  const calibration = parseMotionCalibration(bytes);
+  assert.deepEqual(calibration.gyro.map(({ sensitivity }) => sensitivity), [64, 64, 64]);
+  assert.deepEqual(calibration.accelerometer.map(({ sensitivity }) => sensitivity), [1, 1, 1]);
+  assert.deepEqual(calibrateMotionSensors([26, 11, 19], [8192, 0, -8192], calibration), {
+    gyro: [1024, 1024, 1024],
+    accelerometer: [8192, 0, -8192]
+  });
+  assert.equal(parseMotionCalibration(new Uint8Array(12)), null);
+});
+
+test('smooths motion, suppresses desk noise and requires a stable calibration pose', () => {
+  assert.deepEqual(smoothMotionPose({ roll: 0, pitch: 0, yawRate: 0 }, { roll: 10, pitch: -20, yawRate: 5 }, 0.1), { roll: 1, pitch: -2, yawRate: 0.5 });
+  assert.deepEqual(applyMotionDeadzone({ roll: 1, pitch: -1.2, yawRate: 1.4 }), { roll: 0, pitch: 0, yawRate: 0 });
+  assert.deepEqual(applyMotionDeadzone({ roll: 3.25, pitch: -2.25, yawRate: 3.5 }), { roll: 2, pitch: -1, yawRate: 2 });
+  assert.equal(isMotionStable([100, -120, 80], [0, 8192, 0]), true);
+  assert.equal(isMotionStable([0, 5120, 0], [0, 8192, 0]), false);
+  assert.equal(isMotionStable([0, 0, 0], [0, 1000, 0]), false);
 });
 
 test('detects DualSense USB and Bluetooth report layouts', () => {
