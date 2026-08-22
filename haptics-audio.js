@@ -1,6 +1,8 @@
 const DEFAULT_SAMPLE_RATE = 48_000;
-const CALIBRATION_GAIN = 6;
-const SAFE_PEAK = 0.45;
+const CALIBRATION_GAIN = 27;
+const SOFT_LIMIT_KNEE = 0.8;
+const SOFT_LIMIT_WIDTH = 0.3;
+const SAFE_PEAK = 0.95;
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const smoothstep = (value) => {
@@ -28,7 +30,7 @@ function addBurst(target, sampleRate, start, duration, frequency, amplitude, pha
   }
 }
 
-function applyGlobalEnvelope(channels, sampleRate, intensity) {
+function applyGlobalEnvelope(channels, sampleRate) {
   const fadeSamples = Math.max(1, Math.floor(sampleRate * 0.025));
   let peak = 0;
   for (const channel of channels) {
@@ -39,8 +41,10 @@ function applyGlobalEnvelope(channels, sampleRate, intensity) {
       peak = Math.max(peak, Math.abs(channel[index]));
     }
   }
-  const ceiling = SAFE_PEAK * clamp(intensity, 0, 1);
-  const scale = peak > ceiling && peak > 0 ? ceiling / peak : 1;
+  const limitedPeak = peak > SOFT_LIMIT_KNEE
+    ? SOFT_LIMIT_KNEE + (SAFE_PEAK - SOFT_LIMIT_KNEE) * (1 - Math.exp(-(peak - SOFT_LIMIT_KNEE) / SOFT_LIMIT_WIDTH))
+    : peak;
+  const scale = peak > 0 ? limitedPeak / peak : 1;
   if (scale < 1) {
     for (const channel of channels) {
       for (let index = 0; index < channel.length; index += 1) channel[index] *= scale;
@@ -115,6 +119,6 @@ export function createHapticPattern(name, options = {}) {
     }
   }
 
-  applyGlobalEnvelope([left, right], sampleRate, intensity);
-  return { left, right, sampleRate, duration, peakLimit: SAFE_PEAK * intensity };
+  applyGlobalEnvelope([left, right], sampleRate);
+  return { left, right, sampleRate, duration, peakLimit: SAFE_PEAK };
 }

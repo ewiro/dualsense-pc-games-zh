@@ -25,7 +25,7 @@ let hapticAudio = null;
 const output = { rumbleLeft: 0, rumbleRight: 0, audioHaptics: false, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
 function hapticReadyMessage(audio = hapticAudio) {
-  return `已就绪 · ${audio?.deviceLabel || '4 声道手柄音频'} · ${audio.context.sampleRate / 1000} kHz · Windows 手柄音量建议 80%–100%`;
+  return `已就绪 · ${audio?.deviceLabel || '4 声道手柄音频'} · ${audio.context.sampleRate / 1000} kHz · 建议 Windows 音量 50%，网页强度从 40% 开始`;
 }
 
 function applyTheme(theme) {
