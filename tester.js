@@ -24,6 +24,10 @@ let lastEffect = 'off';
 let hapticAudio = null;
 const output = { rumbleLeft: 0, rumbleRight: 0, audioHaptics: false, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
+function hapticReadyMessage(audio = hapticAudio) {
+  return `已就绪 · ${audio?.deviceLabel || '4 声道手柄音频'} · ${audio.context.sampleRate / 1000} kHz · Windows 手柄音量建议 80%–100%`;
+}
+
 function applyTheme(theme) {
   const dark = theme === 'dark';
   document.documentElement.dataset.theme = dark ? 'dark' : 'light';
@@ -83,7 +87,7 @@ function updateHapticAvailability(connected = Boolean(device?.opened)) {
   $('haptic-intensity').disabled = !hapticAudio;
   document.querySelectorAll('[data-audio-haptic]').forEach((button) => { button.disabled = !hapticAudio; });
   if (hapticAudio) {
-    $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${hapticAudio.context.sampleRate / 1000} kHz`;
+    $('haptic-audio-status').textContent = hapticReadyMessage();
     $('haptic-mode-tag').textContent = 'HD READY';
     $('setup-haptic-audio').textContent = '更换音频设备';
   } else if (!connected) {
@@ -197,7 +201,7 @@ function stopAudioHaptics(immediate = false) {
       playing.source.stop(now + 0.055);
     }
   } catch {}
-  $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${context.sampleRate / 1000} kHz`;
+  $('haptic-audio-status').textContent = hapticReadyMessage();
 }
 
 async function closeHapticAudio() {
@@ -355,7 +359,7 @@ async function playAudioHaptic(name) {
     try { source.disconnect(); gain.disconnect(); splitter.disconnect(); merger.disconnect(); } catch {}
     if (hapticAudio?.playing === playing) {
       hapticAudio.playing = null;
-      $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${hapticAudio.context.sampleRate / 1000} kHz`;
+      $('haptic-audio-status').textContent = hapticReadyMessage();
     }
   };
   $('haptic-audio-status').textContent = `正在播放：${hapticPatternLabels[name]} · ${$('haptic-intensity').value}%`;

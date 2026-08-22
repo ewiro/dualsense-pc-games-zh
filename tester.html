@@ -77,10 +77,10 @@
 
         <article class="test-card output-card">
           <div class="card-heading"><div><p class="card-kicker">HD HAPTICS</p><h2>细腻触觉</h2></div><span id="haptic-mode-tag" class="card-tag">USB AUDIO</span></div>
-          <p class="card-copy">USB 模式会把低强度、带平滑包络的 48 kHz 波形送到左右触觉执行器，更接近游戏中的细节反馈。</p>
+          <p class="card-copy">USB 模式会把强度可调、带平滑包络的 48 kHz 波形送到左右触觉执行器，更接近游戏中的细节反馈。</p>
           <section class="audio-haptics" aria-labelledby="audio-haptics-title">
             <div class="haptic-mode-heading">
-              <div><h3 id="audio-haptics-title">USB 高清触觉</h3><p>需使用数据线，并选择 Wireless Controller 音频输出。</p></div>
+              <div><h3 id="audio-haptics-title">USB 高清触觉</h3><p>需使用数据线，并选择 Wireless Controller 音频输出；Windows 手柄音量不能为 0，建议设为 80%–100%。</p></div>
               <button id="setup-haptic-audio" class="secondary-button" type="button" disabled>查找音频设备</button>
             </div>
             <p id="haptic-audio-status" class="haptic-status" role="status" aria-live="polite">连接 USB 手柄后可启用。</p>
@@ -92,7 +92,7 @@
               </div>
               <p>如果 Chrome 请求麦克风权限，它只用于显示完整的音频设备名称；设备列表读取完成后会立即停止音频轨道。</p>
             </div>
-            <label class="range-row" for="haptic-intensity"><span>触觉强度 <output id="haptic-intensity-value">32%</output></span><input id="haptic-intensity" type="range" min="10" max="65" value="32" disabled></label>
+            <label class="range-row" for="haptic-intensity"><span>触觉强度 <output id="haptic-intensity-value">40%</output></span><input id="haptic-intensity" type="range" min="10" max="100" value="40" disabled></label>
             <div class="preset-grid audio-haptic-presets">
               <button type="button" data-audio-haptic="rain" disabled>细雨</button>
               <button type="button" data-audio-haptic="gravel" disabled>砂石路面</button>

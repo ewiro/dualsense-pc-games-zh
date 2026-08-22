@@ -1,5 +1,6 @@
 const DEFAULT_SAMPLE_RATE = 48_000;
-const SAFE_PEAK = 0.075;
+const CALIBRATION_GAIN = 3;
+const SAFE_PEAK = 0.22;
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const smoothstep = (value) => {
@@ -34,7 +35,7 @@ function applyGlobalEnvelope(channels, sampleRate, intensity) {
     for (let index = 0; index < channel.length; index += 1) {
       const fadeIn = smoothstep(index / fadeSamples);
       const fadeOut = smoothstep((channel.length - 1 - index) / fadeSamples);
-      channel[index] *= Math.min(fadeIn, fadeOut);
+      channel[index] *= Math.min(fadeIn, fadeOut) * CALIBRATION_GAIN;
       peak = Math.max(peak, Math.abs(channel[index]));
     }
   }
