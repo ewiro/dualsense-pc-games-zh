@@ -73,7 +73,10 @@
             <div><dt>触控点 2</dt><dd id="touch-two-value">未触摸</dd></div>
           </dl>
           <figure class="motion-visual" aria-labelledby="motion-visual-title">
-            <figcaption class="motion-caption"><span id="motion-visual-title">实时手柄姿态</span><small>倾斜或转动手柄查看变化</small></figcaption>
+            <figcaption class="motion-caption">
+              <span class="motion-caption-copy"><strong id="motion-visual-title">实时手柄姿态</strong><small id="motion-calibration-status" role="status" aria-live="polite">连接后自动校准正向</small></span>
+              <button id="calibrate-motion" class="secondary-button motion-calibrate" type="button" disabled>校准正向</button>
+            </figcaption>
             <div class="motion-attitude" aria-hidden="true">
               <div class="motion-horizon">
                 <div id="motion-horizon-plane" class="motion-horizon-plane"></div>

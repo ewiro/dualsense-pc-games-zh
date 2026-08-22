@@ -2,6 +2,7 @@ import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, buildOutputReport, calculateMoti
 import { createHapticPattern, hapticPatternLabels } from './haptics-audio.js';
 
 const THEME_KEY = 'dualsense-theme';
+const MOTION_CALIBRATION_FRAMES = 36;
 const $ = (id) => document.getElementById(id);
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const buttonLabels = {
@@ -22,6 +23,8 @@ let sampleStartedAt = performance.now();
 let latestInput = null;
 let lastEffect = 'off';
 let hapticAudio = null;
+let motionNeutral = { roll: 0, pitch: 0, yawRate: 0 };
+let motionCalibration = null;
 const output = { rumbleLeft: 0, rumbleRight: 0, audioHaptics: false, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
 function hapticReadyMessage(audio = hapticAudio) {
@@ -63,6 +66,7 @@ function setConnectionState(state, status, details) {
   const connected = state === 'connected';
   $('connect-button').disabled = connected || state === 'busy';
   $('disconnect-button').disabled = !connected;
+  $('calibrate-motion').disabled = !connected || Boolean(motionCalibration);
   document.querySelectorAll('.compat-haptics-controls button, .compat-haptics-controls input, .adaptive-card button, .adaptive-card input, .adaptive-card fieldset').forEach((element) => { element.disabled = !connected; });
   updateHapticAvailability(connected);
 }
@@ -135,6 +139,7 @@ async function openDevice(candidate) {
   const model = device.productId === 0x0df2 ? 'DualSense Edge' : 'DualSense';
   setConnectionState('connected', '已连接', `${model} · ${link === 'usb' ? 'USB 有线' : link === 'bluetooth' ? '蓝牙' : '正在识别连接方式'}`);
   $('link-type').textContent = link === 'usb' ? 'USB' : link === 'bluetooth' ? 'Bluetooth' : 'Detecting';
+  beginMotionCalibration(true);
   startOutputLoop();
 }
 
@@ -462,6 +467,9 @@ async function disconnect(close = true) {
   device = null;
   link = 'unknown';
   latestInput = null;
+  motionNeutral = { roll: 0, pitch: 0, yawRate: 0 };
+  motionCalibration = null;
+  $('motion-calibration-status').textContent = '连接后自动校准正向';
   renderMotionPose();
   setConnectionState('idle', '尚未连接', '推荐使用 Chrome 或 Edge。首次连接时请选择“Wireless Controller”。');
   $('link-type').textContent = '—';
@@ -473,12 +481,39 @@ function placeStick(id, stick, pressed) {
   dot.classList.toggle('is-pressed', pressed);
 }
 
+function beginMotionCalibration(automatic = false) {
+  if (!device?.opened) return;
+  motionCalibration = { roll: 0, pitch: 0, yawRate: 0, frames: 0 };
+  $('calibrate-motion').disabled = true;
+  $('motion-calibration-status').textContent = automatic ? '正常握持，正在自动校准…' : '保持正常握持，正在校准…';
+}
+
 function renderMotionPose(accelerometer = [0, 0, 0], gyro = [0, 0, 0]) {
-  const { roll, pitch, yawRate } = calculateMotionPose(accelerometer, gyro);
-  const yawTilt = yawRate * 0.56;
-  const yawOffset = yawRate / 32 * 58;
-  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateY(${yawTilt}deg) rotateZ(${roll}deg)`;
-  $('motion-horizon-plane').style.transform = `translateY(${pitch * 0.52}px) rotate(${-roll}deg)`;
+  const rawPose = calculateMotionPose(accelerometer, gyro);
+  if (motionCalibration) {
+    motionCalibration.roll += rawPose.roll;
+    motionCalibration.pitch += rawPose.pitch;
+    motionCalibration.yawRate += rawPose.yawRate;
+    motionCalibration.frames += 1;
+    if (motionCalibration.frames >= MOTION_CALIBRATION_FRAMES) {
+      motionNeutral = {
+        roll: motionCalibration.roll / motionCalibration.frames,
+        pitch: motionCalibration.pitch / motionCalibration.frames,
+        yawRate: motionCalibration.yawRate / motionCalibration.frames
+      };
+      motionCalibration = null;
+      $('calibrate-motion').disabled = !device?.opened;
+      $('motion-calibration-status').textContent = '已按当前握持姿势归零';
+    }
+  }
+  const calibrating = Boolean(motionCalibration);
+  const roll = calibrating ? 0 : clamp(rawPose.roll - motionNeutral.roll, -60, 60);
+  const pitch = calibrating ? 0 : clamp(rawPose.pitch - motionNeutral.pitch, -50, 50);
+  const calibratedYawRate = calibrating ? 0 : clamp(rawPose.yawRate - motionNeutral.yawRate, -32, 32);
+  const yawRate = Math.abs(calibratedYawRate) < 0.5 ? 0 : calibratedYawRate;
+  const yawOffset = -yawRate / 32 * 58;
+  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateZ(${roll}deg)`;
+  $('motion-horizon-plane').style.transform = `translateY(${-pitch * 0.52}px) rotate(${-roll}deg)`;
   $('motion-yaw-indicator').style.transform = `translateX(calc(-50% + ${yawOffset}px))`;
   $('motion-roll-value').textContent = `${Math.round(roll)}°`;
   $('motion-pitch-value').textContent = `${Math.round(pitch)}°`;
@@ -518,6 +553,7 @@ function renderInput() {
 function setupControls() {
   $('connect-button').addEventListener('click', requestConnection);
   $('disconnect-button').addEventListener('click', () => disconnect());
+  $('calibrate-motion').addEventListener('click', () => beginMotionCalibration());
   $('setup-haptic-audio').addEventListener('click', setupHapticAudio);
   $('activate-haptic-audio').addEventListener('click', () => activateHapticAudio());
   $('haptic-output-select').addEventListener('change', () => { $('activate-haptic-audio').disabled = !$('haptic-output-select').value; });

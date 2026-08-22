@@ -6,8 +6,9 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 export function calculateMotionPose(accelerometer = [], gyro = []) {
   const [accelerationX = 0, accelerationY = 0, accelerationZ = 0] = accelerometer.map((value) => Number(value) || 0);
   const yawRate = (Number(gyro[2]) || 0) / 1024;
-  const roll = Math.atan2(accelerationY, accelerationZ) * 180 / Math.PI;
-  const pitch = Math.atan2(-accelerationX, Math.hypot(accelerationY, accelerationZ)) * 180 / Math.PI;
+  // Player-facing top view: X drives side-to-side roll and Y drives front-to-back pitch.
+  const roll = Math.atan2(-accelerationX, accelerationZ) * 180 / Math.PI;
+  const pitch = Math.atan2(-accelerationY, Math.hypot(accelerationX, accelerationZ)) * 180 / Math.PI;
   return {
     roll: Math.abs(roll) < 1e-9 ? 0 : clamp(roll, -60, 60),
     pitch: Math.abs(pitch) < 1e-9 ? 0 : clamp(pitch, -50, 50),
