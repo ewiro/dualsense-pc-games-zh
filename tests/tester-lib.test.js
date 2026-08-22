@@ -28,12 +28,12 @@ test('builds USB and checksummed Bluetooth output reports', () => {
   assert.deepEqual([...bluetooth.data.slice(12, 23)], effect);
 
   const usbAudioHaptics = buildOutputReport({ link: 'usb', audioHaptics: true });
-  assert.equal(usbAudioHaptics.data[0], 0x0e);
+  assert.equal(usbAudioHaptics.data[0], 0x0d);
   assert.equal(usbAudioHaptics.data[2], 0);
   assert.equal(usbAudioHaptics.data[3], 0);
 
   const bluetoothAudioHaptics = buildOutputReport({ link: 'bluetooth', audioHaptics: true });
-  assert.equal(bluetoothAudioHaptics.data[2], 0x0e);
+  assert.equal(bluetoothAudioHaptics.data[2], 0x0d);
   assert.notDeepEqual([...bluetoothAudioHaptics.data.slice(-4)], [0, 0, 0, 0]);
 });
 

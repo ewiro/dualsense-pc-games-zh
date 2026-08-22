@@ -93,9 +93,10 @@ export function buildOutputReport({ link, sequence = 1, rumbleLeft = 0, rumbleRi
     data[0] = (sequence & 0x0f) << 4;
     data[1] = 0x10;
   }
-  // Bit 1 selects the haptics path; bit 0 additionally selects classic rumble.
-  // Leave bit 0 clear while streaming PCM so the voice coils stay on audio haptics.
-  data[commonOffset] = audioHaptics ? 0x0e : 0x0f;
+  // Bit 1 selects classic motor haptics. Sending bit 0 without bit 1 lets the
+  // classic motors terminate and hands the voice coils back to PCM haptics.
+  // Bits 2 and 3 keep the right and left adaptive-trigger effects writable.
+  data[commonOffset] = audioHaptics ? 0x0d : 0x0f;
   data[commonOffset + 2] = clamp(Math.round(rumbleRight), 0, 255);
   data[commonOffset + 3] = clamp(Math.round(rumbleLeft), 0, 255);
   data.set(rightTrigger.slice(0, 11), commonOffset + 10);
