@@ -1,10 +1,11 @@
 import { readFile, writeFile } from 'node:fs/promises';
-import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, EXPANDED_CARGO_QUERY_FIELDS, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, mergeRecords, parseExpandedCargoTable, validateDataset } from './data-lib.js';
+import { API_ENDPOINT, DEFAULT_REPOSITORY_URL, EXPANDED_CARGO_QUERY_FIELDS, applyGameOverrides, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, mergeRecords, parseExpandedCargoTable, validateDataset } from './data-lib.js';
 import { updateNoteTranslations } from './note-translations.js';
 
 const userAgent = process.env.PCGW_USER_AGENT || `dualsense-pc-games-zh/1.0 (${process.env.GITHUB_REPOSITORY ? `https://github.com/${process.env.GITHUB_REPOSITORY}` : DEFAULT_REPOSITORY_URL})`;
 const outputPath = new URL('../data/games.json', import.meta.url);
 const translationsPath = new URL('../data/title-translations.json', import.meta.url);
+const overridesPath = new URL('../data/game-overrides.json', import.meta.url);
 const cargoPageSize = 500;
 const minimumRequestInterval = 2100;
 let nextRequestAt = 0;
@@ -102,6 +103,10 @@ async function readTranslations() {
   try { return JSON.parse(await readFile(translationsPath, 'utf8')); } catch { return {}; }
 }
 
+async function readOverrides() {
+  return JSON.parse(await readFile(overridesPath, 'utf8'));
+}
+
 const dualSenseRows = await queryModel('DualSense');
 const edgeRows = await queryModel('DualSense Edge');
 const translations = await readTranslations();
@@ -110,6 +115,7 @@ const pageWikitext = await queryPageWikitext(dataset.games.map((game) => game.ti
 attachInfoboxCompanies(dataset, pageWikitext);
 attachAvailabilityStores(dataset, pageWikitext);
 attachInputFeatures(dataset, pageWikitext, await updateNoteTranslations(pageWikitext));
+applyGameOverrides(dataset, await readOverrides());
 validateDataset(dataset, await readPrevious());
 await writeFile(outputPath, `${JSON.stringify(dataset, null, 2)}\n`, 'utf8');
 console.log(`已从 ${dualSenseRows.length} 条 DualSense / ${edgeRows.length} 条 Edge 原始记录中筛选 ${dataset.games.length} 条增强功能游戏`);

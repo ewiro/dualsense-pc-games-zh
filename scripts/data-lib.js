@@ -68,6 +68,17 @@ export const FEATURE_KEYS = [
   'controllerSpeaker'
 ];
 
+const OVERRIDABLE_STATUS_KEYS = new Set([
+  'controllerSupport',
+  'playstationPrompts',
+  'motionSensors',
+  'lightBar',
+  'adaptiveTriggers',
+  'hapticFeedback',
+  'hdHapticFeedback',
+  'controllerSpeaker'
+]);
+
 export const CONNECTION_LABELS = {
   Wired: '有线',
   'Wireless (Bluetooth)': '无线（蓝牙）',
@@ -420,6 +431,44 @@ export function unwrapCargoRow(row) {
 
 export function hasEnhancedDualSenseFeature(game) {
   return ENHANCED_STATUSES.has(game?.adaptiveTriggers) || ENHANCED_STATUSES.has(game?.hapticFeedback);
+}
+
+export function applyGameOverrides(dataset, config = {}) {
+  if (config.schemaVersion !== 1 || !Array.isArray(config.overrides)) {
+    throw new Error('人工覆盖数据缺少 schemaVersion 或 overrides');
+  }
+  const games = new Map(dataset.games.map((game) => [game.title.toLocaleLowerCase(), game]));
+  const overridden = new Set();
+  for (const override of config.overrides) {
+    const title = String(override?.title ?? '').trim();
+    const key = title.toLocaleLowerCase();
+    if (!title || overridden.has(key)) throw new Error(`人工覆盖包含无效或重复游戏：${title || '未知'}`);
+    overridden.add(key);
+    const game = games.get(key);
+    if (!game) throw new Error(`人工覆盖未匹配到游戏：${title}`);
+    if (!Number.isInteger(override.issue) || override.issue <= 0) throw new Error(`人工覆盖缺少 Issue 编号：${title}`);
+    if (!override.reason || typeof override.reason !== 'string') throw new Error(`人工覆盖缺少原因：${title}`);
+
+    for (const [field, value] of Object.entries(override.statuses ?? {})) {
+      if (!OVERRIDABLE_STATUS_KEYS.has(field) || !Object.hasOwn(STATUS_LABELS, value)) {
+        throw new Error(`人工覆盖包含无效状态 ${field}：${title}`);
+      }
+      game[field] = value;
+    }
+    for (const [field, note] of Object.entries(override.featureNotes ?? {})) {
+      if (!FEATURE_KEYS.includes(field) || typeof note !== 'string' || !note.trim()) {
+        throw new Error(`人工覆盖包含无效功能说明 ${field}：${title}`);
+      }
+      game.featureNotes[field] = note;
+    }
+    for (const [field, links] of Object.entries(override.featureNoteLinks ?? {})) {
+      if (!FEATURE_KEYS.includes(field) || !Array.isArray(links) || links.some((link) => !link?.label || !/^https:\/\//i.test(link.url))) {
+        throw new Error(`人工覆盖包含无效功能说明链接 ${field}：${title}`);
+      }
+      game.featureNoteLinks[field] = links;
+    }
+  }
+  return dataset;
 }
 
 export function parseCargoResponse(json) {

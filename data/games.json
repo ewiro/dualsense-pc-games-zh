@@ -1974,8 +1974,8 @@
         "Wired"
       ],
       "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "false",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
@@ -1985,9 +1985,20 @@
         "motionSensors": "模式：镜头控制；游戏中的“体感功能瞄准”选项适用于 USB。陀螺仪瞄准具有无法禁用的加速度。",
         "lightBar": "光效十足。",
         "adaptiveTriggers": "模式：有线（USB）",
-        "hapticFeedback": "仅限 USB 有线连接。"
+        "hapticFeedback": "多名玩家报告在 USB 有线连接、关闭 Steam Input 并检查音频设置后仍无触觉反馈；本站据此标记为不支持。"
       },
-      "featureNoteLinks": {}
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "本站数据反馈 #1",
+            "url": "https://github.com/ewiro/dualsense-pc-games-zh/issues/1"
+          },
+          {
+            "label": "Steam 社区反馈",
+            "url": "https://steamcommunity.com/app/1259420/discussions/0/839501596191673437/"
+          }
+        ]
+      }
     },
     {
       "id": "death-stranding-2-on-the-beach",

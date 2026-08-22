@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { readFile } from 'node:fs/promises';
+import { applyGameOverrides, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
 import { readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
@@ -159,6 +160,34 @@ test('merges model rows and removes games without DualSense enhancements', () =>
   assert.equal(dataset.games.some((game) => game.title === 'Beta Game'), false);
   assert.equal(dataset.games.some((game) => game.title === 'Gamma Game'), false);
   validateDataset(dataset);
+});
+
+test('applies validated local data overrides after PCGamingWiki enrichment', () => {
+  const dataset = mergeRecords(dualSenseFixture, edgeFixture, '2026-08-17T00:00:00.000Z', { 'Alpha Game': '阿尔法游戏' });
+  applyGameOverrides(dataset, {
+    schemaVersion: 1,
+    overrides: [{
+      title: 'Alpha Game',
+      issue: 1,
+      reason: 'Verified correction',
+      statuses: { hapticFeedback: 'false' },
+      featureNotes: { hapticFeedback: '本站核验为不支持。' },
+      featureNoteLinks: { hapticFeedback: [{ label: 'Issue #1', url: 'https://example.com/issues/1' }] }
+    }]
+  });
+  const alpha = dataset.games[0];
+  assert.equal(alpha.hapticFeedback, 'false');
+  assert.equal(alpha.featureNotes.hapticFeedback, '本站核验为不支持。');
+  assert.deepEqual(alpha.featureNoteLinks.hapticFeedback, [{ label: 'Issue #1', url: 'https://example.com/issues/1' }]);
+  assert.throws(() => applyGameOverrides(dataset, { schemaVersion: 1, overrides: [{ title: 'Missing Game', issue: 2, reason: 'x' }] }), /未匹配到游戏/);
+});
+
+test('keeps the Days Gone correction in the committed snapshot', async () => {
+  const dataset = JSON.parse(await readFile(new URL('../data/games.json', import.meta.url), 'utf8'));
+  const daysGone = dataset.games.find((game) => game.title === 'Days Gone');
+  assert.equal(daysGone.hapticFeedback, 'false');
+  assert.equal(daysGone.hdHapticFeedback, 'false');
+  assert.equal(daysGone.featureNoteLinks.hapticFeedback[0].url, 'https://github.com/ewiro/dualsense-pc-games-zh/issues/1');
 });
 
 test('rejects empty, malformed, incomplete and sharply reduced datasets', () => {

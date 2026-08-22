@@ -56,6 +56,7 @@ npm run fetch
 | --- | --- |
 | `npm run fetch` | 分页抓取并校验 PCGamingWiki Cargo API 数据 |
 | `npm run enrich` | 从游戏页面补充功能状态与说明，并缓存新增说明的中文翻译 |
+| `npm run overrides` | 将本站人工纠正重新应用到现有数据快照 |
 | `npm test` | 运行数据清洗、合并、保护规则及静态站点 smoke test |
 | `npm run build` | 生成可部署的 `dist/` 静态站点 |
 
@@ -65,9 +66,11 @@ npm run fetch
 .
 ├── .github/workflows/pages.yml  # 自动更新与 Pages 部署
 ├── data/
+│   ├── game-overrides.json      # 经 Issue 核验的本站人工纠正
 │   ├── games.json               # 已校验的数据快照
 │   └── title-translations.json  # 中英文名称映射
 ├── scripts/
+│   ├── apply-overrides.js       # 将人工纠正应用到现有快照
 │   ├── fetch-data.js            # Cargo API 抓取器
 │   ├── enrich-features.js       # 游戏页面功能状态补充器
 │   ├── note-translations.js      # 功能说明翻译与缓存逻辑
@@ -88,7 +91,7 @@ npm run fetch
 
 ## 数据更新与保护
 
-抓取器分别分页获取 DualSense 与 DualSense Edge 记录，合并去重后只保留自适应扳机或触觉反馈状态为“支持”“有限支持”“需额外调整”或“始终启用”的游戏。购买平台和商品 ID 来自各游戏页面的 `Availability` 记录；功能状态、模式与说明来自 `Input` 模板。功能说明按原文缓存中文翻译，说明中的 PCGamingWiki 站内链接和外部参考链接会被解析、保留并适配到中文文本，避免浏览器端临时请求翻译服务。PCGamingWiki 暂无稳定的手柄扬声器统一字段，因此仅在页面存在明确控制器扬声器记录时标记支持，其余保留为“未知”。
+抓取器分别分页获取 DualSense 与 DualSense Edge 记录，合并去重后只保留自适应扳机或触觉反馈状态为“支持”“有限支持”“需额外调整”或“始终启用”的游戏。购买平台和商品 ID 来自各游戏页面的 `Availability` 记录；功能状态、模式与说明来自 `Input` 模板。功能说明按原文缓存中文翻译，说明中的 PCGamingWiki 站内链接和外部参考链接会被解析、保留并适配到中文文本，避免浏览器端临时请求翻译服务。经维护者核验的本站纠正保存在 `data/game-overrides.json`，在最终校验前覆盖上游字段，并通过对应 Issue 和证据链接保留来源。PCGamingWiki 暂无稳定的手柄扬声器统一字段，因此仅在页面存在明确控制器扬声器记录时标记支持，其余保留为“未知”。
 
 为避免异常数据被发布，更新流程会拒绝：
 
