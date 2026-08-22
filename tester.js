@@ -536,10 +536,9 @@ function renderMotionPose(accelerometer = [0, 0, 0], gyro = [0, 0, 0]) {
   motionFiltered = smoothMotionPose(motionFiltered, centeredPose);
   const { roll, pitch, yawRate } = applyMotionDeadzone(motionFiltered);
   const yawOffset = -yawRate / 32 * 58;
-  // In the player-facing top view, CSS's downward Y axis already matches pitch perspective;
-  // roll still needs inversion so lifting the right side lifts the SVG's right side.
-  $('motion-controller').style.transform = `rotateX(${pitch}deg) rotateZ(${-roll}deg)`;
-  $('motion-horizon-plane').style.transform = `translateY(${-pitch * 0.52}px) rotate(${roll}deg)`;
+  // The player-facing top view mirrors sensor pitch depth and screen-space roll.
+  $('motion-controller').style.transform = `rotateX(${-pitch}deg) rotateZ(${-roll}deg)`;
+  $('motion-horizon-plane').style.transform = `translateY(${pitch * 0.52}px) rotate(${roll}deg)`;
   $('motion-yaw-indicator').style.transform = `translateX(calc(-50% + ${yawOffset}px))`;
   $('motion-roll-value').textContent = `${Math.round(roll)}°`;
   $('motion-pitch-value').textContent = `${Math.round(pitch)}°`;
