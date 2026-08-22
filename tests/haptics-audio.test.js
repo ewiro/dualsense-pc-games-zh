@@ -47,11 +47,11 @@ test('patterns are deterministic for the same seed', () => {
   assert.deepEqual(first.right, second.right);
 });
 
-test('balanced calibration stays perceptible and below its peak ceiling', () => {
+test('enhanced calibration stays perceptible and below its peak ceiling', () => {
   const calibrationPoints = [
-    { intensity: 0.4, minimumPeak: 0.04, minimumRms: 0.008 },
-    { intensity: 0.65, minimumPeak: 0.065, minimumRms: 0.015 },
-    { intensity: 1, minimumPeak: 0.1, minimumRms: 0.023 }
+    { intensity: 0.4, minimumPeak: 0.08, minimumRms: 0.018 },
+    { intensity: 0.65, minimumPeak: 0.13, minimumRms: 0.03 },
+    { intensity: 1, minimumPeak: 0.2, minimumRms: 0.045 }
   ];
   for (const name of Object.keys(hapticPatternLabels)) {
     let previousRms = 0;

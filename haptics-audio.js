@@ -1,6 +1,6 @@
 const DEFAULT_SAMPLE_RATE = 48_000;
-const CALIBRATION_GAIN = 3;
-const SAFE_PEAK = 0.22;
+const CALIBRATION_GAIN = 6;
+const SAFE_PEAK = 0.45;
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 const smoothstep = (value) => {
