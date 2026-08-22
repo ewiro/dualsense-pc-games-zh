@@ -80,10 +80,18 @@
           <p class="card-copy">USB 模式会把低强度、带平滑包络的 48 kHz 波形送到左右触觉执行器，更接近游戏中的细节反馈。</p>
           <section class="audio-haptics" aria-labelledby="audio-haptics-title">
             <div class="haptic-mode-heading">
-              <div><h3 id="audio-haptics-title">USB 高清触觉</h3><p>需使用数据线，并在系统弹窗中选择手柄的音频设备。</p></div>
-              <button id="setup-haptic-audio" class="secondary-button" type="button" disabled>选择手柄音频</button>
+              <div><h3 id="audio-haptics-title">USB 高清触觉</h3><p>需使用数据线，并选择 Wireless Controller 音频输出。</p></div>
+              <button id="setup-haptic-audio" class="secondary-button" type="button" disabled>查找音频设备</button>
             </div>
             <p id="haptic-audio-status" class="haptic-status" role="status" aria-live="polite">连接 USB 手柄后可启用。</p>
+            <div id="haptic-output-picker" class="haptic-output-picker" hidden>
+              <label for="haptic-output-select">音频输出设备</label>
+              <div class="haptic-output-actions">
+                <select id="haptic-output-select" disabled></select>
+                <button id="activate-haptic-audio" class="secondary-button" type="button" disabled>启用所选设备</button>
+              </div>
+              <p>如果 Chrome 请求麦克风权限，它只用于显示完整的音频设备名称；设备列表读取完成后会立即停止音频轨道。</p>
+            </div>
             <label class="range-row" for="haptic-intensity"><span>触觉强度 <output id="haptic-intensity-value">32%</output></span><input id="haptic-intensity" type="range" min="10" max="65" value="32" disabled></label>
             <div class="preset-grid audio-haptic-presets">
               <button type="button" data-audio-haptic="rain" disabled>细雨</button>

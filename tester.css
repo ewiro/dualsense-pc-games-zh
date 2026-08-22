@@ -69,6 +69,12 @@
 .haptic-mode-heading p, .compat-haptics-controls > p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
 .haptic-mode-heading .secondary-button { min-height: 40px; flex: 0 0 auto; white-space: nowrap; }
 .haptic-status { min-height: 38px; margin: 15px 0 0; padding: 10px 12px; border-radius: 9px; color: var(--ink); background: color-mix(in srgb, var(--bg) 68%, transparent); font-size: 11px; line-height: 1.6; }
+.haptic-output-picker { margin-top: 12px; padding: 13px; border: 1px solid var(--line); border-radius: 10px; background: color-mix(in srgb, var(--panel) 90%, transparent); }
+.haptic-output-picker > label { display: block; margin-bottom: 7px; color: var(--ink); font-size: 11px; font-weight: 700; }
+.haptic-output-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; }
+.haptic-output-actions select { min-width: 0; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); background: var(--panel); font: inherit; font-size: 12px; }
+.haptic-output-actions .secondary-button { min-height: 44px; white-space: nowrap; }
+.haptic-output-picker > p { margin: 9px 0 0; color: var(--dim); font-size: 10px; line-height: 1.65; }
 .audio-haptic-presets { grid-template-columns: repeat(2, 1fr); }
 .audio-haptic-presets .stop-button { grid-column: 1 / -1; }
 .compat-haptics { margin-top: 14px; border: 1px solid var(--line); border-radius: 11px; overflow: clip; }
@@ -113,6 +119,8 @@
   .preset-grid { grid-template-columns: repeat(2, 1fr); }
   .haptic-mode-heading { display: grid; }
   .haptic-mode-heading .secondary-button { width: 100%; }
+  .haptic-output-actions { grid-template-columns: 1fr; }
+  .haptic-output-actions .secondary-button { width: 100%; }
   .tester-note-grid { grid-template-columns: 1fr; gap: 23px; }
   .feedback-link span { display: none; }
   .feedback-link { width: 44px; padding: 0; }

@@ -63,29 +63,47 @@ function setConnectionState(state, status, details) {
   updateHapticAvailability(connected);
 }
 
+function canRouteHapticAudio() {
+  return Boolean(navigator.mediaDevices?.enumerateDevices && window.AudioContext?.prototype?.setSinkId);
+}
+
+function resetHapticOutputPicker() {
+  $('haptic-output-picker').hidden = true;
+  $('haptic-output-select').replaceChildren();
+  $('haptic-output-select').disabled = true;
+  $('activate-haptic-audio').disabled = true;
+  $('setup-haptic-audio').textContent = '查找音频设备';
+}
+
 function updateHapticAvailability(connected = Boolean(device?.opened)) {
-  const canRouteAudio = Boolean(navigator.mediaDevices?.selectAudioOutput && window.AudioContext?.prototype?.setSinkId);
+  const canRouteAudio = canRouteHapticAudio();
   const usbReady = connected && link === 'usb';
   $('setup-haptic-audio').disabled = !usbReady || !canRouteAudio;
+  $('activate-haptic-audio').disabled = !usbReady || $('haptic-output-picker').hidden || !$('haptic-output-select').value;
   $('haptic-intensity').disabled = !hapticAudio;
   document.querySelectorAll('[data-audio-haptic]').forEach((button) => { button.disabled = !hapticAudio; });
   if (hapticAudio) {
-    $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+    $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${hapticAudio.context.sampleRate / 1000} kHz`;
     $('haptic-mode-tag').textContent = 'HD READY';
+    $('setup-haptic-audio').textContent = '更换音频设备';
   } else if (!connected) {
+    resetHapticOutputPicker();
     $('haptic-audio-status').textContent = '连接 USB 手柄后可启用。';
     $('haptic-mode-tag').textContent = 'USB AUDIO';
   } else if (link === 'bluetooth') {
+    resetHapticOutputPicker();
     $('haptic-audio-status').textContent = '蓝牙没有触觉音频通道，请改用 USB 数据线；下方兼容震动仍可使用。';
     $('haptic-mode-tag').textContent = 'USB REQUIRED';
   } else if (link === 'unknown') {
+    resetHapticOutputPicker();
     $('haptic-audio-status').textContent = '正在识别连接方式…';
     $('haptic-mode-tag').textContent = 'DETECTING';
   } else if (!canRouteAudio) {
-    $('haptic-audio-status').textContent = '当前浏览器不能选择多声道音频输出，请使用最新版 Chrome 或 Edge。';
+    resetHapticOutputPicker();
+    $('haptic-audio-status').textContent = '当前浏览器不支持 Web Audio 输出路由，请使用最新版 Chrome 或 Edge。';
     $('haptic-mode-tag').textContent = 'UNAVAILABLE';
   } else {
-    $('haptic-audio-status').textContent = '点击“选择手柄音频”，并在弹窗中选择 Wireless Controller。';
+    $('haptic-audio-status').textContent = '点击“查找音频设备”，再选择 Wireless Controller。';
     $('haptic-mode-tag').textContent = 'USB READY';
   }
 }
@@ -179,7 +197,7 @@ function stopAudioHaptics(immediate = false) {
       playing.source.stop(now + 0.055);
     }
   } catch {}
-  $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+  $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${context.sampleRate / 1000} kHz`;
 }
 
 async function closeHapticAudio() {
@@ -191,35 +209,106 @@ async function closeHapticAudio() {
   updateHapticAvailability(Boolean(device?.opened));
 }
 
+function isControllerAudioOutput(outputDevice) {
+  return /wireless controller|dualsense/i.test(outputDevice.label);
+}
+
+async function enumerateAudioOutputs(requestPermission = false) {
+  let permissionStream = null;
+  try {
+    if (requestPermission) {
+      if (!navigator.mediaDevices.getUserMedia) throw new Error('浏览器无法申请音频设备列表权限');
+      permissionStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    }
+    const devices = await navigator.mediaDevices.enumerateDevices();
+    return devices.filter((item) => item.kind === 'audiooutput' && item.deviceId);
+  } finally {
+    permissionStream?.getTracks().forEach((track) => track.stop());
+  }
+}
+
+function showAudioOutputPicker(outputDevices) {
+  const select = $('haptic-output-select');
+  select.replaceChildren();
+  const ordered = [...outputDevices].sort((left, right) => Number(isControllerAudioOutput(right)) - Number(isControllerAudioOutput(left)) || left.label.localeCompare(right.label));
+  for (const outputDevice of ordered) {
+    const label = outputDevice.label || (outputDevice.deviceId === 'default' ? '系统默认音频输出' : '未命名音频输出');
+    select.add(new Option(label, outputDevice.deviceId));
+  }
+  const preferredIndex = ordered.findIndex(isControllerAudioOutput);
+  select.selectedIndex = preferredIndex >= 0 ? preferredIndex : 0;
+  select.disabled = false;
+  $('haptic-output-picker').hidden = false;
+  $('activate-haptic-audio').disabled = !select.value;
+  $('setup-haptic-audio').disabled = false;
+  $('setup-haptic-audio').textContent = '重新查找';
+  $('haptic-mode-tag').textContent = 'SELECT OUTPUT';
+  $('haptic-audio-status').textContent = preferredIndex >= 0
+    ? `已找到 ${ordered.length} 个音频输出，并优先选择 Wireless Controller。确认后启用。`
+    : `已找到 ${ordered.length} 个音频输出。请选择 Wireless Controller；如果列表中没有，请确认手柄使用 USB 数据线连接。`;
+}
+
+function audioDiscoveryErrorMessage(error) {
+  if (error.name === 'NotAllowedError') return '未获得音频设备列表权限。请允许麦克风权限后重试；页面读取列表后会立即停止音频轨道。';
+  if (error.name === 'NotFoundError') return '系统没有发现可用的音频设备。请重新插拔 USB 数据线后重试。';
+  return `无法读取音频设备：${error.message}`;
+}
+
 async function setupHapticAudio() {
   if (!device?.opened || link !== 'usb') return;
-  const AudioContextClass = window.AudioContext;
-  if (!navigator.mediaDevices?.selectAudioOutput || !AudioContextClass?.prototype?.setSinkId) {
-    updateHapticAvailability(true);
-    return;
-  }
+  if (!canRouteHapticAudio()) return updateHapticAvailability(true);
   $('setup-haptic-audio').disabled = true;
-  $('haptic-audio-status').textContent = '等待选择手柄音频设备…';
+  $('activate-haptic-audio').disabled = true;
+  $('haptic-audio-status').textContent = '正在读取音频输出设备…';
   try {
-    const outputDevice = await navigator.mediaDevices.selectAudioOutput();
-    await closeHapticAudio();
-    const context = new AudioContextClass({ sampleRate: 48_000, latencyHint: 'interactive' });
-    await context.setSinkId(outputDevice.deviceId);
-    await context.resume();
-    if (context.destination.maxChannelCount < 4) {
-      await context.close();
-      throw new Error('所选设备只提供双声道输出，未检测到 DualSense 的 4 声道触觉端点');
+    if (navigator.mediaDevices.selectAudioOutput) {
+      const outputDevice = await navigator.mediaDevices.selectAudioOutput();
+      return activateHapticAudio(outputDevice.deviceId, outputDevice.label);
     }
+    let outputDevices = await enumerateAudioOutputs(false);
+    if (!outputDevices.some(isControllerAudioOutput)) {
+      $('haptic-audio-status').textContent = 'Chrome 需要一次麦克风权限来显示完整的音频设备名称；授权后会立即停止音频轨道。';
+      outputDevices = await enumerateAudioOutputs(true);
+    }
+    if (!outputDevices.length) throw new DOMException('没有可用的音频输出设备', 'NotFoundError');
+    showAudioOutputPicker(outputDevices);
+  } catch (error) {
+    $('haptic-output-picker').hidden = true;
+    $('haptic-audio-status').textContent = audioDiscoveryErrorMessage(error);
+    $('haptic-mode-tag').textContent = 'NOT READY';
+    $('setup-haptic-audio').disabled = !(device?.opened && link === 'usb');
+    $('activate-haptic-audio').disabled = true;
+  }
+}
+
+async function activateHapticAudio(deviceId = $('haptic-output-select').value, deviceLabel = $('haptic-output-select').selectedOptions[0]?.textContent) {
+  if (!deviceId || !device?.opened || link !== 'usb') return;
+  const AudioContextClass = window.AudioContext;
+  let context = null;
+  $('setup-haptic-audio').disabled = true;
+  $('activate-haptic-audio').disabled = true;
+  $('haptic-audio-status').textContent = `正在检查 ${deviceLabel || '所选音频设备'} 的声道…`;
+  try {
+    await closeHapticAudio();
+    $('haptic-audio-status').textContent = `正在检查 ${deviceLabel || '所选音频设备'} 的声道…`;
+    context = new AudioContextClass({ sampleRate: 48_000, latencyHint: 'interactive' });
+    await context.setSinkId(deviceId);
+    await context.resume();
+    if (context.destination.maxChannelCount < 4) throw new Error('所选设备只提供双声道输出，未检测到 DualSense 的 4 声道触觉端点');
     context.destination.channelCount = 4;
     context.destination.channelCountMode = 'explicit';
     context.destination.channelInterpretation = 'discrete';
-    hapticAudio = { context, deviceLabel: outputDevice.label, playing: null };
+    hapticAudio = { context, deviceLabel, playing: null };
+    context = null;
+    $('haptic-output-picker').hidden = true;
     updateHapticAvailability(true);
   } catch (error) {
+    try { await context?.close(); } catch {}
     hapticAudio = null;
-    $('haptic-audio-status').textContent = `未启用：${error.message}。请确认选择了 Wireless Controller 的 4 声道输出。`;
+    $('haptic-audio-status').textContent = `未启用：${error.message}。请选择 Wireless Controller 的 4 声道输出后重试。`;
     $('haptic-mode-tag').textContent = 'NOT READY';
-    $('setup-haptic-audio').disabled = !(device?.opened && link === 'usb');
+    $('setup-haptic-audio').disabled = false;
+    $('activate-haptic-audio').disabled = !$('haptic-output-select').value;
   }
 }
 
@@ -251,7 +340,7 @@ async function playAudioHaptic(name) {
     try { source.disconnect(); gain.disconnect(); splitter.disconnect(); merger.disconnect(); } catch {}
     if (hapticAudio?.playing === playing) {
       hapticAudio.playing = null;
-      $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+      $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · ${hapticAudio.context.sampleRate / 1000} kHz`;
     }
   };
   $('haptic-audio-status').textContent = `正在播放：${hapticPatternLabels[name]} · ${$('haptic-intensity').value}%`;
@@ -398,6 +487,8 @@ function setupControls() {
   $('connect-button').addEventListener('click', requestConnection);
   $('disconnect-button').addEventListener('click', () => disconnect());
   $('setup-haptic-audio').addEventListener('click', setupHapticAudio);
+  $('activate-haptic-audio').addEventListener('click', () => activateHapticAudio());
+  $('haptic-output-select').addEventListener('change', () => { $('activate-haptic-audio').disabled = !$('haptic-output-select').value; });
   $('haptic-intensity').addEventListener('input', () => { $('haptic-intensity-value').textContent = `${$('haptic-intensity').value}%`; });
   document.querySelectorAll('[data-audio-haptic]').forEach((button) => button.addEventListener('click', () => playAudioHaptic(button.dataset.audioHaptic)));
   for (const side of ['left', 'right']) {

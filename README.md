@@ -25,7 +25,7 @@
 
 测试器位于 [`tester.html`](tester.html)，推荐使用桌面版 Chrome 或 Edge。首次连接需要点击“连接手柄”并在浏览器授权窗口中选择控制器；授权后页面会尝试自动重连。USB 与蓝牙均支持 HID 输入和反馈指令，但 USB 数据线通常更稳定。
 
-USB 高清触觉需要使用数据线，并由用户在浏览器弹窗中选择 Wireless Controller 音频设备。测试器只在所选输出提供 4 个声道时启用触觉波形：前两个声道保持静音，后两个声道分别驱动左右执行器；细雨、砂石、脚步和引擎模式均限制峰值并使用平滑包络。蓝牙没有音频触觉通道，因此回退到已限制强度的 HID 兼容震动。HID 报告格式参考 [nondebug/dualsense](https://github.com/nondebug/dualsense) 与 [dualsense-studio](https://github.com/nikhil8182/dualsense-studio)。
+USB 高清触觉需要使用数据线，并在网页列出的音频输出中选择 Wireless Controller。Chrome 若尚未公开完整设备列表，测试器会申请一次麦克风设备权限，取得音频输出名称后立即停止媒体轨道，不会持续采集音频。测试器只在所选输出提供 4 个声道时启用触觉波形：前两个声道保持静音，后两个声道分别驱动左右执行器；细雨、砂石、脚步和引擎模式均限制峰值并使用平滑包络。蓝牙没有音频触觉通道，因此回退到已限制强度的 HID 兼容震动。HID 报告格式参考 [nondebug/dualsense](https://github.com/nondebug/dualsense) 与 [dualsense-studio](https://github.com/nikhil8182/dualsense-studio)。
 
 ## 数据纠错与补充
 
