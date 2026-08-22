@@ -1,4 +1,5 @@
 import { DUALSENSE_PRODUCT_IDS, SONY_VENDOR_ID, buildOutputReport, detectConnectionType, parseInputReport, triggerEffects } from './tester-lib.js';
+import { createHapticPattern, hapticPatternLabels } from './haptics-audio.js';
 
 const THEME_KEY = 'dualsense-theme';
 const $ = (id) => document.getElementById(id);
@@ -15,10 +16,12 @@ let sequence = 1;
 let outputTimer = null;
 let outputSending = false;
 let patternTimers = [];
+let rumbleAnimation = null;
 let reportsSinceSample = 0;
 let sampleStartedAt = performance.now();
 let latestInput = null;
 let lastEffect = 'off';
+let hapticAudio = null;
 const output = { rumbleLeft: 0, rumbleRight: 0, leftTrigger: triggerEffects.off(), rightTrigger: triggerEffects.off() };
 
 function applyTheme(theme) {
@@ -56,7 +59,35 @@ function setConnectionState(state, status, details) {
   const connected = state === 'connected';
   $('connect-button').disabled = connected || state === 'busy';
   $('disconnect-button').disabled = !connected;
-  document.querySelectorAll('.output-card button, .output-card input, .adaptive-card button, .adaptive-card input, .adaptive-card fieldset').forEach((element) => { element.disabled = !connected; });
+  document.querySelectorAll('.compat-haptics-controls button, .compat-haptics-controls input, .adaptive-card button, .adaptive-card input, .adaptive-card fieldset').forEach((element) => { element.disabled = !connected; });
+  updateHapticAvailability(connected);
+}
+
+function updateHapticAvailability(connected = Boolean(device?.opened)) {
+  const canRouteAudio = Boolean(navigator.mediaDevices?.selectAudioOutput && window.AudioContext?.prototype?.setSinkId);
+  const usbReady = connected && link === 'usb';
+  $('setup-haptic-audio').disabled = !usbReady || !canRouteAudio;
+  $('haptic-intensity').disabled = !hapticAudio;
+  document.querySelectorAll('[data-audio-haptic]').forEach((button) => { button.disabled = !hapticAudio; });
+  if (hapticAudio) {
+    $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+    $('haptic-mode-tag').textContent = 'HD READY';
+  } else if (!connected) {
+    $('haptic-audio-status').textContent = '连接 USB 手柄后可启用。';
+    $('haptic-mode-tag').textContent = 'USB AUDIO';
+  } else if (link === 'bluetooth') {
+    $('haptic-audio-status').textContent = '蓝牙没有触觉音频通道，请改用 USB 数据线；下方兼容震动仍可使用。';
+    $('haptic-mode-tag').textContent = 'USB REQUIRED';
+  } else if (link === 'unknown') {
+    $('haptic-audio-status').textContent = '正在识别连接方式…';
+    $('haptic-mode-tag').textContent = 'DETECTING';
+  } else if (!canRouteAudio) {
+    $('haptic-audio-status').textContent = '当前浏览器不能选择多声道音频输出，请使用最新版 Chrome 或 Edge。';
+    $('haptic-mode-tag').textContent = 'UNAVAILABLE';
+  } else {
+    $('haptic-audio-status').textContent = '点击“选择手柄音频”，并在弹窗中选择 Wireless Controller。';
+    $('haptic-mode-tag').textContent = 'USB READY';
+  }
 }
 
 async function requestConnection() {
@@ -109,6 +140,7 @@ function handleInputReport(event) {
   if (link === 'unknown') {
     link = parsed.link;
     $('link-type').textContent = link === 'usb' ? 'USB' : 'Bluetooth';
+    updateHapticAvailability(true);
   }
 }
 
@@ -132,12 +164,108 @@ function startOutputLoop() {
   sendOutput();
 }
 
+function stopAudioHaptics(immediate = false) {
+  if (!hapticAudio?.playing) return;
+  const { context, playing } = hapticAudio;
+  hapticAudio.playing = null;
+  try {
+    if (immediate) {
+      playing.source.stop();
+    } else {
+      const now = context.currentTime;
+      playing.gain.gain.cancelScheduledValues(now);
+      playing.gain.gain.setValueAtTime(playing.gain.gain.value, now);
+      playing.gain.gain.linearRampToValueAtTime(0, now + 0.045);
+      playing.source.stop(now + 0.055);
+    }
+  } catch {}
+  $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+}
+
+async function closeHapticAudio() {
+  if (!hapticAudio) return;
+  const audio = hapticAudio;
+  stopAudioHaptics(true);
+  hapticAudio = null;
+  try { await audio.context.close(); } catch {}
+  updateHapticAvailability(Boolean(device?.opened));
+}
+
+async function setupHapticAudio() {
+  if (!device?.opened || link !== 'usb') return;
+  const AudioContextClass = window.AudioContext;
+  if (!navigator.mediaDevices?.selectAudioOutput || !AudioContextClass?.prototype?.setSinkId) {
+    updateHapticAvailability(true);
+    return;
+  }
+  $('setup-haptic-audio').disabled = true;
+  $('haptic-audio-status').textContent = '等待选择手柄音频设备…';
+  try {
+    const outputDevice = await navigator.mediaDevices.selectAudioOutput();
+    await closeHapticAudio();
+    const context = new AudioContextClass({ sampleRate: 48_000, latencyHint: 'interactive' });
+    await context.setSinkId(outputDevice.deviceId);
+    await context.resume();
+    if (context.destination.maxChannelCount < 4) {
+      await context.close();
+      throw new Error('所选设备只提供双声道输出，未检测到 DualSense 的 4 声道触觉端点');
+    }
+    context.destination.channelCount = 4;
+    context.destination.channelCountMode = 'explicit';
+    context.destination.channelInterpretation = 'discrete';
+    hapticAudio = { context, deviceLabel: outputDevice.label, playing: null };
+    updateHapticAvailability(true);
+  } catch (error) {
+    hapticAudio = null;
+    $('haptic-audio-status').textContent = `未启用：${error.message}。请确认选择了 Wireless Controller 的 4 声道输出。`;
+    $('haptic-mode-tag').textContent = 'NOT READY';
+    $('setup-haptic-audio').disabled = !(device?.opened && link === 'usb');
+  }
+}
+
+async function playAudioHaptic(name) {
+  if (!hapticAudio) return;
+  if (name === 'stop') return stopAudioHaptics();
+  stopAudioHaptics(true);
+  const { context } = hapticAudio;
+  if (context.state === 'suspended') await context.resume();
+  const intensity = Number($('haptic-intensity').value) / 100;
+  const pattern = createHapticPattern(name, { sampleRate: context.sampleRate, intensity });
+  const buffer = context.createBuffer(2, pattern.left.length, pattern.sampleRate);
+  buffer.copyToChannel(pattern.left, 0);
+  buffer.copyToChannel(pattern.right, 1);
+
+  const source = context.createBufferSource();
+  const gain = context.createGain();
+  const splitter = context.createChannelSplitter(2);
+  const merger = context.createChannelMerger(4);
+  source.buffer = buffer;
+  gain.gain.value = 1;
+  source.connect(gain).connect(splitter);
+  splitter.connect(merger, 0, 2);
+  splitter.connect(merger, 1, 3);
+  merger.connect(context.destination);
+  const playing = { source, gain, splitter, merger };
+  hapticAudio.playing = playing;
+  source.onended = () => {
+    try { source.disconnect(); gain.disconnect(); splitter.disconnect(); merger.disconnect(); } catch {}
+    if (hapticAudio?.playing === playing) {
+      hapticAudio.playing = null;
+      $('haptic-audio-status').textContent = `已就绪 · ${hapticAudio.deviceLabel || '4 声道手柄音频'} · 48 kHz`;
+    }
+  };
+  $('haptic-audio-status').textContent = `正在播放：${hapticPatternLabels[name]} · ${$('haptic-intensity').value}%`;
+  source.start();
+}
+
 function clearPatternTimers() {
   for (const timer of patternTimers) {
     clearTimeout(timer);
     clearInterval(timer);
   }
   patternTimers = [];
+  if (rumbleAnimation !== null) cancelAnimationFrame(rumbleAnimation);
+  rumbleAnimation = null;
 }
 
 function setRumble(left, right) {
@@ -152,26 +280,31 @@ function setRumble(left, right) {
 function playRumblePattern(name) {
   clearPatternTimers();
   if (name === 'stop') return setRumble(0, 0);
-  if (name === 'pulse') {
-    setRumble(90, 145);
-    patternTimers.push(setTimeout(() => setRumble(0, 0), 280));
-  } else if (name === 'heartbeat') {
-    const beat = () => {
-      setRumble(125, 85);
-      patternTimers.push(setTimeout(() => setRumble(0, 0), 100));
-      patternTimers.push(setTimeout(() => setRumble(90, 65), 180));
-      patternTimers.push(setTimeout(() => setRumble(0, 0), 300));
-    };
-    beat();
-    patternTimers.push(setInterval(beat, 900));
-  } else if (name === 'texture') {
-    let step = 0;
-    patternTimers.push(setInterval(() => {
-      step += 1;
-      setRumble(30 + (step % 4) * 18, 55 + (step % 3) * 28);
-      if (step >= 24) { clearPatternTimers(); setRumble(0, 0); }
-    }, 70));
-  }
+  const patterns = {
+    tap: [[0, 0, 0], [75, 12, 20], [190, 0, 0]],
+    double: [[0, 0, 0], [65, 13, 22], [135, 0, 0], [215, 9, 16], [325, 0, 0]],
+    texture: [[0, 0, 0], [120, 5, 9], [260, 9, 13], [410, 4, 8], [570, 11, 15], [740, 6, 10], [910, 12, 17], [1080, 5, 9], [1260, 8, 12], [1440, 0, 0]]
+  };
+  const frames = patterns[name];
+  if (!frames) return;
+  const startedAt = performance.now();
+  const animate = (now) => {
+    const elapsed = now - startedAt;
+    let index = 1;
+    while (index < frames.length && elapsed > frames[index][0]) index += 1;
+    if (index >= frames.length) {
+      setRumble(0, 0);
+      rumbleAnimation = null;
+      return;
+    }
+    const previous = frames[index - 1];
+    const next = frames[index];
+    const progress = clamp((elapsed - previous[0]) / Math.max(1, next[0] - previous[0]), 0, 1);
+    const eased = 0.5 - Math.cos(Math.PI * progress) / 2;
+    setRumble(Math.round(previous[1] + (next[1] - previous[1]) * eased), Math.round(previous[2] + (next[2] - previous[2]) * eased));
+    rumbleAnimation = requestAnimationFrame(animate);
+  };
+  rumbleAnimation = requestAnimationFrame(animate);
 }
 
 function selectedSide() {
@@ -198,6 +331,7 @@ function applyTriggerEffect(name) {
 
 function resetOutputs() {
   clearPatternTimers();
+  stopAudioHaptics(true);
   setRumble(0, 0);
   output.leftTrigger = triggerEffects.off();
   output.rightTrigger = triggerEffects.off();
@@ -208,6 +342,7 @@ function resetOutputs() {
 async function disconnect(close = true) {
   resetOutputs();
   await sendOutput();
+  await closeHapticAudio();
   if (outputTimer) clearInterval(outputTimer);
   outputTimer = null;
   if (device) {
@@ -262,6 +397,9 @@ function renderInput() {
 function setupControls() {
   $('connect-button').addEventListener('click', requestConnection);
   $('disconnect-button').addEventListener('click', () => disconnect());
+  $('setup-haptic-audio').addEventListener('click', setupHapticAudio);
+  $('haptic-intensity').addEventListener('input', () => { $('haptic-intensity-value').textContent = `${$('haptic-intensity').value}%`; });
+  document.querySelectorAll('[data-audio-haptic]').forEach((button) => button.addEventListener('click', () => playAudioHaptic(button.dataset.audioHaptic)));
   for (const side of ['left', 'right']) {
     const input = $(`rumble-${side}`);
     input.addEventListener('input', () => {

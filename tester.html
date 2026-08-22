@@ -76,17 +76,38 @@
         </article>
 
         <article class="test-card output-card">
-          <div class="card-heading"><div><p class="card-kicker">HAPTIC PULSE</p><h2>触觉震动</h2></div><span class="card-tag">执行器测试</span></div>
-          <p class="card-copy">分别调整低频与高频分量，或播放短促测试模式。请先把强度调低再逐步增加。</p>
-          <label class="range-row" for="rumble-left"><span>低频分量 <output id="rumble-left-value">0</output></span><input id="rumble-left" type="range" min="0" max="255" value="0" disabled></label>
-          <label class="range-row" for="rumble-right"><span>高频分量 <output id="rumble-right-value">0</output></span><input id="rumble-right" type="range" min="0" max="255" value="0" disabled></label>
-          <div class="preset-grid">
-            <button type="button" data-rumble="pulse" disabled>短脉冲</button>
-            <button type="button" data-rumble="heartbeat" disabled>心跳</button>
-            <button type="button" data-rumble="texture" disabled>路面纹理</button>
-            <button type="button" data-rumble="stop" class="stop-button" disabled>停止</button>
-          </div>
-          <p class="technical-note">这里通过 HID 驱动 DualSense 触觉执行器，用于确认震动通道工作；它不是游戏经 USB 音频输出的完整高精度触觉波形。</p>
+          <div class="card-heading"><div><p class="card-kicker">HD HAPTICS</p><h2>细腻触觉</h2></div><span id="haptic-mode-tag" class="card-tag">USB AUDIO</span></div>
+          <p class="card-copy">USB 模式会把低强度、带平滑包络的 48 kHz 波形送到左右触觉执行器，更接近游戏中的细节反馈。</p>
+          <section class="audio-haptics" aria-labelledby="audio-haptics-title">
+            <div class="haptic-mode-heading">
+              <div><h3 id="audio-haptics-title">USB 高清触觉</h3><p>需使用数据线，并在系统弹窗中选择手柄的音频设备。</p></div>
+              <button id="setup-haptic-audio" class="secondary-button" type="button" disabled>选择手柄音频</button>
+            </div>
+            <p id="haptic-audio-status" class="haptic-status" role="status" aria-live="polite">连接 USB 手柄后可启用。</p>
+            <label class="range-row" for="haptic-intensity"><span>触觉强度 <output id="haptic-intensity-value">32%</output></span><input id="haptic-intensity" type="range" min="10" max="65" value="32" disabled></label>
+            <div class="preset-grid audio-haptic-presets">
+              <button type="button" data-audio-haptic="rain" disabled>细雨</button>
+              <button type="button" data-audio-haptic="gravel" disabled>砂石路面</button>
+              <button type="button" data-audio-haptic="footsteps" disabled>交替脚步</button>
+              <button type="button" data-audio-haptic="engine" disabled>引擎渐升</button>
+              <button type="button" data-audio-haptic="stop" class="stop-button" disabled>停止高清触觉</button>
+            </div>
+          </section>
+          <details class="compat-haptics">
+            <summary>蓝牙 / 兼容震动（低强度）</summary>
+            <div class="compat-haptics-controls">
+              <p>这是传统马达兼容通道，质感不如 USB 音频触觉；现已限制峰值并改为缓起缓停。</p>
+              <label class="range-row" for="rumble-left"><span>左侧分量 <output id="rumble-left-value">0</output></span><input id="rumble-left" type="range" min="0" max="40" value="0" disabled></label>
+              <label class="range-row" for="rumble-right"><span>右侧分量 <output id="rumble-right-value">0</output></span><input id="rumble-right" type="range" min="0" max="40" value="0" disabled></label>
+              <div class="preset-grid">
+                <button type="button" data-rumble="tap" disabled>轻触</button>
+                <button type="button" data-rumble="double" disabled>双击</button>
+                <button type="button" data-rumble="texture" disabled>细微纹理</button>
+                <button type="button" data-rumble="stop" class="stop-button" disabled>停止</button>
+              </div>
+            </div>
+          </details>
+          <p class="technical-note">安全提示：仅在浏览器确认设备具有 4 个输出声道时才会启用高清触觉，避免将触觉波形误放到普通扬声器。</p>
         </article>
 
         <article class="test-card adaptive-card">

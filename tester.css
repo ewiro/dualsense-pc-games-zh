@@ -63,6 +63,20 @@
 .preset-grid button { min-height: 44px; padding: 7px 9px; color: var(--ink); border-color: var(--line); background: color-mix(in srgb, var(--panel) 85%, var(--teal) 15%); }
 .preset-grid .stop-button { color: var(--red); background: transparent; }
 .technical-note { margin: 18px 0 0; padding: 12px 14px; border-left: 2px solid var(--blue); color: var(--dim); background: color-mix(in srgb, var(--panel) 88%, var(--blue) 12%); font-size: 11px; line-height: 1.7; }
+.audio-haptics { padding: 17px; border: 1px solid color-mix(in srgb, var(--teal) 45%, var(--line)); border-radius: 13px; background: color-mix(in srgb, var(--panel) 84%, var(--teal) 16%); }
+.haptic-mode-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+.haptic-mode-heading h3 { margin: 0 0 5px; font-size: 15px; }
+.haptic-mode-heading p, .compat-haptics-controls > p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.65; }
+.haptic-mode-heading .secondary-button { min-height: 40px; flex: 0 0 auto; white-space: nowrap; }
+.haptic-status { min-height: 38px; margin: 15px 0 0; padding: 10px 12px; border-radius: 9px; color: var(--ink); background: color-mix(in srgb, var(--bg) 68%, transparent); font-size: 11px; line-height: 1.6; }
+.audio-haptic-presets { grid-template-columns: repeat(2, 1fr); }
+.audio-haptic-presets .stop-button { grid-column: 1 / -1; }
+.compat-haptics { margin-top: 14px; border: 1px solid var(--line); border-radius: 11px; overflow: clip; }
+.compat-haptics summary { min-height: 48px; padding: 13px 15px; display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--muted); font-size: 12px; font-weight: 700; cursor: pointer; list-style: none; }
+.compat-haptics summary::-webkit-details-marker { display: none; }
+.compat-haptics summary::after { content: "+"; color: var(--teal); font: 16px ui-monospace, monospace; }
+.compat-haptics[open] summary::after { content: "−"; }
+.compat-haptics-controls { padding: 15px; border-top: 1px solid var(--line); }
 .side-picker { min-width: 0; margin: 18px 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; border: 0; }
 .side-picker legend { margin-bottom: 8px; color: var(--muted); font-size: 12px; }
 .side-picker label { min-height: 40px; padding: 8px 14px; display: inline-flex; flex: 1 1 80px; align-items: center; justify-content: center; gap: 7px; border: 1px solid var(--line); border-radius: 9px; color: var(--ink); font-size: 12px; cursor: pointer; }
@@ -97,6 +111,8 @@
   .stick-layout { gap: 12px; }
   .stick-plane { width: min(132px, 37vw); height: min(132px, 37vw); }
   .preset-grid { grid-template-columns: repeat(2, 1fr); }
+  .haptic-mode-heading { display: grid; }
+  .haptic-mode-heading .secondary-button { width: 100%; }
   .tester-note-grid { grid-template-columns: 1fr; gap: 23px; }
   .feedback-link span { display: none; }
   .feedback-link { width: 44px; padding: 0; }

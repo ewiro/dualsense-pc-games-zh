@@ -23,7 +23,7 @@ test('build output serves index, script, styles and data', async () => {
   await new Promise((resolvePromise) => server.listen(0, '127.0.0.1', resolvePromise));
   try {
     const port = server.address().port;
-    for (const path of ['/', '/app.js', '/styles.css', '/light.css', '/tester.html', '/tester.css', '/tester.js', '/tester-lib.js', '/data/games.json']) {
+    for (const path of ['/', '/app.js', '/styles.css', '/light.css', '/tester.html', '/tester.css', '/tester.js', '/tester-lib.js', '/haptics-audio.js', '/data/games.json']) {
       const response = await fetch(`http://127.0.0.1:${port}${path}`);
       assert.equal(response.status, 200, path);
     }
@@ -33,6 +33,7 @@ test('build output serves index, script, styles and data', async () => {
     assert.match(html, /href="tester\.html"/);
     const tester = await (await fetch(`http://127.0.0.1:${port}/tester.html`)).text();
     assert.match(tester, /id="connect-button"/);
+    assert.match(tester, /id="setup-haptic-audio"/);
     assert.match(tester, /type="module" src="tester\.js"/);
   } finally { server.close(); }
 });
