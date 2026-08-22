@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { attachAvailabilityStores, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
 import { readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
@@ -36,6 +36,26 @@ test('rejects empty and malformed API responses', () => {
   assert.deepEqual(parseCargoResponse({ cargoquery: [] }), []);
 });
 
+test('parses expanded Cargo tables into the legacy response shape', () => {
+  const html = `<table class="cargoTable"><thead><tr><th>Page</th></tr></thead><tbody>
+<tr><td class="field_PcgwPage"><a href="/wiki/Alpha_%26_Beta">Alpha &amp; Beta</a></td>
+<td class="field_PcgwDevelopers"><a href="/wiki/Company:Studio">Company:Studio</a> <span class="CargoDelimiter">&bull;</span> Company:Second</td>
+<td class="field_PcgwPublishers"></td><td class="field_PcgwSteamAppId">123 <span class="CargoDelimiter">&bull;</span> 456</td>
+<td class="field_PcgwAdaptiveTriggers">true</td><td class="field_PcgwHapticFeedback">limited</td></tr>
+</tbody></table>`;
+  assert.deepEqual(parseExpandedCargoTable(html), [{ title: {
+    Page: 'Alpha & Beta',
+    Developers: 'Company:Studio;Company:Second',
+    Publishers: null,
+    'Steam AppID': '123;456',
+    'DualSense adaptive trigger support': 'true',
+    'DualSense haptic feedback support': 'limited'
+  } }]);
+  assert.deepEqual(parseExpandedCargoTable('<em>No results</em>'), []);
+  assert.throws(() => parseExpandedCargoTable('<div class="error">Permission denied</div>'), /Permission denied/);
+  assert.throws(() => parseExpandedCargoTable('<table></table>'), /缺少 Cargo 表格/);
+});
+
 test('keeps only Steam and Epic direct product links', () => {
   const wikitext = `{{Availability|
 {{Availability/row| Epic Games Store | alpha-game | DRM-free | {{Store link|Epic Games Store|alpha-deluxe|Deluxe}} | | Windows }}
@@ -48,6 +68,24 @@ test('keeps only Steam and Epic direct product links', () => {
     { name: 'Steam', url: 'https://store.steampowered.com/app/12345/' },
     { name: 'Epic', url: 'https://store.epicgames.com/p/alpha-game' }
   ]);
+  const fallback = { games: [{ title: 'Alpha Game', steamAppId: '', stores: [] }] };
+  attachAvailabilityStores(fallback, { 'alpha game': '{{Availability/row|Steam|12345|Steam||||Windows}}' });
+  assert.equal(fallback.games[0].steamAppId, '12345');
+});
+
+test('keeps official company casing from page source', () => {
+  const wikitext = `{{Infobox game
+|developers =
+{{Infobox game/row/developer|id Software}}
+{{Infobox game/row/developer|Beethoven & Dinosaur}}
+|publishers =
+{{Infobox game/row/publisher|miHoYo|China}}
+}}`;
+  assert.deepEqual(parseInfoboxCompanies(wikitext, 'developer'), ['id Software', 'Beethoven & Dinosaur']);
+  const dataset = { games: [{ title: 'Alpha Game', developers: ['Id Software'], publishers: ['MiHoYo'] }] };
+  attachInfoboxCompanies(dataset, { 'alpha game': wikitext });
+  assert.deepEqual(dataset.games[0].developers, ['id Software', 'Beethoven & Dinosaur']);
+  assert.deepEqual(dataset.games[0].publishers, ['miHoYo']);
 });
 
 test('keeps a complete Chinese feature note translation cache', async () => {

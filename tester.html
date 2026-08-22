@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="在浏览器中测试 DualSense 与 DualSense Edge 的按键、摇杆、体感、自适应扳机和触觉震动">
+    <title>在线手柄测试器 · DualSense PC 游戏资料库</title>
+    <script>try{const dark=localStorage.getItem('dualsense-theme')==='dark';document.documentElement.dataset.theme=dark?'dark':'light';document.querySelector('meta[name="theme-color"]').content=dark?'#08121f':'#ffffff'}catch{document.documentElement.dataset.theme='light'}</script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="light.css">
+    <link rel="stylesheet" href="tester.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./"><span class="brand-mark">DS</span><span>DualSense<br><em>在线手柄测试器</em></span></a>
+        <div class="header-actions">
+          <a class="feedback-link" href="./" aria-label="返回游戏兼容性资料库">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16M10 6l-6 6 6 6"/></svg><span>兼容资料库</span>
+          </a>
+          <button id="theme-toggle" class="theme-toggle" type="button" aria-label="切换到黑夜模式" aria-pressed="false">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.4 15.4A8.5 8.5 0 0 1 8.6 3.6 8.5 8.5 0 1 0 20.4 15.4Z"/></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+            <span id="theme-label">黑夜模式</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="tester-main">
+      <section class="tester-hero">
+        <div>
+          <p class="eyebrow">DUALSENSE / DUALSENSE EDGE · WEBHID</p>
+          <h1>一页测完手柄的<br><span>输入与反馈</span></h1>
+          <p class="tester-lede">连接后实时查看按键、摇杆、扳机、触控板和六轴体感，并直接测试自适应扳机阻力与触觉震动。数据只在当前浏览器中处理，不会上传。</p>
+        </div>
+        <div class="connect-panel" aria-labelledby="connection-title">
+          <div class="connection-state"><span id="connection-dot" class="connection-dot" aria-hidden="true"></span><span id="connection-status" role="status" aria-live="polite">尚未连接</span></div>
+          <h2 id="connection-title">连接 DualSense</h2>
+          <p id="device-details">推荐使用 Chrome 或 Edge。首次连接时请选择“Wireless Controller”。</p>
+          <div class="connect-actions">
+            <button id="connect-button" class="primary-button" type="button">连接手柄</button>
+            <button id="disconnect-button" class="secondary-button" type="button" disabled>断开</button>
+          </div>
+          <p class="permission-note">浏览器安全规则要求首次授权必须由你点击按钮触发；授权后再次打开页面会尝试自动重连。</p>
+        </div>
+      </section>
+
+      <div id="compatibility-message" class="compatibility-message" role="alert" hidden></div>
+
+      <section class="tester-grid" aria-label="手柄测试面板">
+        <article class="test-card input-card">
+          <div class="card-heading"><div><p class="card-kicker">LIVE INPUT</p><h2>实时输入</h2></div><span id="report-rate" class="card-tag">0 Hz</span></div>
+          <div class="trigger-readouts">
+            <div><span><b>L2</b><output id="left-trigger-value">0%</output></span><div class="meter"><i id="left-trigger-meter"></i></div></div>
+            <div><span><b>R2</b><output id="right-trigger-value">0%</output></span><div class="meter"><i id="right-trigger-meter"></i></div></div>
+          </div>
+          <div class="stick-layout">
+            <div class="stick-readout"><div class="stick-plane"><span class="stick-axis horizontal"></span><span class="stick-axis vertical"></span><i id="left-stick-dot"></i></div><b>左摇杆 / L3</b><output id="left-stick-value">0.00, 0.00</output></div>
+            <div class="stick-readout"><div class="stick-plane"><span class="stick-axis horizontal"></span><span class="stick-axis vertical"></span><i id="right-stick-dot"></i></div><b>右摇杆 / R3</b><output id="right-stick-value">0.00, 0.00</output></div>
+          </div>
+          <div id="button-grid" class="button-grid" aria-label="按键状态"></div>
+        </article>
+
+        <article class="test-card telemetry-card">
+          <div class="card-heading"><div><p class="card-kicker">TELEMETRY</p><h2>体感与状态</h2></div><span id="link-type" class="card-tag">—</span></div>
+          <dl class="telemetry-list">
+            <div><dt>电量</dt><dd id="battery-value">—</dd></div>
+            <div><dt>陀螺仪 X / Y / Z</dt><dd id="gyro-value">0 / 0 / 0</dd></div>
+            <div><dt>加速度 X / Y / Z</dt><dd id="accelerometer-value">0 / 0 / 0</dd></div>
+            <div><dt>触控点 1</dt><dd id="touch-one-value">未触摸</dd></div>
+            <div><dt>触控点 2</dt><dd id="touch-two-value">未触摸</dd></div>
+          </dl>
+          <div class="motion-orb" aria-hidden="true"><div id="motion-core"><span>6 AXIS</span></div></div>
+        </article>
+
+        <article class="test-card output-card">
+          <div class="card-heading"><div><p class="card-kicker">HAPTIC PULSE</p><h2>触觉震动</h2></div><span class="card-tag">执行器测试</span></div>
+          <p class="card-copy">分别调整低频与高频分量，或播放短促测试模式。请先把强度调低再逐步增加。</p>
+          <label class="range-row" for="rumble-left"><span>低频分量 <output id="rumble-left-value">0</output></span><input id="rumble-left" type="range" min="0" max="255" value="0" disabled></label>
+          <label class="range-row" for="rumble-right"><span>高频分量 <output id="rumble-right-value">0</output></span><input id="rumble-right" type="range" min="0" max="255" value="0" disabled></label>
+          <div class="preset-grid">
+            <button type="button" data-rumble="pulse" disabled>短脉冲</button>
+            <button type="button" data-rumble="heartbeat" disabled>心跳</button>
+            <button type="button" data-rumble="texture" disabled>路面纹理</button>
+            <button type="button" data-rumble="stop" class="stop-button" disabled>停止</button>
+          </div>
+          <p class="technical-note">这里通过 HID 驱动 DualSense 触觉执行器，用于确认震动通道工作；它不是游戏经 USB 音频输出的完整高精度触觉波形。</p>
+        </article>
+
+        <article class="test-card adaptive-card">
+          <div class="card-heading"><div><p class="card-kicker">ADAPTIVE TRIGGERS</p><h2>自适应扳机</h2></div><span id="adaptive-state" class="card-tag">已关闭</span></div>
+          <p class="card-copy">选择作用扳机和效果后立即生效。测试时缓慢扣动扳机，不要在阻力点后强行按压。</p>
+          <fieldset class="side-picker" disabled>
+            <legend>作用位置</legend>
+            <label><input type="radio" name="trigger-side" value="left"> L2</label>
+            <label><input type="radio" name="trigger-side" value="right"> R2</label>
+            <label><input type="radio" name="trigger-side" value="both" checked> 两侧</label>
+          </fieldset>
+          <label class="range-row" for="trigger-position"><span>起始位置 <output id="trigger-position-value">3</output></span><input id="trigger-position" type="range" min="0" max="7" value="3" disabled></label>
+          <label class="range-row" for="trigger-strength"><span>阻力强度 <output id="trigger-strength-value">5</output></span><input id="trigger-strength" type="range" min="1" max="8" value="5" disabled></label>
+          <div class="preset-grid adaptive-presets">
+            <button type="button" data-trigger-effect="resistance" disabled>持续阻力</button>
+            <button type="button" data-trigger-effect="weapon" disabled>武器段落</button>
+            <button type="button" data-trigger-effect="vibration" disabled>扳机震动</button>
+            <button type="button" data-trigger-effect="bow" disabled>弓弦手感</button>
+            <button type="button" data-trigger-effect="off" class="stop-button" disabled>关闭扳机效果</button>
+          </div>
+        </article>
+      </section>
+
+      <aside class="tester-notes" aria-label="使用说明">
+        <div><span>01</span><h2>连接建议</h2></div>
+        <div class="tester-note-grid">
+          <article><h3>优先用数据线</h3><p>USB 连接最稳定，也更接近 PC 游戏调用 DualSense 增强功能时的使用环境。仅充电线无法传输手柄数据。</p></article>
+          <article><h3>关闭冲突程序</h3><p>若无法连接或反馈异常，先关闭正在占用手柄的游戏、Steam Input、DS4Windows、DSX 等程序，再刷新页面重试。</p></article>
+          <article><h3>浏览器限制</h3><p>WebHID 目前主要由 Chromium 浏览器提供。Firefox 和 Safari 无法使用本站的 DualSense 专用输出测试。</p></article>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="site-footer"><div><strong>DualSense 在线手柄测试器</strong><span>所有输入和反馈指令仅在本地浏览器中处理</span></div><div><a href="./">返回 PC 游戏资料库</a><span>支持 DualSense / DualSense Edge</span></div><p>本站是非官方工具，与 Sony 无隶属关系。协议实现参考 <a href="https://github.com/nondebug/dualsense" target="_blank" rel="noreferrer">nondebug/dualsense</a> 与 <a href="https://github.com/nikhil8182/dualsense-studio" target="_blank" rel="noreferrer">dualsense-studio</a>；测试后请点击“停止”或断开手柄。</p></footer>
+    <script type="module" src="tester.js"></script>
+  </body>
+</html>

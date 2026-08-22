@@ -18,7 +18,14 @@
 - 游戏名称链接到 Steam，另提供 PCGamingWiki 数据来源链接；
 - 桌面表格、移动卡片和分页；
 - 白天 / 黑夜模式，选择会保存在浏览器中；
+- 内置 DualSense / DualSense Edge 在线测试器，可通过 WebHID 查看按键、摇杆、扳机、触控板、六轴体感和电量，并测试自适应扳机与触觉震动；
 - 每周自动抓取、校验并部署最新数据。
+
+## 在线手柄测试器
+
+测试器位于 [`tester.html`](tester.html)，推荐使用桌面版 Chrome 或 Edge。首次连接需要点击“连接手柄”并在浏览器授权窗口中选择控制器；授权后页面会尝试自动重连。USB 与蓝牙均支持 HID 输入和反馈指令，但 USB 数据线通常更稳定。
+
+触觉震动面板用于验证 DualSense 执行器与兼容震动通道，不等同于游戏通过 USB 音频发送的完整高精度触觉波形。HID 报告格式参考 [nondebug/dualsense](https://github.com/nondebug/dualsense) 与 [dualsense-studio](https://github.com/nikhil8182/dualsense-studio)。
 
 ## 数据纠错与补充
 
@@ -70,6 +77,10 @@ npm run fetch
 ├── tests/                       # Node.js 测试
 ├── index.html
 ├── app.js
+├── tester.html                 # 在线手柄测试器
+├── tester.js                   # WebHID 连接与界面交互
+├── tester-lib.js               # DualSense HID 报告编解码
+├── tester.css                  # 测试器响应式样式
 ├── styles.css
 └── light.css                    # 主题与界面增强样式
 ```

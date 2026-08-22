@@ -21,6 +21,33 @@ export const QUERY_FIELDS = [
   'Input.Controller_haptic_feedback_hd'
 ].join(',');
 
+const EXPANDED_CARGO_FIELD_DEFINITIONS = [
+  ['Infobox_game._pageName', 'PcgwPage', 'Page'],
+  ['Infobox_game.Developers', 'PcgwDevelopers', 'Developers'],
+  ['Infobox_game.Publishers', 'PcgwPublishers', 'Publishers'],
+  ['Infobox_game.Cover_URL', 'PcgwCoverUrl', 'Cover URL'],
+  ['Infobox_game.Steam_AppID', 'PcgwSteamAppId', 'Steam AppID'],
+  ['Infobox_game.Released', 'PcgwReleased', 'Released'],
+  ['Infobox_game.Available_on', 'PcgwAvailableOn', 'Available on'],
+  ['Input.Playstation_controller_support', 'PcgwControllerSupport', 'Playstation controller support'],
+  ['Input.Playstation_prompts', 'PcgwPrompts', 'Playstation prompts'],
+  ['Input.Playstation_motion_sensors', 'PcgwMotionSensors', 'Playstation motion sensors'],
+  ['Input.Playstation_light_bar_support', 'PcgwLightBar', 'Playstation light bar support'],
+  ['Input.DualSense_adaptive_trigger_support', 'PcgwAdaptiveTriggers', 'DualSense adaptive trigger support'],
+  ['Input.DualSense_haptic_feedback_support', 'PcgwHapticFeedback', 'DualSense haptic feedback support'],
+  ['Input.PlayStation_controller_models', 'PcgwControllerModels', 'PlayStation controller models'],
+  ['Input.Playstation_connection_modes', 'PcgwConnectionModes', 'Playstation connection modes'],
+  ['Input.Controller_haptic_feedback_hd', 'PcgwHdHaptics', 'Controller haptic feedback hd']
+];
+
+export const EXPANDED_CARGO_QUERY_FIELDS = EXPANDED_CARGO_FIELD_DEFINITIONS
+  .map(([field, alias]) => `${field}=${alias}`)
+  .join(',');
+
+const EXPANDED_CARGO_FIELD_KEYS = new Map(
+  EXPANDED_CARGO_FIELD_DEFINITIONS.map(([, alias, key]) => [alias, key])
+);
+
 export const STATUS_LABELS = {
   true: '支持',
   limited: '有限支持',
@@ -317,6 +344,27 @@ export function attachAvailabilityStores(dataset, pageWikitext = {}) {
   for (const game of dataset.games) {
     const wikitext = pageWikitext[game.title.toLocaleLowerCase()] || '';
     game.stores = parseAvailabilityStores(wikitext, game.steamAppId);
+    if (!game.steamAppId) {
+      const steamUrl = game.stores.find((store) => store.name === 'Steam')?.url ?? '';
+      game.steamAppId = steamUrl.match(/\/app\/(\d+)/i)?.[1] ?? '';
+    }
+  }
+  return dataset;
+}
+
+export function parseInfoboxCompanies(wikitext, type) {
+  if (!['developer', 'publisher'].includes(type)) throw new Error(`不支持的公司类型：${type}`);
+  const pattern = new RegExp(`\\{\\{\\s*Infobox game/row/${type}\\s*\\|([^|{}]+)`, 'gi');
+  return [...new Set([...String(wikitext ?? '').matchAll(pattern)].map((match) => cleanCompany(match[1])).filter(Boolean))];
+}
+
+export function attachInfoboxCompanies(dataset, pageWikitext = {}) {
+  for (const game of dataset.games) {
+    const wikitext = pageWikitext[game.title.toLocaleLowerCase()] || '';
+    const developers = parseInfoboxCompanies(wikitext, 'developer');
+    const publishers = parseInfoboxCompanies(wikitext, 'publisher');
+    if (developers.length) game.developers = developers;
+    if (publishers.length) game.publishers = publishers;
   }
   return dataset;
 }
@@ -379,6 +427,49 @@ export function parseCargoResponse(json) {
     throw new Error(`PCGamingWiki API 响应无效：${json?.error?.info || '缺少 cargoquery'}`);
   }
   return json.cargoquery;
+}
+
+function decodeCargoCell(html) {
+  const withDelimiters = String(html ?? '')
+    .replace(/<span\b[^>]*class=["'][^"']*\bCargoDelimiter\b[^"']*["'][^>]*>[\s\S]*?<\/span>/gi, ';')
+    .replace(/<br\s*\/?\s*>/gi, ';');
+  return cleanText(withDelimiters)
+    .replace(/&#x([0-9a-f]+);/gi, (_, value) => String.fromCodePoint(Number.parseInt(value, 16)))
+    .replace(/&#(\d+);/g, (_, value) => String.fromCodePoint(Number.parseInt(value, 10)))
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&ndash;/gi, '–')
+    .replace(/&mdash;/gi, '—')
+    .replace(/&hellip;/gi, '…')
+    .replace(/\s*;\s*/g, ';')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function parseExpandedCargoTable(wikitext) {
+  const source = String(wikitext ?? '').trim();
+  if (!source) throw new Error('PCGamingWiki 页面解析响应为空');
+  if (/\bclass=["'][^"']*\berror\b/i.test(source)) {
+    throw new Error(`PCGamingWiki Cargo 页面解析失败：${decodeCargoCell(source)}`);
+  }
+  if (/^<em>\s*No results\s*<\/em>$/i.test(source) || /^No results$/i.test(decodeCargoCell(source))) return [];
+
+  const body = source.match(/<tbody\b[^>]*>([\s\S]*?)<\/tbody>/i)?.[1];
+  if (!body) throw new Error('PCGamingWiki 页面解析响应缺少 Cargo 表格');
+
+  const rows = [];
+  for (const rowMatch of body.matchAll(/<tr\b[^>]*>([\s\S]*?)<\/tr>/gi)) {
+    const item = {};
+    for (const cellMatch of rowMatch[1].matchAll(/<td\b([^>]*)>([\s\S]*?)<\/td>/gi)) {
+      const className = cellMatch[1].match(/\bclass=["']([^"']+)["']/i)?.[1] ?? '';
+      const alias = className.split(/\s+/).find((name) => name.startsWith('field_'))?.slice('field_'.length);
+      const key = EXPANDED_CARGO_FIELD_KEYS.get(alias);
+      if (key) item[key] = decodeCargoCell(cellMatch[2]) || null;
+    }
+    if (!item.Page) throw new Error('PCGamingWiki Cargo 表格存在缺少标题的记录');
+    rows.push({ title: item });
+  }
+  if (rows.length === 0) throw new Error('PCGamingWiki Cargo 表格没有可解析记录');
+  return rows;
 }
 
 export function mergeRecords(dualSenseRows, edgeRows, fetchedAt = new Date().toISOString(), translations = {}) {
