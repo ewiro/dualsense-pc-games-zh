@@ -21,6 +21,7 @@ const commonTranslations = {
   'DualSense': 'DualSense',
   'DualSense Edge': 'DualSense Edge',
   'DualShock 4': 'DualShock 4',
+  'DS4, DS': 'DS4、DS',
   'Genshin Impact': '原神',
   'GInput': 'GInput',
   'GTASense': 'GTASense',
@@ -35,11 +36,14 @@ const commonTranslations = {
   'this': '这个模组',
   'this mod': '这个模组',
   'Named Type B.': '名称为 B 型。',
+  'Labelled as Vibration. Options: Off, Low, Normal.': '标注为“震动”，可选关闭、低、正常。',
   'Modes: Off, Weak, Medium & Strong.': '可选关闭、弱、中、强四档。',
   'Switches colors depending on situation': '灯条会根据游戏情境切换颜色。',
   'React to start signal and flags.': '灯条会随起跑信号灯和赛道旗帜变化。',
   'React to start signals and flags.': '灯条会随起跑信号灯和赛道旗帜变化。',
-  'Haptics is wired only, use Force Rumble for regular rumble on wireless': '触觉反馈仅限有线连接；无线连接时可使用 Force Rumble 获得普通震动。'
+  'Haptics is wired only, use Force Rumble for regular rumble on wireless': '触觉反馈仅限有线连接；无线连接时可使用 Force Rumble 获得普通震动。',
+  'Master, Dialogue, Music, SFX, Controller Speaker, Ambient, Menu volume sliders. 100% default.': '提供主音量、对话、音乐、音效、手柄扬声器、环境音和菜单音量滑块，默认均为 100%。',
+  'Master, SFX, Music, Dialogue, Ambient, Interface and Controller Speaker volume sliders from 0 to 100.': '提供主音量、音效、音乐、对话、环境音、界面和手柄扬声器音量滑块，可在 0 到 100 之间调节。'
 };
 
 function sleep(milliseconds) {

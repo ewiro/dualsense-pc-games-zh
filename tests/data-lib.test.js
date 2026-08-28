@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
-import { applyGameOverrides, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
+import { EXPANDED_CARGO_QUERY_FIELDS, QUERY_FIELDS, applyGameOverrides, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
 import { readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
@@ -55,6 +55,13 @@ test('parses expanded Cargo tables into the legacy response shape', () => {
   assert.deepEqual(parseExpandedCargoTable('<em>No results</em>'), []);
   assert.throws(() => parseExpandedCargoTable('<div class="error">Permission denied</div>'), /Permission denied/);
   assert.throws(() => parseExpandedCargoTable('<table></table>'), /缺少 Cargo 表格/);
+});
+
+test('queries the current PCGamingWiki Game Cargo table', () => {
+  assert.match(QUERY_FIELDS, /^Game\._pageName=Page,/);
+  assert.match(EXPANDED_CARGO_QUERY_FIELDS, /^Game\._pageName=PcgwPage,/);
+  assert.doesNotMatch(QUERY_FIELDS, /Infobox_game/);
+  assert.doesNotMatch(EXPANDED_CARGO_QUERY_FIELDS, /Infobox_game/);
 });
 
 test('keeps only Steam and Epic direct product links', () => {

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-08-17T06:58:00.872Z",
+  "fetchedAt": "2026-08-28T01:59:38.203Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -30,9 +30,12 @@
         }
       ],
       "developers": [
+        "IO Interactive",
+        "Delphi Interactive"
+      ],
+      "publishers": [
         "IO Interactive"
       ],
-      "publishers": [],
       "releaseDates": [
         "2026-05-27"
       ],
@@ -50,12 +53,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "灯条会根据游戏情境切换颜色。",
@@ -105,12 +108,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -156,12 +159,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；添加在周年纪念更新中。",
@@ -205,12 +208,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "unknown",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
@@ -259,12 +262,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；添加到突破更新中。",
@@ -278,8 +281,12 @@
       "titleZh": "明日方舟：终末地",
       "source": "https://www.pcgamingwiki.com/wiki/Arknights%3A_Endfield",
       "coverUrl": "https://images.pcgamingwiki.com/3/30/Arknights_Endfield_cover.jpg",
-      "steamAppId": "",
+      "steamAppId": "4732690",
       "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4732690/"
+        },
         {
           "name": "Epic",
           "url": "https://store.epicgames.com/p/arknightsendfield-f0f167"
@@ -312,12 +319,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线、无线（蓝牙）",
@@ -375,12 +382,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -459,12 +466,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -526,12 +533,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -589,12 +596,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 和 DualSense 按键提示。",
@@ -639,12 +646,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "hackable",
       "motionSensors": "unknown",
       "lightBar": "hackable",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用内容管理器时，PlayStation 方向盘会显示正确的提示。",
@@ -731,12 +738,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；第 3 次游戏更新 中添加了陀螺仪瞄准功能。",
@@ -785,12 +792,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线、无线（蓝牙）",
@@ -842,12 +849,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；需要在步兵/乘客控制映射部分将体感倾斜绑定到向上/向下/向左/向右查找，但在此过程中您将无法访问传统的操纵杆摄像机运动。",
@@ -894,12 +901,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "仅限有线连接。",
@@ -943,12 +950,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "称为 A 型按键图标。",
@@ -994,12 +1001,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "名称为 B 型。",
@@ -1047,12 +1054,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线",
@@ -1099,12 +1106,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "使用越野球时会发出粉红色的光。",
@@ -1150,12 +1157,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -1209,12 +1216,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；标记为体感功能行为（在控制器 > 控制器下）。可以在体感功能行为菜单（控制器 > 瞄准下）中进行各种调整。",
@@ -1267,12 +1274,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -1321,15 +1328,73 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "call-of-duty-modern-warfare-4",
+      "title": "Call of Duty: Modern Warfare 4",
+      "titleZh": "Call of Duty: Modern Warfare 4",
+      "source": "https://www.pcgamingwiki.com/wiki/Call_of_Duty%3A_Modern_Warfare_4",
+      "coverUrl": "https://images.pcgamingwiki.com/5/52/Call_of_Duty_Modern_Warfare_4_cover.jpg",
+      "steamAppId": "4435490",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4435490/"
+        }
+      ],
+      "developers": [
+        "Infinity Ward",
+        "Raven Software",
+        "High Moon Studios",
+        "Treyarch",
+        "Activision Shanghai",
+        "Sledgehammer Games",
+        "Demonware",
+        "Beenox"
+      ],
+      "publishers": [
+        "Activision"
+      ],
+      "releaseDates": [
+        "2026-10-23"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true",
+        "DualSense Edge": "true"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）",
+        "hapticFeedback": "仅限有线连接。"
       },
       "featureNoteLinks": {}
     },
@@ -1377,12 +1442,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -1437,12 +1502,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；标记为体感功能行为（在控制器 > 控制器下）。可以在体感功能行为菜单（控制器 > 瞄准下）中进行各种调整。",
@@ -1484,21 +1549,23 @@
         "Windows"
       ],
       "modelStatuses": {
-        "DualSense": "true"
+        "DualSense": "true",
+        "DualSense Edge": "true"
       },
       "models": [
-        "DualSense"
+        "DualSense",
+        "DualSense Edge"
       ],
       "controllerSupport": "true",
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -1546,12 +1613,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。游戏 UI 的某些部分仍然显示 Xbox 提示。",
@@ -1594,12 +1661,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {
@@ -1650,12 +1717,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "仅 Xbox 提示。在 Steam 版本上：DualSense 按键提示仅在启用 Steam Input时可用。",
@@ -1709,12 +1776,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "1.04版本中添加了自适应扳机支持。",
@@ -1764,12 +1831,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）；灵敏度滑块从 0 到 1。",
@@ -1813,12 +1880,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线、无线",
@@ -1871,12 +1938,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -1919,12 +1986,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "例如，在水面上关闭，潜水时呈蓝色，缺氧时呈红色，使用紫外线时呈紫色。",
@@ -1973,12 +2040,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "false",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "false",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 4 和 DualSense 按键提示",
@@ -2037,12 +2104,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：手势、镜头控制"
@@ -2093,12 +2160,12 @@
       "connectionModes": [
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 图标均可用。",
@@ -2148,12 +2215,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；Goldenloop 更新中添加了陀螺仪瞄准。",
@@ -2198,12 +2265,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -2244,12 +2311,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "false",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "游戏确实会显示 DualShock 4 提示，但仅限于连接了 PlayStation 兼容赛车方向盘时。 （请参阅控制器支持）",
@@ -2305,12 +2372,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -2356,12 +2423,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "always on",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "always on",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "使用 DualSense 控制器时默认启用，且无法禁用。",
@@ -2411,12 +2478,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -2467,12 +2534,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "仅限 Windows。必须禁用任何第三方控制器解决方案。 DualSense 修改扩展了灯条支持",
@@ -2525,12 +2592,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -2580,12 +2647,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -2646,12 +2713,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
@@ -2701,12 +2768,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示",
@@ -2763,12 +2830,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -2811,12 +2878,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "灯条会随起跑信号灯和赛道旗帜变化。",
@@ -2866,12 +2933,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "hackable",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 按键提示。",
@@ -2922,12 +2989,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "hackable",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "基于 DualShock 4 的按钮。",
@@ -2978,12 +3045,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "hackable",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "hackable",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 按键提示。",
@@ -3034,12 +3101,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 按键提示。",
@@ -3047,53 +3114,6 @@
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
       },
-      "featureNoteLinks": {}
-    },
-    {
-      "id": "fantasian-neo-dimension",
-      "title": "Fantasian Neo Dimension",
-      "titleZh": "幻想新维度",
-      "source": "https://www.pcgamingwiki.com/wiki/Fantasian_Neo_Dimension",
-      "coverUrl": "https://images.pcgamingwiki.com/1/10/FantasianNeoDimensionCover.jpg",
-      "steamAppId": "2844850",
-      "stores": [
-        {
-          "name": "Steam",
-          "url": "https://store.steampowered.com/app/2844850/"
-        }
-      ],
-      "developers": [
-        "Mistwalker Corporation",
-        "Square Enix Creative Studio III"
-      ],
-      "publishers": [
-        "Square Enix"
-      ],
-      "releaseDates": [
-        "2024-12-05"
-      ],
-      "platforms": [
-        "Windows"
-      ],
-      "modelStatuses": {
-        "DualSense": "true"
-      },
-      "models": [
-        "DualSense"
-      ],
-      "controllerSupport": "true",
-      "connectionModes": [
-        "Wired",
-        "Wireless (Bluetooth)"
-      ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
-      "playstationPrompts": "true",
-      "motionSensors": "false",
-      "lightBar": "unknown",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {},
       "featureNoteLinks": {}
     },
     {
@@ -3146,12 +3166,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -3201,12 +3221,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -3254,12 +3274,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "motionSensors": "模式：手势、镜头控制；标记为体感功能。用于一些小游戏。可用打开或关闭切换。",
@@ -3314,12 +3334,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "limited",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 和 DualSense 按键提示。使用此 mod (DualShock 4) 或此 mod (DualSense) 强制发出 DualShock 4 或 DualSense 按键提示，无论使用哪个控制器或包装器。",
@@ -3381,12 +3401,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 3、DualShock 4 和 DualSense 按键提示。可在系统配置 -> 控制器下选择。从补丁 7.5 开始，这些选项分别标记为“×○□△（类型 1）”、“×○□△ + 触摸板（类型 2）”和“×○□△ + 触摸板（类型 3）”",
@@ -3438,12 +3458,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示",
@@ -3495,12 +3515,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 和 DualSense 按键提示。",
@@ -3545,12 +3565,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -3594,12 +3614,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "limited",
-      "hapticFeedback": "hackable",
-      "hdHapticFeedback": "hackable",
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "false",
+      "adaptiveTriggers": "limited",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "hackable",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；从4.0版本开始增加了陀螺仪瞄准功能。不支持 DualSense Edge。",
@@ -3650,12 +3670,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "motionSensors": "模式：手势；在壹岐的岛屿扩张期间：长笛迷你游戏使用控制器的体感功能来调整长笛光标的音高。",
@@ -3732,12 +3752,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "按键图标类型 > 类型 2。",
@@ -3787,12 +3807,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 按键提示。",
@@ -3856,12 +3876,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -3913,12 +3933,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "false",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示。",
@@ -3972,12 +3992,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "hackable",
       "motionSensors": "hackable",
       "lightBar": "hackable",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用通用按键提示。 PlayStation 提示可以与 GInput 一起使用。",
@@ -4043,12 +4063,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "hackable",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "可以使用 DualSense 按键提示 mod 添加。",
@@ -4100,12 +4120,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "hackable",
       "lightBar": "unknown",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；请参阅仓促控制。",
@@ -4167,12 +4187,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "用于音乐、语音、环境、音效和控制器扬声器的滑块。"
@@ -4217,12 +4237,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -4270,12 +4290,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；支持陀螺仪瞄准功能（作为体感瞄准，可以在“选项”>“控制器”下找到）。",
@@ -4326,12 +4346,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "称为手柄按键图标类型 B。默认选择类型 A（Xbox 按键图标），必须通过选项 > 辅助功能 > 用户界面 > 手柄按键图标进行更改",
@@ -4383,12 +4403,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。"
@@ -4444,12 +4464,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense",
@@ -4510,12 +4530,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -4570,12 +4590,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示。",
@@ -4640,62 +4660,14 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "false",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "false",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
-      "featureNoteLinks": {}
-    },
-    {
-      "id": "jak-ii-opengoal",
-      "title": "Jak II (OpenGOAL)",
-      "titleZh": "杰克 II (OpenGOAL)",
-      "source": "https://www.pcgamingwiki.com/wiki/Jak_II_(OpenGOAL)",
-      "coverUrl": "https://images.pcgamingwiki.com/6/61/Jak_II_cover.jpg",
-      "steamAppId": "",
-      "stores": [],
-      "developers": [
-        "Naughty Dog"
-      ],
-      "publishers": [
-        "Sony Computer Entertainment"
-      ],
-      "releaseDates": [
-        "2023-11-02"
-      ],
-      "platforms": [
-        "Windows",
-        "OS X",
-        "Linux"
-      ],
-      "modelStatuses": {
-        "DualSense": "true",
-        "DualSense Edge": "true"
-      },
-      "models": [
-        "DualSense",
-        "DualSense Edge"
-      ],
-      "controllerSupport": "true",
-      "connectionModes": [
-        "Wired",
-        "Wireless (Bluetooth)"
-      ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
-      "playstationPrompts": "true",
-      "motionSensors": "false",
-      "lightBar": "true",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {
-        "lightBar": "灯条颜色根据游戏内事件而变化，例如变成黑暗贾克斯、每支枪的颜色、生命值等。",
-        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；触发游戏内事件，例如射击效果和抵抗，同时变为黑暗贾克斯。"
-      },
       "featureNoteLinks": {}
     },
     {
@@ -4734,12 +4706,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -4784,12 +4756,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -4831,12 +4803,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "hapticFeedback": "如果通过蓝牙连接或在游戏开始后连接控制器，则会恢复到普通震动。",
@@ -4882,12 +4854,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 上的 DualSense 按键提示",
@@ -4937,12 +4909,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。有关使用 DualShock 4 时显示 DualSense 按键提示的信息，请参阅强制 PS5 按键提示。",
@@ -4999,12 +4971,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "limited",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示",
@@ -5053,12 +5025,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "false",
       "playstationPrompts": "false",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "false",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -5096,12 +5068,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "颜色根据游戏状态而变化（菜单中为灰色，比赛中健康状况良好，盾牌耗尽时变为红色）。",
@@ -5150,12 +5122,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "limited",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示。如果使用 DualShock 4：它将使用 Xbox 提示。",
@@ -5207,12 +5179,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示列为类型 2 提示。",
@@ -5260,12 +5232,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；支持陀螺仪瞄准。",
@@ -5315,12 +5287,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自 v.2.512.0.0 起添加了本机蓝牙支持和 Steam Input支持。",
@@ -5378,12 +5350,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；自 v.2.516.0.0 起添加了本机蓝牙支持和 Steam Input支持。",
@@ -5435,12 +5407,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -5488,12 +5460,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "对于 DualSense 以外的控制器，请使用它来强制发出正确的提示。",
@@ -5547,12 +5519,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 4 和 Dualsense 提示。",
@@ -5602,12 +5574,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -5630,8 +5602,7 @@
         }
       ],
       "developers": [
-        "Beethoven &amp",
-        "Dinosaur"
+        "Beethoven & Dinosaur"
       ],
       "publishers": [
         "Annapurna Interactive"
@@ -5653,12 +5624,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -5699,12 +5670,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "“类型 3”(DualSense) 和“类型 4”(DualShock 4) 可以通过选项 > 控件下的“手柄按键图标”进行选择。",
@@ -5769,12 +5740,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "开枪时。",
@@ -5818,12 +5789,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "遵循主要场景颜色。"
@@ -5878,12 +5849,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "游戏自动切换提示。",
@@ -5932,12 +5903,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。由于一些奇怪的原因，在使用 DualShock 4 时，它总是通过蓝牙显示 Xbox 按键提示。",
@@ -5987,12 +5958,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "在振动设置下标记为沉浸式。"
@@ -6037,12 +6008,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Steam 版本需要 Steam Input API 才能使用自适应扳机。",
@@ -6092,12 +6063,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "limited",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用 DualShock 4 控制器以及在游戏中时：它将仅使用 Xbox 提示。",
@@ -6138,12 +6109,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -6190,12 +6161,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
@@ -6239,12 +6210,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -6282,12 +6253,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "unknown",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "例如标题画面上的灯条为白色，游戏中为蓝色，Game Over 时为红色，收到“阿姨的帮助”时为粉红色。"
@@ -6330,12 +6301,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "作为 B 型（DualSense 按键提示）",
@@ -6392,12 +6363,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -6442,12 +6413,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "始终显示白色 DualSense 的提示",
@@ -6497,12 +6468,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "limited",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "limited",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线；除了原生支持之外，Steam 版本还具有使用 Steam Input的自适应扳机支持。",
@@ -6562,12 +6533,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "仅 DualSense 按键提示。 DualShock 4 控制器将改为使用 Xbox 提示。",
@@ -6616,12 +6587,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "“B 型”（仅限 DualSense）可通过选项 > 控件下的“手柄按键图标”进行选择。",
@@ -6629,6 +6600,60 @@
         "lightBar": "添加于 2026 年 5 月 8 日发布的更新中。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；添加于 2026 年 5 月 8 日发布的更新中。",
         "hapticFeedback": "添加于 2026 年 5 月 8 日发布的更新中。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "resonance-a-plague-tale-legacy",
+      "title": "Resonance: A Plague Tale Legacy",
+      "titleZh": "Resonance: A Plague Tale Legacy",
+      "source": "https://www.pcgamingwiki.com/wiki/Resonance%3A_A_Plague_Tale_Legacy",
+      "coverUrl": "https://images.pcgamingwiki.com/3/3d/Resonance_A_Plague_Tale_Legacy_cover.jpg",
+      "steamAppId": "2713000",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2713000/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/resonance-a-plague-tale-legacy-d3f169"
+        }
+      ],
+      "developers": [
+        "Asobo Studio"
+      ],
+      "publishers": [
+        "Focus Entertainment"
+      ],
+      "releaseDates": [
+        "2026-08-27"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "playstationPrompts": "DS4、DS",
+        "hapticFeedback": "标注为“震动”，可选关闭、低、正常。",
+        "controllerSpeaker": "提供主音量、对话、音乐、音效、手柄扬声器、环境音和菜单音量滑块，默认均为 100%。"
       },
       "featureNoteLinks": {}
     },
@@ -6674,12 +6699,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -6725,12 +6750,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualSense 按键提示。",
@@ -6773,12 +6798,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -6820,12 +6845,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -6875,12 +6900,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "hackable",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "使用 Aurora 添加 DS4 灯条支持。",
@@ -6947,12 +6972,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -6995,12 +7020,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -7040,12 +7065,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -7085,12 +7110,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "SFX、音乐、控制器扬声器。"
@@ -7136,12 +7161,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：手势；仅限有线连接。玩家角色可以倾斜/移动他们的头部/躯干。 [倾斜平台] 部分可以在游戏中禁用。",
@@ -7187,12 +7212,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。",
@@ -7247,12 +7272,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualShock 4 和 DualSense 按键提示",
@@ -7315,12 +7340,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -7362,12 +7387,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -7411,12 +7436,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "always on",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "hackable",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "always on",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用这个模组。",
@@ -7470,12 +7495,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -7524,12 +7549,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "在设置中标记为类型 B。",
@@ -7578,76 +7603,15 @@
       "connectionModes": [
         "Wired"
       ],
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
       "hdHapticFeedback": "unknown",
-      "playstationPrompts": "true",
-      "motionSensors": "unknown",
-      "lightBar": "false",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "hapticFeedback": "仅限有线连接。将恢复为蓝牙上的普通震动。"
-      },
-      "featureNoteLinks": {}
-    },
-    {
-      "id": "skull-and-bones",
-      "title": "Skull and Bones",
-      "titleZh": "碧海黑帆",
-      "source": "https://www.pcgamingwiki.com/wiki/Skull_and_Bones",
-      "coverUrl": "https://images.pcgamingwiki.com/d/dc/Skull_%26_Bones_cover.jpg",
-      "steamAppId": "2853730",
-      "stores": [
-        {
-          "name": "Steam",
-          "url": "https://store.steampowered.com/app/2853730/"
-        },
-        {
-          "name": "Epic",
-          "url": "https://store.epicgames.com/p/skull-and-bones"
-        }
-      ],
-      "developers": [
-        "Ubisoft Singapore",
-        "Ubisoft Berlin",
-        "Ubisoft Chengdu",
-        "Ubisoft Kyiv",
-        "Ubisoft Paris",
-        "Ubisoft Philippines",
-        "Mi'pu'mi Games"
-      ],
-      "publishers": [
-        "Ubisoft"
-      ],
-      "releaseDates": [
-        "2024-02-16"
-      ],
-      "platforms": [
-        "Windows"
-      ],
-      "modelStatuses": {
-        "DualSense": "true",
-        "DualSense Edge": "true"
-      },
-      "models": [
-        "DualSense",
-        "DualSense Edge"
-      ],
-      "controllerSupport": "true",
-      "connectionModes": [
-        "Wired",
-        "Wireless (Bluetooth)"
-      ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
-      "playstationPrompts": "true",
-      "motionSensors": "unknown",
-      "lightBar": "false",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {
-        "adaptiveTriggers": "通过蓝牙工作。可以通过“设置”菜单中“控制器”选项卡中的“触发强度”滑块进行调整。",
-        "hapticFeedback": "仅限有线连接。将无法恢复到蓝牙上的普通震动。"
       },
       "featureNoteLinks": {}
     },
@@ -7687,12 +7651,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "unknown",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "controllerSpeaker": "主要、音效、音乐、对话、用户界面和控制器扬声器的滑块。"
@@ -7741,12 +7705,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "limited",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4（类型 1）和 DualSense（类型 2）提示可用。正面按键将使用通用面部按键提示，但肩键和扳机键将使用 PlayStation 特定的提示。",
@@ -7799,12 +7763,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "需要在选项菜单中启用",
@@ -7852,12 +7816,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。",
@@ -7921,12 +7885,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制",
@@ -7977,12 +7941,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "true",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -8033,70 +7997,16 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualSense",
         "lightBar": "DualShock 4 上为蓝色，DualSense 上未使用。"
-      },
-      "featureNoteLinks": {}
-    },
-    {
-      "id": "stray",
-      "title": "Stray",
-      "titleZh": "迷失",
-      "source": "https://www.pcgamingwiki.com/wiki/Stray",
-      "coverUrl": "https://images.pcgamingwiki.com/a/ae/Stray_cover.jpg",
-      "steamAppId": "1332010",
-      "stores": [
-        {
-          "name": "Steam",
-          "url": "https://store.steampowered.com/app/1332010/"
-        },
-        {
-          "name": "Epic",
-          "url": "https://store.epicgames.com/p/stray-42d658"
-        }
-      ],
-      "developers": [
-        "BlueTwelve Studio"
-      ],
-      "publishers": [
-        "Annapurna Interactive"
-      ],
-      "releaseDates": [
-        "2022-07-19",
-        "2023-12-05"
-      ],
-      "platforms": [
-        "Windows",
-        "OS X"
-      ],
-      "modelStatuses": {
-        "DualSense": "true"
-      },
-      "models": [
-        "DualSense"
-      ],
-      "controllerSupport": "true",
-      "connectionModes": [
-        "Wired"
-      ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
-      "playstationPrompts": "limited",
-      "motionSensors": "false",
-      "lightBar": "true",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {
-        "playstationPrompts": "DualShock 4 和 Dualsense 需要激活 Steam Input。",
-        "lightBar": "DualShock 4 上为静态蓝色，DualSense 上未使用"
       },
       "featureNoteLinks": {}
     },
@@ -8139,12 +8049,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -8189,12 +8099,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -8239,12 +8149,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "unknown",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "支持 DualSense 灯条，Dualshock 4 未测试。",
@@ -8292,12 +8202,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "unknown",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制"
@@ -8340,12 +8250,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "有线连接。",
@@ -8389,12 +8299,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "使用 DualSense 按键提示。需要禁用 Steam Input并通过 USB 插入。使用此模组可以强制使用彩色 DualSense 按键提示"
@@ -8448,12 +8358,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense 按键提示。"
@@ -8495,12 +8405,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -8548,12 +8458,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -8601,12 +8511,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "需要在 Steam 版本上禁用 Steam Input。",
@@ -8649,12 +8559,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
@@ -8698,12 +8608,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
@@ -8754,12 +8664,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制、手势；可以禁用某些手势操作（例如手电筒摇动）。要在使用陀螺仪瞄准时禁用横滚轴或调整轴灵敏度乘数，请参阅禁用陀螺仪横滚输入。",
@@ -8816,12 +8726,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：手势、镜头控制"
@@ -8869,15 +8779,65 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "the-sinking-city-2",
+      "title": "The Sinking City 2",
+      "titleZh": "The Sinking City 2",
+      "source": "https://www.pcgamingwiki.com/wiki/The_Sinking_City_2",
+      "coverUrl": "https://images.pcgamingwiki.com/6/6c/The_Sinking_City_2_cover.jpg",
+      "steamAppId": "2825860",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2825860/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/the-sinking-city-2-72d2fd"
+        }
+      ],
+      "developers": [
+        "Frogwares"
+      ],
+      "publishers": [],
+      "releaseDates": [
+        "2026-08-18"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "controllerSpeaker": "提供主音量、音效、音乐、对话、环境音、界面和手柄扬声器音量滑块，可在 0 到 100 之间调节。"
       },
       "featureNoteLinks": {}
     },
@@ -8922,12 +8882,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "主菜单为蓝色，游戏玩法为绿色，游戏结束为红色。",
@@ -8974,12 +8934,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -9028,12 +8988,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "DualShock 4 和 DualSense 按键提示。",
@@ -9087,12 +9047,12 @@
       ],
       "controllerSupport": "limited",
       "connectionModes": [],
-      "adaptiveTriggers": "hackable",
-      "hapticFeedback": "hackable",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "hackable",
       "motionSensors": "unknown",
       "lightBar": "hackable",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "将此 mod 用于 DirectX 11。将此 mod 用于 DirectX 9。",
@@ -9161,21 +9121,21 @@
         "Windows"
       ],
       "modelStatuses": {
-        "DualSense": "limited"
+        "DualSense": "true"
       },
       "models": [
         "DualSense"
       ],
-      "controllerSupport": "limited",
+      "controllerSupport": "true",
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -9220,12 +9180,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -9271,12 +9231,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "标准蓝色，仅限 DualShock 4",
@@ -9328,12 +9288,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "motionSensors": "模式：手势；运动控制主要用于“不要移动”QTE 机制，但可以替换为替代 QTE 机制（保持冷静）或启用自动完成“不要移动/保持冷静 QTE”。",
@@ -9377,12 +9337,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
@@ -9425,12 +9385,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "静态蓝"
@@ -9482,12 +9442,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "当设置为“自动检测”时，当 DualShock 4、DualSense 或 DualSense Edge 通过 USB 本机连接以及通过启用 Steam Input的蓝牙连接时，它将自动切换到 DualShock 4 提示。",
@@ -9537,12 +9497,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）"
@@ -9585,12 +9545,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "true",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "瞄准弓时使用。",
@@ -9636,12 +9596,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -9685,12 +9645,12 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）"
@@ -9732,12 +9692,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "禁用steaminput并删除uwp文件夹",
@@ -9788,12 +9748,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "根据游戏内设置：“请注意，此功能仅在游戏的某些部分可用。”"
@@ -9835,12 +9795,12 @@
       "connectionModes": [
         "Wired"
       ],
-      "adaptiveTriggers": "false",
-      "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
       "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "false",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {},
       "featureNoteLinks": {}
@@ -9882,12 +9842,12 @@
       "connectionModes": [
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
-      "hdHapticFeedback": "false",
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "false",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "支持 DualSense（类型 2）和 DualShock 4（类型 3）按键提示。",
@@ -9939,12 +9899,12 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "hackable",
-      "hdHapticFeedback": "hackable",
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "hackable",
       "controllerSpeaker": "limited",
       "featureNotes": {
         "playstationPrompts": "DualShock 和 DualSense 按键提示。 （取决于控制器）",

@@ -3,13 +3,13 @@ export const SOURCE_PAGE = 'https://www.pcgamingwiki.com/wiki/List_of_games_that
 export const DEFAULT_REPOSITORY_URL = 'https://github.com/ewiro/dualsense-pc-games-zh';
 
 export const QUERY_FIELDS = [
-  'Infobox_game._pageName=Page',
-  'Infobox_game.Developers',
-  'Infobox_game.Publishers',
-  'Infobox_game.Cover_URL',
-  'Infobox_game.Steam_AppID',
-  'Infobox_game.Released',
-  'Infobox_game.Available_on',
+  'Game._pageName=Page',
+  'Game.Developers',
+  'Game.Publishers',
+  'Game.Cover_URL',
+  'Game.Steam_AppID',
+  'Game.Released',
+  'Game.Available_on',
   'Input.Playstation_controller_support',
   'Input.Playstation_prompts',
   'Input.Playstation_motion_sensors',
@@ -22,13 +22,13 @@ export const QUERY_FIELDS = [
 ].join(',');
 
 const EXPANDED_CARGO_FIELD_DEFINITIONS = [
-  ['Infobox_game._pageName', 'PcgwPage', 'Page'],
-  ['Infobox_game.Developers', 'PcgwDevelopers', 'Developers'],
-  ['Infobox_game.Publishers', 'PcgwPublishers', 'Publishers'],
-  ['Infobox_game.Cover_URL', 'PcgwCoverUrl', 'Cover URL'],
-  ['Infobox_game.Steam_AppID', 'PcgwSteamAppId', 'Steam AppID'],
-  ['Infobox_game.Released', 'PcgwReleased', 'Released'],
-  ['Infobox_game.Available_on', 'PcgwAvailableOn', 'Available on'],
+  ['Game._pageName', 'PcgwPage', 'Page'],
+  ['Game.Developers', 'PcgwDevelopers', 'Developers'],
+  ['Game.Publishers', 'PcgwPublishers', 'Publishers'],
+  ['Game.Cover_URL', 'PcgwCoverUrl', 'Cover URL'],
+  ['Game.Steam_AppID', 'PcgwSteamAppId', 'Steam AppID'],
+  ['Game.Released', 'PcgwReleased', 'Released'],
+  ['Game.Available_on', 'PcgwAvailableOn', 'Available on'],
   ['Input.Playstation_controller_support', 'PcgwControllerSupport', 'Playstation controller support'],
   ['Input.Playstation_prompts', 'PcgwPrompts', 'Playstation prompts'],
   ['Input.Playstation_motion_sensors', 'PcgwMotionSensors', 'Playstation motion sensors'],

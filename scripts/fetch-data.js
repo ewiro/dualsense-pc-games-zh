@@ -45,11 +45,11 @@ async function requestJson(params) {
 
 async function queryPage(model, offset) {
   const cargoQuery = `{{#cargo_query:\n` +
-    `tables=Infobox_game,Input\n` +
-    `|join on=Infobox_game._pageID=Input._pageID\n` +
+    `tables=Game,Input\n` +
+    `|join on=Game._pageID=Input._pageID\n` +
     `|fields=${EXPANDED_CARGO_QUERY_FIELDS}\n` +
     `|where=Input.PlayStation_controller_models HOLDS '${model}'\n` +
-    `|order by=Infobox_game._pageName\n` +
+    `|order by=Game._pageName\n` +
     `|limit=${cargoPageSize}\n` +
     `|offset=${offset}\n` +
     `|format=table\n` +
