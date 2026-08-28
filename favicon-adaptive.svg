@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <style>
+    svg { color: #0f766e; }
+    @media (prefers-color-scheme: dark) { svg { color: #68e0d1; } }
+  </style>
+  <rect x="4" y="4" width="56" height="56" rx="14" fill="none" stroke="currentColor" stroke-width="4"/>
+  <text x="32" y="40" fill="currentColor" font-family="Segoe UI, Arial, sans-serif" font-size="25" font-weight="700" text-anchor="middle">DS</text>
+</svg>
