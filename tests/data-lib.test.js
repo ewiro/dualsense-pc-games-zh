@@ -2,7 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import { EXPANDED_CARGO_QUERY_FIELDS, QUERY_FIELDS, applyGameOverrides, attachAvailabilityStores, attachInfoboxCompanies, attachInputFeatures, cleanCompanies, cleanSteamAppId, cleanText, cleanWikiNote, detectControllerSpeakerSupport, extractWikiNoteLinks, hasEnhancedDualSenseFeature, mergeRecords, normalizeStatus, parseAvailabilityStores, parseCargoResponse, parseExpandedCargoTable, parseInfoboxCompanies, parseInputFeatures, splitValues, validateDataset } from '../scripts/data-lib.js';
-import { readNoteTranslations } from '../scripts/note-translations.js';
+import { formatUntranslatedNote, readNoteTranslations } from '../scripts/note-translations.js';
 
 const dualSenseFixture = [
   { title: { Page: 'Alpha Game', Developers: 'Company:Alpha_Studio, Company:Second', Publishers: 'Company:Publisher', 'Cover URL': 'https://example.com/alpha.jpg', 'Steam AppID': '12345,67890', Released: '2020-01-02;2021-03-04', 'Available on': 'Windows,Linux', 'Playstation controller support': 'true', 'DualSense adaptive trigger support': 'limited', 'DualSense haptic feedback support': 'true', 'PlayStation controller models': 'DualSense,DualSense Edge', 'Playstation connection modes': 'Wired,Wireless (Bluetooth),Wireless (USB)', 'Controller haptic feedback hd': 'unknown' } },
@@ -103,6 +103,8 @@ test('keeps a complete Chinese feature note translation cache', async () => {
   assert.ok(Object.values(translations).every((note) => typeof note === 'string' && note.trim()));
   assert.match(translations['Use this mod.'], /[\u3400-\u9fff]/u);
   assert.equal(translations['DualSense Edge'], 'DualSense Edge');
+  assert.equal(translations['Working when using Grapnel in combat.'], '战斗中使用抓钩时生效。');
+  assert.equal(formatUntranslatedNote('New note.'), '英文原文：New note.');
 });
 
 test('parses PlayStation features and explicit controller speaker evidence', () => {

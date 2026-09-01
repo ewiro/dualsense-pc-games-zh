@@ -212,6 +212,7 @@
   "Wired only. Will fall back to regular rumble if either connected via Bluetooth or enable Steam Input.": "仅限有线连接。如果通过蓝牙连接或启用 Steam Input，则会恢复到普通震动。",
   "Wired only. Will fall back to regular rumble on Bluetooth.": "仅限有线连接。将恢复为蓝牙上的普通震动。",
   "Work over Bluetooth. Can be adjusted via the Trigger Intensity slider within the Controller tab in the Settings menu.": "通过蓝牙工作。可以通过“设置”菜单中“控制器”选项卡中的“触发强度”滑块进行调整。",
+  "Working when using Grapnel in combat.": "战斗中使用抓钩时生效。",
   "Xbox prompts only. on the Steam version: DualSense prompts is only available when Steam Input is enabled.": "仅 Xbox 提示。在 Steam 版本上：DualSense 按键提示仅在启用 Steam Input时可用。",
   "Сolor changes depending on the situation.": "颜色根据情况而变化。",
   "模式：手势、镜头控制": "模式：手势、镜头控制",

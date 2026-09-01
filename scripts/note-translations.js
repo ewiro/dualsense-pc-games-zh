@@ -102,6 +102,10 @@ async function translateNote(note) {
   return translateEnglish(note);
 }
 
+export function formatUntranslatedNote(note) {
+  return `英文原文：${note}`;
+}
+
 export async function readNoteTranslations() {
   try {
     const cached = JSON.parse(await readFile(cachePath, 'utf8'));
@@ -122,6 +126,7 @@ export async function updateNoteTranslations(pageWikitext) {
   const missingNotes = notes.filter((note) => !translations[note]);
   const missingLabels = linkLabels.filter((label) => !translations[label] && !missingNotes.includes(label));
   const missing = [...missingNotes, ...missingLabels];
+  const fallbackSources = new Set();
   if (missing.length) {
     let cursor = 0;
     const workers = Array.from({ length: Math.min(4, missing.length) }, async () => {
@@ -130,16 +135,22 @@ export async function updateNoteTranslations(pageWikitext) {
         cursor += 1;
         try {
           translations[note] = await translateNote(note);
-        } catch (error) {
-          if (!missingLabels.includes(note)) throw error;
-          translations[note] = note;
+        } catch {
+          if (missingLabels.includes(note)) {
+            translations[note] = note;
+          } else {
+            translations[note] = formatUntranslatedNote(note);
+            fallbackSources.add(note);
+            console.warn(`功能说明翻译暂不可用，保留标注原文：${note.slice(0, 80)}`);
+          }
         }
       }
     });
     await Promise.all(workers);
   }
   const sorted = Object.fromEntries(Object.entries(translations).sort(([a], [b]) => a.localeCompare(b, 'en')));
-  await writeFile(cachePath, `${JSON.stringify(sorted, null, 2)}\n`, 'utf8');
-  if (missing.length) console.log(`已新增 ${missing.length} 条中文功能说明`);
+  const cache = Object.fromEntries(Object.entries(sorted).filter(([source]) => !fallbackSources.has(source)));
+  await writeFile(cachePath, `${JSON.stringify(cache, null, 2)}\n`, 'utf8');
+  if (missing.length) console.log(`已处理 ${missing.length} 条功能说明或链接标签`);
   return sorted;
 }

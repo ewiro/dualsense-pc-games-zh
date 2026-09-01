@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-08-28T02:03:32.304Z",
+  "fetchedAt": "2026-09-01T23:48:53.672Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -3117,6 +3117,53 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "fantasian-neo-dimension",
+      "title": "Fantasian Neo Dimension",
+      "titleZh": "幻想新维度",
+      "source": "https://www.pcgamingwiki.com/wiki/Fantasian_Neo_Dimension",
+      "coverUrl": "https://images.pcgamingwiki.com/1/10/FantasianNeoDimensionCover.jpg",
+      "steamAppId": "2844850",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2844850/"
+        }
+      ],
+      "developers": [
+        "Mistwalker Corporation",
+        "Square Enix Creative Studio III"
+      ],
+      "publishers": [
+        "Square Enix"
+      ],
+      "releaseDates": [
+        "2024-12-05"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
+      "featureNoteLinks": {}
+    },
+    {
       "id": "far-cry-6",
       "title": "Far Cry 6",
       "titleZh": "孤岛惊魂6",
@@ -4671,6 +4718,54 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "jak-ii-opengoal",
+      "title": "Jak II (OpenGOAL)",
+      "titleZh": "杰克 II (OpenGOAL)",
+      "source": "https://www.pcgamingwiki.com/wiki/Jak_II_(OpenGOAL)",
+      "coverUrl": "https://images.pcgamingwiki.com/6/61/Jak_II_cover.jpg",
+      "steamAppId": "",
+      "stores": [],
+      "developers": [
+        "Naughty Dog"
+      ],
+      "publishers": [
+        "Sony Computer Entertainment"
+      ],
+      "releaseDates": [
+        "2023-11-02"
+      ],
+      "platforms": [
+        "Windows",
+        "OS X",
+        "Linux"
+      ],
+      "modelStatuses": {
+        "DualSense": "true",
+        "DualSense Edge": "true"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "lightBar": "灯条颜色根据游戏内事件而变化，例如变成黑暗贾克斯、每支枪的颜色、生命值等。",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；触发游戏内事件，例如射击效果和抵抗，同时变为黑暗贾克斯。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
       "id": "john-carpenter-s-toxic-commando",
       "title": "John Carpenter's Toxic Commando",
       "titleZh": "约翰·卡朋特的有毒突击队",
@@ -6221,51 +6316,6 @@
       "featureNoteLinks": {}
     },
     {
-      "id": "pipistrello-and-the-cursed-yoyo",
-      "title": "Pipistrello and the Cursed Yoyo",
-      "titleZh": "皮皮斯特雷罗和被诅咒的溜溜球",
-      "source": "https://www.pcgamingwiki.com/wiki/Pipistrello_and_the_Cursed_Yoyo",
-      "coverUrl": "https://images.pcgamingwiki.com/1/1f/Pipistrello_and_the_Cursed_Yoyo_cover.jpg",
-      "steamAppId": "2870350",
-      "stores": [
-        {
-          "name": "Steam",
-          "url": "https://store.steampowered.com/app/2870350/"
-        }
-      ],
-      "developers": [
-        "Pocket Trap"
-      ],
-      "publishers": [
-        "PM Studios"
-      ],
-      "releaseDates": [
-        "2025-05-28"
-      ],
-      "platforms": [
-        "Windows"
-      ],
-      "modelStatuses": {
-        "DualSense": "true"
-      },
-      "models": [
-        "DualSense"
-      ],
-      "controllerSupport": "true",
-      "connectionModes": [],
-      "playstationPrompts": "unknown",
-      "motionSensors": "unknown",
-      "lightBar": "true",
-      "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {
-        "lightBar": "例如标题画面上的灯条为白色，游戏中为蓝色，Game Over 时为红色，收到“阿姨的帮助”时为粉红色。"
-      },
-      "featureNoteLinks": {}
-    },
-    {
       "id": "pragmata",
       "title": "Pragmata",
       "titleZh": "虚实万象",
@@ -6646,12 +6696,13 @@
       "playstationPrompts": "true",
       "motionSensors": "false",
       "lightBar": "unknown",
-      "adaptiveTriggers": "unknown",
+      "adaptiveTriggers": "always on",
       "hapticFeedback": "true",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "true",
       "featureNotes": {
         "playstationPrompts": "DS4、DS",
+        "adaptiveTriggers": "战斗中使用抓钩时生效。",
         "hapticFeedback": "标注为“震动”，可选关闭、低、正常。",
         "controllerSpeaker": "提供主音量、对话、音乐、音效、手柄扬声器、环境音和菜单音量滑块，默认均为 100%。"
       },
@@ -7616,6 +7667,67 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "skull-and-bones",
+      "title": "Skull and Bones",
+      "titleZh": "碧海黑帆",
+      "source": "https://www.pcgamingwiki.com/wiki/Skull_and_Bones",
+      "coverUrl": "https://images.pcgamingwiki.com/d/dc/Skull_%26_Bones_cover.jpg",
+      "steamAppId": "2853730",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2853730/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/skull-and-bones"
+        }
+      ],
+      "developers": [
+        "Ubisoft Singapore",
+        "Ubisoft Berlin",
+        "Ubisoft Chengdu",
+        "Ubisoft Kyiv",
+        "Ubisoft Paris",
+        "Ubisoft Philippines",
+        "Mi'pu'mi Games"
+      ],
+      "publishers": [
+        "Ubisoft"
+      ],
+      "releaseDates": [
+        "2024-02-16"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true",
+        "DualSense Edge": "true"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "通过蓝牙工作。可以通过“设置”菜单中“控制器”选项卡中的“触发强度”滑块进行调整。",
+        "hapticFeedback": "仅限有线连接。将无法恢复到蓝牙上的普通震动。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
       "id": "sleep-awake",
       "title": "Sleep Awake",
       "titleZh": "沉睡与苏醒",
@@ -8007,6 +8119,60 @@
       "featureNotes": {
         "playstationPrompts": "DualSense",
         "lightBar": "DualShock 4 上为蓝色，DualSense 上未使用。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "stray",
+      "title": "Stray",
+      "titleZh": "迷失",
+      "source": "https://www.pcgamingwiki.com/wiki/Stray",
+      "coverUrl": "https://images.pcgamingwiki.com/a/ae/Stray_cover.jpg",
+      "steamAppId": "1332010",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1332010/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/stray-42d658"
+        }
+      ],
+      "developers": [
+        "BlueTwelve Studio"
+      ],
+      "publishers": [
+        "Annapurna Interactive"
+      ],
+      "releaseDates": [
+        "2022-07-19",
+        "2023-12-05"
+      ],
+      "platforms": [
+        "Windows",
+        "OS X"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "limited",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "DualShock 4 和 Dualsense 需要激活 Steam Input。",
+        "lightBar": "DualShock 4 上为静态蓝色，DualSense 上未使用"
       },
       "featureNoteLinks": {}
     },
