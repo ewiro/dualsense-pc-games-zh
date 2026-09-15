@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-09-08T21:55:59.202Z",
+  "fetchedAt": "2026-09-15T22:20:27.066Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -2714,13 +2714,14 @@
         "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
-      "motionSensors": "unknown",
-      "lightBar": "unknown",
+      "motionSensors": "false",
+      "lightBar": "false",
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
+        "lightBar": "英文原文：Static blue",
         "hapticFeedback": "仅限有线连接。"
       },
       "featureNoteLinks": {}
@@ -6172,6 +6173,73 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "onimusha-way-of-the-sword",
+      "title": "Onimusha: Way of the Sword",
+      "titleZh": "Onimusha: Way of the Sword",
+      "source": "https://www.pcgamingwiki.com/wiki/Onimusha%3A_Way_of_the_Sword",
+      "coverUrl": "https://images.pcgamingwiki.com/0/00/Onimusha_Way_of_the_Sword_cover.jpg",
+      "steamAppId": "2638890",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2638890/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/onimusha-way-of-the-sword-3c2acc"
+        }
+      ],
+      "developers": [
+        "Capcom"
+      ],
+      "publishers": [],
+      "releaseDates": [
+        "2026-09-04"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "limited",
+        "DualSense Edge": "limited"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "limited",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "adaptiveTriggers": "hackable",
+      "hapticFeedback": "hackable",
+      "hdHapticFeedback": "false",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "playstationPrompts": "英文原文：\"Type 2\" can be selected via \"Button Icon Type\" under Options > Gameplay.",
+        "adaptiveTriggers": "英文原文：Use the Onimusha DualSense mod.",
+        "hapticFeedback": "英文原文：Use the Onimusha DualSense mod."
+      },
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Onimusha DualSense",
+            "url": "https://github.com/AInine9/Onimusha-DualSense"
+          }
+        ],
+        "hapticFeedback": [
+          {
+            "label": "Onimusha DualSense",
+            "url": "https://github.com/AInine9/Onimusha-DualSense"
+          }
+        ]
+      }
+    },
+    {
       "id": "overwatch-2",
       "title": "Overwatch 2",
       "titleZh": "守望先锋 2",
@@ -6187,7 +6255,11 @@
       "developers": [
         "Blizzard Entertainment"
       ],
-      "publishers": [],
+      "publishers": [
+        "Blizzard Entertainment",
+        "Nexon",
+        "NetEase Games"
+      ],
       "releaseDates": [
         "2023-08-10"
       ],
@@ -6704,7 +6776,7 @@
         "playstationPrompts": "DS4、DS",
         "adaptiveTriggers": "战斗中使用抓钩时生效。",
         "hapticFeedback": "标注为“震动”，可选关闭、低、正常。",
-        "controllerSpeaker": "提供主音量、对话、音乐、音效、手柄扬声器、环境音和菜单音量滑块，默认均为 100%。"
+        "controllerSpeaker": "英文原文：Dialogue, Music, SFX, Controller Speaker, Ambient, Menu volume sliders. 100% default."
       },
       "featureNoteLinks": {}
     },
