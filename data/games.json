@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-09-15T22:20:27.066Z",
+  "fetchedAt": "2026-09-22T22:18:58.649Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -1506,13 +1506,13 @@
       "motionSensors": "true",
       "lightBar": "false",
       "adaptiveTriggers": "true",
-      "hapticFeedback": "true",
+      "hapticFeedback": "false",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；标记为体感功能行为（在控制器 > 控制器下）。可以在体感功能行为菜单（控制器 > 瞄准下）中进行各种调整。",
         "adaptiveTriggers": "模式：有线（USB）；可以使用“扳机效果”选项（在“控制器”>“控制器”下）进行调整，并提供“关闭”、“武器火力阈值”和“完整触觉反馈”选项。",
-        "hapticFeedback": "仅限有线连接。"
+        "hapticFeedback": "英文原文：During a slide, the left side clearly vibrates more than the right, and no audio signal was observed."
       },
       "featureNoteLinks": {}
     },
@@ -1624,6 +1624,51 @@
         "playstationPrompts": "DualSense 按键提示。游戏 UI 的某些部分仍然显示 Xbox 提示。",
         "adaptiveTriggers": "模式：有线（USB）"
       },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "clive-barker-s-hellraiser-revival",
+      "title": "Clive Barker's Hellraiser: Revival",
+      "titleZh": "Clive Barker's Hellraiser: Revival",
+      "source": "https://www.pcgamingwiki.com/wiki/Clive_Barker's_Hellraiser%3A_Revival",
+      "coverUrl": "https://images.pcgamingwiki.com/2/2a/Clive_Barker%27s_Hellraiser_Revival_cover.jpg",
+      "steamAppId": "1551980",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1551980/"
+        }
+      ],
+      "developers": [
+        "Saber Interactive",
+        "Boss Team Games"
+      ],
+      "publishers": [],
+      "releaseDates": [
+        "2026-10-08"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
       "featureNoteLinks": {}
     },
     {
@@ -7688,6 +7733,59 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "silent-hill-townfall",
+      "title": "Silent Hill: Townfall",
+      "titleZh": "Silent Hill: Townfall",
+      "source": "https://www.pcgamingwiki.com/wiki/Silent_Hill%3A_Townfall",
+      "coverUrl": "https://images.pcgamingwiki.com/c/c8/Silent_Hill_Townfall_cover.jpg",
+      "steamAppId": "1636440",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1636440/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/silent-hill-townfall-0cb037"
+        }
+      ],
+      "developers": [
+        "Screen Burn"
+      ],
+      "publishers": [
+        "Konami",
+        "Annapurna Interactive"
+      ],
+      "releaseDates": [
+        "2026-09-24"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "motionSensors": "模式：Cursor"
+      },
+      "featureNoteLinks": {}
+    },
+    {
       "id": "skate",
       "title": "Skate",
       "titleZh": "极速滑板",
@@ -9682,7 +9780,7 @@
         "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
-      "motionSensors": "false",
+      "motionSensors": "true",
       "lightBar": "true",
       "adaptiveTriggers": "true",
       "hapticFeedback": "false",
@@ -9690,6 +9788,7 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "当设置为“自动检测”时，当 DualShock 4、DualSense 或 DualSense Edge 通过 USB 本机连接以及通过启用 Steam Input的蓝牙连接时，它将自动切换到 DualShock 4 提示。",
+        "motionSensors": "英文原文：模式：镜头控制；Aded in Update 42.",
         "lightBar": "对收到的伤害做出反应。",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；在更新 34 中添加。",
         "hapticFeedback": "使用普通震动。"
