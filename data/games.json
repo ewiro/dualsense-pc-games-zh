@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-09-22T22:18:58.649Z",
+  "fetchedAt": "2026-09-29T23:02:16.750Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -743,7 +743,7 @@
       "lightBar": "true",
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "motionSensors": "模式：镜头控制；第 3 次游戏更新 中添加了陀螺仪瞄准功能。",
@@ -1722,6 +1722,61 @@
           }
         ]
       }
+    },
+    {
+      "id": "control-resonant",
+      "title": "Control Resonant",
+      "titleZh": "Control Resonant",
+      "source": "https://www.pcgamingwiki.com/wiki/Control_Resonant",
+      "coverUrl": "https://images.pcgamingwiki.com/e/ef/Control_Resonant_cover.jpg",
+      "steamAppId": "3669870",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3669870/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/control-resonant-3568d3"
+        }
+      ],
+      "developers": [
+        "Remedy Entertainment"
+      ],
+      "publishers": [],
+      "releaseDates": [
+        "2026-09-24",
+        "2026-01-01"
+      ],
+      "platforms": [
+        "Windows",
+        "OS X"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "lightBar": "英文原文：Lightbar is active in both gameplay and cutscenes, but will be turned off (or set to static blue on DualShock 4) if on menus.",
+        "adaptiveTriggers": "英文原文：As a toggle under Gameplay>Controller options.",
+        "hapticFeedback": "英文原文：As a slider from 0-100, under Gameplay>Controller options.",
+        "controllerSpeaker": "英文原文：Rumble isn't supported on DualSense under Bluetooth connectivity. Speakers is supported (DualShock 4/DualSense, USB only), typically for radio comms.；Effects, speech, music, and controller speaker volume."
+      },
+      "featureNoteLinks": {}
     },
     {
       "id": "crime-boss-rockay-city",
@@ -3292,9 +3347,7 @@
       "developers": [
         "Remedy Entertainment"
       ],
-      "publishers": [
-        "Remedy Entertainment"
-      ],
+      "publishers": [],
       "releaseDates": [
         "2025-06-17"
       ],
@@ -3659,13 +3712,15 @@
         "Wired"
       ],
       "playstationPrompts": "unknown",
-      "motionSensors": "unknown",
+      "motionSensors": "true",
       "lightBar": "unknown",
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
-      "featureNotes": {},
+      "featureNotes": {
+        "motionSensors": "模式：镜头控制"
+      },
       "featureNoteLinks": {}
     },
     {
@@ -5675,6 +5730,51 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "microsoft-flight-simulator-2024",
+      "title": "Microsoft Flight Simulator 2024",
+      "titleZh": "Microsoft Flight Simulator 2024",
+      "source": "https://www.pcgamingwiki.com/wiki/Microsoft_Flight_Simulator_2024",
+      "coverUrl": "https://images.pcgamingwiki.com/a/ad/Microsoft_Flight_Simulator_2024_cover.jpg",
+      "steamAppId": "2537590",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2537590/"
+        }
+      ],
+      "developers": [
+        "Asobo Studio"
+      ],
+      "publishers": [
+        "Xbox Game Studios"
+      ],
+      "releaseDates": [
+        "2024-11-19"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "unknown",
+      "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
+      "featureNoteLinks": {}
+    },
+    {
       "id": "mindseye",
       "title": "MindsEye",
       "titleZh": "心灵之眼",
@@ -6868,17 +6968,25 @@
         "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
-      "motionSensors": "false",
+      "motionSensors": "hackable",
       "lightBar": "false",
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
       "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
+        "motionSensors": "英文原文：模式：镜头控制；See neolud's Native Gyro and Flick Stick.",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
       },
-      "featureNoteLinks": {}
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "neolud's Native Gyro and Flick Stick",
+            "url": "https://www.pcgamingwiki.com/wiki/Returnal#Returnal_Native_Gyro_+_Mixed_Input"
+          }
+        ]
+      }
     },
     {
       "id": "rise-of-the-ronin",
@@ -7781,7 +7889,7 @@
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
-        "motionSensors": "模式：Cursor"
+        "motionSensors": "英文原文：模式：镜头控制、Cursor、手势；Extensive use of Motion Controls features, such as Map Camera tilt, CRTV Signal tuning , and Gyro Aiming support. Motion Controls function can be disable within Control Options"
       },
       "featureNoteLinks": {}
     },
@@ -9223,12 +9331,13 @@
       "motionSensors": "unknown",
       "lightBar": "true",
       "adaptiveTriggers": "true",
-      "hapticFeedback": "false",
+      "hapticFeedback": "true",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "lightBar": "主菜单为蓝色，游戏玩法为绿色，游戏结束为红色。",
-        "adaptiveTriggers": "模式：有线（USB）；添加到下一代（补丁 4.0）更新中。"
+        "adaptiveTriggers": "模式：有线（USB）；添加到下一代（补丁 4.0）更新中。",
+        "hapticFeedback": "英文原文：Added in the Remastered update."
       },
       "featureNoteLinks": {}
     },
@@ -9788,10 +9897,10 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "playstationPrompts": "当设置为“自动检测”时，当 DualShock 4、DualSense 或 DualSense Edge 通过 USB 本机连接以及通过启用 Steam Input的蓝牙连接时，它将自动切换到 DualShock 4 提示。",
-        "motionSensors": "英文原文：模式：镜头控制；Aded in Update 42.",
-        "lightBar": "对收到的伤害做出反应。",
+        "motionSensors": "英文原文：模式：镜头控制；Added in Update 42.",
+        "lightBar": "英文原文：Reacts to the damage received.",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；在更新 34 中添加。",
-        "hapticFeedback": "使用普通震动。"
+        "hapticFeedback": "英文原文：The game uses regular rumble."
       },
       "featureNoteLinks": {}
     },

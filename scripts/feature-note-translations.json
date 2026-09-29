@@ -113,6 +113,7 @@
   "Named Type B.": "名称为 B 型。",
   "Need to enable in the options menu": "需要在选项菜单中启用",
   "Needs to be enabled in Settings under System Features": "需要在“系统功能”下的“设置”中启用",
+  "neolud's Native Gyro and Flick Stick": "neolud's Native Gyro and Flick Stick",
   "No rumble support on DualShock 4. Also support the built-in speaker for both DualSense and DualSense Edge since Version 2.5.；Wired only. Requires manual configuration on the controller's audio device.": "DualShock 4 不支持震动。自 2.5 版本起，还支持 DualSense 和 DualSense Edge 的内置扬声器；仅限有线。需要在控制器的音频设备上进行手动配置。",
   "No vibration and internal speaker support over Bluetooth connectivity.；Music, Speech, UI, SFX sliders. Separate Gamepad Speaker slider also available.": "通过蓝牙连接无振动和内部扬声器支持；音乐、语音、UI、SFX 滑块。还提供单独的游戏手柄扬声器滑块。",
   "No vibration and internal speaker support with Bluetooth connectivity.；Master, Music, Speech, UI, SFX sliders. Separate Controller Speaker and Audio Balance sliders also available.": "无振动，支持蓝牙连接的内置扬声器；Master、Music、Speech、UI、SFX 滑块。还提供单独的控制器扬声器和音频平衡滑块。",
