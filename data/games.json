@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-09-29T23:02:16.750Z",
+  "fetchedAt": "2026-10-06T23:07:12.226Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -118,6 +118,53 @@
       "featureNotes": {
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "ace-combat-8-wings-of-theve",
+      "title": "Ace Combat 8: Wings of Theve",
+      "titleZh": "Ace Combat 8: Wings of Theve",
+      "source": "https://www.pcgamingwiki.com/wiki/Ace_Combat_8%3A_Wings_of_Theve",
+      "coverUrl": "https://images.pcgamingwiki.com/0/00/Ace_Combat_8_Wings_of_Theve_cover.jpg",
+      "steamAppId": "2288340",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2288340/"
+        }
+      ],
+      "developers": [
+        "Bandai Namco Aces"
+      ],
+      "publishers": [
+        "Bandai Namco Entertainment"
+      ],
+      "releaseDates": [
+        "2026-10-02"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "英文原文：Under Gameplay options."
       },
       "featureNoteLinks": {}
     },
@@ -3711,7 +3758,7 @@
       "connectionModes": [
         "Wired"
       ],
-      "playstationPrompts": "unknown",
+      "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "unknown",
       "adaptiveTriggers": "true",
@@ -4035,7 +4082,7 @@
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）",
         "hapticFeedback": "仅限有线连接。",
-        "controllerSpeaker": "全局、对话、音乐、SFX、控制器扬声器音量滑块从 0 到 10。"
+        "controllerSpeaker": "英文原文：Dialogue, Music, SFX, Controller Speaker Volume sliders from 0 to 10."
       },
       "featureNoteLinks": {}
     },
@@ -7883,13 +7930,14 @@
       ],
       "playstationPrompts": "true",
       "motionSensors": "true",
-      "lightBar": "false",
+      "lightBar": "always on",
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
-        "motionSensors": "英文原文：模式：镜头控制、Cursor、手势；Extensive use of Motion Controls features, such as Map Camera tilt, CRTV Signal tuning , and Gyro Aiming support. Motion Controls function can be disable within Control Options"
+        "motionSensors": "英文原文：模式：镜头控制、Cursor、手势；Extensive use of Motion Controls features, such as Map Camera tilt, CRTV Signal tuning , and Gyro Aiming support. Motion Controls function can be disable within Control Options",
+        "lightBar": "英文原文：Turns red when in Otherworld."
       },
       "featureNoteLinks": {}
     },
