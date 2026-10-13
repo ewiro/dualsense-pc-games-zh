@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-10-06T23:07:12.226Z",
+  "fetchedAt": "2026-10-13T23:19:33.935Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -320,6 +320,58 @@
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；添加到突破更新中。",
         "hapticFeedback": "仅限有线连接。添加到突破更新中。"
       },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "arc-raiders",
+      "title": "ARC Raiders",
+      "titleZh": "ARC Raiders",
+      "source": "https://www.pcgamingwiki.com/wiki/ARC_Raiders",
+      "coverUrl": "https://images.pcgamingwiki.com/7/70/ARC_Raiders_cover.jpg",
+      "steamAppId": "1808500",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/1808500/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/arc-raiders"
+        }
+      ],
+      "developers": [
+        "Embark Studios",
+        "Entrophy Games"
+      ],
+      "publishers": [
+        "Embark Studios",
+        "Tencent Games",
+        "Nexon"
+      ],
+      "releaseDates": [
+        "2025-10-30"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "adaptiveTriggers": "unknown",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
       "featureNoteLinks": {}
     },
     {
@@ -1687,10 +1739,13 @@
         }
       ],
       "developers": [
-        "Saber Interactive",
+        "Saber Serbia",
+        "Saber Bosnia and Herzegovina",
         "Boss Team Games"
       ],
-      "publishers": [],
+      "publishers": [
+        "Saber Interactive"
+      ],
       "releaseDates": [
         "2026-10-08"
       ],
@@ -1708,14 +1763,16 @@
         "Wired",
         "Wireless (Bluetooth)"
       ],
-      "playstationPrompts": "unknown",
+      "playstationPrompts": "true",
       "motionSensors": "unknown",
       "lightBar": "unknown",
       "adaptiveTriggers": "true",
-      "hapticFeedback": "unknown",
-      "hdHapticFeedback": "unknown",
-      "controllerSpeaker": "unknown",
-      "featureNotes": {},
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
+      "controllerSpeaker": "true",
+      "featureNotes": {
+        "controllerSpeaker": "英文原文：Also supports built-in speaker for sound effects."
+      },
       "featureNoteLinks": {}
     },
     {
@@ -2213,6 +2270,92 @@
           }
         ]
       }
+    },
+    {
+      "id": "deadzone-rogue",
+      "title": "Deadzone: Rogue",
+      "titleZh": "Deadzone: Rogue",
+      "source": "https://www.pcgamingwiki.com/wiki/Deadzone%3A_Rogue",
+      "coverUrl": "https://images.pcgamingwiki.com/1/17/Deadzone_Rogue_Cover.jpg",
+      "steamAppId": "3228590",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/3228590/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/deadzone-rogue-1a67ff"
+        }
+      ],
+      "developers": [
+        "Prophecy Games"
+      ],
+      "publishers": [],
+      "releaseDates": [
+        "2025-08-11"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "unknown",
+      "motionSensors": "unknown",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "deadzone-rogue-2",
+      "title": "Deadzone: Rogue 2",
+      "titleZh": "Deadzone: Rogue 2",
+      "source": "https://www.pcgamingwiki.com/wiki/Deadzone%3A_Rogue_2",
+      "coverUrl": "https://images.pcgamingwiki.com/0/00/Deadzone_Rogue_2_cover.jpg",
+      "steamAppId": "4465790",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4465790/"
+        }
+      ],
+      "developers": [
+        "Prophecy Games"
+      ],
+      "publishers": [],
+      "releaseDates": [],
+      "platforms": [],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {},
+      "featureNoteLinks": {}
     },
     {
       "id": "death-stranding-2-on-the-beach",
@@ -3737,7 +3880,8 @@
       ],
       "developers": [
         "The Coalition",
-        "People Can Fly"
+        "People Can Fly",
+        "Virtuos"
       ],
       "publishers": [
         "Xbox Games Studios"
@@ -3756,19 +3900,28 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired"
+        "Wired",
+        "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
-      "motionSensors": "true",
-      "lightBar": "unknown",
+      "motionSensors": "limited",
+      "lightBar": "true",
       "adaptiveTriggers": "true",
       "hapticFeedback": "unknown",
       "hdHapticFeedback": "unknown",
       "controllerSpeaker": "unknown",
       "featureNotes": {
-        "motionSensors": "模式：镜头控制"
+        "motionSensors": "英文原文：模式：镜头控制；Motion Sensor Aiming function only available on the Steam version",
+        "adaptiveTriggers": "英文原文：Can be disabled under Controls, Controller, Adaptive Triggers."
       },
-      "featureNoteLinks": {}
+      "featureNoteLinks": {
+        "motionSensors": [
+          {
+            "label": "There's been reports that built-in Gyro Aiming support is missing from the Xbox PC/Microsoft Store version",
+            "url": "https://www.reddit.com/r/GyroGaming/comments/1wzofn4/gears_of_war_eday_anyone_else_missing_the/"
+          }
+        ]
+      }
     },
     {
       "id": "genshin-impact",
@@ -4168,7 +4321,7 @@
         "Tech Dealer"
       ],
       "releaseDates": [
-        "2005-06-01",
+        "2005-06-07",
         "2010-11-12"
       ],
       "platforms": [
@@ -6481,6 +6634,69 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "p-t-for-pc",
+      "title": "P.T. for PC",
+      "titleZh": "P.T. for PC",
+      "source": "https://www.pcgamingwiki.com/wiki/P.T._for_PC",
+      "coverUrl": "",
+      "steamAppId": "",
+      "stores": [],
+      "developers": [
+        "Kojima Productions"
+      ],
+      "publishers": [
+        "Konami"
+      ],
+      "releaseDates": [
+        "2026-10-07",
+        "2026-10-10"
+      ],
+      "platforms": [
+        "Windows",
+        "Linux",
+        "OS X"
+      ],
+      "modelStatuses": {
+        "DualSense": "true",
+        "DualSense Edge": "true"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "false",
+      "hapticFeedback": "true",
+      "hdHapticFeedback": "true",
+      "controllerSpeaker": "limited",
+      "featureNotes": {
+        "playstationPrompts": "英文原文：DualShock 4 prompts only",
+        "hapticFeedback": "英文原文：setting Rumble Mode to Enhanced will enable DualSense's Haptic Feedback . Disabled by default.",
+        "controllerSpeaker": "英文原文：Added in Release 1.0.2, Controller Speaker (USB only) can be optionally enabled for Lisa's Cries to be heard via the Controller's Speakers.；setting Rumble Mode to Enhanced will enable DualSense's Haptic Feedback . Disabled by default.；only one Master Volume and Controller Speaker"
+      },
+      "featureNoteLinks": {
+        "hapticFeedback": [
+          {
+            "label": "controller_speaker.cpp",
+            "url": "https://github.com/LoreanXavier/pt-pc/blob/main/src/engine/platform/controller_speaker.cpp"
+          }
+        ],
+        "controllerSpeaker": [
+          {
+            "label": "controller_speaker.cpp",
+            "url": "https://github.com/LoreanXavier/pt-pc/blob/main/src/engine/platform/controller_speaker.cpp"
+          }
+        ]
+      }
+    },
+    {
       "id": "pacific-drive",
       "title": "Pacific Drive",
       "titleZh": "超自然车旅",
@@ -8334,6 +8550,58 @@
         "motionSensors": "模式：镜头控制",
         "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）",
         "hapticFeedback": "仅限有线连接。如果通过蓝牙连接，将恢复普通震动。"
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "star-wars-galactic-racer",
+      "title": "Star Wars: Galactic Racer",
+      "titleZh": "Star Wars: Galactic Racer",
+      "source": "https://www.pcgamingwiki.com/wiki/Star_Wars%3A_Galactic_Racer",
+      "coverUrl": "https://images.pcgamingwiki.com/5/57/Star_Wars_-_Galactic_Racer_cover.jpg",
+      "steamAppId": "4078430",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/4078430/"
+        },
+        {
+          "name": "Epic",
+          "url": "https://store.epicgames.com/p/star-wars-galactic-racer-246fdc"
+        }
+      ],
+      "developers": [
+        "Fuse Games"
+      ],
+      "publishers": [
+        "Secret Mode"
+      ],
+      "releaseDates": [
+        "2026-10-06"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired",
+        "Wireless (Bluetooth)"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "true",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "unknown",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "adaptiveTriggers": "英文原文：模式：有线；Toggle under Controls, Adaptive Triggers."
       },
       "featureNoteLinks": {}
     },
