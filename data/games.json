@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-10-13T23:19:33.935Z",
+  "fetchedAt": "2026-10-20T22:24:55.639Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -2520,6 +2520,57 @@
       "featureNoteLinks": {}
     },
     {
+      "id": "delta-force-2024",
+      "title": "Delta Force (2024)",
+      "titleZh": "Delta Force (2024)",
+      "source": "https://www.pcgamingwiki.com/wiki/Delta_Force_(2024)",
+      "coverUrl": "https://images.pcgamingwiki.com/0/07/DeltaForce2025Cover.jpg",
+      "steamAppId": "2507950",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2507950/"
+        }
+      ],
+      "developers": [
+        "Team Jade"
+      ],
+      "publishers": [
+        "TiMi Studio Group",
+        "Level Infinite",
+        "Garena"
+      ],
+      "releaseDates": [
+        "2024-09-26"
+      ],
+      "platforms": [
+        "Windows"
+      ],
+      "modelStatuses": {
+        "DualSense": "true",
+        "DualSense Edge": "true"
+      },
+      "models": [
+        "DualSense",
+        "DualSense Edge"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [
+        "Wired"
+      ],
+      "playstationPrompts": "true",
+      "motionSensors": "false",
+      "lightBar": "false",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "英文原文：basic rumble"
+      },
+      "featureNoteLinks": {}
+    },
+    {
       "id": "depersonalization",
       "title": "Depersonalization",
       "titleZh": "人格解体",
@@ -4083,7 +4134,7 @@
         "Bethesda Softworks"
       ],
       "releaseDates": [
-        "2022-03-25"
+        "2022-03-24"
       ],
       "platforms": [
         "Windows"
@@ -6670,16 +6721,17 @@
         "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
-      "motionSensors": "false",
-      "lightBar": "unknown",
+      "motionSensors": "true",
+      "lightBar": "false",
       "adaptiveTriggers": "false",
       "hapticFeedback": "true",
       "hdHapticFeedback": "true",
       "controllerSpeaker": "limited",
       "featureNotes": {
-        "playstationPrompts": "英文原文：DualShock 4 prompts only",
+        "playstationPrompts": "英文原文：Button prompt is listed as PlayStation, but it'll use DualShock 4 prompts.",
+        "motionSensors": "英文原文：模式：镜头控制、cursor；Added in Release 1.0.4, Motion Sensor is accessible via PC Options > Accessibility > Gyro, can choose Camera or Flashlight.",
         "hapticFeedback": "英文原文：setting Rumble Mode to Enhanced will enable DualSense's Haptic Feedback . Disabled by default.",
-        "controllerSpeaker": "英文原文：Added in Release 1.0.2, Controller Speaker (USB only) can be optionally enabled for Lisa's Cries to be heard via the Controller's Speakers.；setting Rumble Mode to Enhanced will enable DualSense's Haptic Feedback . Disabled by default.；only one Master Volume and Controller Speaker"
+        "controllerSpeaker": "英文原文：Added in Release 1.0.2, Controller Speaker (USB only) can be optionally enabled for Lisa's Cries to be heard via the Controller's Speakers.；setting Rumble Mode to Enhanced will enable DualSense's Haptic Feedback . Disabled by default.；only one Master Volume and Controller Speaker (PlayStation controller speaker only)"
       },
       "featureNoteLinks": {
         "hapticFeedback": [
@@ -9485,19 +9537,29 @@
       ],
       "controllerSupport": "true",
       "connectionModes": [
-        "Wired"
+        "Wired",
+        "Wireless (Bluetooth)"
       ],
       "playstationPrompts": "true",
       "motionSensors": "true",
       "lightBar": "true",
       "adaptiveTriggers": "true",
       "hapticFeedback": "true",
-      "hdHapticFeedback": "unknown",
+      "hdHapticFeedback": "true",
       "controllerSpeaker": "unknown",
       "featureNotes": {
-        "motionSensors": "模式：手势、镜头控制"
+        "playstationPrompts": "支持 DualShock 4 和 DualSense 按键提示",
+        "motionSensors": "模式：手势、镜头控制",
+        "adaptiveTriggers": "模式：有线（USB）、无线（蓝牙）；Steam 版本还通过使用 Steam Input提供自适应扳机支持。"
       },
-      "featureNoteLinks": {}
+      "featureNoteLinks": {
+        "adaptiveTriggers": [
+          {
+            "label": "Steam Input",
+            "url": "https://www.pcgamingwiki.com/wiki/Steam_Input"
+          }
+        ]
+      }
     },
     {
       "id": "the-riftbreaker",
