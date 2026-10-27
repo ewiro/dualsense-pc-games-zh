@@ -1,6 +1,6 @@
 {
   "schemaVersion": 8,
-  "fetchedAt": "2026-10-20T22:24:55.639Z",
+  "fetchedAt": "2026-10-27T23:00:20.336Z",
   "source": "https://www.pcgamingwiki.com/wiki/List_of_games_that_support_DualSense",
   "selection": {
     "rule": "adaptiveTriggers OR hapticFeedback",
@@ -165,6 +165,52 @@
       "controllerSpeaker": "unknown",
       "featureNotes": {
         "adaptiveTriggers": "英文原文：Under Gameplay options."
+      },
+      "featureNoteLinks": {}
+    },
+    {
+      "id": "active-matter",
+      "title": "Active Matter",
+      "titleZh": "Active Matter",
+      "source": "https://www.pcgamingwiki.com/wiki/Active_Matter",
+      "coverUrl": "https://images.pcgamingwiki.com/0/0b/Active_Matter_cover.jpg",
+      "steamAppId": "2887580",
+      "stores": [
+        {
+          "name": "Steam",
+          "url": "https://store.steampowered.com/app/2887580/"
+        }
+      ],
+      "developers": [
+        "Matter Team"
+      ],
+      "publishers": [
+        "Gaijin Network"
+      ],
+      "releaseDates": [
+        "2026-09-15"
+      ],
+      "platforms": [
+        "Windows",
+        "Linux"
+      ],
+      "modelStatuses": {
+        "DualSense": "true"
+      },
+      "models": [
+        "DualSense"
+      ],
+      "controllerSupport": "true",
+      "connectionModes": [],
+      "playstationPrompts": "true",
+      "motionSensors": "true",
+      "lightBar": "unknown",
+      "adaptiveTriggers": "true",
+      "hapticFeedback": "false",
+      "hdHapticFeedback": "unknown",
+      "controllerSpeaker": "unknown",
+      "featureNotes": {
+        "hapticFeedback": "英文原文：basic rumble"
       },
       "featureNoteLinks": {}
     },
